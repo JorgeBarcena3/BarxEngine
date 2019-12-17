@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\BMensajes">
+      <UniqueIdentifier>{3a0938b7-515b-4653-9636-b95bb55f8356}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\BWindow">
+      <UniqueIdentifier>{5c0257e6-f3b9-45b3-a509-6696d8c6cb1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Input">
+      <UniqueIdentifier>{711424f1-f724-4602-ab24-f9a5e0294d83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ECS">
+      <UniqueIdentifier>{89509e69-52c5-4bf0-bb50-2ba770ee7a7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Components">
+      <UniqueIdentifier>{558f88b2-c677-4d25-87ce-6276167c2334}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Audio">
+      <UniqueIdentifier>{a200c86f-2777-480b-8408-488578e9182d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\code\source\BEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\headers\BScene.hpp">
+      <Filter>Header Files\ECS</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\code\headers\BEngine.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BtypeDef.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BMessage.hpp">
+      <Filter>Header Files\BMensajes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BObserver.hpp">
+      <Filter>Header Files\BMensajes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BVariant.hpp">
+      <Filter>Header Files\BMensajes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BDispacher.hpp">
+      <Filter>Header Files\BMensajes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BWindow.hpp">
+      <Filter>Header Files\BWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BInputMapper.hpp">
+      <Filter>Header Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BInputHandler.hpp">
+      <Filter>Header Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BEntity.hpp">
+      <Filter>Header Files\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BComponent.hpp">
+      <Filter>Header Files\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BSystem.hpp">
+      <Filter>Header Files\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BControlComponent.hpp">
+      <Filter>Header Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BAudio.hpp">
+      <Filter>Header Files\Audio</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\..\code\headers\EventMapping.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>
