@@ -4,6 +4,8 @@
 #include <SDL.h>
 #include <ciso646>
 #include <SDL_mixer.h>
+#include <fstream>      // std::fstream
+
 
 /*
  * Maneja el audio del motor
@@ -62,9 +64,10 @@ public:
     */
     Id loadMusic(const char* path) {
 
+      
 
         Mix_Music* _music;
-        _music = Mix_LoadMUS(path);
+        auto aa = Mix_LoadWAV(path);
         auto error = Mix_GetError();
 
         if (_music = Mix_LoadMUS(path))
