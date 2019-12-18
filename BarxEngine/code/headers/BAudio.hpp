@@ -64,19 +64,25 @@ public:
     */
     Id loadMusic(const char* path) {
 
-      
 
         Mix_Music* _music;
-        auto aa = Mix_LoadWAV(path);
-        auto error = Mix_GetError();
 
         if (_music = Mix_LoadMUS(path))
         {
-            Id id = music.end()->first + 1;
+            Id id;
+
+           if (music.empty())
+            {
+                id = 0;
+            }
+            else
+                id = (--music.end())->first + 1;
+
             music[id] = (_music);
             return id;
         }
 
+        auto error = Mix_GetError();
         return -1;
     }
 
@@ -89,12 +95,22 @@ public:
 
         if (_sound = Mix_LoadWAV(path))
         {
-            Id id = sounds.end()->first + 1;
-            sounds[sounds.end()->first + 1] = (_sound);
+            Id id;
+
+            if (sounds.empty())
+            {
+                id = 0;
+            }
+            else
+                id = (--sounds.end())->first + 1;
+
+            sounds[id] = (_sound);
             return id;
         }
 
+        auto error = Mix_GetError();
         return -1;
+
     }
 
     /*
