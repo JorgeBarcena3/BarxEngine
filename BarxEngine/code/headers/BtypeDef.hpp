@@ -3,6 +3,7 @@
 #include "BVariant.hpp"
 #include <functional>
 #include <list> 
+#include <string>
 
 
 using namespace std;

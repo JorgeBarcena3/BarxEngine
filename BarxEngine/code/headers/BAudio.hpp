@@ -4,7 +4,6 @@
 #include <SDL.h>
 #include <ciso646>
 #include <SDL_mixer.h>
-#include <fstream>      // std::fstream
 
 
 /*
@@ -19,12 +18,30 @@ private:
     map<Id, Mix_Chunk* > sounds;
 
 public:
+       
+    /*
+    * Adapta un path en funcion de la version que ejecutamos
+    */
+    string setRelativePath(const char* _path) {
+
+#if _DEBUG 
+        string relativePath = "..\\..\\";
+#else
+        string relativePath = "..\\..\\";
+#endif
+        string path = _path;
+
+        relativePath.append(path);
+
+        return relativePath;
+    }
 
     /*
     * Contructor del audio
     */
     BAudio()
     {
+
         int flags = MIX_INIT_OGG | MIX_INIT_MOD;
 
         // start SDL with audio support
@@ -61,17 +78,17 @@ public:
 
     /*
     * Carga una musica y devuelve su Id
+    * Busca la ruta desde la carpeta de creacion del proyecto
     */
     Id loadMusic(const char* path) {
 
-
         Mix_Music* _music;
 
-        if (_music = Mix_LoadMUS(path))
+        if (_music = Mix_LoadMUS(setRelativePath(path).c_str()))
         {
             Id id;
 
-           if (music.empty())
+            if (music.empty())
             {
                 id = 0;
             }
@@ -88,12 +105,13 @@ public:
 
     /*
     * Carga una sonido y devuelve su Id
+    * Busca la ruta desde la carpeta de creacion del proyecto
     */
     int loadSound(const char* path) {
 
         Mix_Chunk* _sound;
 
-        if (_sound = Mix_LoadWAV(path))
+        if (_sound = Mix_LoadWAV(setRelativePath(path).c_str()))
         {
             Id id;
 

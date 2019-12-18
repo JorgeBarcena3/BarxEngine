@@ -18,10 +18,9 @@ int main() {
 
     BAudio audio;
 
-    Id id = audio.loadMusic("C:\\media\\testogg.ogg");
-    Id id2 = audio.loadMusic("C:\\media\\testmp3.mp3");
-    Id id3 = audio.loadSound("C:\\media\\testwaw.wav");
-
+    Id id = audio.loadMusic("media\\testogg.ogg");
+    Id id2 = audio.loadMusic("media\\testmp3.mp3");
+    Id id3 = audio.loadSound("media\\testwaw.wav");
 
     audio.startMusic(id);
 
