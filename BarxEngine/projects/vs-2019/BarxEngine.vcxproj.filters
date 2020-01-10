@@ -19,17 +19,25 @@
     <Filter Include="Header Files\BWindow">
       <UniqueIdentifier>{5c0257e6-f3b9-45b3-a509-6696d8c6cb1e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Input">
-      <UniqueIdentifier>{711424f1-f724-4602-ab24-f9a5e0294d83}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\ECS">
       <UniqueIdentifier>{89509e69-52c5-4bf0-bb50-2ba770ee7a7f}</UniqueIdentifier>
     </Filter>
+<<<<<<< HEAD
     <Filter Include="Header Files\BComponents">
       <UniqueIdentifier>{558f88b2-c677-4d25-87ce-6276167c2334}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\BAudio">
       <UniqueIdentifier>{a200c86f-2777-480b-8408-488578e9182d}</UniqueIdentifier>
+=======
+    <Filter Include="Header Files\BAudio">
+      <UniqueIdentifier>{a200c86f-2777-480b-8408-488578e9182d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\BComponents">
+      <UniqueIdentifier>{558f88b2-c677-4d25-87ce-6276167c2334}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\BInput">
+      <UniqueIdentifier>{711424f1-f724-4602-ab24-f9a5e0294d83}</UniqueIdentifier>
+>>>>>>> cffc65524b829232b8cad09f6d8899e356ad30ba
     </Filter>
     <Filter Include="Header Files\BModule">
       <UniqueIdentifier>{c4edeb97-f7b0-44a3-816c-c9e6e4615eae}</UniqueIdentifier>
@@ -66,10 +74,10 @@
       <Filter>Header Files\BWindow</Filter>
     </ClInclude>
     <ClInclude Include="..\..\code\headers\BInputMapper.hpp">
-      <Filter>Header Files\Input</Filter>
+      <Filter>Header Files\BInput</Filter>
     </ClInclude>
     <ClInclude Include="..\..\code\headers\BInputHandler.hpp">
-      <Filter>Header Files\Input</Filter>
+      <Filter>Header Files\BInput</Filter>
     </ClInclude>
     <ClInclude Include="..\..\code\headers\BEntity.hpp">
       <Filter>Header Files\ECS</Filter>
@@ -85,6 +93,7 @@
     </ClInclude>
     <ClInclude Include="..\..\code\headers\BAudio.hpp">
       <Filter>Header Files\BAudio</Filter>
+<<<<<<< HEAD
     </ClInclude>
     <ClInclude Include="..\..\code\headers\BKernel.hpp">
       <Filter>Header Files</Filter>
@@ -121,6 +130,8 @@
     </ClInclude>
     <ClInclude Include="..\..\code\headers\BVariant.hpp">
       <Filter>Header Files\BUtilities</Filter>
+=======
+>>>>>>> cffc65524b829232b8cad09f6d8899e356ad30ba
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

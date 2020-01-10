@@ -1,2 +1,0 @@
-﻿SDL2_mixer.lib(SDL2_mixer.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in SDL2.lib(SDL2.dll); second definition ignored
-  BarxEngine.vcxproj -> D:\GitHub\BarxEngine\Demo\projects\vs-2019\x64\Release\BarxEngine.lib
