@@ -48,19 +48,19 @@ public:
     {
         //  load(scene_description_file_path
 
-        shared_ptr< BPhysics_Module::BPhysics_Module_Factory > physicsFactory();
+        //shared_ptr< BPhysics_Module::BPhysics_Module_Factory > physicsFactory();
 
-        BModule::FModule_Map& factories = BModule::get_module_map();
+        //BModule::FModule_Map& factories = BModule::get_module_map();
 
-        BEntity* entity = new BEntity();
+        //BEntity* entity = new BEntity();
 
-        shared_ptr< BComponent> componente = shared_ptr< BPhysics_Component >(new BPhysics_Component(entity));
+        //shared_ptr< BComponent> componente = shared_ptr< BPhysics_Component >(new BPhysics_Component(entity));
 
-        string physicsName = "physics";
+        //string physicsName = "physics";
 
-        modules["physics"] = factories[physicsName]->create_module();
+        //modules["physics"] = factories[physicsName]->create_module();
 
-        entity->add_component("physics", componente);
+        //entity->add_component("physics", componente);
 
         init_kernel();
     }

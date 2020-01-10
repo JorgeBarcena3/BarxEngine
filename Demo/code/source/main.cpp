@@ -19,10 +19,7 @@
 
 #include "BEngine.hpp"
 #include <iostream>
-<<<<<<< HEAD
 #include "BScene.hpp"
-=======
->>>>>>> cffc65524b829232b8cad09f6d8899e356ad30ba
 
 int main() {
 
@@ -48,12 +45,9 @@ int main() {
     audio.makeSound(id);
     std::getchar();*/
 
-<<<<<<< HEAD
     const std::string path = "CASA";
-=======
 	std::cout << id << endl << id3;
     std::getchar();
->>>>>>> cffc65524b829232b8cad09f6d8899e356ad30ba
 
     BScene * scene = new BScene();
   

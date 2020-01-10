@@ -41,8 +41,8 @@ public:
 
     static void register_module(const std::string& id, BModule::BFactory* factory)
     {
-        auto aa = factory->create_module();
-        modules[id] = shared_ptr<BModule>(aa);
+        //auto aa = factory->create_module();
+        //modules[id] = shared_ptr<BModule>(aa);
     }
 
     static FModule_Map& get_module_map()
