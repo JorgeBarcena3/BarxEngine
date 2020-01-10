@@ -1,35 +1,38 @@
 #pragma once
 #include "BtypeDef.hpp"
-
+#include "BVariant.hpp"
 
 /*
 * Clase que se encarga de manejar los mensajes
 */
-class BMessage
+struct BMessage
 {
 
-private:
+    string id;
 
-    //Id unico del mensaje
-    Id id;
+    map< string, BVariant > parameters;
 
-    //Parametros del mensaje en cuestion
-    Params params;
-
-
-public:
-
-    //Sobrecarga del operador [] que devuelve el variant asignado a una id
-    BVariant& operator[](Id id)
+    BMessage(const string& id) : id(id)
     {
-        return params[id];
     }
 
-public:
+    void add_parameter(const string& name, const BVariant& value)
+    {
+        parameters[name] = value;
+    }
 
-    //Devuelve el Id
-    Id getId() { return id; };
-
+    const string getId() {
+        return id;
+    }
 
 };
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//BMessage key_pressed("key_pressed");
+//BVariant key_code();
+//key_pressed.add_parameter("key_code", key_code);
+//
+//message_handler.multicast(key_pressed);
+
 

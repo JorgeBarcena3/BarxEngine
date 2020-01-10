@@ -29,6 +29,11 @@ class BVariant
     value;
 
 public:
+ 
+    BVariant()
+    {
+
+    }
 
     BVariant(bool initializer)
     {

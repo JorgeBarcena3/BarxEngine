@@ -23,12 +23,12 @@ private:
 
     //Contructores
 
-    map<Id, list<BOrbserver*>> observers;
+    map<string, list<BOrbserver*>> observers;
 
 public:
 
     // Añadimos un observador a la lista
-    void add(BOrbserver& o, Id id)
+    void add(BOrbserver& o, string id)
     {
         observers[id].push_back(&o);
     }

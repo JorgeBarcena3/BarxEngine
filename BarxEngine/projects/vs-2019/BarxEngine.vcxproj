@@ -101,13 +101,24 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\code\headers\BAudio.hpp" />
+    <ClInclude Include="..\..\code\headers\BConfiguration.hpp" />
     <ClInclude Include="..\..\code\headers\BControlComponent.hpp" />
     <ClInclude Include="..\..\code\headers\BDispacher.hpp" />
     <ClInclude Include="..\..\code\headers\BEngine.hpp" />
     <ClInclude Include="..\..\code\headers\BInputHandler.hpp" />
     <ClInclude Include="..\..\code\headers\BInputMapper.hpp" />
+    <ClInclude Include="..\..\code\headers\BKernel.hpp" />
+    <ClInclude Include="..\..\code\headers\BMemoryAllocator.hpp" />
+    <ClInclude Include="..\..\code\headers\BMemoryPool.hpp" />
     <ClInclude Include="..\..\code\headers\BMessage.hpp" />
+    <ClInclude Include="..\..\code\headers\BMessageHandler.hpp" />
+    <ClInclude Include="..\..\code\headers\BModule.hpp" />
+    <ClInclude Include="..\..\code\headers\BObjectPool.hpp" />
     <ClInclude Include="..\..\code\headers\BObserver.hpp" />
+    <ClInclude Include="..\..\code\headers\BPhysicsModule.hpp" />
+    <ClInclude Include="..\..\code\headers\BTask.hpp" />
+    <ClInclude Include="..\..\code\headers\BTimer.hpp" />
+    <ClInclude Include="..\..\code\headers\BTimerPerformance.hpp" />
     <ClInclude Include="..\..\code\headers\BtypeDef.hpp" />
     <ClInclude Include="..\..\code\headers\BVariant.hpp" />
     <ClInclude Include="..\..\code\headers\BWindow.hpp" />

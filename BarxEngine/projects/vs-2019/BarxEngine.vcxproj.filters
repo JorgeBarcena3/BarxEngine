@@ -25,11 +25,17 @@
     <Filter Include="Header Files\ECS">
       <UniqueIdentifier>{89509e69-52c5-4bf0-bb50-2ba770ee7a7f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Components">
+    <Filter Include="Header Files\BComponents">
       <UniqueIdentifier>{558f88b2-c677-4d25-87ce-6276167c2334}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Audio">
+    <Filter Include="Header Files\BAudio">
       <UniqueIdentifier>{a200c86f-2777-480b-8408-488578e9182d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\BModule">
+      <UniqueIdentifier>{c4edeb97-f7b0-44a3-816c-c9e6e4615eae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\BUtilities">
+      <UniqueIdentifier>{c69ff214-dad4-4a8c-8cbb-356faab1a7c2}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -51,9 +57,6 @@
       <Filter>Header Files\BMensajes</Filter>
     </ClInclude>
     <ClInclude Include="..\..\code\headers\BObserver.hpp">
-      <Filter>Header Files\BMensajes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\code\headers\BVariant.hpp">
       <Filter>Header Files\BMensajes</Filter>
     </ClInclude>
     <ClInclude Include="..\..\code\headers\BDispacher.hpp">
@@ -78,10 +81,46 @@
       <Filter>Header Files\ECS</Filter>
     </ClInclude>
     <ClInclude Include="..\..\code\headers\BControlComponent.hpp">
-      <Filter>Header Files\Components</Filter>
+      <Filter>Header Files\BComponents</Filter>
     </ClInclude>
     <ClInclude Include="..\..\code\headers\BAudio.hpp">
-      <Filter>Header Files\Audio</Filter>
+      <Filter>Header Files\BAudio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BKernel.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BTask.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BMessageHandler.hpp">
+      <Filter>Header Files\BMensajes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BPhysicsModule.hpp">
+      <Filter>Header Files\BModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BModule.hpp">
+      <Filter>Header Files\BModule</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BConfiguration.hpp">
+      <Filter>Header Files\BUtilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BMemoryPool.hpp">
+      <Filter>Header Files\BUtilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BMemoryAllocator.hpp">
+      <Filter>Header Files\BUtilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BObjectPool.hpp">
+      <Filter>Header Files\BUtilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BTimer.hpp">
+      <Filter>Header Files\BUtilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BTimerPerformance.hpp">
+      <Filter>Header Files\BUtilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BVariant.hpp">
+      <Filter>Header Files\BUtilities</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -1,6 +1,6 @@
 #include "BEngine.hpp"
 #include <iostream>
-
+#include "BScene.hpp"
 
 int main() {
 
@@ -22,10 +22,14 @@ int main() {
     Id id2 = audio.loadMusic("media\\testmp3.mp3");
     Id id3 = audio.loadSound("media\\testwaw.wav");
 
-    audio.startMusic(id);
+ /*   std::getchar();
+    audio.makeSound(id);
+    std::getchar();*/
 
-    std::getchar();
+    const std::string path = "CASA";
 
+    BScene * scene = new BScene();
+  
     return 0;
 
 }

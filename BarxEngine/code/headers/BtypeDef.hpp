@@ -1,13 +1,20 @@
 #pragma once
 #include <map>
-#include "BVariant.hpp"
+#include <set>
+#include <algorithm>
+#include <memory>
+#include <thread> 
 #include <functional>
 #include <list> 
 #include <string>
-
+#include <cstdlib>
+#include <assert.h>
+#include <SDL.h>
 
 using namespace std;
 
 typedef int Id;
 
-typedef map<Id, BVariant> Params;
+typedef short byte;
+
+
