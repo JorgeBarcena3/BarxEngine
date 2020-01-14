@@ -27,6 +27,7 @@
 #include <SDL.h>
 #include <string>
 #include <cassert>
+#include "BtypeDef.hpp"
 
 /*
 * Clase que maneja la ventana
@@ -35,6 +36,8 @@ class BWindow
 {
 
 public:
+
+    static  shared_ptr< BWindow > instance;
 
     enum Fullscreen_Type
     {
@@ -46,7 +49,7 @@ private:
 
     SDL_Window* window;
     SDL_GLContext gl_context;
-    
+
     int width;
     int heigth;
 
@@ -54,27 +57,38 @@ public:
 
     BWindow(const std::string& title, int _width, int _height, bool fullscreen = false)
     {
-
-        width = _width;
-        heigth = _height;
-
-        window = SDL_CreateWindow
-        (
-            title.c_str(),
-            SDL_WINDOWPOS_UNDEFINED,
-            SDL_WINDOWPOS_UNDEFINED,
-            _width,
-            _height,
-            SDL_WINDOW_OPENGL | SDL_WINDOW_SHOWN
-        );
-
-        assert(window != nullptr);
-
-        gl_context = SDL_GL_CreateContext(window);
-
-        if (fullscreen)
+        if (instance == nullptr)
         {
-            set_fullscreen();
+            BWindow::instance = shared_ptr< BWindow > (this);
+            width = _width;
+            heigth = _height;
+
+            window = SDL_CreateWindow
+            (
+                title.c_str(),
+                SDL_WINDOWPOS_UNDEFINED,
+                SDL_WINDOWPOS_UNDEFINED,
+                _width,
+                _height,
+                SDL_WINDOW_OPENGL | SDL_WINDOW_SHOWN
+            );
+
+            assert(window != nullptr);
+
+            gl_context = SDL_GL_CreateContext(window);
+
+            if (fullscreen)
+            {
+                set_fullscreen();
+            }
+        }
+        else
+        {
+            width = instance->width;
+            heigth = instance->heigth;
+            window = instance->window;
+            gl_context = instance->gl_context;
+
         }
 
     }

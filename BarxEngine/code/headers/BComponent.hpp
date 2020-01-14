@@ -21,6 +21,8 @@
 #include "BtypeDef.hpp"
 
 class BEntity;
+class BTask;
+class BPhysics_task;
 
 /*
 * Es mas un modelo de datos que de otra cosa
@@ -30,15 +32,15 @@ class BComponent
 {
 protected:
 
-    BEntity* parent;
+    shared_ptr<BEntity> parent;
 
-    //Id unico
-    Id id;
+    shared_ptr<BTask> task;
 
 public:
 
-    BComponent(BEntity* parent) : parent(parent)
+    BComponent(shared_ptr<BEntity> parent) : parent(parent)
     {
+
     };
 
     virtual ~BComponent()
@@ -53,19 +55,24 @@ public:
         const string& value
     ) = 0;
 
+    
+    shared_ptr<BTask> getTask()
+    {
+        return task;
+    };
 };
 
-class BPhysics_Component : public BComponent
+
+class BTransform_Component : public BComponent
 {
 
-   /* shared_ptr< btCollisionShape > shape;
-    shared_ptr< btRigidBody      > body;
-    btDefaultMotionState 		   motion;*/
+    vec3<float> position;
+    vec3<float> rotation;
+    vec3<float> scale;
+
 public:
 
-    BPhysics_Component(BEntity* parent) : BComponent(parent)
-    {
-    };
+    BTransform_Component(shared_ptr <BEntity> parent);
 
     bool initialize()
     {
@@ -79,4 +86,10 @@ public:
         return true;
     };
 
+};
+
+
+class BControlComponent : public BComponent
+{
+    BControlComponent(shared_ptr <BEntity> parent);
 };

@@ -19,8 +19,9 @@
 
 #pragma once
 #include "BtypeDef.hpp"
-#include "BMessage.hpp"
-#include "BObserver.hpp"
+
+class BOrbserver;
+class BMessage;
 
 /*
 * Es un singleton
@@ -53,18 +54,8 @@ public:
     }
 
     //Enviamos el mensaje
-    void Send(BMessage& m)
-    {
-        auto list = observers.find(m.getId());
-
-        if (list != observers.end())
-        {
-            for (auto & o : list->second) //Cogemos el valor del pair
-            {
-                o->handle(m);
-            }
-        }
-    }
+    void Send(BMessage& m);
+  
     
 
 };

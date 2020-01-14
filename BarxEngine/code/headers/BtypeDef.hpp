@@ -28,6 +28,7 @@
 #include <string>
 #include <cstdlib>
 #include <assert.h>
+#include <iostream>
 #include <SDL.h>
 
 using namespace std;
@@ -35,5 +36,14 @@ using namespace std;
 typedef int_fast16_t Id;
 
 typedef short byte;
+
+template <class T>
+struct vec3 {
+
+    T x;
+    T y;
+    T z;
+
+};
 
 

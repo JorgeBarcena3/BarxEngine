@@ -19,8 +19,9 @@
 
 #pragma once
 #include "BtypeDef.hpp"
-#include "BComponent.hpp"
 
+class BComponent;
+class BScene;
 /*
 * Es la unidad basica del motor
 * Una entidad es todo lo que hay en el motor
@@ -30,42 +31,27 @@
 class BEntity
 {
 
-    //BTransform_Component transform;
+    shared_ptr<BComponent> transform;
+
+    shared_ptr<BScene> scene;
+
+    shared_ptr<BEntity> parent;
 
     map< string, shared_ptr< BComponent > > components;
 
 public:
 
-    bool initialize()
-    {
-        bool result = true;
+    BEntity();
 
-        for (auto component : components)
-        {
-            if (component.second->initialize() == false)
-            {
-                result = false;
-            }
-        }
-
-        return result;
-    }
+    bool initialize();
 
     bool add_component
     (
         const string& type,
         shared_ptr< BComponent >& component
-    )
-    {
-        if (components.count(type) != 0)
-        {
-            return false;
-        }
-        else
-        {
-            components[type] = component;
-            return true;
-        }
-    }
+    );
+   
+
+    list<shared_ptr<BComponent>> getComponents();
 
 };

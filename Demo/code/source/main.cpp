@@ -19,7 +19,9 @@
 
 #include "BEngine.hpp"
 #include <iostream>
-#include "BScene.hpp"
+#include "../../../BarxEngine/code/source/BScene.cpp"
+#include <BAudio.hpp>
+#include <BWindow.hpp>
 
 int main() {
 
@@ -33,24 +35,10 @@ int main() {
     ////Sistema de update. Se recorren toda la lista de entidades y pedirle un puntero al componente que buscan
     ////El transformComponent importante
 
-    BWindow window ("Test", 600, 600);
-
-    BAudio audio;
-
-    Id id = audio.loadMusic("media\\testogg.ogg");
-    //Id id2 = audio.loadMusic("media\\testmp3.mp3");
-    Id id3 = audio.loadSound("media\\testwaw.wav");
-
- /*   std::getchar();
-    audio.makeSound(id);
-    std::getchar();*/
-
-    const std::string path = "CASA";
-	std::cout << id << endl << id3;
-    std::getchar();
+    //BWindow window ("Test", 600, 600);
 
     BScene * scene = new BScene();
-  
+
     return 0;
 
 }

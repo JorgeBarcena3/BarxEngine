@@ -49,8 +49,9 @@ class BVariant
 public:
  
     BVariant()
-    {
-
+    {   
+        type = BOOL;
+        value.bool_value = false;
     }
 
     BVariant(bool initializer)

@@ -1,3 +1,13 @@
 ﻿  BScene.hpp
+  BComponent.cpp
+  BDispacher.cpp
+  BEngine.cpp
+  BEntity.cpp
+  BKernel.cpp
+  BScene.cpp
+  BTask.cpp
+  BWindow.cpp
+  Generating Code...
+x64\Debug\BScene.obj : warning LNK4042: object specified more than once; extras ignored
 SDL2_mixer.lib(SDL2_mixer.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in SDL2.lib(SDL2.dll); second definition ignored
   BarxEngine.vcxproj -> D:\GitHub\BarxEngine\Demo\projects\vs-2019\x64\Debug\BarxEngine.lib

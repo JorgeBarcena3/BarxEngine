@@ -24,8 +24,10 @@
 /*
 * Clase que se encarga de manejar los mensajes
 */
-struct BMessage
+class BMessage
 {
+
+public:
 
     string id;
 

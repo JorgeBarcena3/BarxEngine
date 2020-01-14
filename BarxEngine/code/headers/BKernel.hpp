@@ -6,20 +6,34 @@
 
 class BKernel
 {
-    typedef std::multiset< BTask* > BTask_List;
+    typedef std::multiset< shared_ptr<BTask> > BTask_List;
 
     BTask_List BTasks;
+
+    BTimer deltaTime;
 
     bool exit;
     bool paused;
 
 public:
 
-    void add_Task(BTask& task)
+    BKernel()
     {
-        BTasks.insert(&task);
-        task.set_kernel(this);
+        BTasks = std::multiset< shared_ptr<BTask> >();
     }
+
+    void add_Task(shared_ptr<BTask> task)
+    {
+        if (task->initialize()) 
+        {
+            BTasks.insert(task);
+            task->set_kernel(this);
+        };
+      
+    }
+
+    //Aqui está el bucle principal
+    void run();
 
     void execute()
     {
