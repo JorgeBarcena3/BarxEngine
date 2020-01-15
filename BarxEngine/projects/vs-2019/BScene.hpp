@@ -18,7 +18,7 @@
 //
 #pragma once
 
-#include "BtypeDef.hpp"
+#include "..//..//code/headers/BtypeDef.hpp"
 
 class BModule;
 class BEntity;

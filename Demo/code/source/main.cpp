@@ -17,8 +17,8 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
-#include <BScene.hpp>
 
+#include "../../../BarxEngine/code/source/BScene.cpp"
 
 int main() {
 

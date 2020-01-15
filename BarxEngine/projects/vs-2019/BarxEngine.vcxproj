@@ -100,7 +100,6 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\code\headers\BScene.hpp" />
     <ClCompile Include="..\..\code\source\BAudio.cpp" />
     <ClCompile Include="..\..\code\source\BComponent.cpp" />
     <ClCompile Include="..\..\code\source\BDispacher.cpp" />
@@ -124,6 +123,7 @@
     <ClInclude Include="..\..\code\headers\BMessageHandler.hpp" />
     <ClInclude Include="..\..\code\headers\BObserver.hpp" />
     <ClInclude Include="..\..\code\headers\BRender.hpp" />
+    <ClInclude Include="..\..\code\headers\BScene.hpp" />
     <ClInclude Include="..\..\code\headers\BTask.hpp" />
     <ClInclude Include="..\..\code\headers\BTimer.hpp" />
     <ClInclude Include="..\..\code\headers\BtypeDef.hpp" />

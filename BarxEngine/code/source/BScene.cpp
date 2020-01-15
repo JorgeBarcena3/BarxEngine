@@ -1,4 +1,4 @@
-#include "..\headers\BScene.hpp"
+#include "..//headers/BScene.hpp"
 #include "../headers/BComponent.hpp"
 #include "../headers/BKernel.hpp"
 #include "../headers/BEntity.hpp"
@@ -11,11 +11,12 @@ BScene::BScene(const string& scene_description_file_path)
     entities = new Entity_Map();
 
     kernel = new BKernel();
+     
 
     //CREAMOS LOS SISTEMAS NECESARIOS
     shared_ptr<list<shared_ptr< BSystem>>> systems(new list<shared_ptr< BSystem>>);
 
-    systems->push_back( shared_ptr<BWindow> (new BWindow("Test", 600, 600) ) );
+    systems->push_back( shared_ptr<BWindow> (new BWindow("Barx Engine Tool", 1200, 800) ) );
     systems->push_back( shared_ptr<BRender> (new BRender(BWindow::instance)) );
 
     load(scene_description_file_path);
@@ -30,11 +31,11 @@ void BScene::load(const string& scene_description_file_path)
 
     shared_ptr<BEntity> entity = shared_ptr< BEntity>(new BEntity("Conejo1"));
 
-    shared_ptr<BComponent> renderComponent = shared_ptr<BRenderComponent>(new BRenderComponent( entity, BRender::instance, "../../../assets/bunny-lowpoly.obj"));
+    shared_ptr<BComponent> renderComponent = shared_ptr<BRenderComponent>(new BRenderComponent( entity, BRender::instance, "../../../assets/head.obj"));
 
     entity->add_component("renderer", renderComponent);
 
-    (*entities)["Objeto1"] = entity;
+    (*entities)[entity->getId()] = entity;
 
 
 }

@@ -4,9 +4,6 @@
     <ClCompile Include="..\..\code\source\BEngine.cpp">
       <Filter>Source</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\code\headers\BScene.hpp">
-      <Filter>Headers</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\code\source\BScene.cpp">
       <Filter>Source</Filter>
     </ClCompile>
@@ -92,6 +89,9 @@
     </ClInclude>
     <ClInclude Include="..\..\code\headers\BSystem.hpp">
       <Filter>Headers\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BScene.hpp">
+      <Filter>Headers</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
