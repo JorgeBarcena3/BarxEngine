@@ -10,29 +10,53 @@
     <ClCompile Include="..\..\code\source\BEntity.cpp">
       <Filter>Source</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\code\source\BTask.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\code\source\BComponent.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\code\source\BKernel.cpp">
       <Filter>Source</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\code\source\BWindow.cpp">
-      <Filter>Source</Filter>
+    <ClCompile Include="..\..\code\source\BAudio.cpp">
+      <Filter>Source\Audio</Filter>
     </ClCompile>
     <ClCompile Include="..\..\code\source\BDispacher.cpp">
-      <Filter>Source</Filter>
+      <Filter>Source\Messages</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\code\source\BAudio.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\code\source\BRender.cpp">
-      <Filter>Source</Filter>
+    <ClCompile Include="..\..\code\source\BTask.cpp">
+      <Filter>Source\Task</Filter>
     </ClCompile>
     <ClCompile Include="..\..\code\source\BTimer.cpp">
-      <Filter>Source</Filter>
+      <Filter>Source\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\source\BComponent.cpp">
+      <Filter>Source\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\source\BControlComponent.cpp">
+      <Filter>Source\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\source\BRenderObjectComponent.cpp">
+      <Filter>Source\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\source\BTransformComponent.cpp">
+      <Filter>Source\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\source\BWindowTask.cpp">
+      <Filter>Source\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\source\BTransform_task.cpp">
+      <Filter>Source\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\source\BRenderObject_task.cpp">
+      <Filter>Source\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\source\BRenderTask.cpp">
+      <Filter>Source\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\source\BMainRenderer.cpp">
+      <Filter>Source\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\source\BMainWindowComponent.cpp">
+      <Filter>Source\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\source\BControlTask.cpp">
+      <Filter>Source\Task</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -96,6 +120,24 @@
     <ClInclude Include="..\..\code\headers\BTranformTask.hpp">
       <Filter>Headers\Task</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\code\headers\BTransformComponent.hpp">
+      <Filter>Headers\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BRenderObjectComponent.hpp">
+      <Filter>Headers\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BControlComponent.hpp">
+      <Filter>Headers\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BMainWindowComponent.hpp">
+      <Filter>Headers\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BMainRenderer.hpp">
+      <Filter>Headers\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BControlTask.hpp">
+      <Filter>Headers\Task</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Xml Include="..\..\code\headers\EventMapping.xml" />
@@ -124,6 +166,24 @@
     </Filter>
     <Filter Include="Headers\Task\Input">
       <UniqueIdentifier>{9fa99b2a-4bd2-4f4e-8ffb-35b635212c56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Audio">
+      <UniqueIdentifier>{f8a4ba1c-3fe3-4e1d-a045-dcf2c9226bc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Messages">
+      <UniqueIdentifier>{46e76cff-4566-476c-8584-82da762e9e09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Task">
+      <UniqueIdentifier>{60e28c05-d5dc-4a99-9e06-55318a43781c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Task\Input">
+      <UniqueIdentifier>{cba409ee-9d1d-47c5-b22c-d66d12e63bd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Tools">
+      <UniqueIdentifier>{2b95e464-8bc7-4672-ba04-03e08ab6461b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Component">
+      <UniqueIdentifier>{48ca88e8-fa2a-4a59-9a9f-c00f96391b41}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

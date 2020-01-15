@@ -4,7 +4,6 @@
 class BTask;
 class BTransform_Component;
 
-
 class BTransform_task : public BTask
 {
 

@@ -36,6 +36,8 @@ int main() {
 
     BScene * scene = new BScene();
 
+    scene->run();
+
     return 0;
 
 }

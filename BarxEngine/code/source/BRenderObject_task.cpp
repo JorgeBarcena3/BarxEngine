@@ -10,27 +10,30 @@
 #include <SDL.h>
 
 
-BTransform_task::BTransform_task(string _id, shared_ptr<BTransform_Component> _transformComponent)
+BRenderObject_Task::BRenderObject_Task(string _id, const shared_ptr<BRenderTask> _instance, const shared_ptr< BTransform_Component > _transformComponent)
 {
+    instance = _instance;
     id = _id;
     transform = _transformComponent;
 }
 
-bool BTransform_task::initialize()
+bool BRenderObject_Task::initialize()
+{
+
+    return true;
+}
+
+bool BRenderObject_Task::finalize()
 {
     return true;
 }
 
-bool BTransform_task::finalize()
+bool BRenderObject_Task::execute(float time)
 {
-    return true;
-}
 
-bool BTransform_task::execute(float time)
-{
-    auto obj = BRenderTask::instance->getRenderer()->get(id);
+    auto obj = instance->getRenderer()->get(id);
 
-    obj->rotate_around_y(0.001f);
+    obj->translate(glt::Vector3(transform->position.x, transform->position.y, transform->position.z));
 
     return true;
 }

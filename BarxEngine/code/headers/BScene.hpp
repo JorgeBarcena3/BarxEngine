@@ -38,7 +38,7 @@ class BScene
 
     Entity_Map* entities;
     BKernel* kernel;
-    BEntity* root;
+    shared_ptr< BEntity> root;
 
 public:
 
@@ -59,6 +59,8 @@ private:
     * Inicializa un kernel
     */
     void init_kernel();
+
+public:
 
     /*
     * Aqui se halla el bucle principal

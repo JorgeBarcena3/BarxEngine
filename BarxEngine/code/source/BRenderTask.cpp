@@ -56,14 +56,6 @@ void BRenderTask::render()
 
     glViewport(0, 0, width, height);
 
-    // Se rota el objeto:
-
-    auto cube = renderer->get("cube");
-
-    cube->rotate_around_x(0.01f);
-    cube->rotate_around_y(0.02f);
-    cube->rotate_around_z(0.03f);
-
     // Se renderiza la escena y se intercambian los buffers de la ventana para
     // hacer visible lo que se ha renderizado:
 

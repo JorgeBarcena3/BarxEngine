@@ -4,7 +4,6 @@
 #include "..//headers/BtypeDef.hpp"
 #include <OpenGL.hpp>
 
-
 shared_ptr< BWindowTask > BWindowTask::instance = nullptr;
 
 enum Fullscreen_Type

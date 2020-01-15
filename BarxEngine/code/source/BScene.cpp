@@ -1,9 +1,13 @@
 #include "..//headers/BScene.hpp"
 #include "../headers/BComponent.hpp"
+#include "../headers/BRenderObjectComponent.hpp"
 #include "../headers/BKernel.hpp"
 #include "../headers/BEntity.hpp"
 #include "../headers/BWindowTask.hpp"
 #include "../headers/BRenderTask.hpp"
+#include "../headers/BMainRenderer.hpp"
+#include "../headers/BMainWindowComponent.hpp"
+
 
 BScene::BScene(const string& scene_description_file_path)
 {
@@ -12,28 +16,32 @@ BScene::BScene(const string& scene_description_file_path)
 
     kernel = new BKernel();
 
-    //Creamos las tareas principales
-    shared_ptr<BTask> windowTask = shared_ptr<BWindowTask>(new BWindowTask("Barx Engine Tool", 1200, 800));
-    shared_ptr<BTask> RenderTask = shared_ptr<BRenderTask>(new BRenderTask(BWindowTask::instance));
-
     load(scene_description_file_path);
 
     init_kernel();
 
-    run();
 }
 
 void BScene::load(const string& scene_description_file_path)
 { 
+
+    //Creamos la entidad root
+    root = shared_ptr< BEntity>(new BEntity("MainScene"));
+
+    shared_ptr<BComponent> windowComponent = shared_ptr<BMainWindowComponent>(new BMainWindowComponent(root));
+    shared_ptr<BComponent> mainRenderComponent = shared_ptr<BMainRenderer>(new BMainRenderer(root));
+
+    root->add_component("mainRenderComponent", mainRenderComponent);
+    root->add_component("windowComponent", windowComponent);
 
 
     //Luego pasamos a los mas especificos
 
     shared_ptr<BEntity> entity = shared_ptr< BEntity>(new BEntity("Conejo1"));
 
-    shared_ptr<BComponent> renderComponent = shared_ptr<BRenderComponent>(new BRenderComponent(entity, BRenderTask::instance, "../../../assets/head.obj"));
+    shared_ptr<BComponent> renderComponent = shared_ptr<BRenderObjectComponent>(new BRenderObjectComponent(entity, "../../../assets/head.obj"));
 
-    entity->add_component("renderer", renderComponent);
+    entity->add_component("RendererObject", renderComponent);
 
     (*entities)[entity->getId()] = entity;
 
@@ -42,7 +50,7 @@ void BScene::load(const string& scene_description_file_path)
 
 void BScene::init_kernel()
 {
-    kernel->add_Task(BWindowTask::instance);
+    kernel->add_Task(root->getComponent<BMainWindowComponent>()->getTask());
 
     for (auto entity : *entities)
     {
@@ -57,7 +65,7 @@ void BScene::init_kernel()
 
     }
 
-    kernel->add_Task(BRenderTask::instance);
+    kernel->add_Task(root->getComponent<BMainRenderer>()->getTask());
 
 
 }

@@ -1,6 +1,7 @@
 #include "..\headers\BEntity.hpp"
 #include "../headers/BComponent.hpp"
 #include "..//headers/BtypeDef.hpp"
+#include "..//headers/BTransformComponent.hpp"
 
 BEntity::BEntity(string _id)
 {
