@@ -34,7 +34,7 @@ bool BTransform_task::run(float time)
 }
 
 
-BRender_Task::BRender_Task(string _id, shared_ptr<BRender> _instance, shared_ptr< BTransform_Component > _transformComponent)
+BRender_Task::BRender_Task(string _id, const shared_ptr<BRender> _instance, const shared_ptr< BTransform_Component > _transformComponent)
 {
     instance = _instance;
     id = _id;

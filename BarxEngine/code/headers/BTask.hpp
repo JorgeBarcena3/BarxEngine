@@ -83,9 +83,9 @@ public:
 private:
 
 
-    const shared_ptr< BRender > instance;
+    shared_ptr< BRender > instance;
 
-    const shared_ptr< BTransform_Component > transform;
+    shared_ptr< BTransform_Component > transform;
 
     bool initialize();
 
