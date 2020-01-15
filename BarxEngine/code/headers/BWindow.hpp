@@ -24,106 +24,59 @@
 
 #pragma once
 
-#include <SDL.h>
 #include <string>
 #include <cassert>
 #include "BtypeDef.hpp"
+#include "BSystem.hpp"
 
 /*
 * Clase que maneja la ventana
 */
-class BWindow
+class BWindow : public BSystem
 {
 
 public:
 
-    static  shared_ptr< BWindow > instance;
-
-    enum Fullscreen_Type
-    {
-        REAL = SDL_WINDOW_FULLSCREEN,
-        DESKTOP = SDL_WINDOW_FULLSCREEN_DESKTOP
-    };
+    static shared_ptr< BWindow > instance;   
 
 private:
 
-    SDL_Window* window;
-    SDL_GLContext gl_context;
+    SDL_Window   * window;
+    SDL_GLContext  gl_context;
 
     int width;
     int heigth;
 
 public:
 
-    BWindow(const std::string& title, int _width, int _height, bool fullscreen = false)
-    {
-        if (instance == nullptr)
-        {
-            BWindow::instance = shared_ptr< BWindow > (this);
-            width = _width;
-            heigth = _height;
 
-            window = SDL_CreateWindow
-            (
-                title.c_str(),
-                SDL_WINDOWPOS_UNDEFINED,
-                SDL_WINDOWPOS_UNDEFINED,
-                _width,
-                _height,
-                SDL_WINDOW_OPENGL | SDL_WINDOW_SHOWN
-            );
+    BWindow(const std::string& title, int _width, int _height, bool fullscreen = false);
 
-            assert(window != nullptr);
+    ~BWindow();   
 
-            gl_context = SDL_GL_CreateContext(window);
+    void set_fullscreen(uint32_t type = 0);
 
-            if (fullscreen)
-            {
-                set_fullscreen();
-            }
-        }
-        else
-        {
-            width = instance->width;
-            heigth = instance->heigth;
-            window = instance->window;
-            gl_context = instance->gl_context;
+    void set_windowed();
 
-        }
+    unsigned get_width() const;
 
-    }
+    unsigned get_height() const;
 
-    ~BWindow()
-    {
-        SDL_GL_DeleteContext(gl_context);
-        SDL_DestroyWindow(window);
-    }
+    void set_windowTitle(const char* title);
 
-    void set_fullscreen(Uint32 type = SDL_WINDOW_FULLSCREEN)
-    {
-        SDL_SetWindowFullscreen(window, type);
-    }
+    void set_position(int new_left_x, int new_top_y);
 
-    void set_windowed()
-    {
-        SDL_SetWindowFullscreen(window, SDL_WINDOW_FULLSCREEN_DESKTOP);
-        set_size(width, heigth);
-    }
+    void set_size(int new_width, int new_height);   
 
-    void set_windowTitle(const char* title)
-    {
-        SDL_SetWindowTitle(window, title);
-    }
+    void swap_buffers() const;
 
-    void set_position(int new_left_x, int new_top_y)
-    {
-        SDL_SetWindowPosition(window, new_left_x, new_top_y);
-    }
+    void clear() const;
 
-    void set_size(int new_width, int new_height)
-    {
-        SDL_SetWindowSize(window, new_width, new_height);
-    }
+    virtual bool initialize() override;
+
+    virtual bool finalize() override;
+
+    virtual bool execute(float time) override;
 
 };
 

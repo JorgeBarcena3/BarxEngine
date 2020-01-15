@@ -8,7 +8,6 @@
 
 #pragma once
 
-#include <SDL.h>
 #include <cstdint>
 
 class BTimer
@@ -24,20 +23,13 @@ public:
         start();
     }
 
-    void start()
-    {
-        start_ticks = SDL_GetTicks();
-    }
+    void start();
 
     float elapsed_seconds() const
     {
         return float(elapsed_milliseconds()) / 1000.f;
     }
 
-    uint32_t elapsed_milliseconds() const
-    {
-        return SDL_GetTicks() - start_ticks;
-    }
-
+    uint32_t elapsed_milliseconds() const;
 };
 

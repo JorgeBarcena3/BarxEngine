@@ -26,10 +26,11 @@
 #include <functional>
 #include <list> 
 #include <string>
+#include <sstream>
 #include <cstdlib>
 #include <assert.h>
+#include <vector>
 #include <iostream>
-#include <SDL.h>
 
 using namespace std;
 
@@ -37,12 +38,33 @@ typedef int_fast16_t Id;
 
 typedef short byte;
 
+//////// SDL y OPENGL ////////
+
+typedef struct SDL_Window   SDL_Window;
+typedef void* SDL_GLContext;
+class Render_Node;
+
+namespace glt
+{
+
+    class Render_Node;
+    class Model;
+
+}
+
+
 template <class T>
 struct vec3 {
 
     T x;
     T y;
     T z;
+
+    void setValues(T _x, T _y, T _z) {
+        x = _x;
+        y = _y;
+        z = _z;
+    }
 
 };
 

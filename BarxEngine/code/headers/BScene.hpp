@@ -24,6 +24,7 @@
 class BModule;
 class BEntity;
 class BKernel;
+class BSystem;
 
 /*
 * Es un codigo que se ejecuta teniendo en cuenta todos los componentes especificos
@@ -58,7 +59,7 @@ private:
     /*
     * Inicializa un kernel
     */
-    void init_kernel();
+    void init_kernel(shared_ptr<list<shared_ptr< BSystem>>> systems);
 
     /*
     * Aqui se halla el bucle principal

@@ -20,8 +20,9 @@
 #pragma once
 
 #include "BtypeDef.hpp"
-#include <SDL_mixer.h>
 
+typedef struct _Mix_Music Mix_Music;
+struct Mix_Chunk;
 
 /*
  * Maneja el audio del motor
@@ -75,167 +76,67 @@ public:
 	/*
 	* Contructor del audio
 	*/
-	BAudio()
-	{
-
-		int flags = MIX_INIT_OGG | MIX_INIT_MOD;
-
-		// start SDL with audio support
-		if (SDL_Init(flags) == -1) {
-			printf("SDL_Init: %s\n", SDL_GetError());
-			exit(1);
-		}
-
-		// open 44.1KHz, signed 16bit, system byte order,
-		//      stereo audio, using 1024 byte chunks
-		if (Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 1024) == -1) {
-			printf("Mix_OpenAudio: %s\n", Mix_GetError());
-			exit(2);
-		}
-
-	};
+    BAudio();
 
 	/*
 	* Destruye todos los archivos de musica que hemos cargado con anterioridad
 	*/
-	~BAudio() {
-
-		for (auto outer = music.begin(); outer != music.end(); ++outer)
-		{
-			Mix_FreeMusic(outer->second->music);
-		}
-
-		for (auto outer = sounds.begin(); outer != sounds.end(); ++outer)
-		{
-			Mix_FreeChunk(outer->second->sound);
-		}
-
-		Mix_CloseAudio();
-	};
+    ~BAudio();
 
 	/*
 	* Carga una musica y devuelve su Id
 	* Busca la ruta desde la carpeta de creacion del proyecto
 	*/
-	Id loadMusic(const char* path) {
-
-		Mix_Music* _music;
-
-		if (_music = Mix_LoadMUS(setRelativePath(path).c_str()))
-		{
-			Id id;
-
-			if (music.empty())
-			{
-				id = 0;
-			}
-			else
-				id = (--music.end())->first + 1;
-
-			music[id] = new BAudioInfo(_music);
-			return id;
-		}
-
-		auto error = Mix_GetError();
-		return -1;
-	}
+    Id loadMusic(const char* path);
 
 	/*
 	* Carga una sonido y devuelve su Id
 	* Busca la ruta desde la carpeta de creacion del proyecto
 	*/
-	int loadSound(const char* path) {
-
-		Mix_Chunk* _sound;
-
-		if (_sound = Mix_LoadWAV(setRelativePath(path).c_str()))
-		{
-			Id id;
-
-			if (sounds.empty())
-			{
-				id = 0;
-			}
-			else
-				id = (--sounds.end())->first + 1;
-
-			sounds[id] = new BAudioInfo(_sound);
-			return id;
-		}
-
-		auto error = Mix_GetError();
-		return -1;
-
-	}
+    int loadSound(const char* path);
 
 	/*
 	* Comienza una musica
 	* Devuelve el canal donde se está ejecutando
 	*/
-	int startMusic(Id id)
-	{
-		return  music[id]->channel = Mix_FadeInMusic(music[id]->music, -1, 1000);
-	}
+    int startMusic(Id id);
 
 
 	/*
 	* Comienza un sonido
 	* Devuelve el canal donde se está ejecutando
 	*/
-	int makeSound(Id id)
-	{
-		return sounds[id]->channel = Mix_PlayChannel(-1, sounds[id]->sound, 0);
-	}
+    int makeSound(Id id);
 
 	/*
 	* Para toda la musica
 	*/
-	void stopAllMusic()
-	{
-		Mix_HaltMusic();
-	}
+    void stopAllMusic();
 
 	/*
 	* Para una musica segun el id
 	*/
-	void stopMusicId(Id id)
-	{
-		Mix_HaltChannel(music[id]->channel);
-	}
+    void stopMusicId(Id id);
 
 	/*
 	*  Para todos los sonidos
 	*/
-	void stopAllSounds() {
-
-		Mix_HaltChannel(-1);
-	}
+    void stopAllSounds();
 
 	/*
 	*  Para un sonido en concreto
 	*/
-	void stopChanelId(Id id) {
-
-		Mix_HaltChannel(music[id]->channel);
-	}
+    void stopChanelId(Id id);
 
 	/*
 	*  Para una musica en concreto
 	*/
-	void setMusicVolume(Id id, int volume) {
-
-		int finalVolume = volume > 128 ? 128 : volume < 0 ? 0 : volume;
-		Mix_Volume(music[id] ->channel, finalVolume);
-	}
+    void setMusicVolume(Id id, int volume);
 
 	/*
 	*  Para un sonido en concreto
 	*/
-	void setSoundVolume(Id id, int volume) {
-
-		int finalVolume = volume > 128 ? 128 : volume < 0 ? 0 : volume;
-		Mix_Volume(sounds[id]->channel, finalVolume);
-	}
+    void setSoundVolume(Id id, int volume);
 
 };
 

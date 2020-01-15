@@ -2,6 +2,10 @@
 #include "../headers/BScene.hpp"
 #include "../headers/BTask.hpp"
 #include "../headers/BWindow.hpp"
+#include "../headers/BRender.hpp"
+#include <Render_Node.hpp>
+#include <SDL.h>
+#include "../headers/BComponent.hpp"
 
 BPhysics_task::BPhysics_task()
 {
@@ -23,42 +27,30 @@ bool BPhysics_task::run(float time)
 }
 
 
-BWindow_Task::BWindow_Task()
+BRender_Task::BRender_Task(string _id, shared_ptr<BRender> _instance, shared_ptr< BTransform_Component > _transformComponent)
 {
+    instance = _instance;
+    id = _id;
+    transform = _transformComponent;
 }
 
-bool BWindow_Task::initialize()
+bool BRender_Task::initialize()
 {
-    instance = BWindow::instance;
-
-    if (instance == nullptr)
-    {
-        BWindow* window = new BWindow("Test", 600, 600);
-        instance = shared_ptr< BWindow >(window);
-
-    }
-
+    
     return true;
 }
 
-bool BWindow_Task::finalize()
+bool BRender_Task::finalize()
 {
-    instance->~BWindow();
     return true;
 }
 
-bool BWindow_Task::run(float time)
+bool BRender_Task::run(float time)
 {
 
-    SDL_Event event;
-
-    while (SDL_PollEvent(&event) > 0)
-    {
-        if (event.type == SDL_QUIT)
-        {
-            return false;
-        }
-    }
-
+    auto cube = instance->getRenderer()->get(id);
+    
+    cube->translate(glt::Vector3(transform->position.x, transform->position.y, transform->position.z) );
+      
     return true;
 }

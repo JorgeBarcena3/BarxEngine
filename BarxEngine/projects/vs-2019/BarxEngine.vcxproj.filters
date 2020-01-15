@@ -28,6 +28,15 @@
     <ClCompile Include="..\..\code\source\BDispacher.cpp">
       <Filter>Source</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\code\source\BAudio.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\source\BRender.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\source\BTimer.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\code\headers\BEngine.hpp">
@@ -39,17 +48,11 @@
     <ClInclude Include="..\..\code\headers\BKernel.hpp">
       <Filter>Headers</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\code\headers\BSystem.hpp">
-      <Filter>Headers</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\code\headers\BtypeDef.hpp">
       <Filter>Headers</Filter>
     </ClInclude>
     <ClInclude Include="..\..\code\headers\BAudio.hpp">
       <Filter>Headers\Audio</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\code\headers\BWindow.hpp">
-      <Filter>Headers\Window</Filter>
     </ClInclude>
     <ClInclude Include="..\..\code\headers\BTimer.hpp">
       <Filter>Headers\Tools</Filter>
@@ -76,10 +79,19 @@
       <Filter>Headers\Messages</Filter>
     </ClInclude>
     <ClInclude Include="..\..\code\headers\BInputHandler.hpp">
-      <Filter>Headers\Input</Filter>
+      <Filter>Headers\Systems\Input</Filter>
     </ClInclude>
     <ClInclude Include="..\..\code\headers\BInputMapper.hpp">
-      <Filter>Headers\Input</Filter>
+      <Filter>Headers\Systems\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BWindow.hpp">
+      <Filter>Headers\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BRender.hpp">
+      <Filter>Headers\Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BSystem.hpp">
+      <Filter>Headers\Systems</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -95,9 +107,6 @@
     <Filter Include="Headers\Audio">
       <UniqueIdentifier>{328cabef-7d20-484b-b83d-1066ffc65571}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Headers\Window">
-      <UniqueIdentifier>{afd7d381-b926-4973-b171-b03960ca89c4}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Headers\Tools">
       <UniqueIdentifier>{1026352c-d56e-488a-b8c2-25b1007fff0b}</UniqueIdentifier>
     </Filter>
@@ -110,7 +119,10 @@
     <Filter Include="Headers\Messages">
       <UniqueIdentifier>{85a0cd51-be0f-4853-965e-fa5762f7138c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Headers\Input">
+    <Filter Include="Headers\Systems">
+      <UniqueIdentifier>{724ee2eb-a8b1-457a-894d-5142271edfad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Systems\Input">
       <UniqueIdentifier>{9fa99b2a-4bd2-4f4e-8ffb-35b635212c56}</UniqueIdentifier>
     </Filter>
   </ItemGroup>

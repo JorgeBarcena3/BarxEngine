@@ -2,6 +2,8 @@
 #include "../headers/BComponent.hpp"
 #include "../headers/BKernel.hpp"
 #include "../headers/BEntity.hpp"
+#include "../headers/BWindow.hpp"
+#include "../headers/BRender.hpp"
 
 BScene::BScene(const string& scene_description_file_path)
 {
@@ -10,9 +12,15 @@ BScene::BScene(const string& scene_description_file_path)
 
     kernel = new BKernel();
 
+    //CREAMOS LOS SISTEMAS NECESARIOS
+    shared_ptr<list<shared_ptr< BSystem>>> systems(new list<shared_ptr< BSystem>>);
+
+    systems->push_back( shared_ptr<BWindow> (new BWindow("Test", 600, 600) ) );
+    systems->push_back( shared_ptr<BRender> (new BRender(BWindow::instance)) );
+
     load(scene_description_file_path);
 
-    init_kernel();
+    init_kernel(systems);
 
     run();
 }
@@ -22,27 +30,21 @@ void BScene::load(const string& scene_description_file_path)
 
     shared_ptr<BEntity> entity = shared_ptr< BEntity>(new BEntity());
 
-    //RAPID XML
+    shared_ptr<BComponent> renderComponent = shared_ptr<BRenderComponent>(new BRenderComponent("Objeto1", entity, BRender::instance));
 
-   /* shared_ptr< BComponent> componente = shared_ptr< BTransform_Component >(new BTransform_Component(entity));
-
-    entity->add_component("physics", componente);*/
+    entity->add_component("renderer", renderComponent);
 
     (*entities)["Objeto1"] = entity;
 
 
 }
 
-void BScene::init_kernel()
+void BScene::init_kernel(shared_ptr<list<shared_ptr< BSystem>>> systems)
 {
-
-    //HAY QUE AÑADIR LA VENTANA
-    shared_ptr<BWindow_Task> windowTask = shared_ptr<BWindow_Task>(new BWindow_Task());
-    kernel->add_Task(windowTask);
-    //HAY QUE AÑADIR EL INPUT
 
     for (auto entity : *entities)
     {
+        (*entity.second).initialize();
         auto components = (*entity.second).getComponents();
 
         for (auto comp : components)
@@ -51,6 +53,11 @@ void BScene::init_kernel()
             kernel->add_Task(task);
         }
 
+    }
+
+    for (auto system : *systems)
+    {
+        kernel->add_system(system);
     }
 }
 

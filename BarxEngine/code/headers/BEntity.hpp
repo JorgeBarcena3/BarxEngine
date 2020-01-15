@@ -50,7 +50,22 @@ public:
         const string& type,
         shared_ptr< BComponent >& component
     );
-   
+
+    template <class T>
+    shared_ptr<T> getComponent()
+    {
+        for (auto component : components)
+        {
+            auto thing = dynamic_pointer_cast<T>(component.second);
+
+            if (thing != nullptr)
+                return thing;
+        }
+
+        return nullptr;
+
+    };
+
 
     list<shared_ptr<BComponent>> getComponents();
 

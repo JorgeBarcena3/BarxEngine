@@ -18,10 +18,8 @@
 //
 
 #include "BEngine.hpp"
-#include <iostream>
-#include "../../../BarxEngine/code/source/BScene.cpp"
-#include <BAudio.hpp>
-#include <BWindow.hpp>
+#include <BScene.hpp>
+
 
 int main() {
 

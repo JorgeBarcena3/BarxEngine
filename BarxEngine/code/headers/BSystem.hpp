@@ -30,4 +30,12 @@ class BSystem {
     //Id unico
     Id id;
 
+public:
+
+    virtual bool initialize() = 0;
+
+    virtual bool finalize() = 0;
+
+    virtual bool execute(float time) = 0;
+
 };

@@ -2,13 +2,17 @@
 #include "BtypeDef.hpp"
 
 #include "BTimer.hpp"
-#include "BTask.hpp"
+
+class BTask;
+class BSystem;
 
 class BKernel
 {
     typedef std::multiset< shared_ptr<BTask> > BTask_List;
+    typedef std::multiset< shared_ptr<BSystem>> BSystems_list;
 
-    BTask_List BTasks;
+    BTask_List      BTasks;
+    BSystems_list   BSystems;
 
     BTimer deltaTime;
 
@@ -20,62 +24,16 @@ public:
     BKernel()
     {
         BTasks = std::multiset< shared_ptr<BTask> >();
+        BSystems = std::multiset< shared_ptr<BSystem> >();
     }
 
-    void add_Task(shared_ptr<BTask> task)
-    {
-        if (task->initialize()) 
-        {
-            BTasks.insert(task);
-            task->set_kernel(this);
-        };
-      
-    }
+    void add_Task(shared_ptr<BTask> task);
+
+    void add_system(shared_ptr<BSystem> system);
 
     //Aqui está el bucle principal
     void run();
 
-    void execute()
-    {
-        exit = false;
-
-        for (auto BTask : BTasks)
-        {
-            BTask->initialize();
-        }
-
-        float time = 1.f / 60.f;
-
-        while (!exit)
-        {
-            BTimer timer;
-            timer.start();
-
-            for (auto BTask : BTasks)
-            {
-                if (exit)
-                {
-                    break;
-                }
-                else if (paused)
-                {
-                    while (paused)
-                    {
-                        //thread::current_thread().sleep(10);
-                    }
-                }
-
-                //task->step(time);  // Hacer una barra de carga
-            }
-
-            time = timer.elapsed_seconds();
-        }
-
-        for (auto BTask : BTasks)
-        {
-            BTask->finalize();
-        }
-    }
 
     void stop()
     {

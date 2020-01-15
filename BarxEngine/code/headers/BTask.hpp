@@ -2,6 +2,8 @@
 #include "BtypeDef.hpp"
 
 class BKernel;
+class BWindow;
+class BRender;
 
 // Tareas consumibles o no consumibles
 // Secuancia de tareas (hereda de task y tiene una lista de tasks)
@@ -11,6 +13,8 @@ class BTask
 protected:
 
     BKernel* kernel;
+
+    string id;
 
     int priority;
 
@@ -63,19 +67,22 @@ private:
 
 };
 
-class BWindow;
+class BRender;
+class BTransform_Component;
 
-class BWindow_Task : public BTask
+class BRender_Task : public BTask
 {
 
 public:
 
-    BWindow_Task();
+    BRender_Task(string id, shared_ptr< BRender > instance, shared_ptr< BTransform_Component > transformComponent);
 
 private:
 
 
-    shared_ptr< BWindow > instance;
+    shared_ptr< BRender > instance;
+
+    shared_ptr< BTransform_Component > transform;
 
     bool initialize();
 
@@ -84,5 +91,6 @@ private:
     bool run(float time);
 
 };
+
 
 

@@ -45,9 +45,11 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\..\..\Demo\libraries\win\barx-engine\lib\x64\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\..\Demo\libraries\win\barx-engine\lib\x64\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -56,15 +58,16 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>../../libraries/win/sdl2-mixer/include/;../../libraries/win/sdl2-2.0.10/include/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../libraries/win/sdl2-mixer/include/;../../libraries/win/sdl2-2.0.10/include/;../../libraries/win/opengl-toolkit/headers/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Lib>
-      <AdditionalLibraryDirectories>../../libraries/win/sdl2-mixer/lib/x64;../../libraries/win/sdl2-2.0.10/lib/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>../../libraries/win/sdl2-2.0.10/lib/x64/SDL2.lib;../../libraries/win/sdl2-mixer/lib/x64/SDL2_mixer.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../libraries/win/sdl2-mixer/lib/x64;../../libraries/win/sdl2-2.0.10/lib/x64;../../libraries/win/opengl-toolkit/lib/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>../../libraries/win/sdl2-2.0.10/lib/x64/SDL2.lib;../../libraries/win/sdl2-mixer/lib/x64/SDL2_mixer.lib;../../libraries/win/opengl-toolkit/lib/x64/opengl-toolkit-debug.lib</AdditionalDependencies>
     </Lib>
     <ProjectReference>
       <LinkLibraryDependencies>true</LinkLibraryDependencies>
@@ -79,7 +82,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>../../libraries/win/sdl2-mixer/include/;../../libraries/win/sdl2-2.0.10/include/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../libraries/win/sdl2-mixer/include/;../../libraries/win/sdl2-2.0.10/include/;../../libraries/win/opengl-toolkit/headers/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -88,8 +92,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Lib>
-      <AdditionalLibraryDirectories>../../libraries/win/sdl2-mixer/lib/x64;../../libraries/win/sdl2-2.0.10/lib/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>../../libraries/win/sdl2-2.0.10/lib/x64/SDL2.lib;../../libraries/win/sdl2-mixer/lib/x64/SDL2_mixer.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../libraries/win/sdl2-mixer/lib/x64;../../libraries/win/sdl2-2.0.10/lib/x64;../../libraries/win/opengl-toolkit/lib/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>../../libraries/win/sdl2-2.0.10/lib/x64/SDL2.lib;../../libraries/win/sdl2-mixer/lib/x64/SDL2_mixer.lib;../../libraries/win/opengl-toolkit/lib/x64/opengl-toolkit-release.lib</AdditionalDependencies>
     </Lib>
     <ProjectReference>
       <LinkLibraryDependencies>true</LinkLibraryDependencies>
@@ -97,13 +101,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\code\headers\BScene.hpp" />
+    <ClCompile Include="..\..\code\source\BAudio.cpp" />
     <ClCompile Include="..\..\code\source\BComponent.cpp" />
     <ClCompile Include="..\..\code\source\BDispacher.cpp" />
     <ClCompile Include="..\..\code\source\BEngine.cpp" />
     <ClCompile Include="..\..\code\source\BEntity.cpp" />
     <ClCompile Include="..\..\code\source\BKernel.cpp" />
+    <ClCompile Include="..\..\code\source\BRender.cpp" />
     <ClCompile Include="..\..\code\source\BTask.cpp" />
     <ClCompile Include="..\..\code\source\BScene.cpp" />
+    <ClCompile Include="..\..\code\source\BTimer.cpp" />
     <ClCompile Include="..\..\code\source\BWindow.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -116,6 +123,7 @@
     <ClInclude Include="..\..\code\headers\BMessage.hpp" />
     <ClInclude Include="..\..\code\headers\BMessageHandler.hpp" />
     <ClInclude Include="..\..\code\headers\BObserver.hpp" />
+    <ClInclude Include="..\..\code\headers\BRender.hpp" />
     <ClInclude Include="..\..\code\headers\BTask.hpp" />
     <ClInclude Include="..\..\code\headers\BTimer.hpp" />
     <ClInclude Include="..\..\code\headers\BtypeDef.hpp" />
