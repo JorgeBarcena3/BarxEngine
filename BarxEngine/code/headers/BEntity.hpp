@@ -31,6 +31,8 @@ class BScene;
 class BEntity
 {
 
+    string id;
+
     shared_ptr<BComponent> transform;
 
     shared_ptr<BScene> scene;
@@ -41,7 +43,7 @@ class BEntity
 
 public:
 
-    BEntity();
+    BEntity(string id);
 
     bool initialize();
 
@@ -66,6 +68,7 @@ public:
 
     };
 
+    const string getId() { return id; }
 
     list<shared_ptr<BComponent>> getComponents();
 

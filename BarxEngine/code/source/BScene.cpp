@@ -28,9 +28,9 @@ BScene::BScene(const string& scene_description_file_path)
 void BScene::load(const string& scene_description_file_path)
 {
 
-    shared_ptr<BEntity> entity = shared_ptr< BEntity>(new BEntity());
+    shared_ptr<BEntity> entity = shared_ptr< BEntity>(new BEntity("Conejo1"));
 
-    shared_ptr<BComponent> renderComponent = shared_ptr<BRenderComponent>(new BRenderComponent("Objeto1", entity, BRender::instance));
+    shared_ptr<BComponent> renderComponent = shared_ptr<BRenderComponent>(new BRenderComponent( entity, BRender::instance, "../../../assets/bunny-lowpoly.obj"));
 
     entity->add_component("renderer", renderComponent);
 

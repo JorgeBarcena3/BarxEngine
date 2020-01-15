@@ -2,8 +2,9 @@
 #include "../headers/BComponent.hpp"
 #include "..//headers/BtypeDef.hpp"
 
-BEntity::BEntity()
+BEntity::BEntity(string _id)
 {
+    id = _id;
 
     components = map< string, shared_ptr< BComponent > >();
 

@@ -7,22 +7,29 @@
 #include <SDL.h>
 #include "../headers/BComponent.hpp"
 
-BPhysics_task::BPhysics_task()
+
+BTransform_task::BTransform_task(string _id, shared_ptr<BTransform_Component> _transformComponent)
 {
+    id = _id;
+    transform = _transformComponent;
 }
 
-bool BPhysics_task::initialize()
+bool BTransform_task::initialize()
 {
     return true;
 }
 
-bool BPhysics_task::finalize()
+bool BTransform_task::finalize()
 {
     return true;
 }
 
-bool BPhysics_task::run(float time)
+bool BTransform_task::run(float time)
 {
+    auto obj = BRender::instance->getRenderer()->get(id);
+
+    obj->rotate_around_y(0.001f);
+
     return true;
 }
 
@@ -48,9 +55,9 @@ bool BRender_Task::finalize()
 bool BRender_Task::run(float time)
 {
 
-    auto cube = instance->getRenderer()->get(id);
-    
-    cube->translate(glt::Vector3(transform->position.x, transform->position.y, transform->position.z) );
-      
+    auto obj = instance->getRenderer()->get(id);
+
+    obj->translate(glt::Vector3(transform->position.x, transform->position.y, transform->position.z) );
+ 
     return true;
 }

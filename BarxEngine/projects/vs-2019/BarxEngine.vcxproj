@@ -66,8 +66,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Lib>
-      <AdditionalLibraryDirectories>../../libraries/win/sdl2-mixer/lib/x64;../../libraries/win/sdl2-2.0.10/lib/x64;../../libraries/win/opengl-toolkit/lib/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>../../libraries/win/sdl2-2.0.10/lib/x64/SDL2.lib;../../libraries/win/sdl2-mixer/lib/x64/SDL2_mixer.lib;../../libraries/win/opengl-toolkit/lib/x64/opengl-toolkit-debug.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../libraries/win/sdl2-mixer/lib/x64;../../libraries/win/sdl2-2.0.10/lib/x64;../../libraries/win/opengl-toolkit/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>../../libraries/win/sdl2-2.0.10/lib/x64/SDL2.lib;../../libraries/win/sdl2-mixer/lib/x64/SDL2_mixer.lib;../../libraries/win/opengl-toolkit/lib/OpenGL Toolkit.lib</AdditionalDependencies>
     </Lib>
     <ProjectReference>
       <LinkLibraryDependencies>true</LinkLibraryDependencies>
@@ -92,8 +92,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Lib>
-      <AdditionalLibraryDirectories>../../libraries/win/sdl2-mixer/lib/x64;../../libraries/win/sdl2-2.0.10/lib/x64;../../libraries/win/opengl-toolkit/lib/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>../../libraries/win/sdl2-2.0.10/lib/x64/SDL2.lib;../../libraries/win/sdl2-mixer/lib/x64/SDL2_mixer.lib;../../libraries/win/opengl-toolkit/lib/x64/opengl-toolkit-release.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../libraries/win/sdl2-mixer/lib/x64;../../libraries/win/sdl2-2.0.10/lib/x64;../../libraries/win/opengl-toolkit/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>../../libraries/win/sdl2-2.0.10/lib/x64/SDL2.lib;../../libraries/win/sdl2-mixer/lib/x64/SDL2_mixer.lib;../../libraries/win/opengl-toolkit/lib/OpenGL Toolkit.lib</AdditionalDependencies>
     </Lib>
     <ProjectReference>
       <LinkLibraryDependencies>true</LinkLibraryDependencies>

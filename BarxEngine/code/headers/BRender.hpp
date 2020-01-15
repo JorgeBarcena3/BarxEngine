@@ -4,9 +4,7 @@
 class BWindow;
 
 class BRender : public BSystem
-{
-
-  
+{  
 
     // Se crea un puntero a Render_Node porque al usar una declaración adelantada
     // para no exportar dependencias con esta cabecera, solo se pueden definir

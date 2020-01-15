@@ -22,7 +22,7 @@
 
 class BEntity;
 class BTask;
-class BPhysics_task;
+class BTransform_task;
 
 using namespace glt;
 
@@ -135,7 +135,7 @@ class BRenderComponent : public BComponent
 
 public:
 
-    BRenderComponent(string name, shared_ptr <BEntity> parent, shared_ptr<BRender> system, string path = "");
+    BRenderComponent( shared_ptr <BEntity> parent, shared_ptr<BRender> system, string path = "");
 
     bool initialize();
     

@@ -4,6 +4,8 @@
 class BKernel;
 class BWindow;
 class BRender;
+class BRender;
+class BTransform_Component;
 
 // Tareas consumibles o no consumibles
 // Secuancia de tareas (hereda de task y tiene una lista de tasks)
@@ -50,14 +52,16 @@ public:
 };
 
 
-class BPhysics_task : public BTask
+class BTransform_task : public BTask
 {
 
 public:
 
-    BPhysics_task();
+    BTransform_task(string id, shared_ptr< BTransform_Component > transformComponent);
 
 private:
+
+    shared_ptr< BTransform_Component > transform;
 
     bool initialize();
 
@@ -67,8 +71,7 @@ private:
 
 };
 
-class BRender;
-class BTransform_Component;
+
 
 class BRender_Task : public BTask
 {
@@ -80,9 +83,9 @@ public:
 private:
 
 
-    shared_ptr< BRender > instance;
+    const shared_ptr< BRender > instance;
 
-    shared_ptr< BTransform_Component > transform;
+    const shared_ptr< BTransform_Component > transform;
 
     bool initialize();
 
