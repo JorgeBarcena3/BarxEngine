@@ -32,7 +32,7 @@ int main() {
     ////Sistema de update. Se recorren toda la lista de entidades y pedirle un puntero al componente que buscan
     ////El transformComponent importante
 
-    //BWindow window ("Test", 600, 600);
+    //BWindowTask window ("Test", 600, 600);
 
     BScene * scene = new BScene();
 

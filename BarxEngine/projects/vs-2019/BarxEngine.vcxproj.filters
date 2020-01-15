@@ -76,22 +76,25 @@
       <Filter>Headers\Messages</Filter>
     </ClInclude>
     <ClInclude Include="..\..\code\headers\BInputHandler.hpp">
-      <Filter>Headers\Systems\Input</Filter>
+      <Filter>Headers\Task\Input</Filter>
     </ClInclude>
     <ClInclude Include="..\..\code\headers\BInputMapper.hpp">
-      <Filter>Headers\Systems\Input</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\code\headers\BWindow.hpp">
-      <Filter>Headers\Systems</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\code\headers\BRender.hpp">
-      <Filter>Headers\Systems</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\code\headers\BSystem.hpp">
-      <Filter>Headers\Systems</Filter>
+      <Filter>Headers\Task\Input</Filter>
     </ClInclude>
     <ClInclude Include="..\..\code\headers\BScene.hpp">
       <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BWindowTask.hpp">
+      <Filter>Headers\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BRenderTask.hpp">
+      <Filter>Headers\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BRenderObject_task.hpp">
+      <Filter>Headers\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BTranformTask.hpp">
+      <Filter>Headers\Task</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -119,10 +122,7 @@
     <Filter Include="Headers\Messages">
       <UniqueIdentifier>{85a0cd51-be0f-4853-965e-fa5762f7138c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Headers\Systems">
-      <UniqueIdentifier>{724ee2eb-a8b1-457a-894d-5142271edfad}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Headers\Systems\Input">
+    <Filter Include="Headers\Task\Input">
       <UniqueIdentifier>{9fa99b2a-4bd2-4f4e-8ffb-35b635212c56}</UniqueIdentifier>
     </Filter>
   </ItemGroup>

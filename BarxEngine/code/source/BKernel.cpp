@@ -13,10 +13,6 @@ void BKernel::add_Task(shared_ptr<BTask> task)
 
 }
 
-void BKernel::add_system(shared_ptr<BSystem> system)
-{
-    BSystems.insert(system);
-}
 
 void BKernel::run()
 {
@@ -33,16 +29,11 @@ void BKernel::run()
 
         for (auto task : BTasks)
         {
-            if (!task->run((float)deltaTime.elapsed_milliseconds()))
+            if (!task->execute((float)deltaTime.elapsed_milliseconds()))
                 exit = true;
         }
 
-        for (auto system : BSystems)
-        {
-            if (!system->execute((float)deltaTime.elapsed_milliseconds()))
-                exit = true;
-        }
-
+        
 
     } while (!exit);
 

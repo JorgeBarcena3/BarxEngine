@@ -3,7 +3,7 @@
 // Use it at your own risk. It might have bugs.
 // angel.rodriguez@esne.edu
 
-// File: BWindow.hpp
+// File: BWindowTask.hpp
 // Author: Jorge Bárcena Lumbreras
 
 // © Copyright (C) 2019  Jorge Bárcena Lumbreras
@@ -21,23 +21,19 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
-
 #pragma once
-
-#include <string>
-#include <cassert>
 #include "BtypeDef.hpp"
-#include "BSystem.hpp"
+#include "BTask.hpp"
 
 /*
 * Clase que maneja la ventana
 */
-class BWindow : public BSystem
+class BWindowTask : public BTask
 {
 
 public:
 
-    static shared_ptr< BWindow > instance;   
+    static shared_ptr< BWindowTask > instance;   
 
 private:
 
@@ -50,9 +46,9 @@ private:
 public:
 
 
-    BWindow(const std::string& title, int _width, int _height, bool fullscreen = false);
+    BWindowTask(const std::string& title, int _width, int _height, bool fullscreen = false);
 
-    ~BWindow();   
+    ~BWindowTask();   
 
     void set_fullscreen(uint32_t type = 0);
 
@@ -72,11 +68,11 @@ public:
 
     void clear() const;
 
-    virtual bool initialize() override;
+    virtual bool initialize();
 
-    virtual bool finalize() override;
+    virtual bool finalize();
 
-    virtual bool execute(float time) override;
+    virtual bool execute(float time);
 
 };
 

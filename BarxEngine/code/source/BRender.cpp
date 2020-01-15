@@ -1,21 +1,22 @@
-#include "..\headers\BRender.hpp"
+#include "..//headers/BTask.hpp"
 #include <Cube.hpp>
 #include <Model.hpp>
 #include <Light.hpp>
 #include <Render_Node.hpp>
-#include "..///headers/BWindow.hpp"
 #include "..//headers/BtypeDef.hpp"
 #include "..//headers/BSystem.hpp"
+#include "../headers/BRenderTask.hpp"
+#include "../headers/BWindowTask.hpp"
 
 using namespace glt;
 
-shared_ptr< BRender > BRender::instance = nullptr;
+shared_ptr< BRenderTask > BRenderTask::instance = nullptr;
 
-BRender::BRender(shared_ptr< BWindow > given_window)
+BRenderTask::BRenderTask(shared_ptr< BWindowTask > given_window)
 {
     window = given_window;
 
-    BRender::instance = shared_ptr< BRender >(this);
+    BRenderTask::instance = shared_ptr< BRenderTask >(this);
 
     // Se crea el render node de OpenGL Toolkit:
 
@@ -40,11 +41,11 @@ BRender::BRender(shared_ptr< BWindow > given_window)
     renderer->get("light")->translate(Vector3(10.f, 10.f, 10.f));
 };
 
-BRender::~BRender()
+BRenderTask::~BRenderTask()
 {
 }
 
-void BRender::render()
+void BRenderTask::render()
 {
     // Se ajusta el viewport por si el tamaño de la ventana ha cambiado:
 
@@ -73,27 +74,27 @@ void BRender::render()
     window->swap_buffers();
 }
 
-std::shared_ptr<glt::Render_Node> BRender::getRenderer()
+std::shared_ptr<glt::Render_Node> BRenderTask::getRenderer()
 {
     return renderer;
 }
 
-shared_ptr<BWindow> BRender::getWindow()
+shared_ptr<BWindowTask> BRenderTask::getWindow()
 {
     return window;
 }
 
-bool BRender::initialize()
+bool BRenderTask::initialize()
 {
-    return false;
+    return true;
 }
 
-bool BRender::finalize()
+bool BRenderTask::finalize()
 {
-    return false;
+    return true;
 }
 
-bool BRender::execute(float time)
+bool BRenderTask::execute(float time)
 {
     auto renderer = instance->getRenderer();
 

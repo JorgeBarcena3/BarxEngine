@@ -2,9 +2,8 @@
 #include "BtypeDef.hpp"
 
 class BKernel;
-class BWindow;
-class BRender;
-class BRender;
+class BRenderTask;
+class BRenderTask;
 class BTransform_Component;
 
 // Tareas consumibles o no consumibles
@@ -40,7 +39,7 @@ public:
 
     virtual bool initialize() = 0;
     virtual bool finalize() = 0;
-    virtual bool run(float time) = 0;
+    virtual bool execute(float time) = 0;
 
 public:
 
@@ -50,50 +49,4 @@ public:
     }
 
 };
-
-
-class BTransform_task : public BTask
-{
-
-public:
-
-    BTransform_task(string id, shared_ptr< BTransform_Component > transformComponent);
-
-private:
-
-    shared_ptr< BTransform_Component > transform;
-
-    bool initialize();
-
-    bool finalize();
-
-    bool run(float time);
-
-};
-
-
-
-class BRender_Task : public BTask
-{
-
-public:
-
-    BRender_Task(string id, shared_ptr< BRender > instance, shared_ptr< BTransform_Component > transformComponent);
-
-private:
-
-
-    shared_ptr< BRender > instance;
-
-    shared_ptr< BTransform_Component > transform;
-
-    bool initialize();
-
-    bool finalize();
-
-    bool run(float time);
-
-};
-
-
 

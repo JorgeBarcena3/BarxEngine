@@ -1,6 +1,7 @@
 #include "../headers/BTask.hpp"
 #include "../headers/BComponent.hpp"
-#include "../headers/BRender.hpp"
+#include "../headers/BRenderTask.hpp"
+#include "../headers/BTranformTask.hpp"
 #include "../headers/BEntity.hpp"
 #include <Model.hpp>
 #include <Cube.hpp>
@@ -8,6 +9,7 @@
 #include <Drawable.hpp>
 #include <Render_Node.hpp>
 #include <Model_Obj.hpp>
+#include "../headers/BRenderObject_task.hpp"
 
 using namespace glt;
 
@@ -21,11 +23,11 @@ BControlComponent::BControlComponent(shared_ptr <BEntity> parent) : BComponent(p
    // task = shared_ptr<BTransform_task>(new BTransform_task());
 };
 
-BRenderComponent::BRenderComponent(shared_ptr<BEntity> parent, shared_ptr<BRender> _system, string _path) : BComponent(parent)
+BRenderComponent::BRenderComponent(shared_ptr<BEntity> parent, shared_ptr<BRenderTask> _renderTask, string _path) : BComponent(parent)
 {
-    system = _system;
+    renderTask = _renderTask;
     id = parent->getId();
-    task = shared_ptr<BRender_Task>(new BRender_Task(id, system, parent->getComponent<BTransform_Component>()));
+    task = shared_ptr<BRenderObject_Task>(new BRenderObject_Task(id, renderTask, parent->getComponent<BTransform_Component>()));
     path = _path;   
 }
 
@@ -44,6 +46,6 @@ bool BRenderComponent::initialize()
 
     }
 
-    system->getRenderer()->add(id, model);
+    renderTask->getRenderer()->add(id, model);
     return false;
 }

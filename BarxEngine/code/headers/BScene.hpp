@@ -58,7 +58,7 @@ private:
     /*
     * Inicializa un kernel
     */
-    void init_kernel(shared_ptr<list<shared_ptr< BSystem>>> systems);
+    void init_kernel();
 
     /*
     * Aqui se halla el bucle principal

@@ -125,17 +125,17 @@ public:
 
 };
 
-class BRender;
+class BRenderTask;
 
 class BRenderComponent : public BComponent
 {
     string path;
-    shared_ptr<BRender> system;
+    shared_ptr<BRenderTask> renderTask;
     shared_ptr< glt::Model > model;
 
 public:
 
-    BRenderComponent( shared_ptr <BEntity> parent, shared_ptr<BRender> system, string path = "");
+    BRenderComponent( shared_ptr <BEntity> parent, shared_ptr<BRenderTask> system, string path = "");
 
     bool initialize();
     
@@ -151,8 +151,5 @@ public:
 
 class BControlComponent : public BComponent
 {
-    vec3<float> direction;
-    vec3<float> velocity;
-
     BControlComponent(shared_ptr <BEntity> parent);
 };

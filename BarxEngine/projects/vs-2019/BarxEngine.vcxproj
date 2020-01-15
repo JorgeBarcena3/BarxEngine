@@ -122,16 +122,17 @@
     <ClInclude Include="..\..\code\headers\BMessage.hpp" />
     <ClInclude Include="..\..\code\headers\BMessageHandler.hpp" />
     <ClInclude Include="..\..\code\headers\BObserver.hpp" />
-    <ClInclude Include="..\..\code\headers\BRender.hpp" />
+    <ClInclude Include="..\..\code\headers\BRenderObject_task.hpp" />
+    <ClInclude Include="..\..\code\headers\BRenderTask.hpp" />
     <ClInclude Include="..\..\code\headers\BScene.hpp" />
     <ClInclude Include="..\..\code\headers\BTask.hpp" />
     <ClInclude Include="..\..\code\headers\BTimer.hpp" />
+    <ClInclude Include="..\..\code\headers\BTranformTask.hpp" />
     <ClInclude Include="..\..\code\headers\BtypeDef.hpp" />
     <ClInclude Include="..\..\code\headers\BVariant.hpp" />
-    <ClInclude Include="..\..\code\headers\BWindow.hpp" />
+    <ClInclude Include="..\..\code\headers\BWindowTask.hpp" />
     <ClInclude Include="..\..\code\headers\BEntity.hpp" />
     <ClInclude Include="..\..\code\headers\BComponent.hpp" />
-    <ClInclude Include="..\..\code\headers\BSystem.hpp" />
   </ItemGroup>
   <ItemGroup>
     <Xml Include="..\..\code\headers\EventMapping.xml" />

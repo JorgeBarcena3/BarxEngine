@@ -1,8 +1,9 @@
-#include "..\headers\BPhysicsTask.hpp"
 #include "../headers/BScene.hpp"
 #include "../headers/BTask.hpp"
-#include "../headers/BWindow.hpp"
-#include "../headers/BRender.hpp"
+#include "../headers/BTranformTask.hpp"
+#include "../headers/BWindowTask.hpp"
+#include "../headers/BRenderTask.hpp"
+#include "../headers/BRenderObject_task.hpp"
 #include <Render_Node.hpp>
 #include <SDL.h>
 #include "../headers/BComponent.hpp"
@@ -24,9 +25,9 @@ bool BTransform_task::finalize()
     return true;
 }
 
-bool BTransform_task::run(float time)
+bool BTransform_task::execute(float time)
 {
-    auto obj = BRender::instance->getRenderer()->get(id);
+    auto obj = BRenderTask::instance->getRenderer()->get(id);
 
     obj->rotate_around_y(0.001f);
 
@@ -34,25 +35,25 @@ bool BTransform_task::run(float time)
 }
 
 
-BRender_Task::BRender_Task(string _id, const shared_ptr<BRender> _instance, const shared_ptr< BTransform_Component > _transformComponent)
+BRenderObject_Task::BRenderObject_Task(string _id, const shared_ptr<BRenderTask> _instance, const shared_ptr< BTransform_Component > _transformComponent)
 {
     instance = _instance;
     id = _id;
     transform = _transformComponent;
 }
 
-bool BRender_Task::initialize()
+bool BRenderObject_Task::initialize()
 {
     
     return true;
 }
 
-bool BRender_Task::finalize()
+bool BRenderObject_Task::finalize()
 {
     return true;
 }
 
-bool BRender_Task::run(float time)
+bool BRenderObject_Task::execute(float time)
 {
 
     auto obj = instance->getRenderer()->get(id);

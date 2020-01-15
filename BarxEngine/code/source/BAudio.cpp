@@ -13,7 +13,7 @@ BAudio::BAudio()
         exit(1);
     }
 
-    // open 44.1KHz, signed 16bit, system byte order,
+    // open 44.1KHz, signed 16bit, renderTask byte order,
     //      stereo audio, using 1024 byte chunks
     if (Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 1024) == -1) {
         printf("Mix_OpenAudio: %s\n", Mix_GetError());

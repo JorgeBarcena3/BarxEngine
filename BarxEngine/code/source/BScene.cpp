@@ -2,8 +2,8 @@
 #include "../headers/BComponent.hpp"
 #include "../headers/BKernel.hpp"
 #include "../headers/BEntity.hpp"
-#include "../headers/BWindow.hpp"
-#include "../headers/BRender.hpp"
+#include "../headers/BWindowTask.hpp"
+#include "../headers/BRenderTask.hpp"
 
 BScene::BScene(const string& scene_description_file_path)
 {
@@ -11,27 +11,27 @@ BScene::BScene(const string& scene_description_file_path)
     entities = new Entity_Map();
 
     kernel = new BKernel();
-     
 
-    //CREAMOS LOS SISTEMAS NECESARIOS
-    shared_ptr<list<shared_ptr< BSystem>>> systems(new list<shared_ptr< BSystem>>);
-
-    systems->push_back( shared_ptr<BWindow> (new BWindow("Barx Engine Tool", 1200, 800) ) );
-    systems->push_back( shared_ptr<BRender> (new BRender(BWindow::instance)) );
+    //Creamos las tareas principales
+    shared_ptr<BTask> windowTask = shared_ptr<BWindowTask>(new BWindowTask("Barx Engine Tool", 1200, 800));
+    shared_ptr<BTask> RenderTask = shared_ptr<BRenderTask>(new BRenderTask(BWindowTask::instance));
 
     load(scene_description_file_path);
 
-    init_kernel(systems);
+    init_kernel();
 
     run();
 }
 
 void BScene::load(const string& scene_description_file_path)
-{
+{ 
+
+
+    //Luego pasamos a los mas especificos
 
     shared_ptr<BEntity> entity = shared_ptr< BEntity>(new BEntity("Conejo1"));
 
-    shared_ptr<BComponent> renderComponent = shared_ptr<BRenderComponent>(new BRenderComponent( entity, BRender::instance, "../../../assets/head.obj"));
+    shared_ptr<BComponent> renderComponent = shared_ptr<BRenderComponent>(new BRenderComponent(entity, BRenderTask::instance, "../../../assets/head.obj"));
 
     entity->add_component("renderer", renderComponent);
 
@@ -40,8 +40,9 @@ void BScene::load(const string& scene_description_file_path)
 
 }
 
-void BScene::init_kernel(shared_ptr<list<shared_ptr< BSystem>>> systems)
+void BScene::init_kernel()
 {
+    kernel->add_Task(BWindowTask::instance);
 
     for (auto entity : *entities)
     {
@@ -56,10 +57,9 @@ void BScene::init_kernel(shared_ptr<list<shared_ptr< BSystem>>> systems)
 
     }
 
-    for (auto system : *systems)
-    {
-        kernel->add_system(system);
-    }
+    kernel->add_Task(BRenderTask::instance);
+
+
 }
 
 void BScene::run()

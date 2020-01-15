@@ -1,11 +1,11 @@
 #include <SDL.h>
-#include "../headers/BWindow.hpp"
+#include "..//headers/BTask.hpp"
+#include "../headers/BWindowTask.hpp"
 #include "..//headers/BtypeDef.hpp"
-#include "..//headers/BSystem.hpp"
 #include <OpenGL.hpp>
 
 
-shared_ptr< BWindow > BWindow::instance = nullptr;
+shared_ptr< BWindowTask > BWindowTask::instance = nullptr;
 
 enum Fullscreen_Type
 {
@@ -14,12 +14,12 @@ enum Fullscreen_Type
 };
 
 
-BWindow::BWindow(const std::string& title, int _width, int _height, bool fullscreen)
+BWindowTask::BWindowTask(const std::string& title, int _width, int _height, bool fullscreen)
 {
     if (instance == nullptr)
     {
 
-        BWindow::instance = shared_ptr< BWindow >(this);
+        BWindowTask::instance = shared_ptr< BWindowTask >(this);
         width = _width;
         heigth = _height;
 
@@ -59,24 +59,24 @@ BWindow::BWindow(const std::string& title, int _width, int _height, bool fullscr
 
 };
 
-BWindow::~BWindow()
+BWindowTask::~BWindowTask()
 {
     if (gl_context) SDL_GL_DeleteContext(gl_context);
     if (window) SDL_DestroyWindow(window);
 };
 
-void BWindow::set_fullscreen(uint32_t type)
+void BWindowTask::set_fullscreen(uint32_t type)
 {
     SDL_SetWindowFullscreen(window, type);
 };
 
-void BWindow::set_windowed()
+void BWindowTask::set_windowed()
 {
     SDL_SetWindowFullscreen(window, SDL_WINDOW_FULLSCREEN_DESKTOP);
     set_size(width, heigth);
 };
 
-unsigned BWindow::get_width() const
+unsigned BWindowTask::get_width() const
 {
     int width = 0, height;
 
@@ -85,7 +85,7 @@ unsigned BWindow::get_width() const
     return unsigned(width);
 }
 
-unsigned BWindow::get_height() const
+unsigned BWindowTask::get_height() const
 {
     int width, height = 0;
 
@@ -95,42 +95,42 @@ unsigned BWindow::get_height() const
 }
 
 
-void BWindow::set_windowTitle(const char* title)
+void BWindowTask::set_windowTitle(const char* title)
 {
     SDL_SetWindowTitle(window, title);
 };
 
-void BWindow::set_position(int new_left_x, int new_top_y)
+void BWindowTask::set_position(int new_left_x, int new_top_y)
 {
     SDL_SetWindowPosition(window, new_left_x, new_top_y);
 };
 
-void BWindow::set_size(int new_width, int new_height)
+void BWindowTask::set_size(int new_width, int new_height)
 {
     SDL_SetWindowSize(window, new_width, new_height);
 };
 
-void BWindow::swap_buffers() const
+void BWindowTask::swap_buffers() const
 {
     if (gl_context) SDL_GL_SwapWindow(window);
 };
 
-void BWindow::clear() const
+void BWindowTask::clear() const
 {
     if (gl_context) glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 };
 
-bool BWindow::initialize()
+bool BWindowTask::initialize()
 {
-    return false;
+    return true;
 };
 
-bool BWindow::finalize()
+bool BWindowTask::finalize()
 {
-    return false;
+    return true;
 };
 
-bool BWindow::execute(float time)
+bool BWindowTask::execute(float time)
 {
     SDL_Event event;
 
