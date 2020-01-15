@@ -18,4 +18,14 @@
 //
 
 #define SDL_MAIN_HANDLED
+#include "BtypeDef.hpp"
+#include "BScene.hpp"
+#include "BEntity.hpp"
+#include "BComponent.hpp"
+#include "BControlComponent.hpp"
+#include "BTransformComponent.hpp"
+#include "BKeyboard.hpp"
+
+typedef BKeyboard Input;
+
 

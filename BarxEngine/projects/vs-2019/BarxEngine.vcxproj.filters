@@ -58,6 +58,18 @@
     <ClCompile Include="..\..\code\source\BControlTask.cpp">
       <Filter>Source\Task</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\code\source\BInputComponent.cpp">
+      <Filter>Source\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\source\BInputHandlerTask.cpp">
+      <Filter>Source\Task\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\headers\BKeyboard.hpp">
+      <Filter>Headers\Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\source\BKeyboard.cpp">
+      <Filter>Source\Keyboard</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\code\headers\BEngine.hpp">
@@ -99,9 +111,6 @@
     <ClInclude Include="..\..\code\headers\BObserver.hpp">
       <Filter>Headers\Messages</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\code\headers\BInputHandler.hpp">
-      <Filter>Headers\Task\Input</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\code\headers\BInputMapper.hpp">
       <Filter>Headers\Task\Input</Filter>
     </ClInclude>
@@ -137,6 +146,12 @@
     </ClInclude>
     <ClInclude Include="..\..\code\headers\BControlTask.hpp">
       <Filter>Headers\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BInputComponent.hpp">
+      <Filter>Headers\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BInputHandlerTask.hpp">
+      <Filter>Headers\Task\Input</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -184,6 +199,12 @@
     </Filter>
     <Filter Include="Source\Component">
       <UniqueIdentifier>{48ca88e8-fa2a-4a59-9a9f-c00f96391b41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Keyboard">
+      <UniqueIdentifier>{c5810acb-e81a-4a27-90fe-7e5b8dce2569}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Keyboard">
+      <UniqueIdentifier>{5ecae2cb-9077-4c3a-a880-cad81fcf11dc}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

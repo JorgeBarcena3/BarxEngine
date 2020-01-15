@@ -8,6 +8,7 @@
 #include "../headers/BRenderTask.hpp"
 #include "../headers/BMainRenderer.hpp"
 #include "../headers/BMainWindowComponent.hpp"
+#include "../headers/BInputComponent.hpp"
 
 
 BScene::BScene(const string& scene_description_file_path)
@@ -36,9 +37,11 @@ void BScene::load(const string& scene_description_file_path)
 
     shared_ptr<BComponent> windowComponent = shared_ptr<BMainWindowComponent>(new BMainWindowComponent(root));
     shared_ptr<BComponent> mainRenderComponent = shared_ptr<BMainRenderer>(new BMainRenderer(root));
+    shared_ptr<BComponent> inputComponent = shared_ptr<BInputComponent>(new BInputComponent(root));
 
     root->add_component("mainRenderComponent", mainRenderComponent);
     root->add_component("windowComponent", windowComponent);
+    root->add_component("inputComponent", inputComponent);
 
 
     //Luego pasamos a los mas especificos
@@ -60,6 +63,7 @@ void BScene::load(const string& scene_description_file_path)
 void BScene::init_kernel()
 {
     kernel->add_Task(root->getComponent<BMainWindowComponent>()->getTask());
+    kernel->add_Task(root->getComponent<BInputComponent>()->getTask());
 
     for (auto entity : *entities)
     {

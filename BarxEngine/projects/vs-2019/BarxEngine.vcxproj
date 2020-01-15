@@ -100,6 +100,7 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\code\headers\BKeyboard.hpp" />
     <ClCompile Include="..\..\code\source\BAudio.cpp" />
     <ClCompile Include="..\..\code\source\BComponent.cpp" />
     <ClCompile Include="..\..\code\source\BControlComponent.cpp" />
@@ -107,7 +108,10 @@
     <ClCompile Include="..\..\code\source\BDispacher.cpp" />
     <ClCompile Include="..\..\code\source\BEngine.cpp" />
     <ClCompile Include="..\..\code\source\BEntity.cpp" />
+    <ClCompile Include="..\..\code\source\BInputComponent.cpp" />
+    <ClCompile Include="..\..\code\source\BInputHandlerTask.cpp" />
     <ClCompile Include="..\..\code\source\BKernel.cpp" />
+    <ClCompile Include="..\..\code\source\BKeyboard.cpp" />
     <ClCompile Include="..\..\code\source\BMainRenderer.cpp" />
     <ClCompile Include="..\..\code\source\BMainWindowComponent.cpp" />
     <ClCompile Include="..\..\code\source\BRenderTask.cpp" />
@@ -126,7 +130,8 @@
     <ClInclude Include="..\..\code\headers\BControlTask.hpp" />
     <ClInclude Include="..\..\code\headers\BDispacher.hpp" />
     <ClInclude Include="..\..\code\headers\BEngine.hpp" />
-    <ClInclude Include="..\..\code\headers\BInputHandler.hpp" />
+    <ClInclude Include="..\..\code\headers\BInputComponent.hpp" />
+    <ClInclude Include="..\..\code\headers\BInputHandlerTask.hpp" />
     <ClInclude Include="..\..\code\headers\BInputMapper.hpp" />
     <ClInclude Include="..\..\code\headers\BKernel.hpp" />
     <ClInclude Include="..\..\code\headers\BMainRenderer.hpp" />

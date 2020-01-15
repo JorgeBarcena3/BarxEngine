@@ -1,4 +1,4 @@
-// File: BInputHandler.hpp
+// File: BInputHandlerTask.hpp
 // Author: Jorge Bárcena Lumbreras
 
 // © Copyright (C) 2019  Jorge Bárcena Lumbreras
@@ -18,11 +18,26 @@
 //
 
 #pragma once
+#include "BTask.hpp"
 
 /*
 * Se ejecutará en segundo plano recogiendo todos los eventos y los guardara en una cola de eventos
 * Cuando se de una vuelta de bucle entera, se pasan al inputmapper, traduciendo los inputs para enviarlo mediante mensajes
 */
-class BInputHandler {
+class BMyInputHandlerTask : public BTask
+{
+
+public: 
+
+    BMyInputHandlerTask(bool active);
+
+private:
+
+    // Inherited via BTask
+    virtual bool initialize() override;
+
+    virtual bool finalize() override;
+
+    virtual bool execute(float time) override;
 
 };

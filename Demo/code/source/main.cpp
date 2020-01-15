@@ -17,20 +17,39 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
-
-#include <BScene.hpp>
-#include <BEntity.hpp>
-#include <BComponent.hpp>
-#include <BControlComponent.hpp>
-#include <BTransformComponent.hpp>
+#include <BEngine.hpp>
 
 
 void controlFunction(float time, shared_ptr<BEntity> entity)
 {
-    shared_ptr<BTransform_Component> comp = entity->getTransform();
-    
-    comp->rotation.y = 0.001;
+    /*if (Input::getKeyDown(BKeyboard::keyMapper.A))
+    {
+        shared_ptr<BTransform_Component> comp = entity->getTransform();
+        comp->position.x -= 0.001; 
+
+    }
+    else if (Input::getKeyDown(BKeyboard::keyMapper.W))
+    {
+        shared_ptr<BTransform_Component> comp = entity->getTransform();
+        comp->position.y += 0.001;
+
+    }
+    else if (Input::getKeyDown(BKeyboard::keyMapper.S))
+    {
+        shared_ptr<BTransform_Component> comp = entity->getTransform();
+        comp->position.y -= 0.001;
+    }
+    else if (Input::getKeyDown(BKeyboard::keyMapper.D))
+    {
+        shared_ptr<BTransform_Component> comp = entity->getTransform();
+        comp->position.x += 0.001;
+
+    }
+*/
   
+    shared_ptr<BTransform_Component> comp = entity->getTransform();
+    comp->rotation.y += 0.000001;
+
 }
 
 int main() {
@@ -47,7 +66,7 @@ int main() {
 
     //BWindowTask window ("Test", 600, 600);
 
-    BScene * scene = new BScene();
+    BScene* scene = new BScene();
 
     scene->getEntity("Objeto")->getComponent<BControlComponent>()->setFunction(controlFunction);
 
