@@ -35,5 +35,11 @@ bool BRenderObject_Task::execute(float time)
 
     obj->translate(glt::Vector3(transform->position.x, transform->position.y, transform->position.z));
 
+    obj->scale(transform->scale.x, transform->scale.y, transform->scale.z);
+
+    obj->rotate_around_x(transform->rotation.x);
+    obj->rotate_around_y(transform->rotation.y);
+    obj->rotate_around_z(transform->rotation.z);
+
     return true;
 }

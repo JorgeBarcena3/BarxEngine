@@ -30,6 +30,11 @@ bool BEntity::initialize()
     return result;
 }
 
+shared_ptr<BTransform_Component> BEntity::getTransform()
+{
+    return dynamic_pointer_cast<BTransform_Component>(transform);
+}
+
 bool BEntity::add_component(const string& type, shared_ptr<BComponent>& component)
 {
    

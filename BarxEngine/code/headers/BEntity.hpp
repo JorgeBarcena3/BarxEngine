@@ -21,6 +21,7 @@
 #include "BtypeDef.hpp"
 
 class BComponent;
+class BTransform_Component;
 class BScene;
 /*
 * Es la unidad basica del motor
@@ -33,11 +34,11 @@ class BEntity
 
     string id;
 
-    shared_ptr<BComponent> transform;
-
     shared_ptr<BScene> scene;
 
     shared_ptr<BEntity> parent;
+    
+    shared_ptr<BComponent> transform;
 
     map< string, shared_ptr< BComponent > > components;
 
@@ -46,6 +47,9 @@ public:
     BEntity(string id);
 
     bool initialize();
+
+
+    shared_ptr<BTransform_Component> getTransform();
 
     bool add_component
     (

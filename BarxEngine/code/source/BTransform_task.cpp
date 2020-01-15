@@ -29,8 +29,7 @@ bool BTransform_task::finalize()
 bool BTransform_task::execute(float time)
 {
     auto obj = BRenderTask::instance->getRenderer()->get(id);
-
-    obj->rotate_around_y(0.001f);
-
+    
+   
     return true;
 }

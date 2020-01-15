@@ -1,6 +1,7 @@
 #include "..//headers/BScene.hpp"
 #include "../headers/BComponent.hpp"
 #include "../headers/BRenderObjectComponent.hpp"
+#include "../headers/BControlComponent.hpp"
 #include "../headers/BKernel.hpp"
 #include "../headers/BEntity.hpp"
 #include "../headers/BWindowTask.hpp"
@@ -22,6 +23,11 @@ BScene::BScene(const string& scene_description_file_path)
 
 }
 
+shared_ptr<BEntity> BScene::getEntity(string id)
+{
+    return (*entities)[id];
+}
+
 void BScene::load(const string& scene_description_file_path)
 { 
 
@@ -37,11 +43,14 @@ void BScene::load(const string& scene_description_file_path)
 
     //Luego pasamos a los mas especificos
 
-    shared_ptr<BEntity> entity = shared_ptr< BEntity>(new BEntity("Conejo1"));
+    shared_ptr<BEntity> entity = shared_ptr< BEntity>(new BEntity("Objeto"));
 
     shared_ptr<BComponent> renderComponent = shared_ptr<BRenderObjectComponent>(new BRenderObjectComponent(entity, "../../../assets/head.obj"));
+   
+    shared_ptr<BComponent> controlComponent = shared_ptr<BControlComponent>(new BControlComponent(entity));
 
     entity->add_component("RendererObject", renderComponent);
+    entity->add_component("ControlComponent", controlComponent);
 
     (*entities)[entity->getId()] = entity;
 

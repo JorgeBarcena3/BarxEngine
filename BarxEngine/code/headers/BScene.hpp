@@ -47,6 +47,8 @@ public:
     */
     BScene(const string& scene_description_file_path = "");
 
+    shared_ptr < BEntity > getEntity(string id);
+
 
 private:
 
