@@ -20,6 +20,8 @@ void BKernel::run()
 
     exit = false;
 
+    //Ordenamos las task por orden de preferemcia
+
     for (auto task : BTasks)
     {
         task->initialize();
@@ -27,9 +29,25 @@ void BKernel::run()
 
     float time = 1.f / 60.f;
 
+    BTimer timer;
+
+    int now = timer.elapsed_milliseconds();
+    int lastFrame = timer.elapsed_milliseconds();
+    int TimeToSleep = (1000 / 60) / 1000;
+
     do
     {
-        BTimer timer;
+        now = timer.elapsed_milliseconds();
+        float delta = now - lastFrame;
+        lastFrame = now;
+        
+        //Limitamos a 60 el numero de FPS
+        if (delta < TimeToSleep)
+        {
+            std::this_thread::sleep_for(std::chrono::seconds(TimeToSleep));
+        }
+
+      
 
         for (auto task : BTasks)
         {
@@ -37,8 +55,8 @@ void BKernel::run()
                 exit = true;
         }
 
-        time = timer.timeDeltatime();
-
+        time = timer.elapsed_milliseconds();
+        
 
     } while (!exit);
 
