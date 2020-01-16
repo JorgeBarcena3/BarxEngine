@@ -1,8 +1,9 @@
 #pragma once
 #include "BtypeDef.hpp"
+#include "BComponent.hpp"
 
 
-class BTransform_Component : public BComponent
+class BTransformComponent : public BComponent
 {
 
 
@@ -12,7 +13,7 @@ public:
     vec3<float> rotation;
     vec3<float> scale;
 
-    BTransform_Component(shared_ptr <BEntity> parent);
+    BTransformComponent(shared_ptr <BEntity> parent);
 
     bool initialize()
     {

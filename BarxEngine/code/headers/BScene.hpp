@@ -24,6 +24,8 @@
 
 class BModule;
 class BKernel;
+class BKeyboard;
+class BkeyboardComponent;
 
 /*
 * Es un codigo que se ejecuta teniendo en cuenta todos los componentes especificos
@@ -35,10 +37,11 @@ class BScene
     //typedef map< string, shared_ptr< BModule > > FModule_Map;
     typedef map< string, shared_ptr< BEntity > > Entity_Map;
 
-
     Entity_Map* entities;
+
     BKernel* kernel;
-    shared_ptr< BEntity> root;
+
+    shared_ptr<BEntity> root;
 
 public:
 
@@ -92,6 +95,13 @@ public:
         return BDispacher::instance() ;
 
     }
+
+     shared_ptr<BEntity> getRootEntity() {
+         return root;
+     }
+
+     shared_ptr<BKeyboard> getKeyBoardInput();
+
 };
 
 

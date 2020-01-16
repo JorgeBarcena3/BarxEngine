@@ -103,6 +103,7 @@
     <ClCompile Include="..\..\code\headers\BKeyboard.hpp" />
     <ClCompile Include="..\..\code\source\BAudio.cpp" />
     <ClCompile Include="..\..\code\source\BCharacterController.cpp" />
+    <ClCompile Include="..\..\code\source\BCharacterControllerTask.cpp" />
     <ClCompile Include="..\..\code\source\BColliderComponent.cpp" />
     <ClCompile Include="..\..\code\source\BColliderTask.cpp" />
     <ClCompile Include="..\..\code\source\BComponent.cpp" />
@@ -115,21 +116,23 @@
     <ClCompile Include="..\..\code\source\BInputHandlerTask.cpp" />
     <ClCompile Include="..\..\code\source\BKernel.cpp" />
     <ClCompile Include="..\..\code\source\BKeyboard.cpp" />
+    <ClCompile Include="..\..\code\source\BKeyboardComponent.cpp" />
     <ClCompile Include="..\..\code\source\BMainRenderer.cpp" />
     <ClCompile Include="..\..\code\source\BMainWindowComponent.cpp" />
     <ClCompile Include="..\..\code\source\BRenderTask.cpp" />
     <ClCompile Include="..\..\code\source\BRenderObjectComponent.cpp" />
-    <ClCompile Include="..\..\code\source\BRenderObject_task.cpp" />
+    <ClCompile Include="..\..\code\source\BRenderObjectTask.cpp" />
     <ClCompile Include="..\..\code\source\BTask.cpp" />
     <ClCompile Include="..\..\code\source\BScene.cpp" />
     <ClCompile Include="..\..\code\source\BTimer.cpp" />
     <ClCompile Include="..\..\code\source\BTransformComponent.cpp" />
-    <ClCompile Include="..\..\code\source\BTransform_task.cpp" />
+    <ClCompile Include="..\..\code\source\BTransformTask.cpp" />
     <ClCompile Include="..\..\code\source\BWindowTask.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\code\headers\BAudio.hpp" />
     <ClInclude Include="..\..\code\headers\BCharacterController.hpp" />
+    <ClInclude Include="..\..\code\headers\BCharacterControllerTask.hpp" />
     <ClInclude Include="..\..\code\headers\BColliderTask.hpp" />
     <ClInclude Include="..\..\code\headers\BControlComponent.hpp" />
     <ClInclude Include="..\..\code\headers\BControlTask.hpp" />
@@ -137,7 +140,6 @@
     <ClInclude Include="..\..\code\headers\BEngine.hpp" />
     <ClInclude Include="..\..\code\headers\BInputComponent.hpp" />
     <ClInclude Include="..\..\code\headers\BInputHandlerTask.hpp" />
-    <ClInclude Include="..\..\code\headers\BInputMapper.hpp" />
     <ClInclude Include="..\..\code\headers\BKernel.hpp" />
     <ClInclude Include="..\..\code\headers\BMainRenderer.hpp" />
     <ClInclude Include="..\..\code\headers\BMainWindowComponent.hpp" />
@@ -145,7 +147,7 @@
     <ClInclude Include="..\..\code\headers\BMessageHandler.hpp" />
     <ClInclude Include="..\..\code\headers\BObserver.hpp" />
     <ClInclude Include="..\..\code\headers\BRenderObjectComponent.hpp" />
-    <ClInclude Include="..\..\code\headers\BRenderObject_task.hpp" />
+    <ClInclude Include="..\..\code\headers\BRenderObjectTask.hpp" />
     <ClInclude Include="..\..\code\headers\BRenderTask.hpp" />
     <ClInclude Include="..\..\code\headers\BScene.hpp" />
     <ClInclude Include="..\..\code\headers\BTask.hpp" />
@@ -158,6 +160,7 @@
     <ClInclude Include="..\..\code\headers\BEntity.hpp" />
     <ClInclude Include="..\..\code\headers\BComponent.hpp" />
     <ClInclude Include="..\..\code\headers\BColliderComponent.hpp" />
+    <ClInclude Include="..\..\code\headers\BKeyboardComponent.hpp" />
     <ClInclude Include="..\..\code\headers\rapidxml.hpp" />
     <ClInclude Include="..\..\code\headers\rapidxml_iterators.hpp" />
     <ClInclude Include="..\..\code\headers\rapidxml_print.hpp" />

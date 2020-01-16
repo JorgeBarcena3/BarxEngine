@@ -3,7 +3,7 @@
 
 class BComponent;
 class BRenderTask;
-class BRenderObject_Task;
+class BRenderObjectTask;
 
 class BRenderObjectComponent : public BComponent
 {

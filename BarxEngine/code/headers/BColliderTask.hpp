@@ -20,7 +20,7 @@ public:
 
 private:
 
-    shared_ptr<BTransform_Component> transform;
+    shared_ptr<BTransformComponent> transform;
 
     list < shared_ptr<BEntity> > colliderEntites;
 

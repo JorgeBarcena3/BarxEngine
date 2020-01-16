@@ -3,21 +3,21 @@
 #include "../headers/BTranformTask.hpp"
 #include "../headers/BWindowTask.hpp"
 #include "../headers/BRenderTask.hpp"
-#include "../headers/BRenderObject_task.hpp"
+#include "../headers/BRenderObjectTask.hpp"
 #include "../headers/BComponent.hpp"
 #include "../headers/BTransformComponent.hpp"
 #include <Render_Node.hpp>
 #include <SDL.h>
 
 
-BRenderObject_Task::BRenderObject_Task(string _id, const shared_ptr<BRenderTask> _instance, const shared_ptr< BTransform_Component > _transformComponent)
+BRenderObjectTask::BRenderObjectTask(string _id, const shared_ptr<BRenderTask> _instance, const shared_ptr< BTransformComponent > _transformComponent)
 {
     instance = _instance;
     id = _id;
     transform = _transformComponent;
 }
 
-bool BRenderObject_Task::initialize()
+bool BRenderObjectTask::initialize()
 {
 
     auto obj = instance->getRenderer()->get(id);
@@ -49,12 +49,12 @@ bool BRenderObject_Task::initialize()
     return true;
 }
 
-bool BRenderObject_Task::finalize()
+bool BRenderObjectTask::finalize()
 {
     return true;
 }
 
-bool BRenderObject_Task::execute(float time)
+bool BRenderObjectTask::execute(float time)
 {
 
     auto obj = instance->getRenderer()->get(id);

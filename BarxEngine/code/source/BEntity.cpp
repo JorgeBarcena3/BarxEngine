@@ -27,9 +27,9 @@ bool BEntity::initialize()
     return result;
 }
 
-shared_ptr<BTransform_Component> BEntity::getTransform()
+shared_ptr<BTransformComponent> BEntity::getTransform()
 {
-    return dynamic_pointer_cast<BTransform_Component>(transform);
+    return dynamic_pointer_cast<BTransformComponent>(transform);
 }
 
 bool BEntity::add_component(const string& type, shared_ptr<BComponent>& component)
@@ -41,6 +41,7 @@ bool BEntity::add_component(const string& type, shared_ptr<BComponent>& componen
     }
     else
     {
+        //component->initialize();
         components[type] = component;
         return true;
     }

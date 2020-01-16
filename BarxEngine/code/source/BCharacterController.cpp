@@ -6,46 +6,15 @@
 #include "..\headers\BObserver.hpp"
 #include "..\headers\BScene.hpp"
 #include "..\headers\BTransformComponent.hpp"
+#include "..\headers\BCharacterControllerTask.hpp"
 
-BCharacterController::BCharacterController(shared_ptr<BEntity> parent) : BComponent(parent)
+BCharacterControllerComponent::BCharacterControllerComponent(shared_ptr<BEntity> parent) : BComponent(parent)
 {
-    task = shared_ptr<BTask>(nullptr);
-    parent->getScene()->getDispacher()->add(*this, "Keyboard"); //Nos subscribimos al evento de keyboard
+    task = shared_ptr<BCharacterControllerTask>(new BCharacterControllerTask(parent, shared_ptr<BCharacterControllerComponent>(this)));
 }
 
-bool BCharacterController::initialize()
+bool BCharacterControllerComponent::initialize()
 {
     return true;
 }
 
-void BCharacterController::handle(const BMessage& m)
-{
-
-    for (auto param : m.parameters)
-    {
-        if (param.first == "KeyDown")
-        {
-            if (param.second == Up)
-            {
-                parent->getTransform()->position.z -= 0.001f * speed;;
-            }
-            else  if (param.second == Down)
-            {
-                parent->getTransform()->position.z += 0.001f * speed;;
-
-            }
-
-            if (param.second == Left)
-            {
-                parent->getTransform()->position.x -= 0.001f * speed;;
-
-            }
-            else  if (param.second == Right)
-            {
-                parent->getTransform()->position.x += 0.001f * speed;;
-
-            }
-        }
-    }
-
-}

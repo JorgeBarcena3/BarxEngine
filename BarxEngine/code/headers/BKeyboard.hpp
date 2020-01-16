@@ -46,10 +46,14 @@ public:
 
     };
 
-    static KEYCODE keyMapper;
+    KEYCODE keyMapper;
 
-    static list<string> keyPresed;
+    list<string> keyPresed;
 
-    static bool isKeyPresed(string letter);
+    bool isKeyPresed(string letter);
+
+    void setKeyDown(string letter);
+
+    void setKeyUp(string letter);
     
 };

@@ -2,18 +2,18 @@
 #include "BtypeDef.hpp"
 
 class BTask;
-class BTransform_Component;
+class BTransformComponent;
 
-class BTransform_task : public BTask
+class BTransformTask : public BTask
 {
 
 public:
 
-    BTransform_task(string id, shared_ptr< BTransform_Component > transformComponent);
+    BTransformTask(string id, shared_ptr< BTransformComponent > transformComponent);
 
 private:
 
-    shared_ptr< BTransform_Component > transform;
+    shared_ptr< BTransformComponent > transform;
 
     bool initialize();
 

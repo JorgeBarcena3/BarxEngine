@@ -4,7 +4,7 @@
 class BKernel;
 class BRenderTask;
 class BRenderTask;
-class BTransform_Component;
+class BTransformComponent;
 
 // Tareas consumibles o no consumibles
 // Secuancia de tareas (hereda de task y tiene una lista de tasks)

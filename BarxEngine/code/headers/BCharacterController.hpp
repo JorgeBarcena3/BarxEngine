@@ -5,8 +5,10 @@
 class BComponent;
 class BEntity;
 
-class BCharacterController : public BComponent, public BOrbserver
+class BCharacterControllerComponent : public BComponent
 {
+
+public:
 
     string Up;
     string Down;
@@ -17,7 +19,7 @@ class BCharacterController : public BComponent, public BOrbserver
 
 public:
 
-    BCharacterController(shared_ptr <BEntity> parent);
+    BCharacterControllerComponent(shared_ptr <BEntity> parent);
 
     // Inherited via BComponent
     virtual bool initialize();
@@ -38,8 +40,5 @@ public:
         return true;
     };
 
-
-    // Inherited via BOrbserver
-    virtual void handle(const BMessage& m) override;
 
 };

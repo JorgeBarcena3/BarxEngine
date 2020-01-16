@@ -14,7 +14,7 @@
       <model>../../assets/models/spider-man.obj</model>
     </component>
     <component type="BCharacterController">
-      <speed>100</speed>
+      <speed>10</speed>
       <Up>W</Up>
       <Down>S</Down>
       <Left>A</Left>

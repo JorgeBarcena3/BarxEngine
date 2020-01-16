@@ -40,12 +40,6 @@
     <ClCompile Include="..\..\code\source\BWindowTask.cpp">
       <Filter>Source\Task</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\code\source\BTransform_task.cpp">
-      <Filter>Source\Task</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\code\source\BRenderObject_task.cpp">
-      <Filter>Source\Task</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\code\source\BRenderTask.cpp">
       <Filter>Source\Task</Filter>
     </ClCompile>
@@ -77,6 +71,18 @@
       <Filter>Source\Task</Filter>
     </ClCompile>
     <ClCompile Include="..\..\code\source\BCharacterController.cpp">
+      <Filter>Source\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\source\BCharacterControllerTask.cpp">
+      <Filter>Source\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\source\BRenderObjectTask.cpp">
+      <Filter>Source\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\source\BTransformTask.cpp">
+      <Filter>Source\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\source\BKeyboardComponent.cpp">
       <Filter>Source\Component</Filter>
     </ClCompile>
   </ItemGroup>
@@ -120,9 +126,6 @@
     <ClInclude Include="..\..\code\headers\BObserver.hpp">
       <Filter>Headers\Messages</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\code\headers\BInputMapper.hpp">
-      <Filter>Headers\Task\Input</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\code\headers\BScene.hpp">
       <Filter>Headers</Filter>
     </ClInclude>
@@ -130,9 +133,6 @@
       <Filter>Headers\Task</Filter>
     </ClInclude>
     <ClInclude Include="..\..\code\headers\BRenderTask.hpp">
-      <Filter>Headers\Task</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\code\headers\BRenderObject_task.hpp">
       <Filter>Headers\Task</Filter>
     </ClInclude>
     <ClInclude Include="..\..\code\headers\BTranformTask.hpp">
@@ -181,6 +181,15 @@
       <Filter>Headers\Task</Filter>
     </ClInclude>
     <ClInclude Include="..\..\code\headers\BCharacterController.hpp">
+      <Filter>Headers\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BCharacterControllerTask.hpp">
+      <Filter>Headers\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BRenderObjectTask.hpp">
+      <Filter>Headers\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BKeyboardComponent.hpp">
       <Filter>Headers\Components</Filter>
     </ClInclude>
   </ItemGroup>

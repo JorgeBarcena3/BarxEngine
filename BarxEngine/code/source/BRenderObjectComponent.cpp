@@ -2,7 +2,7 @@
 #include "../headers/BRenderObjectComponent.hpp"
 #include "../headers/BTransformComponent.hpp"
 #include "../headers/BRenderTask.hpp"
-#include "../headers/BRenderObject_task.hpp"
+#include "../headers/BRenderObjectTask.hpp"
 #include "../headers/BEntity.hpp"
 #include <Model.hpp>
 #include <Cube.hpp>
@@ -16,7 +16,7 @@ BRenderObjectComponent::BRenderObjectComponent(shared_ptr<BEntity> parent) : BCo
 {
     renderTask = BRenderTask::instance;
     id = parent->getId();
-    task = shared_ptr<BRenderObject_Task>(new BRenderObject_Task(id, renderTask, parent->getComponent<BTransform_Component>()));
+    task = shared_ptr<BRenderObjectTask>(new BRenderObjectTask(id, renderTask, parent->getComponent<BTransformComponent>()));
 }
 
 bool BRenderObjectComponent::initialize()

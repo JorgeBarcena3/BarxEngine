@@ -21,7 +21,7 @@
 #include "BtypeDef.hpp"
 
 class BComponent;
-class BTransform_Component;
+class BTransformComponent;
 class BScene;
 /*
 * Es la unidad basica del motor
@@ -52,7 +52,7 @@ public:
 
     bool initialize();
 
-    shared_ptr<BTransform_Component> getTransform();
+    shared_ptr<BTransformComponent> getTransform();
 
     shared_ptr<BScene> getScene()
     {

@@ -22,7 +22,7 @@
 
 class BEntity;
 class BTask;
-class BTransform_task;
+class BTransformTask;
 class BRenderTask;
 
 using namespace glt;

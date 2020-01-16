@@ -27,30 +27,30 @@ void playerControlFunction(float time, shared_ptr<BEntity> entity)
 {
     /*if (Input::getKeyDown(BKeyboard::keyMapper.A))
     {
-        shared_ptr<BTransform_Component> comp = entity->getTransform();
+        shared_ptr<BTransformComponent> comp = entity->getTransform();
         comp->position.x -= 0.001; 
 
     }
     else if (Input::getKeyDown(BKeyboard::keyMapper.W))
     {
-        shared_ptr<BTransform_Component> comp = entity->getTransform();
+        shared_ptr<BTransformComponent> comp = entity->getTransform();
         comp->position.y += 0.001;
 
     }
     else if (Input::getKeyDown(BKeyboard::keyMapper.S))
     {
-        shared_ptr<BTransform_Component> comp = entity->getTransform();
+        shared_ptr<BTransformComponent> comp = entity->getTransform();
         comp->position.y -= 0.001;
     }
     else if (Input::getKeyDown(BKeyboard::keyMapper.D))
     {
-        shared_ptr<BTransform_Component> comp = entity->getTransform();
+        shared_ptr<BTransformComponent> comp = entity->getTransform();
         comp->position.x += 0.001;
 
     }
 */
 
-    //shared_ptr<BTransform_Component> comp = entity->getTransform();
+    //shared_ptr<BTransformComponent> comp = entity->getTransform();
     //comp->rotation.y = 0.001;
 
     //player->getTransform()->position.x += 0.001f;

@@ -3,30 +3,30 @@
 #include "../headers/BTranformTask.hpp"
 #include "../headers/BWindowTask.hpp"
 #include "../headers/BRenderTask.hpp"
-#include "../headers/BRenderObject_task.hpp"
+#include "../headers/BRenderObjectTask.hpp"
 #include "../headers/BComponent.hpp"
 #include "../headers/BTransformComponent.hpp"
 #include <Render_Node.hpp>
 #include <SDL.h>
 
 
-BTransform_task::BTransform_task(string _id, shared_ptr<BTransform_Component> _transformComponent)
+BTransformTask::BTransformTask(string _id, shared_ptr<BTransformComponent> _transformComponent)
 {
     id = _id;
     transform = _transformComponent;
 }
 
-bool BTransform_task::initialize()
+bool BTransformTask::initialize()
 {
     return true;
 }
 
-bool BTransform_task::finalize()
+bool BTransformTask::finalize()
 {
     return true;
 }
 
-bool BTransform_task::execute(float time)
+bool BTransformTask::execute(float time)
 {
   
     return true;

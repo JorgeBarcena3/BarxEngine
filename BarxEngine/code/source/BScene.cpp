@@ -14,17 +14,15 @@
 #include "../headers/rapidxml.hpp"
 #include "../headers/rapidxml_utils.hpp"
 #include "../headers/BCharacterController.hpp"
-
-
+#include "../headers/BKeyboardComponent.hpp"
+#include "../headers/BKeyboard.hpp"
 
 BScene::BScene(const string& scene_description_file_path)
 {
 
     entities = new Entity_Map();
 
-    kernel = new BKernel(shared_ptr<BScene> (this));
-    
-    
+    kernel = new BKernel(shared_ptr<BScene> (this));    
 
     load(scene_description_file_path);
 
@@ -59,10 +57,12 @@ void BScene::load(const string& scene_description_file_path)
 
     shared_ptr<BComponent> mainRenderComponent = shared_ptr<BMainRenderer>(new BMainRenderer(root));
     shared_ptr<BComponent> inputComponent = shared_ptr<BInputComponent>(new BInputComponent(root));
+    shared_ptr<BComponent> keyboardComponent = shared_ptr<BKeyboardComponent>(new BKeyboardComponent(root));
 
     root->add_component("mainRenderComponent", mainRenderComponent);
     root->add_component("windowComponent", windowComponent);
     root->add_component("inputComponent", inputComponent);
+    root->add_component("keyboardComponent", keyboardComponent);
     
 
 
@@ -76,7 +76,7 @@ void BScene::load(const string& scene_description_file_path)
             shared_ptr<BComponent> currentComponent;
 
             if (typeComponent == "BTransform_Component")
-                currentComponent = shared_ptr<BTransform_Component>(new BTransform_Component(entity));
+                currentComponent = shared_ptr<BTransformComponent>(new BTransformComponent(entity));
             else if(typeComponent == "BRenderObjectComponent")
                 currentComponent = shared_ptr<BRenderObjectComponent>(new BRenderObjectComponent(entity));
             else if(typeComponent == "BControlComponent")
@@ -84,7 +84,7 @@ void BScene::load(const string& scene_description_file_path)
             else if (typeComponent == "BColliderComponent")
                 currentComponent = shared_ptr<BColliderComponent>(new BColliderComponent(entity)); 
             else if (typeComponent == "BCharacterController")
-                currentComponent = shared_ptr<BCharacterController>(new BCharacterController(entity));
+                currentComponent = shared_ptr<BCharacterControllerComponent>(new BCharacterControllerComponent(entity));
 
             // Añadimos todos los componentes que vayamos añadiendo
 
@@ -130,4 +130,9 @@ void BScene::init_kernel()
 void BScene::run()
 {
     kernel->run();
+}
+
+shared_ptr<BKeyboard> BScene::getKeyBoardInput()
+{
+    return getRootEntity()->getComponent<BKeyboardComponent>()->Keyboard;
 }
