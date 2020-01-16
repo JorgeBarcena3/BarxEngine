@@ -70,9 +70,9 @@ bool BRenderObject_Task::execute(float time)
         obj->translate(difference);
 
    /* difference = glt::Vector3(
-        transform->scale.x - transformation[0].x,
-        transform->scale.y - transformation[1].y,
-        transform->scale.z - transformation[2].z);
+        entity->scale.x - transformation[0].x,
+        entity->scale.y - transformation[1].y,
+        entity->scale.z - transformation[2].z);
 
     if (glm::length(difference) > 0)
         obj->scale(difference.x, difference.y, difference.z);*/

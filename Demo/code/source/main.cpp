@@ -20,6 +20,8 @@
 #include <BEngine.hpp>
 
 shared_ptr<BEntity> player;
+BAudio audio;
+Id collisionID;
 
 void playerControlFunction(float time, shared_ptr<BEntity> entity)
 {
@@ -73,6 +75,16 @@ void EnemyControlFunction(float time, shared_ptr<BEntity> entity)
 
 }
 
+void OnCollision(shared_ptr<BEntity> A, shared_ptr<BEntity> B)
+{
+
+    if (A->getId() == "Player" && B->getId().find("Enemy") != std::string::npos)
+    {
+        audio.makeSound(collisionID);
+    }
+
+};
+
 int main() {
 
 
@@ -87,15 +99,25 @@ int main() {
 
     //BWindowTask window ("Test", 600, 600);
 
-    BScene* scene = new BScene("../../media/scene/scene.xml");
+    BScene* scene = new BScene("../../assets/scene/scene.xml");
 
     player = scene->getEntity("Player");
     player->getComponent<BControlComponent>()->setFunction(playerControlFunction);
+    player->getComponent<BColliderComponent>()->setFunction(OnCollision);
 
     scene->getEntity("Enemy1")->getComponent<BControlComponent>()->setFunction(EnemyControlFunction);
+    scene->getEntity("Enemy1")->getComponent<BColliderComponent>()->setFunction(OnCollision);
+
     scene->getEntity("Enemy2")->getComponent<BControlComponent>()->setFunction(EnemyControlFunction);
+    scene->getEntity("Enemy2")->getComponent<BColliderComponent>()->setFunction(OnCollision);
+
     scene->getEntity("Enemy3")->getComponent<BControlComponent>()->setFunction(EnemyControlFunction);
+    scene->getEntity("Enemy3")->getComponent<BColliderComponent>()->setFunction(OnCollision);
+
     scene->getEntity("Enemy4")->getComponent<BControlComponent>()->setFunction(EnemyControlFunction);
+    scene->getEntity("Enemy4")->getComponent<BColliderComponent>()->setFunction(OnCollision);
+
+    collisionID = audio.loadSound("assets\\sfx\\collision.wav");
 
     scene->run();
 

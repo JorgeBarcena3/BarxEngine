@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<scene>
+  <entity id="Player">
+    <component type="BTransform_Component" >
+      <position>0, -2, -2</position>
+      <rotation>0, 0, 0</rotation>
+      <scale>0.05,0.05,0.05</scale>
+    </component>
+    <component type="BColliderComponent">
+      <radius>0.1</radius>
+    </component>
+    <component type="BRenderObjectComponent" >
+      <model>../../assets/models/spider-man.obj</model>
+    </component>
+    <component type="BControlComponent"/>
+  </entity>
+
+  <entity id="Floor">
+    <component type="BTransform_Component" >
+      <position>0, -2, -1</position>
+      <rotation>0, 0, 0</rotation>
+      <scale>4, 2, 1</scale>
+    </component>
+    <component type="BRenderObjectComponent" >
+      <model>../../assets/models/plane.obj</model>
+    </component>
+  </entity>
+
+  <entity id="Enemy1">
+    <component type="BTransform_Component" >
+      <position>4, -2, -1</position>
+      <rotation>0, 0, 0</rotation>
+      <scale>0.01,0.01,0.01</scale>
+    </component>
+    <component type="BColliderComponent">
+      <radius>0.1</radius>
+    </component>
+    <component type="BRenderObjectComponent" >
+      <model>../../assets/models/pig.obj</model>
+    </component>
+    <component type="BControlComponent"/>
+  </entity>
+
+  <entity id="Enemy2">
+    <component type="BTransform_Component" >
+      <position>4, -2, -3</position>
+      <rotation>0, 0, 0</rotation>
+      <scale>0.01,0.01,0.01</scale>
+    </component>
+    <component type="BColliderComponent">
+      <radius>0.1</radius>
+    </component>
+    <component type="BRenderObjectComponent" >
+      <model>../../assets/models/pig.obj</model>
+    </component>
+    <component type="BControlComponent"/>
+  </entity>
+
+  <entity id="Enemy3">
+    <component type="BTransform_Component" >
+      <position>-4, -2, -1</position>
+      <rotation>0, 0, 0</rotation>
+      <scale>0.01,0.01,0.01</scale>
+    </component>
+    <component type="BColliderComponent">
+      <radius>0.1</radius>
+    </component>
+    <component type="BRenderObjectComponent" >
+      <model>../../assets/models/pig.obj</model>
+    </component>
+    <component type="BControlComponent"/>
+  </entity>
+
+  <entity id="Enemy4">
+    <component type="BTransform_Component" >
+      <position>-4, -2, -3</position>
+      <rotation>0, 0, 0</rotation>
+      <scale>0.01,0.01,0.01</scale>
+    </component>
+    <component type="BColliderComponent">
+      <radius>0.1</radius>
+    </component>
+    <component type="BRenderObjectComponent" >
+      <model>../../assets/models/pig.obj</model>
+    </component>
+    <component type="BControlComponent"/>
+  </entity>
+
+</scene>

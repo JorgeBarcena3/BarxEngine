@@ -23,8 +23,10 @@
 #include "BEntity.hpp"
 #include "BComponent.hpp"
 #include "BControlComponent.hpp"
+#include "BColliderComponent.hpp"
 #include "BTransformComponent.hpp"
 #include "BKeyboard.hpp"
+#include "BAudio.hpp"
 
 typedef BKeyboard Input;
 

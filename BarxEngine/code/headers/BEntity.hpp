@@ -48,11 +48,16 @@ private:
 
 public:
 
-    BEntity(string id);
+    BEntity(string id, shared_ptr<BScene> scene);
 
     bool initialize();
 
     shared_ptr<BTransform_Component> getTransform();
+
+    shared_ptr<BScene> getScene()
+    {
+        return scene;
+    };
 
     bool add_component
     (
@@ -71,7 +76,7 @@ public:
                 return thing;
         }
 
-        return nullptr;
+        return shared_ptr<T>(nullptr);
 
     };
 

@@ -2,6 +2,7 @@
 #include "../headers/BComponent.hpp"
 #include "../headers/BTransformComponent.hpp"
 #include "../headers/BRenderObjectComponent.hpp"
+#include "../headers/BColliderComponent.hpp"
 #include "../headers/BControlComponent.hpp"
 #include "../headers/BKernel.hpp"
 #include "../headers/BEntity.hpp"
@@ -37,7 +38,7 @@ void BScene::load(const string& scene_description_file_path)
 {
 
     //Creamos la entidad root
-    root = shared_ptr< BEntity>(new BEntity("MainScene"));
+    root = shared_ptr< BEntity>(new BEntity("MainScene", shared_ptr<BScene>(this)));
 
     shared_ptr<BComponent> windowComponent = shared_ptr<BMainWindowComponent>(new BMainWindowComponent(root));
     shared_ptr<BComponent> mainRenderComponent = shared_ptr<BMainRenderer>(new BMainRenderer(root));
@@ -55,7 +56,7 @@ void BScene::load(const string& scene_description_file_path)
 
     for (rapidxml::xml_node<>* entityNode = rootNode->first_node(); entityNode; entityNode = entityNode->next_sibling()) //Son las entidades
     {
-        shared_ptr<BEntity> entity = shared_ptr< BEntity>(new BEntity(entityNode->first_attribute("id")->value()));
+        shared_ptr<BEntity> entity = shared_ptr< BEntity>(new BEntity(entityNode->first_attribute("id")->value(), shared_ptr<BScene>(this)));
 
         for (rapidxml::xml_node<>* componentNode = entityNode->first_node(); componentNode; componentNode = componentNode->next_sibling()) //Son los componentes
         {
@@ -68,6 +69,8 @@ void BScene::load(const string& scene_description_file_path)
                 currentComponent = shared_ptr<BRenderObjectComponent>(new BRenderObjectComponent(entity));
             else if(typeComponent == "BControlComponent")
                 currentComponent = shared_ptr<BControlComponent>(new BControlComponent(entity));
+            else if (typeComponent == "BColliderComponent")
+                currentComponent = shared_ptr<BColliderComponent>(new BColliderComponent(entity));
 
             // Añadimos todos los componentes que vayamos añadiendo
 

@@ -19,9 +19,9 @@
 #pragma once
 
 #include "BtypeDef.hpp"
+#include "BEntity.hpp"
 
 class BModule;
-class BEntity;
 class BKernel;
 class BSystem;
 
@@ -68,4 +68,24 @@ public:
     * Aqui se halla el bucle principal
     */
     void run();
+
+    template <class T>
+    list<shared_ptr<BEntity>> entitesWithComponent()
+    {
+        list<shared_ptr<BEntity>> list;
+
+        for (auto entity : *entities)
+        {
+            shared_ptr< T > component = (*entity.second).getComponent< T >();
+
+            if (component != nullptr)
+            {
+                list.push_back( (*entities)[entity.first]);
+            }
+        }
+
+        return list;
+    }
 };
+
+

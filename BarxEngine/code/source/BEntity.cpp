@@ -3,10 +3,10 @@
 #include "..//headers/BtypeDef.hpp"
 #include "..//headers/BTransformComponent.hpp"
 
-BEntity::BEntity(string _id)
+BEntity::BEntity(string _id, shared_ptr<BScene> _scene)
 {
     id = _id;
-
+    scene = _scene;
     components = map< string, shared_ptr< BComponent > >();
   
 }

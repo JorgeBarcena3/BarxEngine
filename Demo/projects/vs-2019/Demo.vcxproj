@@ -14,7 +14,7 @@
     <ClCompile Include="..\..\code\source\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Xml Include="..\..\media\Scene\scene.xml" />
+    <Xml Include="..\..\assets\Scene\scene.xml" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
