@@ -19,8 +19,9 @@
 
 #include <BEngine.hpp>
 
+shared_ptr<BEntity> player;
 
-void controlFunction(float time, shared_ptr<BEntity> entity)
+void playerControlFunction(float time, shared_ptr<BEntity> entity)
 {
     /*if (Input::getKeyDown(BKeyboard::keyMapper.A))
     {
@@ -47,9 +48,28 @@ void controlFunction(float time, shared_ptr<BEntity> entity)
     }
 */
 
-    shared_ptr<BTransform_Component> comp = entity->getTransform();
-    cout << comp->position.y << endl;
-    comp->position.y = 0.001;// *time;
+    //shared_ptr<BTransform_Component> comp = entity->getTransform();
+    //comp->rotation.y = 0.001;
+
+    player->getTransform()->position.x += 0.001f;
+}
+
+void EnemyControlFunction(float time, shared_ptr<BEntity> entity)
+{
+    auto transform = entity->getTransform();
+
+    vec3<float> direction;
+    direction.setValues(
+        transform->position.x - player->getTransform()->position.x,
+        transform->position.y - player->getTransform()->position.y,
+        transform->position.z - player->getTransform()->position.z
+    );
+
+    direction.normalize();
+
+    transform->position.x -= direction.x * 0.002f;
+    transform->position.y -= direction.y * 0.002f;
+    transform->position.z -= direction.z * 0.002f;
 
 }
 
@@ -69,7 +89,13 @@ int main() {
 
     BScene* scene = new BScene("../../media/scene/scene.xml");
 
-    scene->getEntity("Player")->getComponent<BControlComponent>()->setFunction(controlFunction);
+    player = scene->getEntity("Player");
+    player->getComponent<BControlComponent>()->setFunction(playerControlFunction);
+
+    scene->getEntity("Enemy1")->getComponent<BControlComponent>()->setFunction(EnemyControlFunction);
+    scene->getEntity("Enemy2")->getComponent<BControlComponent>()->setFunction(EnemyControlFunction);
+    scene->getEntity("Enemy3")->getComponent<BControlComponent>()->setFunction(EnemyControlFunction);
+    scene->getEntity("Enemy4")->getComponent<BControlComponent>()->setFunction(EnemyControlFunction);
 
     scene->run();
 

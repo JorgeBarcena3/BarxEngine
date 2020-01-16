@@ -8,17 +8,17 @@ BMyInputHandlerTask::BMyInputHandlerTask(bool active)
 
 bool BMyInputHandlerTask::initialize()
 {
-    return false;
+    return true;
 }
 
 bool BMyInputHandlerTask::finalize()
 {
-    return false;
+    return true;
 }
 
 bool BMyInputHandlerTask::execute(float time)
 {
-    return false;
+    return true;
 }
 
 

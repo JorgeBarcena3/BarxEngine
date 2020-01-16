@@ -37,7 +37,8 @@ BRenderTask::BRenderTask(shared_ptr< BWindowTask > given_window)
 
     // Se configuran algunas propiedades de transformación:
 
-    renderer->get("camera")->translate(Vector3(0.f, 0.f, 5.f));
+    renderer->get("camera")->translate(Vector3(0.f, 1.f, 5.f));
+    //renderer->get("camera")->rotate_around_x(-0.8);
     renderer->get("light")->translate(Vector3(10.f, 10.f, 10.f));
 };
 

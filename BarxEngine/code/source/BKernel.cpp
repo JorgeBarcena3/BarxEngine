@@ -5,11 +5,10 @@
 
 void BKernel::add_Task(shared_ptr<BTask> task)
 {
-    if (task->initialize())
-    {
-        BTasks.insert(task);
-        task->set_kernel(this);
-    };
+
+    BTasks.insert(task);
+    task->set_kernel(this);
+
 
 }
 
@@ -17,7 +16,7 @@ void BKernel::add_Task(shared_ptr<BTask> task)
 void BKernel::run()
 {
 
-    exit = false; 
+    exit = false;
 
     for (auto task : BTasks)
     {
@@ -26,7 +25,7 @@ void BKernel::run()
 
     float time = 1.f / 60.f;
 
-    do 
+    do
     {
         BTimer timer;
 
@@ -37,7 +36,7 @@ void BKernel::run()
         }
 
         time = timer.timeDeltatime();
-        
+
 
     } while (!exit);
 

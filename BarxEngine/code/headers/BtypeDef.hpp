@@ -66,6 +66,18 @@ struct vec3 {
         z = _z;
     }
 
+    void normalize() {
+
+        float inv_magnitude = inv_length();
+        x = x * inv_magnitude;
+        y = y * inv_magnitude;
+        z = z * inv_magnitude;
+    }
+
+    T inv_length() {
+        return 1 / sqrt((x * x) + (y * y) + (z * z));
+    }
+
 };
 
 

@@ -28,8 +28,6 @@ bool BTransform_task::finalize()
 
 bool BTransform_task::execute(float time)
 {
-    auto obj = BRenderTask::instance->getRenderer()->get(id);
-    
-   
+  
     return true;
 }
