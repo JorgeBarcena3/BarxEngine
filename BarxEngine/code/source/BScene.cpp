@@ -1,5 +1,6 @@
 #include "..//headers/BScene.hpp"
 #include "../headers/BComponent.hpp"
+#include "../headers/BTransformComponent.hpp"
 #include "../headers/BRenderObjectComponent.hpp"
 #include "../headers/BControlComponent.hpp"
 #include "../headers/BKernel.hpp"
@@ -9,6 +10,9 @@
 #include "../headers/BMainRenderer.hpp"
 #include "../headers/BMainWindowComponent.hpp"
 #include "../headers/BInputComponent.hpp"
+#include "../headers/rapidxml.hpp"
+#include "../headers/rapidxml_utils.hpp"
+
 
 
 BScene::BScene(const string& scene_description_file_path)
@@ -30,7 +34,7 @@ shared_ptr<BEntity> BScene::getEntity(string id)
 }
 
 void BScene::load(const string& scene_description_file_path)
-{ 
+{
 
     //Creamos la entidad root
     root = shared_ptr< BEntity>(new BEntity("MainScene"));
@@ -42,20 +46,43 @@ void BScene::load(const string& scene_description_file_path)
     root->add_component("mainRenderComponent", mainRenderComponent);
     root->add_component("windowComponent", windowComponent);
     root->add_component("inputComponent", inputComponent);
+    
+    rapidxml::file<> xmlFile(scene_description_file_path.c_str()); // Default template is char
+    rapidxml::xml_document<> doc;
+    doc.parse<0>(xmlFile.data());
 
+    auto rootNode = doc.first_node();
 
-    //Luego pasamos a los mas especificos
+    for (rapidxml::xml_node<>* entityNode = rootNode->first_node(); entityNode; entityNode = entityNode->next_sibling()) //Son las entidades
+    {
+        shared_ptr<BEntity> entity = shared_ptr< BEntity>(new BEntity(entityNode->first_attribute("id")->value()));
 
-    shared_ptr<BEntity> entity = shared_ptr< BEntity>(new BEntity("Objeto"));
+        for (rapidxml::xml_node<>* componentNode = entityNode->first_node(); componentNode; componentNode = componentNode->next_sibling()) //Son los componentes
+        {
+            string typeComponent = componentNode->first_attribute("type")->value();
+            shared_ptr<BComponent> currentComponent;
 
-    shared_ptr<BComponent> renderComponent = shared_ptr<BRenderObjectComponent>(new BRenderObjectComponent(entity, "../../../assets/head.obj"));
-   
-    shared_ptr<BComponent> controlComponent = shared_ptr<BControlComponent>(new BControlComponent(entity));
+            if (typeComponent == "BTransform_Component")
+                currentComponent = shared_ptr<BTransform_Component>(new BTransform_Component(entity));
+            else if(typeComponent == "BRenderObjectComponent")
+                currentComponent = shared_ptr<BRenderObjectComponent>(new BRenderObjectComponent(entity));
+            else if(typeComponent == "BControlComponent")
+                currentComponent = shared_ptr<BControlComponent>(new BControlComponent(entity));
 
-    entity->add_component("RendererObject", renderComponent);
-    entity->add_component("ControlComponent", controlComponent);
+            // Añadimos todos los componentes que vayamos añadiendo
 
-    (*entities)[entity->getId()] = entity;
+            for (rapidxml::xml_node<>* propertyComponent = componentNode->first_node(); propertyComponent; propertyComponent = propertyComponent->next_sibling()) //Son las propiedades de los componentes
+            {
+                currentComponent->parse_property(propertyComponent->name(), propertyComponent->value());
+            }
+
+            entity->add_component(typeComponent, currentComponent);
+
+        }
+
+        (*entities)[entity->getId()] = entity;
+
+    }
 
 
 }

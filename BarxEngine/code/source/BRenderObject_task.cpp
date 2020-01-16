@@ -33,6 +33,7 @@ bool BRenderObject_Task::execute(float time)
 
     auto obj = instance->getRenderer()->get(id);
 
+    
     obj->translate(glt::Vector3(transform->position.x, transform->position.y, transform->position.z));
 
     obj->scale(transform->scale.x, transform->scale.y, transform->scale.z);

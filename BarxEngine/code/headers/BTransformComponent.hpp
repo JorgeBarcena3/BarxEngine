@@ -34,20 +34,20 @@ public:
             seglist.push_back(segment);
         }
 
-        if (name == "Position")
+        if (name == "position")
         {
             position.x = stof(seglist[0]);
             position.y = stof(seglist[1]);
             position.z = stof(seglist[2]);
         }
-        else if (name == "Rotation")
+        else if (name == "rotation")
         {
             rotation.x = stof(seglist[0]);
             rotation.y = stof(seglist[1]);
             rotation.z = stof(seglist[2]);
 
         }
-        else if (name == "Scale")
+        else if (name == "scale")
         {
             scale.x = stof(seglist[0]);
             scale.y = stof(seglist[1]);

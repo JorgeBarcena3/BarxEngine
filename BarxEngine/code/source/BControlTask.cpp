@@ -29,6 +29,8 @@ bool BControlTask::finalize()
 
 bool BControlTask::execute(float time)
 {
-    myFunction(time, entityReference);
+    if (myFunction)
+        myFunction(time, entityReference);
+
     return true;
 }

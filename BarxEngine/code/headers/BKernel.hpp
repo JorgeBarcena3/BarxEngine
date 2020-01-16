@@ -12,8 +12,6 @@ class BKernel
 
     BTask_List      BTasks;
 
-    BTimer deltaTime;
-
     bool exit;
     bool paused;
 

@@ -38,7 +38,11 @@ class BEntity
 
     shared_ptr<BEntity> parent;
     
+public:
+
     shared_ptr<BComponent> transform;
+
+private:
 
     map< string, shared_ptr< BComponent > > components;
 
@@ -47,7 +51,6 @@ public:
     BEntity(string id);
 
     bool initialize();
-
 
     shared_ptr<BTransform_Component> getTransform();
 

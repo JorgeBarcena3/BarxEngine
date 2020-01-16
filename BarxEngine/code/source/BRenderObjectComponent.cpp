@@ -12,12 +12,11 @@
 #include <Model_Obj.hpp>
 #include <Render_Node.hpp>
 
-BRenderObjectComponent::BRenderObjectComponent(shared_ptr<BEntity> parent, string _path) : BComponent(parent)
+BRenderObjectComponent::BRenderObjectComponent(shared_ptr<BEntity> parent) : BComponent(parent)
 {
     renderTask = BRenderTask::instance;
     id = parent->getId();
     task = shared_ptr<BRenderObject_Task>(new BRenderObject_Task(id, renderTask, parent->getComponent<BTransform_Component>()));
-    path = _path;
 }
 
 bool BRenderObjectComponent::initialize()

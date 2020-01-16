@@ -153,6 +153,18 @@
     <ClInclude Include="..\..\code\headers\BInputHandlerTask.hpp">
       <Filter>Headers\Task\Input</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\code\headers\rapidxml.hpp">
+      <Filter>Headers\RapidXML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\rapidxml_iterators.hpp">
+      <Filter>Headers\RapidXML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\rapidxml_print.hpp">
+      <Filter>Headers\RapidXML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\rapidxml_utils.hpp">
+      <Filter>Headers\RapidXML</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Xml Include="..\..\code\headers\EventMapping.xml" />
@@ -205,6 +217,9 @@
     </Filter>
     <Filter Include="Source\Keyboard">
       <UniqueIdentifier>{5ecae2cb-9077-4c3a-a880-cad81fcf11dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\RapidXML">
+      <UniqueIdentifier>{e6bad82b-feba-4a92-a4a4-c6cd7e1ba048}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

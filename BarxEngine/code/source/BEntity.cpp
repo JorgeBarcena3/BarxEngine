@@ -8,10 +8,7 @@ BEntity::BEntity(string _id)
     id = _id;
 
     components = map< string, shared_ptr< BComponent > >();
-
-    transform = shared_ptr<BTransform_Component>(new BTransform_Component(shared_ptr<BEntity>(this)));
-
-    add_component("Transform", transform);
+  
 }
 
 bool BEntity::initialize()

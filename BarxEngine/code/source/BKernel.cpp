@@ -24,15 +24,19 @@ void BKernel::run()
         task->initialize();
     }
 
+    float time = 1.f / 60.f;
+
     do 
     {
+        BTimer timer;
 
         for (auto task : BTasks)
         {
-            if (!task->execute((float)deltaTime.elapsed_milliseconds()))
+            if (!task->execute(time))
                 exit = true;
         }
 
+        time = timer.timeDeltatime();
         
 
     } while (!exit);

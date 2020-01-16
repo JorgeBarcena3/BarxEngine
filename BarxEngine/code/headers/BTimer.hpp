@@ -14,6 +14,7 @@ class BTimer
 {
 
     uint32_t start_ticks;
+    uint32_t last_ticks;
 
 public:
 
@@ -31,5 +32,8 @@ public:
     }
 
     uint32_t elapsed_milliseconds() const;
+
+    float timeDeltatime();
+
 };
 
