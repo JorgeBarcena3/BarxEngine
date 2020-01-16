@@ -63,6 +63,9 @@ public:
 
     shared_ptr<BTask> getTask()
     {
-        return task;
+        if (task != nullptr)
+            return task;
+
+        return shared_ptr<BTask>(nullptr);
     };
 };

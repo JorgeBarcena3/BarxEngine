@@ -2,6 +2,8 @@
 #include "..//headers/BMessage.hpp"
 #include "..//headers/BObserver.hpp"
  
+shared_ptr< BDispacher > BDispacher::d = shared_ptr<BDispacher>(nullptr);
+
 
   void BDispacher::Send(BMessage& m)
   {

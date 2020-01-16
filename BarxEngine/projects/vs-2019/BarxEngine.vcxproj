@@ -102,6 +102,7 @@
   <ItemGroup>
     <ClCompile Include="..\..\code\headers\BKeyboard.hpp" />
     <ClCompile Include="..\..\code\source\BAudio.cpp" />
+    <ClCompile Include="..\..\code\source\BCharacterController.cpp" />
     <ClCompile Include="..\..\code\source\BColliderComponent.cpp" />
     <ClCompile Include="..\..\code\source\BColliderTask.cpp" />
     <ClCompile Include="..\..\code\source\BComponent.cpp" />
@@ -128,6 +129,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\code\headers\BAudio.hpp" />
+    <ClInclude Include="..\..\code\headers\BCharacterController.hpp" />
     <ClInclude Include="..\..\code\headers\BColliderTask.hpp" />
     <ClInclude Include="..\..\code\headers\BControlComponent.hpp" />
     <ClInclude Include="..\..\code\headers\BControlTask.hpp" />
@@ -160,9 +162,6 @@
     <ClInclude Include="..\..\code\headers\rapidxml_iterators.hpp" />
     <ClInclude Include="..\..\code\headers\rapidxml_print.hpp" />
     <ClInclude Include="..\..\code\headers\rapidxml_utils.hpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <Xml Include="..\..\code\headers\EventMapping.xml" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

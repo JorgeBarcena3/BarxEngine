@@ -31,13 +31,13 @@ public:
 
     string id;
 
-    map< string, BVariant > parameters;
+    map< string, string > parameters;
 
     BMessage(const string& id) : id(id)
     {
     }
 
-    void add_parameter(const string& name, const BVariant& value)
+    void add_parameter(const string& name, string value)
     {
         parameters[name] = value;
     }

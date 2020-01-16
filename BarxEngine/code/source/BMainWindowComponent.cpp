@@ -2,9 +2,9 @@
 #include "..//headers/BMainWindowComponent.hpp"
 #include "..//headers/BWindowTask.hpp"
 
-BMainWindowComponent::BMainWindowComponent(shared_ptr<BEntity> parent) : BComponent(parent)
+BMainWindowComponent::BMainWindowComponent(shared_ptr<BEntity> parent, string windowName , int w, int h, bool fs) : BComponent(parent)
 {
-    task = shared_ptr<BWindowTask>(new BWindowTask("Barx engine tool", 1200, 800));
+    task = shared_ptr<BWindowTask>(new BWindowTask(windowName, w, h, fs));
 
 }
 

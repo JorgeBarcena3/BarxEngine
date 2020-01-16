@@ -76,6 +76,9 @@
     <ClCompile Include="..\..\code\source\BColliderTask.cpp">
       <Filter>Source\Task</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\code\source\BCharacterController.cpp">
+      <Filter>Source\Component</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\code\headers\BEngine.hpp">
@@ -177,9 +180,9 @@
     <ClInclude Include="..\..\code\headers\BColliderTask.hpp">
       <Filter>Headers\Task</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <Xml Include="..\..\code\headers\EventMapping.xml" />
+    <ClInclude Include="..\..\code\headers\BCharacterController.hpp">
+      <Filter>Headers\Components</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Headers">

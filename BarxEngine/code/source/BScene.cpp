@@ -13,6 +13,7 @@
 #include "../headers/BInputComponent.hpp"
 #include "../headers/rapidxml.hpp"
 #include "../headers/rapidxml_utils.hpp"
+#include "../headers/BCharacterController.hpp"
 
 
 
@@ -21,7 +22,9 @@ BScene::BScene(const string& scene_description_file_path)
 
     entities = new Entity_Map();
 
-    kernel = new BKernel();
+    kernel = new BKernel(shared_ptr<BScene> (this));
+    
+    
 
     load(scene_description_file_path);
 
@@ -36,11 +39,24 @@ shared_ptr<BEntity> BScene::getEntity(string id)
 
 void BScene::load(const string& scene_description_file_path)
 {
+    rapidxml::file<> xmlFile(scene_description_file_path.c_str()); 
+    rapidxml::xml_document<> doc;
+    doc.parse<0>(xmlFile.data());
+
+    auto rootNode = doc.first_node();
 
     //Creamos la entidad root
     root = shared_ptr< BEntity>(new BEntity("MainScene", shared_ptr<BScene>(this)));
 
-    shared_ptr<BComponent> windowComponent = shared_ptr<BMainWindowComponent>(new BMainWindowComponent(root));
+    shared_ptr<BComponent> windowComponent = shared_ptr<BMainWindowComponent>(new BMainWindowComponent(
+        root, 
+        (
+             rootNode->first_attribute("WindowName")->value()),
+        stoi(rootNode->first_attribute("windowWidth")->value()),
+        stoi(rootNode->first_attribute("windowHeith")->value()),
+             rootNode->first_attribute("fullScreen")->value() == "true"
+        ));
+
     shared_ptr<BComponent> mainRenderComponent = shared_ptr<BMainRenderer>(new BMainRenderer(root));
     shared_ptr<BComponent> inputComponent = shared_ptr<BInputComponent>(new BInputComponent(root));
 
@@ -48,11 +64,7 @@ void BScene::load(const string& scene_description_file_path)
     root->add_component("windowComponent", windowComponent);
     root->add_component("inputComponent", inputComponent);
     
-    rapidxml::file<> xmlFile(scene_description_file_path.c_str()); // Default template is char
-    rapidxml::xml_document<> doc;
-    doc.parse<0>(xmlFile.data());
 
-    auto rootNode = doc.first_node();
 
     for (rapidxml::xml_node<>* entityNode = rootNode->first_node(); entityNode; entityNode = entityNode->next_sibling()) //Son las entidades
     {
@@ -70,7 +82,9 @@ void BScene::load(const string& scene_description_file_path)
             else if(typeComponent == "BControlComponent")
                 currentComponent = shared_ptr<BControlComponent>(new BControlComponent(entity));
             else if (typeComponent == "BColliderComponent")
-                currentComponent = shared_ptr<BColliderComponent>(new BColliderComponent(entity));
+                currentComponent = shared_ptr<BColliderComponent>(new BColliderComponent(entity)); 
+            else if (typeComponent == "BCharacterController")
+                currentComponent = shared_ptr<BCharacterController>(new BCharacterController(entity));
 
             // Añadimos todos los componentes que vayamos añadiendo
 

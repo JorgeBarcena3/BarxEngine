@@ -4,7 +4,7 @@
 #include "BTimer.hpp"
 
 class BTask;
-class BSystem;
+class BScene;
 
 class BKernel
 {
@@ -12,14 +12,17 @@ class BKernel
 
     BTask_List      BTasks;
 
+    shared_ptr<BScene> scene;
+
     bool exit;
     bool paused;
 
 public:
 
-    BKernel()
+    BKernel(shared_ptr<BScene> _scene)
     {
         BTasks = std::multiset< shared_ptr<BTask> >();
+        scene = _scene;
     }
 
     void add_Task(shared_ptr<BTask> task);
@@ -42,6 +45,8 @@ public:
     {
         paused = false;
     }
+
+    shared_ptr<BScene> getScene() { return scene; }
 
 };
 

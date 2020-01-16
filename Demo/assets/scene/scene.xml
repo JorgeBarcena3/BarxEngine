@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
-<scene>
+<scene WindowName="Demo - BarxEngine" windowWidth="800" windowHeith="600" fullScreen="false">
+  
   <entity id="Player">
     <component type="BTransform_Component" >
       <position>0, -2, -2</position>
@@ -12,7 +13,14 @@
     <component type="BRenderObjectComponent" >
       <model>../../assets/models/spider-man.obj</model>
     </component>
-    <component type="BControlComponent"/>
+    <component type="BCharacterController">
+      <speed>100</speed>
+      <Up>W</Up>
+      <Down>S</Down>
+      <Left>A</Left>
+      <Right>D</Right>
+    </component>
+
   </entity>
 
   <entity id="Floor">

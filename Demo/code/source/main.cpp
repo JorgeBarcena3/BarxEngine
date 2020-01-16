@@ -53,7 +53,7 @@ void playerControlFunction(float time, shared_ptr<BEntity> entity)
     //shared_ptr<BTransform_Component> comp = entity->getTransform();
     //comp->rotation.y = 0.001;
 
-    player->getTransform()->position.x += 0.001f;
+    //player->getTransform()->position.x += 0.001f;
 }
 
 void EnemyControlFunction(float time, shared_ptr<BEntity> entity)
@@ -87,22 +87,9 @@ void OnCollision(shared_ptr<BEntity> A, shared_ptr<BEntity> B)
 
 int main() {
 
-
-    ////BScene s;
-    ////s.exec(); --> Se va a ejecutar el kernel
-    ////Para probar creamos una clase que hereda de Escena. Se añaden las entidades a la clase de entidades.
-    ////Ir poniendo console.log para ver si se esta ejecutando todo
-    ////Se van a necesitar solamente un componente grafico, y un sistema de render que será una tarea.
-    ////Un componente de control, un script que manipula la entidad
-    ////Sistema de update. Se recorren toda la lista de entidades y pedirle un puntero al componente que buscan
-    ////El transformComponent importante
-
-    //BWindowTask window ("Test", 600, 600);
-
     BScene* scene = new BScene("../../assets/scene/scene.xml");
 
     player = scene->getEntity("Player");
-    player->getComponent<BControlComponent>()->setFunction(playerControlFunction);
     player->getComponent<BColliderComponent>()->setFunction(OnCollision);
 
     scene->getEntity("Enemy1")->getComponent<BControlComponent>()->setFunction(EnemyControlFunction);

@@ -20,10 +20,10 @@
 
 #include "BtypeDef.hpp"
 #include "BEntity.hpp"
+#include "BDispacher.hpp"
 
 class BModule;
 class BKernel;
-class BSystem;
 
 /*
 * Es un codigo que se ejecuta teniendo en cuenta todos los componentes especificos
@@ -85,6 +85,12 @@ public:
         }
 
         return list;
+    }
+
+     shared_ptr< BDispacher > getDispacher() {
+
+        return BDispacher::instance() ;
+
     }
 };
 

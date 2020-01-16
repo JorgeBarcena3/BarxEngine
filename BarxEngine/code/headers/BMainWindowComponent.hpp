@@ -11,7 +11,7 @@ class BMainWindowComponent : public BComponent
 
 public:
 
-    BMainWindowComponent(shared_ptr <BEntity> parent);
+    BMainWindowComponent(shared_ptr <BEntity> parent, string windowName = "BarxEngine tool", int w = 1200, int h = 800, bool fs = false);
 
     bool initialize();
 

@@ -6,9 +6,11 @@
 void BKernel::add_Task(shared_ptr<BTask> task)
 {
 
-    BTasks.insert(task);
-    task->set_kernel(this);
-
+    if (task != nullptr)
+    {
+        BTasks.insert(task);
+        task->set_kernel(this);
+    }
 
 }
 

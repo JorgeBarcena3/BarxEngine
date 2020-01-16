@@ -5,7 +5,6 @@ class BKeyboard
 {
 public:
 
-
     struct KEYCODE 
     {
        const string A  = "A";
@@ -49,7 +48,8 @@ public:
 
     static KEYCODE keyMapper;
 
-    static bool getKeyDown(string KEY);
+    static list<string> keyPresed;
 
-    static bool setKeyUp(string key);
+    static bool isKeyPresed(string letter);
+    
 };

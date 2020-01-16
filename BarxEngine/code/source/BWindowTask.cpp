@@ -131,15 +131,5 @@ bool BWindowTask::finalize()
 
 bool BWindowTask::execute(float time)
 {
-    SDL_Event event;
-
-    while (SDL_PollEvent(&event) > 0)
-    {
-        if (event.type == SDL_QUIT)
-        {
-            return false;
-        }
-    }
-
-    return true;
+      return true;
 };

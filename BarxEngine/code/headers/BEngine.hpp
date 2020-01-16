@@ -27,6 +27,7 @@
 #include "BTransformComponent.hpp"
 #include "BKeyboard.hpp"
 #include "BAudio.hpp"
+#include "BWindowTask.hpp"
 
 typedef BKeyboard Input;
 

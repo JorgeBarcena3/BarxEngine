@@ -32,15 +32,18 @@ class BDispacher {
 
 public:
 
+
     //Devuelve una instancia al dispacher
-    static BDispacher& instance()
+    static shared_ptr<BDispacher> instance()
     {
-        static BDispacher d;
+        if(d == nullptr)
+          BDispacher::d = shared_ptr< BDispacher >(new BDispacher);
         return d;
     }
 
 private:
 
+    static shared_ptr< BDispacher > d;
     //Contructores
 
     map<string, list<BOrbserver*>> observers;
