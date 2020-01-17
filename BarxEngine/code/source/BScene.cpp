@@ -16,6 +16,8 @@
 #include "../headers/BCharacterController.hpp"
 #include "../headers/BKeyboardComponent.hpp"
 #include "../headers/BKeyboard.hpp"
+#include "../headers/BCameraComponent.hpp"
+#include "../headers/BLightComponent.hpp"
 
 BScene::BScene(const string& scene_description_file_path)
 {
@@ -84,7 +86,11 @@ void BScene::load(const string& scene_description_file_path)
             else if (typeComponent == "BColliderComponent")
                 currentComponent = shared_ptr<BColliderComponent>(new BColliderComponent(entity)); 
             else if (typeComponent == "BCharacterController")
-                currentComponent = shared_ptr<BCharacterControllerComponent>(new BCharacterControllerComponent(entity));
+                currentComponent = shared_ptr<BCharacterControllerComponent>(new BCharacterControllerComponent(entity));   
+            else if (typeComponent == "BCameraComponent")
+                currentComponent = shared_ptr<BCameraComponent>(new BCameraComponent(entity));
+            else if (typeComponent == "BLightComponent")
+                currentComponent = shared_ptr<BLightComponent>(new BLightComponent(entity));
 
             // Añadimos todos los componentes que vayamos añadiendo
 

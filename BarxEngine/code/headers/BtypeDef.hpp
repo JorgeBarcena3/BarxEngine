@@ -50,6 +50,8 @@ namespace glt
 
     class Render_Node;
     class Model;
+    class Camera;
+    class Light;
 
 }
 

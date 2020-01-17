@@ -11,7 +11,7 @@ namespace BAlgoritmosDeOrdenacion {
     ///Recorremos la lista de numeros comparando el numero actual con el siguiente, y si es el orden incorrecto los cambiamos
     ///Hasta que no cambiamos nada
     template <class T>
-    void algoritmoBurbuja(T* list, unsigned int size) {
+    void algoritmoBurbuja(T* list, size_t size) {
 
         bool hayCambios = true;
 

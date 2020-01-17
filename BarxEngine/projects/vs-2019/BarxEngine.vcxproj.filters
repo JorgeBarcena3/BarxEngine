@@ -82,6 +82,12 @@
     <ClCompile Include="..\..\code\source\BKeyboardComponent.cpp">
       <Filter>Source\Component</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\code\source\BCameraComponent.cpp">
+      <Filter>Source\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\source\BLightComponent.cpp">
+      <Filter>Source\Component</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\code\headers\BEngine.hpp">
@@ -194,6 +200,12 @@
     </ClInclude>
     <ClInclude Include="..\..\code\headers\BKeyboard.hpp">
       <Filter>Headers\Keyboard</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BCameraComponent.hpp">
+      <Filter>Headers\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BLightComponent.hpp">
+      <Filter>Headers\Components</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

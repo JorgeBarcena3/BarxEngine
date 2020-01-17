@@ -1,6 +1,29 @@
 <?xml version="1.0"?>
 <scene WindowName="Demo - BarxEngine" windowWidth="800" windowHeith="600" fullScreen="false">
-  
+
+  <entity id="Camera">
+    <component type="BTransform_Component" >
+      <position>0,1,5</position>
+      <rotation>0, 0, 0</rotation>
+      <scale>1,1,1</scale>
+    </component>
+    <component type="BCameraComponent">
+      <fov>20</fov>
+      <near>1</near>
+      <far>50</far>
+      <aspectRatio>1</aspectRatio>
+    </component>
+  </entity>
+
+  <entity id="Light">
+    <component type="BTransform_Component" >
+      <position>10,10,10</position>
+      <rotation>0, 0, 0</rotation>
+      <scale>1,1,1</scale>
+    </component>
+    <component type="BLightComponent"/>
+  </entity>
+
   <entity id="Player">
     <component type="BTransform_Component" >
       <position>0, -2, -2</position>
