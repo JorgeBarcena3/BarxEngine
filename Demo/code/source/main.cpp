@@ -22,38 +22,17 @@
 shared_ptr<BEntity> player;
 BAudio audio;
 Id collisionID;
+vec3<float> cameraPlayerDistance;
+BScene* scene;
 
-void playerControlFunction(float time, shared_ptr<BEntity> entity)
+void cameraControlFunction(float time, shared_ptr<BEntity> entity)
 {
-    /*if (Input::getKeyDown(BKeyboard::keyMapper.A))
-    {
-        shared_ptr<BTransformComponent> comp = entity->getTransform();
-        comp->position.x -= 0.001; 
+    auto cameraTransform = entity->getTransform();
+    auto playerTransform = player->getTransform();
 
-    }
-    else if (Input::getKeyDown(BKeyboard::keyMapper.W))
-    {
-        shared_ptr<BTransformComponent> comp = entity->getTransform();
-        comp->position.y += 0.001;
+    cameraTransform->position.x =  playerTransform->position.x - cameraPlayerDistance.x;
+    cameraTransform->position.z =  playerTransform->position.z + cameraPlayerDistance.z;
 
-    }
-    else if (Input::getKeyDown(BKeyboard::keyMapper.S))
-    {
-        shared_ptr<BTransformComponent> comp = entity->getTransform();
-        comp->position.y -= 0.001;
-    }
-    else if (Input::getKeyDown(BKeyboard::keyMapper.D))
-    {
-        shared_ptr<BTransformComponent> comp = entity->getTransform();
-        comp->position.x += 0.001;
-
-    }
-*/
-
-    //shared_ptr<BTransformComponent> comp = entity->getTransform();
-    //comp->rotation.y = 0.001;
-
-    //player->getTransform()->position.x += 0.001f;
 }
 
 void EnemyControlFunction(float time, shared_ptr<BEntity> entity)
@@ -81,16 +60,31 @@ void OnCollision(shared_ptr<BEntity> A, shared_ptr<BEntity> B)
     if (A->getId() == "Player" && B->getId().find("Enemy") != std::string::npos)
     {
         audio.makeSound(collisionID);
+        //scene->reloadScene("../../assets/scene/scene.xml");
     }
 
 };
 
 int main() {
 
-    BScene* scene = new BScene("../../assets/scene/scene.xml");
+    scene = new BScene("../../assets/scene/scene.xml");
+
+    ////////////// PLAYER ////////////// 
 
     player = scene->getEntity("Player");
     player->getComponent<BColliderComponent>()->setFunction(OnCollision);
+
+    ////////////// CAMERA ////////////// 
+
+    scene->getEntity("Camera")->getComponent<BControlComponent>()->setFunction(cameraControlFunction);
+
+    cameraPlayerDistance = vec3<float>(
+        scene->getEntity("Camera")->getTransform()->position.x - player->getTransform()->position.x,
+        scene->getEntity("Camera")->getTransform()->position.y - player->getTransform()->position.y,
+        scene->getEntity("Camera")->getTransform()->position.z - player->getTransform()->position.z        
+        );
+
+    //////////////  ENEMIES ////////////// 
 
     scene->getEntity("Enemy1")->getComponent<BControlComponent>()->setFunction(EnemyControlFunction);
     scene->getEntity("Enemy1")->getComponent<BColliderComponent>()->setFunction(OnCollision);
@@ -103,6 +97,9 @@ int main() {
 
     scene->getEntity("Enemy4")->getComponent<BControlComponent>()->setFunction(EnemyControlFunction);
     scene->getEntity("Enemy4")->getComponent<BColliderComponent>()->setFunction(OnCollision);
+
+
+    ////////////// AUDIO ////////////// 
 
     collisionID = audio.loadSound("assets\\sfx\\collision.wav");
 

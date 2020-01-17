@@ -56,7 +56,7 @@
 
             static unsigned instance_count;
 
-            static std::shared_ptr< Material > default_material ();
+            static std::shared_ptr< Material > default_material (Vector3 color = Vector3(0.5,0.5,0.5));
 
         private:
 

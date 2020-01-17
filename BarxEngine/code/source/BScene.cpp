@@ -19,16 +19,17 @@
 #include "../headers/BCameraComponent.hpp"
 #include "../headers/BLightComponent.hpp"
 
-BScene::BScene(const string& scene_description_file_path)
+BScene::BScene(const string& _scene_description_file_path)
 {
 
     entities = new Entity_Map();
 
-    kernel = new BKernel(shared_ptr<BScene> (this));    
+    kernel = shared_ptr<BKernel>( new BKernel(shared_ptr<BScene>(this)));
 
-    load(scene_description_file_path);
+    load(_scene_description_file_path);
 
     init_kernel();
+
 
 }
 
@@ -39,23 +40,24 @@ shared_ptr<BEntity> BScene::getEntity(string id)
 
 void BScene::load(const string& scene_description_file_path)
 {
-    rapidxml::file<> xmlFile(scene_description_file_path.c_str()); 
+    rapidxml::file<> xmlFile(scene_description_file_path.c_str());
     rapidxml::xml_document<> doc;
     doc.parse<0>(xmlFile.data());
 
     auto rootNode = doc.first_node();
 
-    //Creamos la entidad root
-    root = shared_ptr< BEntity>(new BEntity("MainScene", shared_ptr<BScene>(this)));
+    if (root == nullptr)
+        //Creamos la entidad root
+        root = shared_ptr< BEntity>(new BEntity("MainScene", shared_ptr<BScene>(this)));
 
     shared_ptr<BComponent> windowComponent = shared_ptr<BMainWindowComponent>(new BMainWindowComponent(
-        root, 
+        root,
         (
-             rootNode->first_attribute("WindowName")->value()),
+            rootNode->first_attribute("WindowName")->value()),
         stoi(rootNode->first_attribute("windowWidth")->value()),
         stoi(rootNode->first_attribute("windowHeith")->value()),
-             rootNode->first_attribute("fullScreen")->value() == "true"
-        ));
+        rootNode->first_attribute("fullScreen")->value() == "true"
+    ));
 
     shared_ptr<BComponent> mainRenderComponent = shared_ptr<BMainRenderer>(new BMainRenderer(root));
     shared_ptr<BComponent> inputComponent = shared_ptr<BInputComponent>(new BInputComponent(root));
@@ -65,7 +67,6 @@ void BScene::load(const string& scene_description_file_path)
     root->add_component("windowComponent", windowComponent);
     root->add_component("inputComponent", inputComponent);
     root->add_component("keyboardComponent", keyboardComponent);
-    
 
 
     for (rapidxml::xml_node<>* entityNode = rootNode->first_node(); entityNode; entityNode = entityNode->next_sibling()) //Son las entidades
@@ -79,14 +80,14 @@ void BScene::load(const string& scene_description_file_path)
 
             if (typeComponent == "BTransform_Component")
                 currentComponent = shared_ptr<BTransformComponent>(new BTransformComponent(entity));
-            else if(typeComponent == "BRenderObjectComponent")
+            else if (typeComponent == "BRenderObjectComponent")
                 currentComponent = shared_ptr<BRenderObjectComponent>(new BRenderObjectComponent(entity));
-            else if(typeComponent == "BControlComponent")
+            else if (typeComponent == "BControlComponent")
                 currentComponent = shared_ptr<BControlComponent>(new BControlComponent(entity));
             else if (typeComponent == "BColliderComponent")
-                currentComponent = shared_ptr<BColliderComponent>(new BColliderComponent(entity)); 
+                currentComponent = shared_ptr<BColliderComponent>(new BColliderComponent(entity));
             else if (typeComponent == "BCharacterController")
-                currentComponent = shared_ptr<BCharacterControllerComponent>(new BCharacterControllerComponent(entity));   
+                currentComponent = shared_ptr<BCharacterControllerComponent>(new BCharacterControllerComponent(entity));
             else if (typeComponent == "BCameraComponent")
                 currentComponent = shared_ptr<BCameraComponent>(new BCameraComponent(entity));
             else if (typeComponent == "BLightComponent")
@@ -136,6 +137,22 @@ void BScene::init_kernel()
 void BScene::run()
 {
     kernel->run();
+}
+
+void BScene::reloadScene(const string& scene_description_file_path)
+{
+    //root.reset(new BEntity("MainScene", shared_ptr<BScene>(this)));
+
+    //kernel.reset(new BKernel(shared_ptr<BScene>( this )));
+
+    //entities = new Entity_Map();
+
+    //load(scene_description_file_path);
+
+    //init_kernel();
+
+    //run();
+
 }
 
 shared_ptr<BKeyboard> BScene::getKeyBoardInput()

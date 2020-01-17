@@ -39,9 +39,10 @@ class BScene
 
     Entity_Map* entities;
 
-    BKernel* kernel;
+    shared_ptr<BKernel> kernel;
 
     shared_ptr<BEntity> root;
+
 
 public:
 
@@ -72,6 +73,8 @@ public:
     */
     void run();
 
+    void reloadScene(const string& scene_description_file_path);
+
     template <class T>
     list<shared_ptr<BEntity>> entitesWithComponent()
     {
@@ -83,24 +86,24 @@ public:
 
             if (component != nullptr)
             {
-                list.push_back( (*entities)[entity.first]);
+                list.push_back((*entities)[entity.first]);
             }
         }
 
         return list;
     }
 
-     shared_ptr< BDispacher > getDispacher() {
+    shared_ptr< BDispacher > getDispacher() {
 
-        return BDispacher::instance() ;
+        return BDispacher::instance();
 
     }
 
-     shared_ptr<BEntity> getRootEntity() {
-         return root;
-     }
+    shared_ptr<BEntity> getRootEntity() {
+        return root;
+    }
 
-     shared_ptr<BKeyboard> getKeyBoardInput();
+    shared_ptr<BKeyboard> getKeyBoardInput();
 
 };
 

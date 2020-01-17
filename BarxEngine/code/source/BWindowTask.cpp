@@ -116,6 +116,8 @@ void BWindowTask::swap_buffers() const
 
 void BWindowTask::clear() const
 {
+    //glClearColor(0.52f,0.8f,0.9f,1); //AZUL CIELO
+    glClearColor(0.2f, 0.2f, 0.2f, 1.f);
     if (gl_context) glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 };
 

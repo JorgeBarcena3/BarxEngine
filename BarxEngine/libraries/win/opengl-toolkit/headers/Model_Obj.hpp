@@ -25,7 +25,7 @@
 
         public:
 
-            Model_Obj(const std::string & obj_file_path);
+            Model_Obj(const std::string & obj_file_path, Vector3 color = Vector3(0.5f, 0.5f, 0.5f));
 
             bool is_ok ()
             {

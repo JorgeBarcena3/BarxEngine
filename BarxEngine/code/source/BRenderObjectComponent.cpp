@@ -17,6 +17,7 @@ BRenderObjectComponent::BRenderObjectComponent(shared_ptr<BEntity> parent) : BCo
     renderTask = BRenderTask::instance;
     id = parent->getId();
     task = shared_ptr<BRenderObjectTask>(new BRenderObjectTask(id, renderTask, parent->getComponent<BTransformComponent>()));
+    color = vec3<float>(.4f, .5f, .5f);
 }
 
 bool BRenderObjectComponent::initialize()
@@ -30,7 +31,7 @@ bool BRenderObjectComponent::initialize()
     }
     else
     {
-        model = shared_ptr<glt::Model_Obj>(new Model_Obj(path.c_str()));
+        model = shared_ptr<glt::Model_Obj>(new Model_Obj(path.c_str(), Vector3(color.x, color.y, color.z)));
 
     }
 

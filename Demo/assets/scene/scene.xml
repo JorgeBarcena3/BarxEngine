@@ -13,6 +13,7 @@
       <far>50</far>
       <aspectRatio>1</aspectRatio>
     </component>
+    <component type="BControlComponent"/>
   </entity>
 
   <entity id="Light">
@@ -37,7 +38,7 @@
       <model>../../assets/models/spider-man.obj</model>
     </component>
     <component type="BCharacterController">
-      <speed>10</speed>
+      <speed>5</speed>
       <Up>W</Up>
       <Down>S</Down>
       <Left>A</Left>
@@ -48,18 +49,62 @@
 
   <entity id="Floor">
     <component type="BTransform_Component" >
-      <position>0, -2, -1</position>
+      <position>+2, -2, -1</position>
       <rotation>0, 0, 0</rotation>
-      <scale>4, 2, 1</scale>
+      <scale>16,2,10</scale>
     </component>
     <component type="BRenderObjectComponent" >
       <model>../../assets/models/plane.obj</model>
     </component>
   </entity>
 
+  <entity id="Wall1">
+    <component type="BTransform_Component" >
+      <position>0, -2, -10</position>
+      <rotation>0, 0, 0</rotation>
+      <scale>5,1,1</scale>
+    </component>
+    <component type="BRenderObjectComponent" >
+      <model>../../assets/models/wall.obj</model>
+    </component>
+  </entity>
+  
+  <entity id="Wall2">
+    <component type="BTransform_Component" >
+      <position>-12.3, -2, 0</position>
+      <rotation>0, 90, 0</rotation>
+      <scale>8,1,1</scale>
+    </component>
+    <component type="BRenderObjectComponent" >
+      <model>../../assets/models/wall.obj</model>
+    </component>
+  </entity>
+
+  <entity id="Wall3">
+    <component type="BTransform_Component" >
+      <position>4, -2, 10</position>
+      <rotation>0, 0, 0</rotation>
+      <scale>5,1,1</scale>
+    </component>
+    <component type="BRenderObjectComponent" >
+      <model>../../assets/models/wall.obj</model>
+    </component>
+  </entity>
+
+  <entity id="Wall4">
+    <component type="BTransform_Component" >
+      <position>+16.3, -2, 0</position>
+      <rotation>0, 90, 0</rotation>
+      <scale>8,1,1</scale>
+    </component>
+    <component type="BRenderObjectComponent" >
+      <model>../../assets/models/wall.obj</model>
+    </component>
+  </entity>
+  
   <entity id="Enemy1">
     <component type="BTransform_Component" >
-      <position>4, -2, -1</position>
+      <position>-11,-2,8</position>
       <rotation>0, 0, 0</rotation>
       <scale>0.01,0.01,0.01</scale>
     </component>
@@ -74,7 +119,7 @@
 
   <entity id="Enemy2">
     <component type="BTransform_Component" >
-      <position>4, -2, -3</position>
+      <position>11,-2,8</position>
       <rotation>0, 0, 0</rotation>
       <scale>0.01,0.01,0.01</scale>
     </component>
@@ -89,7 +134,7 @@
 
   <entity id="Enemy3">
     <component type="BTransform_Component" >
-      <position>-4, -2, -1</position>
+      <position>-11, -2, -8</position>
       <rotation>0, 0, 0</rotation>
       <scale>0.01,0.01,0.01</scale>
     </component>
@@ -104,7 +149,7 @@
 
   <entity id="Enemy4">
     <component type="BTransform_Component" >
-      <position>-4, -2, -3</position>
+      <position>11, -2, -8</position>
       <rotation>0, 0, 0</rotation>
       <scale>0.01,0.01,0.01</scale>
     </component>

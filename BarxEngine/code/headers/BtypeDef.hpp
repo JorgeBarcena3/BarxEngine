@@ -63,6 +63,16 @@ struct vec3 {
     T y;
     T z;
 
+    vec3() {
+
+    }
+
+    vec3(T _x, T _y, T _z) {
+        x = _x;
+        y = _y;
+        z = _z;
+    }
+
     void setValues(T _x, T _y, T _z) {
         x = _x;
         y = _y;
@@ -87,10 +97,10 @@ enum TASKPRIORITY {
     WINDOW = 0,
     INPUTSYSTEM = 1,
     COLLISIONS = 2,
-    TRANSFORM = 4,
-    ENTITYUPDATES = 5,
-    RENDEROBJECT = 6,
-    RENDERGENERAL = 7
+    TRANSFORM = 3,
+    ENTITYUPDATES = 4,
+    RENDEROBJECT = 5,
+    RENDERGENERAL = 6
 };
 
 
