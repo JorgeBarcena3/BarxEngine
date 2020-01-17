@@ -6,7 +6,7 @@
 #include <SDL.h>
 
 
-BMyInputHandlerTask::BMyInputHandlerTask(bool active)
+BMyInputHandlerTask::BMyInputHandlerTask(bool active) : BTask(TASKPRIORITY::INPUTSYSTEM)
 {
 }
 

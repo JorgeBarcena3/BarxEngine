@@ -17,9 +17,11 @@ protected:
 
     string id;
 
-    int priority;
+ 
 
 public:
+
+    int priority;
 
     BTask(int priority = 0) :priority(priority)
     {
@@ -45,7 +47,7 @@ public:
 
     bool operator < (const BTask& other) const
     {
-        return this->priority < other.priority;
+        return this->priority > other.priority;
     }
 
 };

@@ -10,7 +10,7 @@
 #include <SDL.h>
 
 
-BRenderObjectTask::BRenderObjectTask(string _id, const shared_ptr<BRenderTask> _instance, const shared_ptr< BTransformComponent > _transformComponent)
+BRenderObjectTask::BRenderObjectTask(string _id, const shared_ptr<BRenderTask> _instance, const shared_ptr< BTransformComponent > _transformComponent) : BTask(TASKPRIORITY::RENDEROBJECT)
 {
     instance = _instance;
     id = _id;

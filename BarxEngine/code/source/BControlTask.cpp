@@ -10,7 +10,7 @@
 #include <SDL.h>
 
 
-BControlTask::BControlTask(shared_ptr<BEntity> _entityReference)
+BControlTask::BControlTask(shared_ptr<BEntity> _entityReference) : BTask(TASKPRIORITY::ENTITYUPDATES)
 {
     entityReference = _entityReference;
     //myFunction = funcion;

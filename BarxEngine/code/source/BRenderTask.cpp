@@ -12,7 +12,7 @@ using namespace glt;
 
 shared_ptr< BRenderTask > BRenderTask::instance = nullptr;
 
-BRenderTask::BRenderTask(shared_ptr< BWindowTask > given_window)
+BRenderTask::BRenderTask(shared_ptr< BWindowTask > given_window) : BTask(TASKPRIORITY::RENDERGENERAL)
 {
     window = given_window;
 
@@ -22,24 +22,6 @@ BRenderTask::BRenderTask(shared_ptr< BWindowTask > given_window)
 
     renderer.reset(new glt::Render_Node);
 
-    // Se crean los elementos básicos necesarios para dibujar un cubo:
-
-    shared_ptr< Camera > camera(new Camera(20.f, 1.f, 50.f, 1.f));
-    shared_ptr< Light  > light(new Light);
-
-    // Es necesario añadir las mallas a los modelos antes de añadir los modelos a la escena:
-
-
-    // Se añaden los nodos a la escena:
-
-    renderer->add("camera", camera);
-    renderer->add("light", light);
-
-    // Se configuran algunas propiedades de transformación:
-
-    renderer->get("camera")->translate(Vector3(0.f, 1.f, 5.f));
-    //renderer->get("camera")->rotate_around_x(-0.8);
-    renderer->get("light")->translate(Vector3(10.f, 10.f, 10.f));
 };
 
 BRenderTask::~BRenderTask()
@@ -79,6 +61,26 @@ shared_ptr<BWindowTask> BRenderTask::getWindow()
 
 bool BRenderTask::initialize()
 {
+
+    // Se crean los elementos básicos necesarios para dibujar un cubo:
+
+    shared_ptr< Camera > camera(new Camera(20.f, 1.f, 50.f, 1.f));
+    shared_ptr< Light  > light(new Light);
+
+    // Es necesario añadir las mallas a los modelos antes de añadir los modelos a la escena:
+
+
+    // Se añaden los nodos a la escena:
+
+    renderer->add("camera", camera);
+    renderer->add("light", light);
+
+    // Se configuran algunas propiedades de transformación:
+
+    renderer->get("camera")->translate(Vector3(0.f, 1.f, 5.f));
+    //renderer->get("camera")->rotate_around_x(-0.8);
+    renderer->get("light")->translate(Vector3(10.f, 10.f, 10.f));
+
     return true;
 }
 

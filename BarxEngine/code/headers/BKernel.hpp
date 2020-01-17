@@ -8,7 +8,7 @@ class BScene;
 
 class BKernel
 {
-    typedef std::multiset< shared_ptr<BTask> > BTask_List;
+    typedef std::vector< shared_ptr<BTask> > BTask_List;
 
     BTask_List      BTasks;
 
@@ -21,7 +21,7 @@ public:
 
     BKernel(shared_ptr<BScene> _scene)
     {
-        BTasks = std::multiset< shared_ptr<BTask> >();
+        BTasks = std::vector< shared_ptr<BTask> >();
         scene = _scene;
     }
 

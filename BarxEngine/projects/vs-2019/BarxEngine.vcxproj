@@ -100,7 +100,6 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\code\headers\BKeyboard.hpp" />
     <ClCompile Include="..\..\code\source\BAudio.cpp" />
     <ClCompile Include="..\..\code\source\BCharacterController.cpp" />
     <ClCompile Include="..\..\code\source\BCharacterControllerTask.cpp" />
@@ -130,6 +129,7 @@
     <ClCompile Include="..\..\code\source\BWindowTask.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\code\headers\BAlgoritmosDeOrdenacion.hpp" />
     <ClInclude Include="..\..\code\headers\BAudio.hpp" />
     <ClInclude Include="..\..\code\headers\BCharacterController.hpp" />
     <ClInclude Include="..\..\code\headers\BCharacterControllerTask.hpp" />
@@ -141,6 +141,7 @@
     <ClInclude Include="..\..\code\headers\BInputComponent.hpp" />
     <ClInclude Include="..\..\code\headers\BInputHandlerTask.hpp" />
     <ClInclude Include="..\..\code\headers\BKernel.hpp" />
+    <ClInclude Include="..\..\code\headers\BKeyboard.hpp" />
     <ClInclude Include="..\..\code\headers\BMainRenderer.hpp" />
     <ClInclude Include="..\..\code\headers\BMainWindowComponent.hpp" />
     <ClInclude Include="..\..\code\headers\BMessage.hpp" />

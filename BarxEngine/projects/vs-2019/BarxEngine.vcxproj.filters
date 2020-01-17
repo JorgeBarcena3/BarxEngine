@@ -58,9 +58,6 @@
     <ClCompile Include="..\..\code\source\BInputHandlerTask.cpp">
       <Filter>Source\Task\Input</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\code\headers\BKeyboard.hpp">
-      <Filter>Headers\Keyboard</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\code\source\BKeyboard.cpp">
       <Filter>Source\Keyboard</Filter>
     </ClCompile>
@@ -191,6 +188,12 @@
     </ClInclude>
     <ClInclude Include="..\..\code\headers\BKeyboardComponent.hpp">
       <Filter>Headers\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BAlgoritmosDeOrdenacion.hpp">
+      <Filter>Headers\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BKeyboard.hpp">
+      <Filter>Headers\Keyboard</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

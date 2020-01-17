@@ -4,7 +4,7 @@
 #include "..\headers\BScene.hpp"
 #include "../headers/BColliderComponent.hpp"
 
-BColliderTask::BColliderTask(shared_ptr<BEntity> _transfom, shared_ptr<BScene> _scene)
+BColliderTask::BColliderTask(shared_ptr<BEntity> _transfom, shared_ptr<BScene> _scene) : BTask(TASKPRIORITY::COLLISIONS)
 {
     entity = _transfom;
     scene = _scene;

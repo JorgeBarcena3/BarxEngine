@@ -7,7 +7,7 @@
 #include "../headers/BScene.hpp"
 #include "../headers/BKeyboard.hpp"
 
-BCharacterControllerTask::BCharacterControllerTask(shared_ptr<BEntity> _entity, shared_ptr<BCharacterControllerComponent> _component)
+BCharacterControllerTask::BCharacterControllerTask(shared_ptr<BEntity> _entity, shared_ptr<BCharacterControllerComponent> _component) : BTask(TASKPRIORITY::ENTITYUPDATES)
 {
     transform = _entity->getTransform();
     component = _component;

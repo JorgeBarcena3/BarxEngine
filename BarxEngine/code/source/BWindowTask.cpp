@@ -13,7 +13,7 @@ enum Fullscreen_Type
 };
 
 
-BWindowTask::BWindowTask(const std::string& title, int _width, int _height, bool fullscreen)
+BWindowTask::BWindowTask(const std::string& title, int _width, int _height, bool fullscreen) : BTask(TASKPRIORITY::WINDOW)
 {
     if (instance == nullptr)
     {

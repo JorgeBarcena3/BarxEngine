@@ -30,6 +30,7 @@
 #include <cstdlib>
 #include <assert.h>
 #include <vector>
+#include <iterator>  
 #include <iostream>
 
 using namespace std;
@@ -78,6 +79,16 @@ struct vec3 {
         return 1 / sqrt((x * x) + (y * y) + (z * z));
     }
 
+};
+
+enum TASKPRIORITY {
+    WINDOW = 0,
+    INPUTSYSTEM = 1,
+    COLLISIONS = 2,
+    TRANSFORM = 4,
+    ENTITYUPDATES = 5,
+    RENDEROBJECT = 6,
+    RENDERGENERAL = 7
 };
 
 

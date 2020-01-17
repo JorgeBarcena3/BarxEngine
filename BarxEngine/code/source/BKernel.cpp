@@ -1,6 +1,7 @@
 #include "..\headers\BKernel.hpp"
 #include "..\headers\BSystem.hpp"
 #include "..\headers\BTask.hpp"
+#include "..\headers\BAlgoritmosDeOrdenacion.hpp"
 
 
 void BKernel::add_Task(shared_ptr<BTask> task)
@@ -8,7 +9,7 @@ void BKernel::add_Task(shared_ptr<BTask> task)
 
     if (task != nullptr)
     {
-        BTasks.insert(task);
+        BTasks.push_back(task);
         task->set_kernel(this);
     }
 
@@ -20,7 +21,7 @@ void BKernel::run()
 
     exit = false;
 
-    //Ordenamos las task por orden de preferemcia
+    BAlgoritmosDeOrdenacion::algoritmoBurbuja<shared_ptr<BTask>>(BTasks.data(), BTasks.size());
 
     for (auto task : BTasks)
     {
@@ -33,21 +34,21 @@ void BKernel::run()
 
     int now = timer.elapsed_milliseconds();
     int lastFrame = timer.elapsed_milliseconds();
-    int TimeToSleep = (1000 / 60) / 1000;
+    long TimeToSleep = (1000 / 60) / 1000;
 
     do
     {
         now = timer.elapsed_milliseconds();
-        float delta = now - lastFrame;
+        int delta = now - lastFrame;
         lastFrame = now;
-        
+
         //Limitamos a 60 el numero de FPS
         if (delta < TimeToSleep)
         {
             std::this_thread::sleep_for(std::chrono::seconds(TimeToSleep));
         }
 
-      
+
 
         for (auto task : BTasks)
         {
@@ -55,8 +56,8 @@ void BKernel::run()
                 exit = true;
         }
 
-        time = timer.elapsed_milliseconds();
-        
+        time = (float)timer.elapsed_milliseconds();
+
 
     } while (!exit);
 

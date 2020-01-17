@@ -10,7 +10,7 @@
 #include <SDL.h>
 
 
-BTransformTask::BTransformTask(string _id, shared_ptr<BTransformComponent> _transformComponent)
+BTransformTask::BTransformTask(string _id, shared_ptr<BTransformComponent> _transformComponent) : BTask(TASKPRIORITY::TRANSFORM)
 {
     id = _id;
     transform = _transformComponent;
