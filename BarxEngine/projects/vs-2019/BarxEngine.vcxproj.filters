@@ -61,9 +61,6 @@
     <ClCompile Include="..\..\code\source\BKeyboard.cpp">
       <Filter>Source\Keyboard</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\code\source\BColliderComponent.cpp">
-      <Filter>Source\Component</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\code\source\BColliderTask.cpp">
       <Filter>Source\Task</Filter>
     </ClCompile>
@@ -87,6 +84,15 @@
     </ClCompile>
     <ClCompile Include="..\..\code\source\BLightComponent.cpp">
       <Filter>Source\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\source\BColliderComponent.cpp">
+      <Filter>Source\Component\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\source\BShereColliderComponent.cpp">
+      <Filter>Source\Component\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\source\BBoxColliderComponent.cpp">
+      <Filter>Source\Component\Collider</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -171,12 +177,6 @@
     <ClInclude Include="..\..\code\headers\rapidxml_utils.hpp">
       <Filter>Headers\RapidXML</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\code\headers\BColliderComponent.hpp">
-      <Filter>Headers\Components</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\code\headers\BColliderTask.hpp">
-      <Filter>Headers\Task</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\code\headers\BCharacterController.hpp">
       <Filter>Headers\Components</Filter>
     </ClInclude>
@@ -200,6 +200,18 @@
     </ClInclude>
     <ClInclude Include="..\..\code\headers\BLightComponent.hpp">
       <Filter>Headers\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BColliderComponent.hpp">
+      <Filter>Headers\Components\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BSphereColliderTask.hpp">
+      <Filter>Headers\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BShereColliderComponent.hpp">
+      <Filter>Headers\Components\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BBoxColliderComponent.hpp">
+      <Filter>Headers\Components\Collider</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -253,6 +265,12 @@
     </Filter>
     <Filter Include="Headers\RapidXML">
       <UniqueIdentifier>{e6bad82b-feba-4a92-a4a4-c6cd7e1ba048}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Components\Collider">
+      <UniqueIdentifier>{0d08c877-b353-4d16-83c7-fa7f968f420e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Component\Collider">
+      <UniqueIdentifier>{c9d7189c-26fb-4337-a6bc-d9f97692cf14}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

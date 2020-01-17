@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<scene WindowName="Demo - BarxEngine" windowWidth="800" windowHeith="600" fullScreen="false">
+<scene WindowName="Demo - BarxEngine" windowWidth="800" windowHeith="600" fullScreen="0">
 
   <entity id="Camera">
     <component type="BTransform_Component" >
@@ -31,7 +31,7 @@
       <rotation>0, 0, 0</rotation>
       <scale>0.05,0.05,0.05</scale>
     </component>
-    <component type="BColliderComponent">
+    <component type="BShereColliderComponent">
       <radius>0.1</radius>
     </component>
     <component type="BRenderObjectComponent" >
@@ -66,6 +66,10 @@
     </component>
     <component type="BRenderObjectComponent" >
       <model>../../assets/models/wall.obj</model>
+    </component> 
+    <component type="BBoxColliderComponent" >
+      <max>16,0,2  </max>
+      <min>16,0,0</min>
     </component>
   </entity>
   
@@ -78,6 +82,10 @@
     <component type="BRenderObjectComponent" >
       <model>../../assets/models/wall.obj</model>
     </component>
+    <component type="BBoxColliderComponent" >
+      <max>1,2,16</max>
+      <min>0,0,16</min>
+    </component>
   </entity>
 
   <entity id="Wall3">
@@ -88,6 +96,10 @@
     </component>
     <component type="BRenderObjectComponent" >
       <model>../../assets/models/wall.obj</model>
+    </component>
+    <component type="BBoxColliderComponent" >
+      <max>14,0,2  </max>
+      <min>14,0,0</min>
     </component>
   </entity>
 
@@ -100,6 +112,10 @@
     <component type="BRenderObjectComponent" >
       <model>../../assets/models/wall.obj</model>
     </component>
+    <component type="BBoxColliderComponent" >
+      <max>2,0,0</max>
+      <min>-11,1,20</min>
+    </component>
   </entity>
   
   <entity id="Enemy1">
@@ -108,7 +124,7 @@
       <rotation>0, 0, 0</rotation>
       <scale>0.01,0.01,0.01</scale>
     </component>
-    <component type="BColliderComponent">
+    <component type="BShereColliderComponent">
       <radius>0.1</radius>
     </component>
     <component type="BRenderObjectComponent" >
@@ -123,7 +139,7 @@
       <rotation>0, 0, 0</rotation>
       <scale>0.01,0.01,0.01</scale>
     </component>
-    <component type="BColliderComponent">
+    <component type="BShereColliderComponent">
       <radius>0.1</radius>
     </component>
     <component type="BRenderObjectComponent" >
@@ -138,7 +154,7 @@
       <rotation>0, 0, 0</rotation>
       <scale>0.01,0.01,0.01</scale>
     </component>
-    <component type="BColliderComponent">
+    <component type="BShereColliderComponent">
       <radius>0.1</radius>
     </component>
     <component type="BRenderObjectComponent" >
@@ -153,7 +169,7 @@
       <rotation>0, 0, 0</rotation>
       <scale>0.01,0.01,0.01</scale>
     </component>
-    <component type="BColliderComponent">
+    <component type="BShereColliderComponent">
       <radius>0.1</radius>
     </component>
     <component type="BRenderObjectComponent" >

@@ -57,7 +57,7 @@ void EnemyControlFunction(float time, shared_ptr<BEntity> entity)
 void OnCollision(shared_ptr<BEntity> A, shared_ptr<BEntity> B)
 {
 
-    if (A->getId() == "Player" && B->getId().find("Enemy") != std::string::npos)
+    if (B->getId() == "Player" && A->getId().find("Wall") != std::string::npos)
     {
         audio.makeSound(collisionID);
         //scene->reloadScene("../../assets/scene/scene.xml");
@@ -83,6 +83,14 @@ int main() {
         scene->getEntity("Camera")->getTransform()->position.y - player->getTransform()->position.y,
         scene->getEntity("Camera")->getTransform()->position.z - player->getTransform()->position.z        
         );
+
+    //////////////  PROPS ////////////// 
+
+    scene->getEntity("Wall1")->getComponent<BColliderComponent>()->setFunction(OnCollision);
+    scene->getEntity("Wall2")->getComponent<BColliderComponent>()->setFunction(OnCollision);
+    scene->getEntity("Wall3")->getComponent<BColliderComponent>()->setFunction(OnCollision);
+    scene->getEntity("Wall4")->getComponent<BColliderComponent>()->setFunction(OnCollision);
+    //scene->getEntity("Wall2")->getComponent<BColliderComponent>()->setFunction(OnCollision);
 
     //////////////  ENEMIES ////////////// 
 

@@ -18,13 +18,15 @@
 #include "../headers/BKeyboard.hpp"
 #include "../headers/BCameraComponent.hpp"
 #include "../headers/BLightComponent.hpp"
+#include "../headers/BShereColliderComponent.hpp"
+#include "../headers/BBoxColliderComponent.hpp"
 
 BScene::BScene(const string& _scene_description_file_path)
 {
 
     entities = new Entity_Map();
 
-    kernel = shared_ptr<BKernel>( new BKernel(shared_ptr<BScene>(this)));
+    kernel = shared_ptr<BKernel>(new BKernel(shared_ptr<BScene>(this)));
 
     load(_scene_description_file_path);
 
@@ -56,7 +58,7 @@ void BScene::load(const string& scene_description_file_path)
             rootNode->first_attribute("WindowName")->value()),
         stoi(rootNode->first_attribute("windowWidth")->value()),
         stoi(rootNode->first_attribute("windowHeith")->value()),
-        rootNode->first_attribute("fullScreen")->value() == "true"
+        stoi(rootNode->first_attribute("fullScreen")->value())
     ));
 
     shared_ptr<BComponent> mainRenderComponent = shared_ptr<BMainRenderer>(new BMainRenderer(root));
@@ -84,8 +86,10 @@ void BScene::load(const string& scene_description_file_path)
                 currentComponent = shared_ptr<BRenderObjectComponent>(new BRenderObjectComponent(entity));
             else if (typeComponent == "BControlComponent")
                 currentComponent = shared_ptr<BControlComponent>(new BControlComponent(entity));
-            else if (typeComponent == "BColliderComponent")
-                currentComponent = shared_ptr<BColliderComponent>(new BColliderComponent(entity));
+            else if (typeComponent == "BShereColliderComponent")
+                currentComponent = shared_ptr<BShereColliderComponent>(new BShereColliderComponent(entity));
+            else if (typeComponent == "BBoxColliderComponent")
+                currentComponent = shared_ptr<BBoxColliderComponent>(new BBoxColliderComponent(entity));
             else if (typeComponent == "BCharacterController")
                 currentComponent = shared_ptr<BCharacterControllerComponent>(new BCharacterControllerComponent(entity));
             else if (typeComponent == "BCameraComponent")

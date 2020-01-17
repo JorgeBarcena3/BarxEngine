@@ -28,9 +28,9 @@ bool BTransformTask::initialize()
         transform->position.y - transformation[3].y,
         transform->position.z - transformation[3].z));
 
-    obj->rotate_around_x(transform->rotation.x);
+    //obj->rotate_around_x(transform->rotation.x);
     obj->rotate_around_y(transform->rotation.y);
-    obj->rotate_around_z(transform->rotation.z);
+    //obj->rotate_around_z(transform->rotation.z);
 
     transform->rotation.x = 0;
     transform->rotation.x = 0;

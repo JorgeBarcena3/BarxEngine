@@ -1,36 +1,35 @@
 #pragma once
 #include "BtypeDef.hpp"
+#include "BComponent.hpp"
 
-class BComponent;
 class BEntity;
+
+enum COLLIDERTYPE {
+    SPHERE = 0,
+    BOX = 1
+};
 
 class BColliderComponent : public BComponent
 {
+    
+protected:
 
+    COLLIDERTYPE type;
 
 public:
-
-    float radius;
 
     BColliderComponent(shared_ptr <BEntity> parent);
 
     void setFunction(std::function<void(shared_ptr<BEntity>, shared_ptr<BEntity>)> myFunction);
 
-    bool initialize()
-    {
-        return true;
-    };
+    virtual bool initialize() = 0;
 
-    bool parse_property(const string& name, const string& value)
-    {
-        
+    virtual bool parse_property(const string& name, const string& value) = 0;
 
-        if (name == "radius")
-        {
-            radius = stof(value);
-        }
+    virtual shared_ptr<BEntity> checkCollisions(shared_ptr<BEntity> other) = 0;
 
-        return true;
-    };
-
+    COLLIDERTYPE getType() {
+        return type;
+    }
+   
 };

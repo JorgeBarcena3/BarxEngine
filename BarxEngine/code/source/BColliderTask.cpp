@@ -1,12 +1,13 @@
-#include "..\headers\BColliderTask.hpp"
+#include "..\headers\BSphereColliderTask.hpp"
 #include "..\headers\BComponent.hpp"
 #include "..\headers\BTransformComponent.hpp"
 #include "..\headers\BScene.hpp"
+#include "../headers/BEntity.hpp"
 #include "../headers/BColliderComponent.hpp"
 
-BColliderTask::BColliderTask(shared_ptr<BEntity> _transfom, shared_ptr<BScene> _scene) : BTask(TASKPRIORITY::COLLISIONS)
+BColliderTask::BColliderTask(shared_ptr<BEntity> _entity, shared_ptr<BScene> _scene) : BTask(TASKPRIORITY::COLLISIONS)
 {
-    entity = _transfom;
+    entity = _entity;
     scene = _scene;
 }
 
@@ -27,27 +28,15 @@ bool BColliderTask::execute(float time)
 
     for (auto AEntity : colliderEntites)
     {
-        auto BTransform = AEntity->getTransform();
+        if (onCollision) {
 
-        if (transform != BTransform && onCollision)
-        {
+            auto collision = entity->getComponent<BColliderComponent>()->checkCollisions(AEntity);
 
-            auto BColliderA = AEntity->getComponent<BColliderComponent>();
-            auto BColliderB = entity->getComponent<BColliderComponent>();
-
-            float dx = (transform->position.x - BTransform->position.x);
-            float dy = (transform->position.y - BTransform->position.y);
-            float dz = (transform->position.z - BTransform->position.z);
-
-            float distance = sqrt(dx * dx + dy * dy + dz * dz);
-
-            if (distance <= (BColliderA->radius + BColliderB->radius))
+            if (collision != nullptr)
             {
                 onCollision(entity, AEntity);
             }
         }
-
-
     }
     return true;
 }

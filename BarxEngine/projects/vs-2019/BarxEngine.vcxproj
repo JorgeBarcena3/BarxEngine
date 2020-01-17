@@ -101,6 +101,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\code\source\BAudio.cpp" />
+    <ClCompile Include="..\..\code\source\BBoxColliderComponent.cpp" />
     <ClCompile Include="..\..\code\source\BCameraComponent.cpp" />
     <ClCompile Include="..\..\code\source\BCharacterController.cpp" />
     <ClCompile Include="..\..\code\source\BCharacterControllerTask.cpp" />
@@ -123,6 +124,7 @@
     <ClCompile Include="..\..\code\source\BRenderTask.cpp" />
     <ClCompile Include="..\..\code\source\BRenderObjectComponent.cpp" />
     <ClCompile Include="..\..\code\source\BRenderObjectTask.cpp" />
+    <ClCompile Include="..\..\code\source\BShereColliderComponent.cpp" />
     <ClCompile Include="..\..\code\source\BTask.cpp" />
     <ClCompile Include="..\..\code\source\BScene.cpp" />
     <ClCompile Include="..\..\code\source\BTimer.cpp" />
@@ -133,10 +135,11 @@
   <ItemGroup>
     <ClInclude Include="..\..\code\headers\BAlgoritmosDeOrdenacion.hpp" />
     <ClInclude Include="..\..\code\headers\BAudio.hpp" />
+    <ClInclude Include="..\..\code\headers\BBoxColliderComponent.hpp" />
     <ClInclude Include="..\..\code\headers\BCameraComponent.hpp" />
     <ClInclude Include="..\..\code\headers\BCharacterController.hpp" />
     <ClInclude Include="..\..\code\headers\BCharacterControllerTask.hpp" />
-    <ClInclude Include="..\..\code\headers\BColliderTask.hpp" />
+    <ClInclude Include="..\..\code\headers\BSphereColliderTask.hpp" />
     <ClInclude Include="..\..\code\headers\BControlComponent.hpp" />
     <ClInclude Include="..\..\code\headers\BControlTask.hpp" />
     <ClInclude Include="..\..\code\headers\BDispacher.hpp" />
@@ -154,6 +157,7 @@
     <ClInclude Include="..\..\code\headers\BRenderObjectTask.hpp" />
     <ClInclude Include="..\..\code\headers\BRenderTask.hpp" />
     <ClInclude Include="..\..\code\headers\BScene.hpp" />
+    <ClInclude Include="..\..\code\headers\BShereColliderComponent.hpp" />
     <ClInclude Include="..\..\code\headers\BTask.hpp" />
     <ClInclude Include="..\..\code\headers\BTimer.hpp" />
     <ClInclude Include="..\..\code\headers\BTranformTask.hpp" />
