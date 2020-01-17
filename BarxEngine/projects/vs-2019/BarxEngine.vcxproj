@@ -149,7 +149,6 @@
     <ClInclude Include="..\..\code\headers\BMainRenderer.hpp" />
     <ClInclude Include="..\..\code\headers\BMainWindowComponent.hpp" />
     <ClInclude Include="..\..\code\headers\BMessage.hpp" />
-    <ClInclude Include="..\..\code\headers\BMessageHandler.hpp" />
     <ClInclude Include="..\..\code\headers\BObserver.hpp" />
     <ClInclude Include="..\..\code\headers\BRenderObjectComponent.hpp" />
     <ClInclude Include="..\..\code\headers\BRenderObjectTask.hpp" />
@@ -160,7 +159,6 @@
     <ClInclude Include="..\..\code\headers\BTranformTask.hpp" />
     <ClInclude Include="..\..\code\headers\BTransformComponent.hpp" />
     <ClInclude Include="..\..\code\headers\BtypeDef.hpp" />
-    <ClInclude Include="..\..\code\headers\BVariant.hpp" />
     <ClInclude Include="..\..\code\headers\BWindowTask.hpp" />
     <ClInclude Include="..\..\code\headers\BEntity.hpp" />
     <ClInclude Include="..\..\code\headers\BComponent.hpp" />

@@ -1,5 +1,4 @@
 #include "..\headers\BKernel.hpp"
-#include "..\headers\BSystem.hpp"
 #include "..\headers\BTask.hpp"
 #include "..\headers\BAlgoritmosDeOrdenacion.hpp"
 

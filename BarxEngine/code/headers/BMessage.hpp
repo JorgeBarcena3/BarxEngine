@@ -19,7 +19,6 @@
 
 #pragma once
 #include "BtypeDef.hpp"
-#include "BVariant.hpp"
 
 /*
 * Clase que se encarga de manejar los mensajes

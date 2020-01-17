@@ -108,9 +108,6 @@
     <ClInclude Include="..\..\code\headers\BTimer.hpp">
       <Filter>Headers\Tools</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\code\headers\BVariant.hpp">
-      <Filter>Headers\Tools</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\code\headers\BComponent.hpp">
       <Filter>Headers\Components</Filter>
     </ClInclude>
@@ -118,9 +115,6 @@
       <Filter>Headers\Task</Filter>
     </ClInclude>
     <ClInclude Include="..\..\code\headers\BMessage.hpp">
-      <Filter>Headers\Messages</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\code\headers\BMessageHandler.hpp">
       <Filter>Headers\Messages</Filter>
     </ClInclude>
     <ClInclude Include="..\..\code\headers\BDispacher.hpp">

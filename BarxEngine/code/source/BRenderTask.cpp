@@ -4,7 +4,6 @@
 #include <Light.hpp>
 #include <Render_Node.hpp>
 #include "..//headers/BtypeDef.hpp"
-#include "..//headers/BSystem.hpp"
 #include "../headers/BRenderTask.hpp"
 #include "../headers/BWindowTask.hpp"
 
