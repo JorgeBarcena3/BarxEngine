@@ -15,9 +15,10 @@
 
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
-//
 
-#pragma once
+#ifndef BARX_ENGINE_BMESSAGE
+#define BARX_ENGINE_BMESSAGE
+
 #include "BtypeDef.hpp"
 
 /*
@@ -28,31 +29,25 @@ class BMessage
 
 public:
 
-    string id;
+    string                id         ; ///< Id del mensaje
 
-    map< string, string > parameters;
+    map< string, string > parameters ; ///< Parámetros de los mensajes
 
-    BMessage(const string& id) : id(id)
-    {
-    }
+    /*
+    * Constructor por defecto
+    */
+    BMessage(const string& id);
 
-    void add_parameter(const string& name, string value)
-    {
-        parameters[name] = value;
-    }
+    /*
+    * Añadimos parametros a los mensajes
+    */
+    void add_parameter(const string& name, string value);
 
-    const string getId() {
-        return id;
-    }
+    /*
+    * Devuelve el ID del mensaje
+    */
+    const string getId();
 
 };
-
-////////////////////////////////////////////////////////////////////////////////////////////////////
-
-//BMessage key_pressed("key_pressed");
-//BVariant key_code();
-//key_pressed.add_parameter("key_code", key_code);
-//
-//message_handler.multicast(key_pressed);
-
+#endif;
 

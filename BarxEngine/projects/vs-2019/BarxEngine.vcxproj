@@ -111,7 +111,6 @@
     <ClCompile Include="..\..\code\source\BControlComponent.cpp" />
     <ClCompile Include="..\..\code\source\BControlTask.cpp" />
     <ClCompile Include="..\..\code\source\BDispacher.cpp" />
-    <ClCompile Include="..\..\code\source\BEngine.cpp" />
     <ClCompile Include="..\..\code\source\BEntity.cpp" />
     <ClCompile Include="..\..\code\source\BInputComponent.cpp" />
     <ClCompile Include="..\..\code\source\BInputHandlerTask.cpp" />
@@ -121,6 +120,7 @@
     <ClCompile Include="..\..\code\source\BLightComponent.cpp" />
     <ClCompile Include="..\..\code\source\BMainRenderer.cpp" />
     <ClCompile Include="..\..\code\source\BMainWindowComponent.cpp" />
+    <ClCompile Include="..\..\code\source\BMessage.cpp" />
     <ClCompile Include="..\..\code\source\BRenderTask.cpp" />
     <ClCompile Include="..\..\code\source\BRenderObjectComponent.cpp" />
     <ClCompile Include="..\..\code\source\BRenderObjectTask.cpp" />
@@ -139,7 +139,7 @@
     <ClInclude Include="..\..\code\headers\BCameraComponent.hpp" />
     <ClInclude Include="..\..\code\headers\BCharacterController.hpp" />
     <ClInclude Include="..\..\code\headers\BCharacterControllerTask.hpp" />
-    <ClInclude Include="..\..\code\headers\BSphereColliderTask.hpp" />
+    <ClInclude Include="..\..\code\headers\BColliderTask.hpp" />
     <ClInclude Include="..\..\code\headers\BControlComponent.hpp" />
     <ClInclude Include="..\..\code\headers\BControlTask.hpp" />
     <ClInclude Include="..\..\code\headers\BDispacher.hpp" />
@@ -151,6 +151,7 @@
     <ClInclude Include="..\..\code\headers\BLightComponent.hpp" />
     <ClInclude Include="..\..\code\headers\BMainRenderer.hpp" />
     <ClInclude Include="..\..\code\headers\BMainWindowComponent.hpp" />
+    <ClInclude Include="..\..\code\headers\BMath.hpp" />
     <ClInclude Include="..\..\code\headers\BMessage.hpp" />
     <ClInclude Include="..\..\code\headers\BObserver.hpp" />
     <ClInclude Include="..\..\code\headers\BRenderObjectComponent.hpp" />

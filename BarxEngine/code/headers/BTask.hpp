@@ -1,54 +1,89 @@
-#pragma once
+// File: BTask.hpp
+// Author: Jorge Bárcena Lumbreras
+
+// © Copyright (C) 2019  Jorge Bárcena Lumbreras
+
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+#ifndef BARX_ENGINE_BTASK
+#define BARX_ENGINE_BTASK
+
 #include "BtypeDef.hpp"
 
+/*
+* Clases adelantadas
+*/
 class BKernel;
 class BRenderTask;
 class BRenderTask;
 class BTransformComponent;
 
-// Tareas consumibles o no consumibles
-// Secuancia de tareas (hereda de task y tiene una lista de tasks)
+/*
+* Tareas que se ejecutaran en cada vuelta de bucle
+*/
 class BTask
 {
 
 protected:
 
-    BKernel* kernel;
+    BKernel* kernel; ///< Kernel al que está adjudicado la tarea
 
-    string id;
-
- 
+    string id;       ///< Id de la tarea
 
 public:
 
-    int priority;
+    int priority;    ///< Prioridad de la tarea
 
-    BTask(int priority = 0) :priority(priority)
-    {
-        kernel = nullptr;
-    }
+    /*
+    * Constructor por defecto
+    */
+    BTask(int priority = 0);
 
-    virtual ~BTask()
-    {
-    }
+    /*
+    * Destructor por defecto
+    */
+    virtual ~BTask();
 
-    void set_kernel(BKernel* new_kernel)
-    {
-        kernel = new_kernel;
-    }
+    /*
+    * Selecciona un kernel
+    */
+    void setKernel(BKernel* new_kernel);
 
 public:
 
-    virtual bool initialize() = 0;
-    virtual bool finalize() = 0;
+    /*
+    * Inicializa la tarea
+    */
+    virtual bool initialize()        = 0;
+
+    /*
+    * Finaliza la tarea
+    */
+    virtual bool finalize()          = 0;
+
+    /*
+    * Ejecuta la tarea 
+    */
     virtual bool execute(float time) = 0;
 
+
 public:
 
-    bool operator < (const BTask& other) const
-    {
-        return this->priority > other.priority;
-    }
-
+    /*
+    * Sobrecarga del operador <
+    */
+    bool operator < (const BTask& other) const;
+   
 };
-
+#endif

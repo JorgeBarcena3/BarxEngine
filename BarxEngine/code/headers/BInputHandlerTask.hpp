@@ -15,29 +15,42 @@
 
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
-//
 
-#pragma once
+#ifndef BARX_ENGINE_BINPUTHANDLERTASK
+#define BARX_ENGINE_BINPUTHANDLERTASK
+
 #include "BTask.hpp"
 
 /*
 * Se ejecutará en segundo plano recogiendo todos los eventos y los guardara en una cola de eventos
-* Cuando se de una vuelta de bucle entera, se pasan al inputmapper, traduciendo los inputs para enviarlo mediante mensajes
+* Recoge los eventos y los distribuye a traves del sistema de mensajes
 */
 class BMyInputHandlerTask : public BTask
 {
 
 public: 
 
+    /*
+    * Constructor por defecto
+    */
     BMyInputHandlerTask(bool active);
 
 private:
 
-    // Inherited via BTask
+    /*
+    * Inicializa la tarea
+    */
     virtual bool initialize() override;
 
+    /*
+    * Finaliza la tarea
+    */
     virtual bool finalize() override;
 
+    /*
+    * Ejecuta la tarea 
+    */
     virtual bool execute(float time) override;
 
 };
+#endif

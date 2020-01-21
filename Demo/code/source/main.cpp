@@ -39,13 +39,7 @@ void EnemyControlFunction(float time, shared_ptr<BEntity> entity)
 {
     auto transform = entity->getTransform();
 
-    vec3<float> direction;
-    direction.setValues(
-        transform->position.x - player->getTransform()->position.x,
-        transform->position.y - player->getTransform()->position.y,
-        transform->position.z - player->getTransform()->position.z
-    );
-
+    vec3<float> direction = transform->position - player->getTransform()->position;
     direction.normalize();
 
     transform->position.x -= direction.x * 0.002f;

@@ -15,11 +15,15 @@
 
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
-//
 
-#pragma once
+#ifndef BARX_ENGINE_BCOMPONENT
+#define BARX_ENGINE_BCOMPONENT
+
 #include "BtypeDef.hpp"
 
+/*
+* Clases adelantadas
+*/
 class BEntity;
 class BTask;
 class BTransformTask;
@@ -28,44 +32,48 @@ class BRenderTask;
 using namespace glt;
 
 /*
-* Es mas un modelo de datos que de otra cosa
-* Diferencian las entidades
+* Componentes que son poseidos por las entidades
 */
 class BComponent
 {
 protected:
 
-    string id;
-
-    shared_ptr<BEntity> parent;
-
-    shared_ptr<BTask> task;
+    string              id     ;  ///< Id del componente
+    shared_ptr<BEntity> parent ;  ///< Entidad que posee el componente
+    shared_ptr<BTask  >   task ;  ///< Tarea que tiene asignada
 
 public:
 
-    BComponent(shared_ptr<BEntity> parent) : parent(parent)
-    {
+    /*
+    * Constructor por defecto
+    */
+    BComponent(shared_ptr<BEntity> parent);
 
-    };
+    /*
+    * Destructor por defecto
+    */
+    virtual ~BComponent();
 
-    virtual ~BComponent()
-    {
-    };
-
+    /*
+    * Función virtual pura
+    * Se ejetua al inicializar el componente
+    */
     virtual bool initialize() = 0;
 
+    /*
+    * Función virtual pura  
+    * Parsea las propiedades del xml
+    */
     virtual bool parse_property
     (
         const string& name,
         const string& value
     ) = 0;
 
-
-    shared_ptr<BTask> getTask()
-    {
-        if (task != nullptr)
-            return task;
-
-        return shared_ptr<BTask>(nullptr);
-    };
+    /*
+    * Devuelve la tarea que tiene asignada, en caso de que la tenga
+    */
+    shared_ptr<BTask> getTask();
+  
 };
+#endif

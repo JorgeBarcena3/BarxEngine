@@ -15,9 +15,10 @@
 
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
-//
 
-#pragma once
+#ifndef BARX_ENGINE_BOBSERVER
+#define BARX_ENGINE_BOBSERVER
+
 #include "BMessage.hpp"
 
 /*
@@ -27,7 +28,10 @@ class BOrbserver {
 
 public:
 
-    //Obliga a que todo lo que hereda de BOrbserver tenga un mensaje
+    /*
+    * Se ejecuta al recibir un mensaje
+    */
     virtual void handle(const BMessage & m) = 0;
 
 };
+#endif

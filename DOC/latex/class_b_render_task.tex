@@ -1,0 +1,118 @@
+\hypertarget{class_b_render_task}{}\doxysection{B\+Render\+Task Class Reference}
+\label{class_b_render_task}\index{BRenderTask@{BRenderTask}}
+
+
+{\ttfamily \#include $<$B\+Render\+Task.\+hpp$>$}
+
+Inheritance diagram for B\+Render\+Task\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_b_render_task}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_b_render_task_ae0a109a37ca2554cfc62b60529ef53f9}{B\+Render\+Task}} (shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_window_task}{B\+Window\+Task}} $>$ given\+\_\+window)
+\item 
+\mbox{\hyperlink{class_b_render_task_a42197d4cfc0489f7924ecf609e6043ea}{$\sim$\+B\+Render\+Task}} ()
+\item 
+void \mbox{\hyperlink{class_b_render_task_ab96f0baa8bade38c800d3dd57758690c}{render}} ()
+\item 
+shared\+\_\+ptr$<$ glt\+::\+Render\+\_\+\+Node $>$ \mbox{\hyperlink{class_b_render_task_a6d98d9ee1f3332cd3c033469d21c8bb9}{get\+Renderer}} ()
+\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_window_task}{B\+Window\+Task}} $>$ \mbox{\hyperlink{class_b_render_task_adeedc0c009807c27449495ca6a68ac6b}{get\+Window}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_b_render_task_a117554cdf7de6ad3851d12a4dad45fa2}{initialize}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_b_render_task_a731d18e76d32e287894161966b64a3b9}{finalize}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_b_render_task_aef4938042a08cd30a3a2c56237417b5f}{execute}} (float time)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_render_task}{B\+Render\+Task}} $>$ \mbox{\hyperlink{class_b_render_task_ad2e9182cffc9894d88653e489bcfb4f0}{instance}} = nullptr
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_b_render_task_ae0a109a37ca2554cfc62b60529ef53f9}\label{class_b_render_task_ae0a109a37ca2554cfc62b60529ef53f9}} 
+\index{BRenderTask@{BRenderTask}!BRenderTask@{BRenderTask}}
+\index{BRenderTask@{BRenderTask}!BRenderTask@{BRenderTask}}
+\doxysubsubsection{\texorpdfstring{BRenderTask()}{BRenderTask()}}
+{\footnotesize\ttfamily B\+Render\+Task\+::\+B\+Render\+Task (\begin{DoxyParamCaption}\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_window_task}{B\+Window\+Task}} $>$}]{given\+\_\+window }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_b_render_task_a42197d4cfc0489f7924ecf609e6043ea}\label{class_b_render_task_a42197d4cfc0489f7924ecf609e6043ea}} 
+\index{BRenderTask@{BRenderTask}!````~BRenderTask@{$\sim$BRenderTask}}
+\index{````~BRenderTask@{$\sim$BRenderTask}!BRenderTask@{BRenderTask}}
+\doxysubsubsection{\texorpdfstring{$\sim$BRenderTask()}{~BRenderTask()}}
+{\footnotesize\ttfamily B\+Render\+Task\+::$\sim$\+B\+Render\+Task (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+En este caso es necesario definir explícitamente el destructor en el archivo de implementación (C\+PP) para que el compilador pueda destruir el Render\+\_\+\+Node. Si se deja que el compilador cree un destructor por defecto en el programa que use el engine, como solo tendrá una declaración adelantada, no sabrá cómo destruirlo y ello dará lugar a un error de compilación. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_b_render_task_aef4938042a08cd30a3a2c56237417b5f}\label{class_b_render_task_aef4938042a08cd30a3a2c56237417b5f}} 
+\index{BRenderTask@{BRenderTask}!execute@{execute}}
+\index{execute@{execute}!BRenderTask@{BRenderTask}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily bool B\+Render\+Task\+::execute (\begin{DoxyParamCaption}\item[{float}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_b_task_a77fdf9e87f9b8d7af1a0bfddf4a0964e}{B\+Task}}.
+
+\mbox{\Hypertarget{class_b_render_task_a731d18e76d32e287894161966b64a3b9}\label{class_b_render_task_a731d18e76d32e287894161966b64a3b9}} 
+\index{BRenderTask@{BRenderTask}!finalize@{finalize}}
+\index{finalize@{finalize}!BRenderTask@{BRenderTask}}
+\doxysubsubsection{\texorpdfstring{finalize()}{finalize()}}
+{\footnotesize\ttfamily bool B\+Render\+Task\+::finalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_b_task_a26577b1dd0f253db8df66551d18bcbe3}{B\+Task}}.
+
+\mbox{\Hypertarget{class_b_render_task_a6d98d9ee1f3332cd3c033469d21c8bb9}\label{class_b_render_task_a6d98d9ee1f3332cd3c033469d21c8bb9}} 
+\index{BRenderTask@{BRenderTask}!getRenderer@{getRenderer}}
+\index{getRenderer@{getRenderer}!BRenderTask@{BRenderTask}}
+\doxysubsubsection{\texorpdfstring{getRenderer()}{getRenderer()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ glt\+::\+Render\+\_\+\+Node $>$ B\+Render\+Task\+::get\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_b_render_task_adeedc0c009807c27449495ca6a68ac6b}\label{class_b_render_task_adeedc0c009807c27449495ca6a68ac6b}} 
+\index{BRenderTask@{BRenderTask}!getWindow@{getWindow}}
+\index{getWindow@{getWindow}!BRenderTask@{BRenderTask}}
+\doxysubsubsection{\texorpdfstring{getWindow()}{getWindow()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_window_task}{B\+Window\+Task}} $>$ B\+Render\+Task\+::get\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_b_render_task_a117554cdf7de6ad3851d12a4dad45fa2}\label{class_b_render_task_a117554cdf7de6ad3851d12a4dad45fa2}} 
+\index{BRenderTask@{BRenderTask}!initialize@{initialize}}
+\index{initialize@{initialize}!BRenderTask@{BRenderTask}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily bool B\+Render\+Task\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_b_task_a05f5a0789a494fbbe4897a269a15985f}{B\+Task}}.
+
+\mbox{\Hypertarget{class_b_render_task_ab96f0baa8bade38c800d3dd57758690c}\label{class_b_render_task_ab96f0baa8bade38c800d3dd57758690c}} 
+\index{BRenderTask@{BRenderTask}!render@{render}}
+\index{render@{render}!BRenderTask@{BRenderTask}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void B\+Render\+Task\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_b_render_task_ad2e9182cffc9894d88653e489bcfb4f0}\label{class_b_render_task_ad2e9182cffc9894d88653e489bcfb4f0}} 
+\index{BRenderTask@{BRenderTask}!instance@{instance}}
+\index{instance@{instance}!BRenderTask@{BRenderTask}}
+\doxysubsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_render_task}{B\+Render\+Task}} $>$ B\+Render\+Task\+::instance = nullptr\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Git\+Hub/\+Barx\+Engine/\+Barx\+Engine/code/headers/\mbox{\hyperlink{_b_render_task_8hpp}{B\+Render\+Task.\+hpp}}\item 
+D\+:/\+Git\+Hub/\+Barx\+Engine/\+Barx\+Engine/code/source/\mbox{\hyperlink{_b_render_task_8cpp}{B\+Render\+Task.\+cpp}}\end{DoxyCompactItemize}

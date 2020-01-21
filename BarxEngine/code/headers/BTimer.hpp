@@ -1,39 +1,61 @@
-#pragma once
+// File: BTimer.hpp
+// Author: Jorge Bárcena Lumbreras
+
+// © Copyright (C) 2019  Jorge Bárcena Lumbreras
+
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+#ifndef BARX_ENGINE_BTIMER
+#define BARX_ENGINE_BTIMER
+
 #include "BtypeDef.hpp"
 
-// This is free code released into the public domain.
-// Drafted by Ángel on March 2017.
-// Use it at your own risk. It might have bugs.
-// angel.rodriguez@esne.edu
-
-#pragma once
-
-#include <cstdint>
-
+/*
+* Clase que maneja el tiempo
+*/
 class BTimer
 {
 
-    uint32_t start_ticks;
-    uint32_t last_ticks;
+    uint32_t startTick; ///< Tick del start
+    uint32_t lastTick ; ///< Tick de la ultima vez que se pidio
 
 public:
 
+    /*
+    * Constructor
+    */
+    BTimer();
 
-    BTimer()
-    {
-        start();
-    }
-
+    /*
+    * Comienza el contador
+    */
     void start();
 
-    float elapsed_seconds() const
-    {
-        return float(elapsed_milliseconds()) / 1000.f;
-    }
+    /*
+    * Devuelve los segundos transcurridos
+    */
+    float elapsedSeconds() const;  
 
-    uint32_t elapsed_milliseconds() const;
+    /*
+    * Devuelve los milisegundos transcurridos
+    */
+    uint32_t elapsedMiliseconds() const;
 
+    /*
+    * Devuelve el timDeltaTime
+    */
     float timeDeltatime();
 
 };
-
+#endif

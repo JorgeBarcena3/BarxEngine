@@ -1,27 +1,65 @@
+// File: BRenderObjectTask.hpp
+// Author: Jorge Bárcena Lumbreras
+
+// © Copyright (C) 2019  Jorge Bárcena Lumbreras
+
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+#ifndef BARX_ENGINE_BRENDEROBJECTTASK
+#define BARX_ENGINE_BRENDEROBJECTTASK
+
 #include "BtypeDef.hpp"
 
+/*
+* Clases adelantadas
+*/
 class BTask;
 class BRenderTask;
 class BTransformComponent;
 
+/*
+* Tarea de renderizar un objeto
+*/
 class BRenderObjectTask : public BTask
 {
 
 public:
 
-    BRenderObjectTask(string id, shared_ptr< BRenderTask > instance, shared_ptr< BTransformComponent > transformComponent);
+    /*
+    * Constructor por defecto
+    */
+    BRenderObjectTask(string id, shared_ptr< BRenderTask > instance);
 
 private:
 
 
-    shared_ptr< BRenderTask > instance;
+    shared_ptr< BRenderTask >         instance  ; ///< Instancia de la clase de render general
 
-    shared_ptr< BTransformComponent > transform;
+    /*
+    * Inicializa la tarea
+    */
+    virtual bool initialize() override;
 
-    bool initialize();
+    /*
+    * Finaliza la tarea
+    */
+    virtual bool finalize() override;
 
-    bool finalize();
-
-    bool execute(float time);
+    /*
+    * Ejecuta la tarea 
+    */
+    virtual bool execute(float time) override;
 
 };
+#endif

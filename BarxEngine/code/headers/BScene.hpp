@@ -15,33 +15,31 @@
 
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
-//
-#pragma once
+
+#ifndef BARX_ENGINE_BSCENE
+#define BARX_ENGINE_BSCENE
 
 #include "BtypeDef.hpp"
 #include "BEntity.hpp"
 #include "BDispacher.hpp"
 
+/*
+* Clases adelantadas
+*/
 class BModule;
 class BKernel;
 class BKeyboard;
 class BkeyboardComponent;
 
 /*
-* Es un codigo que se ejecuta teniendo en cuenta todos los componentes especificos
-* Ejemplo el systema de fisicas
-* Es mas especifico
+* Clase escena que se ejecuta en funcion de las entidades que posee
 */
 class BScene
 {
-    //typedef map< string, shared_ptr< BModule > > FModule_Map;
-    typedef map< string, shared_ptr< BEntity > > Entity_Map;
-
-    Entity_Map* entities;
-
-    shared_ptr<BKernel> kernel;
-
-    shared_ptr<BEntity> root;
+    typedef map< string, shared_ptr< BEntity > > Entity_Map ; ///< Tipo de dato que guarda las entidades que hay en la escena
+    shared_ptr< Entity_Map >                     entities   ; ///< Entidades que hay en la escena
+    shared_ptr< BKernel    >                     kernel     ; ///< Kernel de la escena
+    shared_ptr< BEntity    >                     root       ; ///< Entidad root de la escena
 
 
 public:
@@ -51,6 +49,9 @@ public:
     */
     BScene(const string& scene_description_file_path = "");
 
+    /*
+    * Devuelve una entidad por ID
+    */
     shared_ptr < BEntity > getEntity(string id);
 
 
@@ -69,12 +70,18 @@ private:
 public:
 
     /*
-    * Aqui se halla el bucle principal
+    * Inicia el bucle run del kernel
     */
     void run();
 
+    /*
+    * Recarga la escena (TODO)
+    */
     void reloadScene(const string& scene_description_file_path);
 
+    /*
+    * Devuelve las entidades que tienen N componentes
+    */
     template <class T>
     list<shared_ptr<BEntity>> entitesWithComponent()
     {
@@ -93,18 +100,20 @@ public:
         return list;
     }
 
-    shared_ptr< BDispacher > getDispacher() {
+    /*
+    * Devuelve el dispacher
+    */
+    shared_ptr< BDispacher > getDispacher();
 
-        return BDispacher::instance();
+    /*
+    * Devuelve la entidad root de la escena
+    */
+    shared_ptr<BEntity> getRootEntity();
 
-    }
-
-    shared_ptr<BEntity> getRootEntity() {
-        return root;
-    }
-
-    shared_ptr<BKeyboard> getKeyBoardInput();
+    /*
+    * Devuelve el keyboard manager
+    */
+    shared_ptr<BKeyboard> getKeyBoardManager();
 
 };
-
-
+#endif

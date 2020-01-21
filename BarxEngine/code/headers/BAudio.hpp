@@ -15,9 +15,9 @@
 
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
-//
 
-#pragma once
+#ifndef BARX_ENGINE_BAUDIO
+#define BARX_ENGINE_BAUDIO
 
 #include "BtypeDef.hpp"
 
@@ -32,17 +32,26 @@ class BAudio
 
 public:
 
+	/*
+	* Guarda la informacion de que tipo de sonido es
+	*/
 	struct BAudioInfo
 	{
-		Mix_Music* music = nullptr;
-		Mix_Chunk* sound = nullptr;
-		int channel = -1;
+		Mix_Music * music = nullptr;   ///< Musica que tiene almacenada
+		Mix_Chunk * sound = nullptr;   ///< Sonido que tiene almacenado
+		int         channel      = -1; ///< Canal donde se ejecuta
 
+		/*
+		* Constructor que admite la musica a cargar
+		*/
 		BAudioInfo(Mix_Music* _music)
 		{
 			music = _music;
 		};
 
+		/*
+		* Constructor que admite el sonido a cargar
+		*/
 		BAudioInfo(Mix_Chunk* _sound)
 		{
 			sound = _sound;
@@ -51,8 +60,8 @@ public:
 
 private:
 
-	map<Id, BAudioInfo* > music;
-	map<Id, BAudioInfo* > sounds;
+	map<Id, BAudioInfo * > music ; ///< Mapa de musica almacenada
+	map<Id, BAudioInfo * > sounds; ///< Mapa de sonidos almacenados
 
 public:
 
@@ -140,4 +149,4 @@ public:
 
 };
 
-
+#endif

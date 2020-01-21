@@ -1,8 +1,3 @@
-// This is free code released into the public domain.
-// Drafted by Ángel on March 2017.
-// Use it at your own risk. It might have bugs.
-// angel.rodriguez@esne.edu
-
 // File: BWindowTask.hpp
 // Author: Jorge Bárcena Lumbreras
 
@@ -20,8 +15,10 @@
 
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
-//
-#pragma once
+
+#ifndef BARX_ENGINE_BWINDOWTASK
+#define BARX_ENGINE_BWINDOWTASK
+
 #include "BtypeDef.hpp"
 #include "BTask.hpp"
 
@@ -33,46 +30,92 @@ class BWindowTask : public BTask
 
 public:
 
-    static shared_ptr< BWindowTask > instance;   
+    static shared_ptr< BWindowTask > instance; ///< Instancia de la ventana
 
 private:
 
-    SDL_Window   * window;
-    SDL_GLContext  gl_context;
+    SDL_Window   * window     ; ///< SDL windows
+    SDL_GLContext  gl_context ; ///< Contexto de SDL
 
-    int width;
-    int heigth;
+    int            width      ; ///< Anchura de la pantalla
+    int            heigth     ; ///< Altura de la pantalla
 
 public:
 
 
-    BWindowTask(const std::string& title, int _width, int _height, bool fullscreen = false);
+    /*
+    * Constructor por defecto
+    */                                   
+    BWindowTask(const std::string& title, ///< Nombre de la ventana
+                int _width,               ///< Ancho de la ventana
+                int _height,              ///< ALtura de la ventana
+                bool fullscreen = false   ///< Si se ejecutará en fullscreen
+    );
 
+    /*
+    * Destructor
+    */    
     ~BWindowTask();   
 
-    void set_fullscreen(uint32_t type = 0);
+    /*
+    * Cambia a fullscreen
+    */
+    void setFullScreen(uint32_t type = 0);
 
-    void set_windowed();
+    /*
+    * Cambia a  modo ventana
+    */
+    void setWindowed();
 
-    unsigned get_width() const;
+    /*
+    * Devuelve el ancho de la pantalla
+    */
+    unsigned getWidth() const;
 
-    unsigned get_height() const;
+    /*
+    * Devuelve la altura
+    */
+    unsigned getHeight() const;
 
-    void set_windowTitle(const char* title);
+    /*
+    * Cambia el titulo de la ventana
+    */
+    void setWindowTitle(const char* title);
 
-    void set_position(int new_left_x, int new_top_y);
+    /*
+    * Posiciona la posicion
+    */
+    void setPosition(int new_left_x, int new_top_y);
 
-    void set_size(int new_width, int new_height);   
+    /*
+    * Cambia el tamaño de la pantalla
+    */
+    void setSize(int new_width, int new_height);   
 
-    void swap_buffers() const;
+    /*
+    * Intercambia los buffer de la pantalla
+    */
+    void swapBuffers() const;
 
+    /*
+    * Limpia la pantalla
+    */
     void clear() const;
 
-    virtual bool initialize();
+    /*
+    * Inicializa la tarea
+    */
+    virtual bool initialize() override;
 
-    virtual bool finalize();
+    /*
+    * Finaliza la tarea
+    */
+    virtual bool finalize() override;
 
-    virtual bool execute(float time);
+    /*
+    * Ejecuta la tarea 
+    */
+    virtual bool execute(float time) override;
 
 };
-
+#endif

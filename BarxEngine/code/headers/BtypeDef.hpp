@@ -1,4 +1,4 @@
-// File: BTypeDef.hpp
+// File: BtypeDef.hpp
 // Author: Jorge Bárcena Lumbreras
 
 // © Copyright (C) 2019  Jorge Bárcena Lumbreras
@@ -15,9 +15,10 @@
 
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
-//
 
-#pragma once
+#ifndef BARX_ENGINE_BTYPEDEF
+#define BARX_ENGINE_BTYPEDEF
+
 #include <map>
 #include <set>
 #include <algorithm>
@@ -32,8 +33,11 @@
 #include <vector>
 #include <iterator>  
 #include <iostream>
+#include "BMath.hpp"
 
 using namespace std;
+
+//////// TYPEDEF NECESARIOS ////////
 
 typedef int_fast16_t Id;
 
@@ -56,43 +60,6 @@ namespace glt
 }
 
 
-template <class T>
-struct vec3 {
-
-    T x;
-    T y;
-    T z;
-
-    vec3() {
-
-    }
-
-    vec3(T _x, T _y, T _z) {
-        x = _x;
-        y = _y;
-        z = _z;
-    }
-
-    void setValues(T _x, T _y, T _z) {
-        x = _x;
-        y = _y;
-        z = _z;
-    }
-
-    void normalize() {
-
-        float inv_magnitude = inv_length();
-        x = x * inv_magnitude;
-        y = y * inv_magnitude;
-        z = z * inv_magnitude;
-    }
-
-    T inv_length() {
-        return 1 / sqrt((x * x) + (y * y) + (z * z));
-    }
-
-};
-
 enum TASKPRIORITY {
     WINDOW = 0,
     INPUTSYSTEM = 1,
@@ -102,5 +69,4 @@ enum TASKPRIORITY {
     RENDEROBJECT = 5,
     RENDERGENERAL = 6
 };
-
-
+#endif

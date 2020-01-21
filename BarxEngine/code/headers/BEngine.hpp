@@ -15,9 +15,11 @@
 
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
-//
 
+#ifndef BARX_ENGINE_BENGINE
+#define BARX_ENGINE_BENGINE
 #define SDL_MAIN_HANDLED
+
 #include "BtypeDef.hpp"
 #include "BScene.hpp"
 #include "BEntity.hpp"
@@ -31,4 +33,4 @@
 
 typedef BKeyboard Input;
 
-
+#endif

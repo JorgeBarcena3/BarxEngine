@@ -1,9 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="..\..\code\source\BEngine.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\code\source\BScene.cpp">
       <Filter>Source</Filter>
     </ClCompile>
@@ -94,6 +91,9 @@
     <ClCompile Include="..\..\code\source\BBoxColliderComponent.cpp">
       <Filter>Source\Component\Collider</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\code\source\BMessage.cpp">
+      <Filter>Source\Messages</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\code\headers\BEngine.hpp">
@@ -113,12 +113,6 @@
     </ClInclude>
     <ClInclude Include="..\..\code\headers\BTimer.hpp">
       <Filter>Headers\Tools</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\code\headers\BComponent.hpp">
-      <Filter>Headers\Components</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\code\headers\BTask.hpp">
-      <Filter>Headers\Task</Filter>
     </ClInclude>
     <ClInclude Include="..\..\code\headers\BMessage.hpp">
       <Filter>Headers\Messages</Filter>
@@ -162,9 +156,6 @@
     <ClInclude Include="..\..\code\headers\BInputComponent.hpp">
       <Filter>Headers\Components</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\code\headers\BInputHandlerTask.hpp">
-      <Filter>Headers\Task\Input</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\code\headers\rapidxml.hpp">
       <Filter>Headers\RapidXML</Filter>
     </ClInclude>
@@ -204,14 +195,26 @@
     <ClInclude Include="..\..\code\headers\BColliderComponent.hpp">
       <Filter>Headers\Components\Collider</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\code\headers\BSphereColliderTask.hpp">
-      <Filter>Headers\Task</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\code\headers\BShereColliderComponent.hpp">
       <Filter>Headers\Components\Collider</Filter>
     </ClInclude>
     <ClInclude Include="..\..\code\headers\BBoxColliderComponent.hpp">
       <Filter>Headers\Components\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BComponent.hpp">
+      <Filter>Headers\Components\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BColliderTask.hpp">
+      <Filter>Headers\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BInputHandlerTask.hpp">
+      <Filter>Headers\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BTask.hpp">
+      <Filter>Headers\Task\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\headers\BMath.hpp">
+      <Filter>Headers\Tools</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -235,9 +238,6 @@
     </Filter>
     <Filter Include="Headers\Messages">
       <UniqueIdentifier>{85a0cd51-be0f-4853-965e-fa5762f7138c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Headers\Task\Input">
-      <UniqueIdentifier>{9fa99b2a-4bd2-4f4e-8ffb-35b635212c56}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source\Audio">
       <UniqueIdentifier>{f8a4ba1c-3fe3-4e1d-a045-dcf2c9226bc2}</UniqueIdentifier>
@@ -271,6 +271,12 @@
     </Filter>
     <Filter Include="Source\Component\Collider">
       <UniqueIdentifier>{c9d7189c-26fb-4337-a6bc-d9f97692cf14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Components\Base">
+      <UniqueIdentifier>{0ee1c990-38bc-4295-b1f0-c23da46eb63f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers\Task\Base">
+      <UniqueIdentifier>{0fc7a008-c6d0-4964-b71f-0e7aaea7909d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

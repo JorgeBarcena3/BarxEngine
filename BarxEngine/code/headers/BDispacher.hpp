@@ -15,50 +15,53 @@
 
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
-//
 
-#pragma once
+#ifndef BARX_ENGINE_BDISPACHER
+#define BARX_ENGINE_BDISPACHER
 #include "BtypeDef.hpp"
 
+/*
+* Clases adelantadas
+*/
 class BOrbserver;
 class BMessage;
 
 /*
 * Es un singleton
 * Se encarga de repartir los mensajes
-* SingleCast / MultiCast (Depende del numero de destinatarios)
 */
 class BDispacher {
 
 public:
-
-
-    //Devuelve una instancia al dispacher
-    static shared_ptr<BDispacher> instance()
-    {
-        if(d == nullptr)
-          BDispacher::d = shared_ptr< BDispacher >(new BDispacher);
-        return d;
-    }
+    
+    /*
+    * Devuelve una instancia del dispacher
+    */
+    static shared_ptr<BDispacher> instance();
 
 private:
 
-    static shared_ptr< BDispacher > d;
-    //Contructores
+    /*
+    * Instancia del dispacher
+    */
+    static shared_ptr< BDispacher > _instance;
 
+    /*
+    * Lista de observadores subscritos
+    */
     map<string, list<BOrbserver*>> observers;
 
 public:
 
-    // Añadimos un observador a la lista
-    void add(BOrbserver& o, string id)
-    {
-        observers[id].push_back(&o);
-    }
-
-    //Enviamos el mensaje
-    void Send(BMessage& m);
-  
+    /*
+    * Añadimos un observador a la lista
+    */
+    void add(BOrbserver& o, string id);
     
+    /*
+    * Enviamos los mensajes a traves de los observadores
+    */
+    void Send(BMessage& m);   
 
 };
+#endif

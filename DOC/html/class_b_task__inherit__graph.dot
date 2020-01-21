@@ -1,0 +1,24 @@
+digraph "BTask"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="BTask",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="BCharacterControllerTask",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_b_character_controller_task.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="BColliderTask",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_b_collider_task.html",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="BControlTask",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_b_control_task.html",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="BMyInputHandlerTask",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_b_my_input_handler_task.html",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="BRenderObjectTask",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_b_render_object_task.html",tooltip=" "];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="BRenderTask",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_b_render_task.html",tooltip=" "];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="BTransformTask",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_b_transform_task.html",tooltip=" "];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="BWindowTask",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_b_window_task.html",tooltip=" "];
+}

@@ -1,7 +1,25 @@
+// File: BWindowTask.cpp
+// Author: Jorge Bárcena Lumbreras
+
+// © Copyright (C) 2019  Jorge Bárcena Lumbreras
+
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+#include "..\headers\BTask.hpp"
+#include "..\headers\BWindowTask.hpp"
+#include "..\headers\BtypeDef.hpp"
 #include <SDL.h>
-#include "..//headers/BTask.hpp"
-#include "../headers/BWindowTask.hpp"
-#include "..//headers/BtypeDef.hpp"
 #include <OpenGL.hpp>
 
 shared_ptr< BWindowTask > BWindowTask::instance = nullptr;
@@ -11,7 +29,6 @@ enum Fullscreen_Type
     REAL = SDL_WINDOW_FULLSCREEN,
     DESKTOP = SDL_WINDOW_FULLSCREEN_DESKTOP
 };
-
 
 BWindowTask::BWindowTask(const std::string& title, int _width, int _height, bool fullscreen) : BTask(TASKPRIORITY::WINDOW)
 {
@@ -56,26 +73,26 @@ BWindowTask::BWindowTask(const std::string& title, int _width, int _height, bool
 
     }
 
-};
+}
 
 BWindowTask::~BWindowTask()
 {
     if (gl_context) SDL_GL_DeleteContext(gl_context);
     if (window) SDL_DestroyWindow(window);
-};
+}
 
-void BWindowTask::set_fullscreen(uint32_t type)
+void BWindowTask::setFullScreen(uint32_t type)
 {
     SDL_SetWindowFullscreen(window, type);
-};
+}
 
-void BWindowTask::set_windowed()
+void BWindowTask::setWindowed()
 {
     SDL_SetWindowFullscreen(window, SDL_WINDOW_FULLSCREEN_DESKTOP);
-    set_size(width, heigth);
-};
+    setSize(width, heigth);
+}
 
-unsigned BWindowTask::get_width() const
+unsigned BWindowTask::getWidth() const
 {
     int width = 0, height;
 
@@ -84,7 +101,7 @@ unsigned BWindowTask::get_width() const
     return unsigned(width);
 }
 
-unsigned BWindowTask::get_height() const
+unsigned BWindowTask::getHeight() const
 {
     int width, height = 0;
 
@@ -93,45 +110,43 @@ unsigned BWindowTask::get_height() const
     return unsigned(height);
 }
 
-
-void BWindowTask::set_windowTitle(const char* title)
+void BWindowTask::setWindowTitle(const char* title)
 {
     SDL_SetWindowTitle(window, title);
-};
+}
 
-void BWindowTask::set_position(int new_left_x, int new_top_y)
+void BWindowTask::setPosition(int new_left_x, int new_top_y)
 {
     SDL_SetWindowPosition(window, new_left_x, new_top_y);
-};
+}
 
-void BWindowTask::set_size(int new_width, int new_height)
+void BWindowTask::setSize(int new_width, int new_height)
 {
     SDL_SetWindowSize(window, new_width, new_height);
-};
+}
 
-void BWindowTask::swap_buffers() const
+void BWindowTask::swapBuffers() const
 {
     if (gl_context) SDL_GL_SwapWindow(window);
-};
+}
 
 void BWindowTask::clear() const
 {
-    //glClearColor(0.52f,0.8f,0.9f,1); //AZUL CIELO
     glClearColor(0.2f, 0.2f, 0.2f, 1.f);
     if (gl_context) glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-};
+}
 
 bool BWindowTask::initialize()
 {
     return true;
-};
+}
 
 bool BWindowTask::finalize()
 {
     return true;
-};
+}
 
 bool BWindowTask::execute(float time)
 {
       return true;
-};
+}

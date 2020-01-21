@@ -1,0 +1,104 @@
+\hypertarget{class_b_component}{}\doxysection{B\+Component Class Reference}
+\label{class_b_component}\index{BComponent@{BComponent}}
+
+
+{\ttfamily \#include $<$B\+Component.\+hpp$>$}
+
+Inheritance diagram for B\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_b_component}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_b_component_abae36f17d49ca6c1f46922956d159d96}{B\+Component}} (shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_entity}{B\+Entity}} $>$ \mbox{\hyperlink{class_b_component_a624802174f6aadf23e2dc7547ee02f4a}{parent}})
+\item 
+virtual \mbox{\hyperlink{class_b_component_a7bea2fd800bd30aab3e18a9685f99d6e}{$\sim$\+B\+Component}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_b_component_a0f2c3dcbd6a0c29b1fdd1c11ba9fc955}{initialize}} ()=0
+\item 
+virtual bool \mbox{\hyperlink{class_b_component_a8fdb99fe57c956bb54c2c2d8607816ac}{parse\+\_\+property}} (const string \&name, const string \&value)=0
+\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_task}{B\+Task}} $>$ \mbox{\hyperlink{class_b_component_a2edf5a07fd311c122b949534f0217dee}{get\+Task}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_b_component_abf3cb8afae4054f2f5f75abff01a8f52}{id}}
+\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_entity}{B\+Entity}} $>$ \mbox{\hyperlink{class_b_component_a624802174f6aadf23e2dc7547ee02f4a}{parent}}
+\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_task}{B\+Task}} $>$ \mbox{\hyperlink{class_b_component_ae93fc8ae60fed725ab38cec199222ae9}{task}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_b_component_abae36f17d49ca6c1f46922956d159d96}\label{class_b_component_abae36f17d49ca6c1f46922956d159d96}} 
+\index{BComponent@{BComponent}!BComponent@{BComponent}}
+\index{BComponent@{BComponent}!BComponent@{BComponent}}
+\doxysubsubsection{\texorpdfstring{BComponent()}{BComponent()}}
+{\footnotesize\ttfamily B\+Component\+::\+B\+Component (\begin{DoxyParamCaption}\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_entity}{B\+Entity}} $>$}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_b_component_a7bea2fd800bd30aab3e18a9685f99d6e}\label{class_b_component_a7bea2fd800bd30aab3e18a9685f99d6e}} 
+\index{BComponent@{BComponent}!````~BComponent@{$\sim$BComponent}}
+\index{````~BComponent@{$\sim$BComponent}!BComponent@{BComponent}}
+\doxysubsubsection{\texorpdfstring{$\sim$BComponent()}{~BComponent()}}
+{\footnotesize\ttfamily virtual B\+Component\+::$\sim$\+B\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_b_component_a2edf5a07fd311c122b949534f0217dee}\label{class_b_component_a2edf5a07fd311c122b949534f0217dee}} 
+\index{BComponent@{BComponent}!getTask@{getTask}}
+\index{getTask@{getTask}!BComponent@{BComponent}}
+\doxysubsubsection{\texorpdfstring{getTask()}{getTask()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$\mbox{\hyperlink{class_b_task}{B\+Task}}$>$ B\+Component\+::get\+Task (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_b_component_a0f2c3dcbd6a0c29b1fdd1c11ba9fc955}\label{class_b_component_a0f2c3dcbd6a0c29b1fdd1c11ba9fc955}} 
+\index{BComponent@{BComponent}!initialize@{initialize}}
+\index{initialize@{initialize}!BComponent@{BComponent}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily virtual bool B\+Component\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_b_collider_component_a3e36fe62ba229800ac0da823e167e51b}{B\+Collider\+Component}}, \mbox{\hyperlink{class_b_control_component_a81add685fda53dc12ccd5c78113ed986}{B\+Control\+Component}}, \mbox{\hyperlink{class_b_character_controller_component_a2609918b0cb0be7738bc33b926c53978}{B\+Character\+Controller\+Component}}, \mbox{\hyperlink{class_b_camera_component_a77270032c8db1818383dc391f71858fa}{B\+Camera\+Component}}, \mbox{\hyperlink{class_b_box_collider_component_a194c92a04487a38d38cbb20eb8b53f34}{B\+Box\+Collider\+Component}}, \mbox{\hyperlink{class_b_shere_collider_component_a27c979685a89baadce022c5350a271ad}{B\+Shere\+Collider\+Component}}, \mbox{\hyperlink{class_b_keyboard_component_abd21d8d198b3ef3dcaf66b4923c141e4}{B\+Keyboard\+Component}}, \mbox{\hyperlink{class_b_render_object_component_a4dee16400977c0a2f3faa3af6cfdced6}{B\+Render\+Object\+Component}}, \mbox{\hyperlink{class_b_light_component_a9e9b2f3993eed28dd16eacfaf4d72a82}{B\+Light\+Component}}, \mbox{\hyperlink{class_b_transform_component_a3eb270fc8f4272be98095f788640ad97}{B\+Transform\+Component}}, \mbox{\hyperlink{class_b_main_window_component_a3375baa7e604842b49031fb61acb5105}{B\+Main\+Window\+Component}}, \mbox{\hyperlink{class_b_input_component_a4d47d5a97a06ff2c234be286d352c036}{B\+Input\+Component}}, and \mbox{\hyperlink{class_b_main_renderer_af84969c8e74764210faf7b1ae2713210}{B\+Main\+Renderer}}.
+
+\mbox{\Hypertarget{class_b_component_a8fdb99fe57c956bb54c2c2d8607816ac}\label{class_b_component_a8fdb99fe57c956bb54c2c2d8607816ac}} 
+\index{BComponent@{BComponent}!parse\_property@{parse\_property}}
+\index{parse\_property@{parse\_property}!BComponent@{BComponent}}
+\doxysubsubsection{\texorpdfstring{parse\_property()}{parse\_property()}}
+{\footnotesize\ttfamily virtual bool B\+Component\+::parse\+\_\+property (\begin{DoxyParamCaption}\item[{const string \&}]{name,  }\item[{const string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_b_collider_component_ae0aad18e7a3936be34d9d3223b4244c9}{B\+Collider\+Component}}, \mbox{\hyperlink{class_b_control_component_a3335ea1b3a32d02f6c31c682c08437bb}{B\+Control\+Component}}, \mbox{\hyperlink{class_b_box_collider_component_a92c19c968e526aabd27f1f1f953eca32}{B\+Box\+Collider\+Component}}, \mbox{\hyperlink{class_b_character_controller_component_ac62be87a9c60ae0269b43567d9d15770}{B\+Character\+Controller\+Component}}, \mbox{\hyperlink{class_b_camera_component_af3aa7c4043fa5bcce665ce99ff333f4f}{B\+Camera\+Component}}, \mbox{\hyperlink{class_b_shere_collider_component_ae5fa6db9444833ca8e4df70987f161dc}{B\+Shere\+Collider\+Component}}, \mbox{\hyperlink{class_b_transform_component_a961d65a6f64d644c9606eebb56409807}{B\+Transform\+Component}}, \mbox{\hyperlink{class_b_keyboard_component_a634c8d0fc3b6f837dd2e22486d8e5f55}{B\+Keyboard\+Component}}, \mbox{\hyperlink{class_b_render_object_component_a2fd9f9e60af290ae6042c8af84766c69}{B\+Render\+Object\+Component}}, \mbox{\hyperlink{class_b_light_component_a84ddfd5027b9a757c80e7bbe11147e29}{B\+Light\+Component}}, \mbox{\hyperlink{class_b_main_window_component_a9dd6ad5253a098cd0662d313d0fbc492}{B\+Main\+Window\+Component}}, \mbox{\hyperlink{class_b_input_component_a1bf52dc2cbd0f834495cb4cfb0b49caf}{B\+Input\+Component}}, and \mbox{\hyperlink{class_b_main_renderer_acc31c2c06491d59b25ae3067211c7847}{B\+Main\+Renderer}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_b_component_abf3cb8afae4054f2f5f75abff01a8f52}\label{class_b_component_abf3cb8afae4054f2f5f75abff01a8f52}} 
+\index{BComponent@{BComponent}!id@{id}}
+\index{id@{id}!BComponent@{BComponent}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily string B\+Component\+::id\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_b_component_a624802174f6aadf23e2dc7547ee02f4a}\label{class_b_component_a624802174f6aadf23e2dc7547ee02f4a}} 
+\index{BComponent@{BComponent}!parent@{parent}}
+\index{parent@{parent}!BComponent@{BComponent}}
+\doxysubsubsection{\texorpdfstring{parent}{parent}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$\mbox{\hyperlink{class_b_entity}{B\+Entity}}$>$ B\+Component\+::parent\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_b_component_ae93fc8ae60fed725ab38cec199222ae9}\label{class_b_component_ae93fc8ae60fed725ab38cec199222ae9}} 
+\index{BComponent@{BComponent}!task@{task}}
+\index{task@{task}!BComponent@{BComponent}}
+\doxysubsubsection{\texorpdfstring{task}{task}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$\mbox{\hyperlink{class_b_task}{B\+Task}}$>$ B\+Component\+::task\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Git\+Hub/\+Barx\+Engine/\+Barx\+Engine/code/headers/\mbox{\hyperlink{_b_component_8hpp}{B\+Component.\+hpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,86 @@
+\hypertarget{class_b_scene}{}\doxysection{B\+Scene Class Reference}
+\label{class_b_scene}\index{BScene@{BScene}}
+
+
+{\ttfamily \#include $<$B\+Scene.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_b_scene_aa1e63c0f4abd79732806ca7946930666}{B\+Scene}} (const string \&scene\+\_\+description\+\_\+file\+\_\+path=\char`\"{}\char`\"{})
+\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_entity}{B\+Entity}} $>$ \mbox{\hyperlink{class_b_scene_a31908172f61d24d0f8ceab1247b89770}{get\+Entity}} (string id)
+\item 
+void \mbox{\hyperlink{class_b_scene_aad35151ed575ff5a828474cccf581733}{run}} ()
+\item 
+void \mbox{\hyperlink{class_b_scene_a216f0a6d8a53fdfb71b53eb1427493a9}{reload\+Scene}} (const string \&scene\+\_\+description\+\_\+file\+\_\+path)
+\item 
+{\footnotesize template$<$class T $>$ }\\list$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_entity}{B\+Entity}} $>$ $>$ \mbox{\hyperlink{class_b_scene_a5ced21bc3d74b610952c71ed6980ebae}{entites\+With\+Component}} ()
+\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_dispacher}{B\+Dispacher}} $>$ \mbox{\hyperlink{class_b_scene_a046828adec66e4da59ee48ceebef5eef}{get\+Dispacher}} ()
+\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_entity}{B\+Entity}} $>$ \mbox{\hyperlink{class_b_scene_ada959a0cdf6630b59371a47ab7feb1fc}{get\+Root\+Entity}} ()
+\item 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_keyboard}{B\+Keyboard}} $>$ \mbox{\hyperlink{class_b_scene_a84c9d3d1b1401edd39c028f888a33b38}{get\+Key\+Board\+Input}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_b_scene_aa1e63c0f4abd79732806ca7946930666}\label{class_b_scene_aa1e63c0f4abd79732806ca7946930666}} 
+\index{BScene@{BScene}!BScene@{BScene}}
+\index{BScene@{BScene}!BScene@{BScene}}
+\doxysubsubsection{\texorpdfstring{BScene()}{BScene()}}
+{\footnotesize\ttfamily B\+Scene\+::\+B\+Scene (\begin{DoxyParamCaption}\item[{const string \&}]{scene\+\_\+description\+\_\+file\+\_\+path = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_b_scene_a5ced21bc3d74b610952c71ed6980ebae}\label{class_b_scene_a5ced21bc3d74b610952c71ed6980ebae}} 
+\index{BScene@{BScene}!entitesWithComponent@{entitesWithComponent}}
+\index{entitesWithComponent@{entitesWithComponent}!BScene@{BScene}}
+\doxysubsubsection{\texorpdfstring{entitesWithComponent()}{entitesWithComponent()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+list$<$shared\+\_\+ptr$<$\mbox{\hyperlink{class_b_entity}{B\+Entity}}$>$ $>$ B\+Scene\+::entites\+With\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_b_scene_a046828adec66e4da59ee48ceebef5eef}\label{class_b_scene_a046828adec66e4da59ee48ceebef5eef}} 
+\index{BScene@{BScene}!getDispacher@{getDispacher}}
+\index{getDispacher@{getDispacher}!BScene@{BScene}}
+\doxysubsubsection{\texorpdfstring{getDispacher()}{getDispacher()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_dispacher}{B\+Dispacher}} $>$ B\+Scene\+::get\+Dispacher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_b_scene_a31908172f61d24d0f8ceab1247b89770}\label{class_b_scene_a31908172f61d24d0f8ceab1247b89770}} 
+\index{BScene@{BScene}!getEntity@{getEntity}}
+\index{getEntity@{getEntity}!BScene@{BScene}}
+\doxysubsubsection{\texorpdfstring{getEntity()}{getEntity()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_entity}{B\+Entity}} $>$ B\+Scene\+::get\+Entity (\begin{DoxyParamCaption}\item[{string}]{id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_b_scene_a84c9d3d1b1401edd39c028f888a33b38}\label{class_b_scene_a84c9d3d1b1401edd39c028f888a33b38}} 
+\index{BScene@{BScene}!getKeyBoardInput@{getKeyBoardInput}}
+\index{getKeyBoardInput@{getKeyBoardInput}!BScene@{BScene}}
+\doxysubsubsection{\texorpdfstring{getKeyBoardInput()}{getKeyBoardInput()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_keyboard}{B\+Keyboard}} $>$ B\+Scene\+::get\+Key\+Board\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_b_scene_ada959a0cdf6630b59371a47ab7feb1fc}\label{class_b_scene_ada959a0cdf6630b59371a47ab7feb1fc}} 
+\index{BScene@{BScene}!getRootEntity@{getRootEntity}}
+\index{getRootEntity@{getRootEntity}!BScene@{BScene}}
+\doxysubsubsection{\texorpdfstring{getRootEntity()}{getRootEntity()}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$\mbox{\hyperlink{class_b_entity}{B\+Entity}}$>$ B\+Scene\+::get\+Root\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_b_scene_a216f0a6d8a53fdfb71b53eb1427493a9}\label{class_b_scene_a216f0a6d8a53fdfb71b53eb1427493a9}} 
+\index{BScene@{BScene}!reloadScene@{reloadScene}}
+\index{reloadScene@{reloadScene}!BScene@{BScene}}
+\doxysubsubsection{\texorpdfstring{reloadScene()}{reloadScene()}}
+{\footnotesize\ttfamily void B\+Scene\+::reload\+Scene (\begin{DoxyParamCaption}\item[{const string \&}]{scene\+\_\+description\+\_\+file\+\_\+path }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_b_scene_aad35151ed575ff5a828474cccf581733}\label{class_b_scene_aad35151ed575ff5a828474cccf581733}} 
+\index{BScene@{BScene}!run@{run}}
+\index{run@{run}!BScene@{BScene}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void B\+Scene\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Git\+Hub/\+Barx\+Engine/\+Barx\+Engine/code/headers/\mbox{\hyperlink{_b_scene_8hpp}{B\+Scene.\+hpp}}\item 
+D\+:/\+Git\+Hub/\+Barx\+Engine/\+Barx\+Engine/code/source/\mbox{\hyperlink{_b_scene_8cpp}{B\+Scene.\+cpp}}\end{DoxyCompactItemize}

@@ -1,3 +1,24 @@
+// File: BAlgoritmosDeOrdenacion.hpp
+// Author: Jorge Bárcena Lumbreras
+
+// © Copyright (C) 2019  Jorge Bárcena Lumbreras
+
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+#ifndef BARX_ENGINE_BALGORITMOSDEORDENACION
+#define BARX_ENGINE_BALGORITMOSDEORDENACION
+
 #include <iostream>	
 #include <vector>
 #include <stdlib.h>   
@@ -7,9 +28,11 @@ using namespace std;
 
 namespace BAlgoritmosDeOrdenacion {
 
-    ///Algoritmo de burbuja
-    ///Recorremos la lista de numeros comparando el numero actual con el siguiente, y si es el orden incorrecto los cambiamos
-    ///Hasta que no cambiamos nada
+    /* 
+    * Algoritmo de burbuja
+    * Recorremos la lista de numeros comparando el numero actual con el siguiente, y si es el orden incorrecto los cambiamos
+    * Hasta que no cambiamos nada 
+    */
     template <class T>
     void algoritmoBurbuja(T* list, size_t size) {
 
@@ -33,9 +56,11 @@ namespace BAlgoritmosDeOrdenacion {
 
     }
 
-    ///Algoritmo de inserccion directa
-   ///Recorremos la lista buscando el valor mas pequeño
-    ///size_tercambiamos la posicion actual con el valor mas pequeño
+    /*
+    *  Algoritmo de inserccion directa
+    *  Recorremos la lista buscando el valor mas pequeño
+    *  size_tercambiamos la posicion actual con el valor mas pequeño
+    */ 
     template <class T>
     void algoritmoInserccionDirecta(T* list, size_t size) {
 
@@ -53,11 +78,13 @@ namespace BAlgoritmosDeOrdenacion {
     }
 
 
-    ///Algoritmo de quick sort
-   ///Elegimos un numero al alazar (Mitad de la cadena)
-    //Dos listas con elementos mas grandes que el pivote y otra con los elementos mas pequeños que el pivote
-    ///Llamamos a la funcion de ordenacion de quickShort para que lo reordene
-    ///Cuando queden dos elementos, se retorna ordenandolos
+    /* 
+    * Algoritmo de quick sort
+    * Elegimos un numero al alazar (Mitad de la cadena)
+    * Dos listas con elementos mas grandes que el pivote y otra con los elementos mas pequeños que el pivote
+    * Llamamos a la funcion de ordenacion de quickShort para que lo reordene
+    * Cuando queden dos elementos, se retorna ordenandolos
+    */
     template <class T>
     void quickSort(T* list, size_t size) {
 
@@ -119,11 +146,13 @@ namespace BAlgoritmosDeOrdenacion {
     }
 
 
-    ///Necesita una lista de auxialr del tipo de dato
-    ///Contamos cuantas veces aparece cada dato repetido
-    ///Lista de igual tamaño
-    //Variable offest que vale 0
-    //Recorremos la lista de conteo y la añadimos a la nueva lista
+    /*
+    Necesita una lista de auxialr del tipo de dato
+    * Contamos cuantas veces aparece cada dato repetido
+    * Lista de igual tamaño
+    * Variable offest que vale 0
+    * Recorremos la lista de conteo y la añadimos a la nueva lista
+    */ 
     template <class T>
     void countShort(T* list, size_t size) {
         
@@ -156,5 +185,4 @@ namespace BAlgoritmosDeOrdenacion {
         }
     }
 };
-
-
+#endif

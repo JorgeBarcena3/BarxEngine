@@ -1,0 +1,166 @@
+\hypertarget{class_b_window_task}{}\doxysection{B\+Window\+Task Class Reference}
+\label{class_b_window_task}\index{BWindowTask@{BWindowTask}}
+
+
+{\ttfamily \#include $<$B\+Window\+Task.\+hpp$>$}
+
+Inheritance diagram for B\+Window\+Task\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_b_window_task}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_b_window_task_a477d0d0eaecbe29573022dbf1e2aef7c}{B\+Window\+Task}} (const std\+::string \&title, int \+\_\+width, int \+\_\+height, bool fullscreen=false)
+\item 
+\mbox{\hyperlink{class_b_window_task_afa482375cc539382f8789d9ed980647a}{$\sim$\+B\+Window\+Task}} ()
+\item 
+void \mbox{\hyperlink{class_b_window_task_a05bab82cd98303096a225fc1c931dd05}{set\+\_\+fullscreen}} (uint32\+\_\+t type=0)
+\item 
+void \mbox{\hyperlink{class_b_window_task_a9c36ba8c691216bf869523b2cf0f66e1}{set\+\_\+windowed}} ()
+\item 
+unsigned \mbox{\hyperlink{class_b_window_task_a76a46bd4786ceb48ae0e74060215343a}{get\+\_\+width}} () const
+\item 
+unsigned \mbox{\hyperlink{class_b_window_task_aa0ed37abb64e44df7b766350d46984be}{get\+\_\+height}} () const
+\item 
+void \mbox{\hyperlink{class_b_window_task_a7982ce5ff08fbc342e02087ffaf225fc}{set\+\_\+window\+Title}} (const char $\ast$title)
+\item 
+void \mbox{\hyperlink{class_b_window_task_a139b65e77d60c5727de0cd5bccaa0856}{set\+\_\+position}} (int new\+\_\+left\+\_\+x, int new\+\_\+top\+\_\+y)
+\item 
+void \mbox{\hyperlink{class_b_window_task_a60dd70b6f6c0fd4ad14c5795f3e56f23}{set\+\_\+size}} (int new\+\_\+width, int new\+\_\+height)
+\item 
+void \mbox{\hyperlink{class_b_window_task_a759744a913619bfdb07a973084fed4fb}{swap\+\_\+buffers}} () const
+\item 
+void \mbox{\hyperlink{class_b_window_task_ae2fd1bd7006d8acb87aebf0d52334f9e}{clear}} () const
+\item 
+virtual bool \mbox{\hyperlink{class_b_window_task_a4f1e83039e8958c368e71e8397811390}{initialize}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_b_window_task_a6f3127339236853004a0672489235277}{finalize}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_b_window_task_a3b908f071474a3166f97bd9e14685714}{execute}} (float time)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_window_task}{B\+Window\+Task}} $>$ \mbox{\hyperlink{class_b_window_task_a5abdcd44338663971910f02171c1338e}{instance}} = nullptr
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_b_window_task_a477d0d0eaecbe29573022dbf1e2aef7c}\label{class_b_window_task_a477d0d0eaecbe29573022dbf1e2aef7c}} 
+\index{BWindowTask@{BWindowTask}!BWindowTask@{BWindowTask}}
+\index{BWindowTask@{BWindowTask}!BWindowTask@{BWindowTask}}
+\doxysubsubsection{\texorpdfstring{BWindowTask()}{BWindowTask()}}
+{\footnotesize\ttfamily B\+Window\+Task\+::\+B\+Window\+Task (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title,  }\item[{int}]{\+\_\+width,  }\item[{int}]{\+\_\+height,  }\item[{bool}]{fullscreen = {\ttfamily false} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_b_window_task_afa482375cc539382f8789d9ed980647a}\label{class_b_window_task_afa482375cc539382f8789d9ed980647a}} 
+\index{BWindowTask@{BWindowTask}!````~BWindowTask@{$\sim$BWindowTask}}
+\index{````~BWindowTask@{$\sim$BWindowTask}!BWindowTask@{BWindowTask}}
+\doxysubsubsection{\texorpdfstring{$\sim$BWindowTask()}{~BWindowTask()}}
+{\footnotesize\ttfamily B\+Window\+Task\+::$\sim$\+B\+Window\+Task (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_b_window_task_ae2fd1bd7006d8acb87aebf0d52334f9e}\label{class_b_window_task_ae2fd1bd7006d8acb87aebf0d52334f9e}} 
+\index{BWindowTask@{BWindowTask}!clear@{clear}}
+\index{clear@{clear}!BWindowTask@{BWindowTask}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void B\+Window\+Task\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_b_window_task_a3b908f071474a3166f97bd9e14685714}\label{class_b_window_task_a3b908f071474a3166f97bd9e14685714}} 
+\index{BWindowTask@{BWindowTask}!execute@{execute}}
+\index{execute@{execute}!BWindowTask@{BWindowTask}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily bool B\+Window\+Task\+::execute (\begin{DoxyParamCaption}\item[{float}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_b_task_a77fdf9e87f9b8d7af1a0bfddf4a0964e}{B\+Task}}.
+
+\mbox{\Hypertarget{class_b_window_task_a6f3127339236853004a0672489235277}\label{class_b_window_task_a6f3127339236853004a0672489235277}} 
+\index{BWindowTask@{BWindowTask}!finalize@{finalize}}
+\index{finalize@{finalize}!BWindowTask@{BWindowTask}}
+\doxysubsubsection{\texorpdfstring{finalize()}{finalize()}}
+{\footnotesize\ttfamily bool B\+Window\+Task\+::finalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_b_task_a26577b1dd0f253db8df66551d18bcbe3}{B\+Task}}.
+
+\mbox{\Hypertarget{class_b_window_task_aa0ed37abb64e44df7b766350d46984be}\label{class_b_window_task_aa0ed37abb64e44df7b766350d46984be}} 
+\index{BWindowTask@{BWindowTask}!get\_height@{get\_height}}
+\index{get\_height@{get\_height}!BWindowTask@{BWindowTask}}
+\doxysubsubsection{\texorpdfstring{get\_height()}{get\_height()}}
+{\footnotesize\ttfamily unsigned B\+Window\+Task\+::get\+\_\+height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_b_window_task_a76a46bd4786ceb48ae0e74060215343a}\label{class_b_window_task_a76a46bd4786ceb48ae0e74060215343a}} 
+\index{BWindowTask@{BWindowTask}!get\_width@{get\_width}}
+\index{get\_width@{get\_width}!BWindowTask@{BWindowTask}}
+\doxysubsubsection{\texorpdfstring{get\_width()}{get\_width()}}
+{\footnotesize\ttfamily unsigned B\+Window\+Task\+::get\+\_\+width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_b_window_task_a4f1e83039e8958c368e71e8397811390}\label{class_b_window_task_a4f1e83039e8958c368e71e8397811390}} 
+\index{BWindowTask@{BWindowTask}!initialize@{initialize}}
+\index{initialize@{initialize}!BWindowTask@{BWindowTask}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily bool B\+Window\+Task\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_b_task_a05f5a0789a494fbbe4897a269a15985f}{B\+Task}}.
+
+\mbox{\Hypertarget{class_b_window_task_a05bab82cd98303096a225fc1c931dd05}\label{class_b_window_task_a05bab82cd98303096a225fc1c931dd05}} 
+\index{BWindowTask@{BWindowTask}!set\_fullscreen@{set\_fullscreen}}
+\index{set\_fullscreen@{set\_fullscreen}!BWindowTask@{BWindowTask}}
+\doxysubsubsection{\texorpdfstring{set\_fullscreen()}{set\_fullscreen()}}
+{\footnotesize\ttfamily void B\+Window\+Task\+::set\+\_\+fullscreen (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{type = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_b_window_task_a139b65e77d60c5727de0cd5bccaa0856}\label{class_b_window_task_a139b65e77d60c5727de0cd5bccaa0856}} 
+\index{BWindowTask@{BWindowTask}!set\_position@{set\_position}}
+\index{set\_position@{set\_position}!BWindowTask@{BWindowTask}}
+\doxysubsubsection{\texorpdfstring{set\_position()}{set\_position()}}
+{\footnotesize\ttfamily void B\+Window\+Task\+::set\+\_\+position (\begin{DoxyParamCaption}\item[{int}]{new\+\_\+left\+\_\+x,  }\item[{int}]{new\+\_\+top\+\_\+y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_b_window_task_a60dd70b6f6c0fd4ad14c5795f3e56f23}\label{class_b_window_task_a60dd70b6f6c0fd4ad14c5795f3e56f23}} 
+\index{BWindowTask@{BWindowTask}!set\_size@{set\_size}}
+\index{set\_size@{set\_size}!BWindowTask@{BWindowTask}}
+\doxysubsubsection{\texorpdfstring{set\_size()}{set\_size()}}
+{\footnotesize\ttfamily void B\+Window\+Task\+::set\+\_\+size (\begin{DoxyParamCaption}\item[{int}]{new\+\_\+width,  }\item[{int}]{new\+\_\+height }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_b_window_task_a9c36ba8c691216bf869523b2cf0f66e1}\label{class_b_window_task_a9c36ba8c691216bf869523b2cf0f66e1}} 
+\index{BWindowTask@{BWindowTask}!set\_windowed@{set\_windowed}}
+\index{set\_windowed@{set\_windowed}!BWindowTask@{BWindowTask}}
+\doxysubsubsection{\texorpdfstring{set\_windowed()}{set\_windowed()}}
+{\footnotesize\ttfamily void B\+Window\+Task\+::set\+\_\+windowed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_b_window_task_a7982ce5ff08fbc342e02087ffaf225fc}\label{class_b_window_task_a7982ce5ff08fbc342e02087ffaf225fc}} 
+\index{BWindowTask@{BWindowTask}!set\_windowTitle@{set\_windowTitle}}
+\index{set\_windowTitle@{set\_windowTitle}!BWindowTask@{BWindowTask}}
+\doxysubsubsection{\texorpdfstring{set\_windowTitle()}{set\_windowTitle()}}
+{\footnotesize\ttfamily void B\+Window\+Task\+::set\+\_\+window\+Title (\begin{DoxyParamCaption}\item[{const char $\ast$}]{title }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_b_window_task_a759744a913619bfdb07a973084fed4fb}\label{class_b_window_task_a759744a913619bfdb07a973084fed4fb}} 
+\index{BWindowTask@{BWindowTask}!swap\_buffers@{swap\_buffers}}
+\index{swap\_buffers@{swap\_buffers}!BWindowTask@{BWindowTask}}
+\doxysubsubsection{\texorpdfstring{swap\_buffers()}{swap\_buffers()}}
+{\footnotesize\ttfamily void B\+Window\+Task\+::swap\+\_\+buffers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_b_window_task_a5abdcd44338663971910f02171c1338e}\label{class_b_window_task_a5abdcd44338663971910f02171c1338e}} 
+\index{BWindowTask@{BWindowTask}!instance@{instance}}
+\index{instance@{instance}!BWindowTask@{BWindowTask}}
+\doxysubsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_window_task}{B\+Window\+Task}} $>$ B\+Window\+Task\+::instance = nullptr\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Git\+Hub/\+Barx\+Engine/\+Barx\+Engine/code/headers/\mbox{\hyperlink{_b_window_task_8hpp}{B\+Window\+Task.\+hpp}}\item 
+D\+:/\+Git\+Hub/\+Barx\+Engine/\+Barx\+Engine/code/source/\mbox{\hyperlink{_b_window_task_8cpp}{B\+Window\+Task.\+cpp}}\end{DoxyCompactItemize}

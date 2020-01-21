@@ -1,19 +1,42 @@
+// File: BKernel.cpp
+// Author: Jorge Bárcena Lumbreras
+
+// © Copyright (C) 2019  Jorge Bárcena Lumbreras
+
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 #include "..\headers\BKernel.hpp"
 #include "..\headers\BTask.hpp"
 #include "..\headers\BAlgoritmosDeOrdenacion.hpp"
 
 
-void BKernel::add_Task(shared_ptr<BTask> task)
+BKernel::BKernel(shared_ptr<BScene> _scene)
+{
+    BTasks = std::vector< shared_ptr<BTask> >();
+    scene = _scene;
+}
+
+void BKernel::addTask(shared_ptr<BTask> task)
 {
 
     if (task != nullptr)
     {
         BTasks.push_back(task);
-        task->set_kernel(this);
+        task->setKernel(this);
     }
 
 }
-
 
 void BKernel::run()
 {
@@ -31,13 +54,13 @@ void BKernel::run()
 
     BTimer timer;
 
-    int now = timer.elapsed_milliseconds();
-    int lastFrame = timer.elapsed_milliseconds();
+    int now = timer.elapsedMiliseconds();
+    int lastFrame = timer.elapsedMiliseconds();
     long TimeToSleep = (1000 / 60) / 1000;
 
     do
     {
-        now = timer.elapsed_milliseconds();
+        now = timer.elapsedMiliseconds();
         int delta = now - lastFrame;
         lastFrame = now;
 
@@ -55,7 +78,7 @@ void BKernel::run()
                 exit = true;
         }
 
-        time = (float)timer.elapsed_milliseconds();
+        time = (float)timer.elapsedMiliseconds();
 
 
     } while (!exit);
@@ -65,4 +88,23 @@ void BKernel::run()
         task->finalize();
     }
 
+}
+
+void BKernel::stop()
+{
+    exit = true;
+}
+
+void BKernel::pause() {
+    paused = true;
+}
+
+void BKernel::resume()
+{
+    paused = false;
+}
+
+shared_ptr<BScene> BKernel::getScene()
+{
+    return scene;
 }
