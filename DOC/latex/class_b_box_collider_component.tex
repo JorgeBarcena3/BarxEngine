@@ -1,9 +1,5 @@
 \hypertarget{class_b_box_collider_component}{}\doxysection{B\+Box\+Collider\+Component Class Reference}
 \label{class_b_box_collider_component}\index{BBoxColliderComponent@{BBoxColliderComponent}}
-
-
-{\ttfamily \#include $<$B\+Box\+Collider\+Component.\+hpp$>$}
-
 Inheritance diagram for B\+Box\+Collider\+Component\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -13,82 +9,31 @@ Inheritance diagram for B\+Box\+Collider\+Component\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_b_box_collider_component_a369bbd760f3d32a72ea51b95437a9806}{B\+Box\+Collider\+Component}} (shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_entity}{B\+Entity}} $>$ \mbox{\hyperlink{class_b_component_a624802174f6aadf23e2dc7547ee02f4a}{parent}})
+\mbox{\Hypertarget{class_b_box_collider_component_a369bbd760f3d32a72ea51b95437a9806}\label{class_b_box_collider_component_a369bbd760f3d32a72ea51b95437a9806}} 
+{\bfseries B\+Box\+Collider\+Component} (shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_entity}{B\+Entity}} $>$ \mbox{\hyperlink{class_b_component_a624802174f6aadf23e2dc7547ee02f4a}{parent}})
 \item 
-bool \mbox{\hyperlink{class_b_box_collider_component_a194c92a04487a38d38cbb20eb8b53f34}{initialize}} ()
+\mbox{\Hypertarget{class_b_box_collider_component_a194c92a04487a38d38cbb20eb8b53f34}\label{class_b_box_collider_component_a194c92a04487a38d38cbb20eb8b53f34}} 
+bool {\bfseries initialize} ()
 \item 
-bool \mbox{\hyperlink{class_b_box_collider_component_a92c19c968e526aabd27f1f1f953eca32}{parse\+\_\+property}} (const string \&name, const string \&value)
+\mbox{\Hypertarget{class_b_box_collider_component_a92c19c968e526aabd27f1f1f953eca32}\label{class_b_box_collider_component_a92c19c968e526aabd27f1f1f953eca32}} 
+bool {\bfseries parse\+\_\+property} (const string \&name, const string \&value)
 \item 
-shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_entity}{B\+Entity}} $>$ \mbox{\hyperlink{class_b_box_collider_component_a7a9f5c390ca0dd5e4e33b0b16e803fdf}{check\+Collisions}} (shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_entity}{B\+Entity}} $>$ other)
+\mbox{\Hypertarget{class_b_box_collider_component_a7a9f5c390ca0dd5e4e33b0b16e803fdf}\label{class_b_box_collider_component_a7a9f5c390ca0dd5e4e33b0b16e803fdf}} 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_entity}{B\+Entity}} $>$ {\bfseries check\+Collisions} (shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_entity}{B\+Entity}} $>$ other)
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{structvec3}{vec3}}$<$ float $>$ \mbox{\hyperlink{class_b_box_collider_component_ac38aacec6dd1df8e54f12a1fdb94cd21}{Max\+Offset}}
-\item 
-\mbox{\hyperlink{structvec3}{vec3}}$<$ float $>$ \mbox{\hyperlink{class_b_box_collider_component_a912fd9facccccfc911d3bc694129ada2}{Min\+Offset}}
-\end{DoxyCompactItemize}
+\mbox{\Hypertarget{class_b_box_collider_component_a171b6c2c4f17b2e5c2c03bc5b4b908a7}\label{class_b_box_collider_component_a171b6c2c4f17b2e5c2c03bc5b4b908a7}} 
+\mbox{\hyperlink{classvec3}{vec3}}$<$ float $>$ \mbox{\hyperlink{class_b_box_collider_component_a171b6c2c4f17b2e5c2c03bc5b4b908a7}{Max\+Offset}}
+\begin{DoxyCompactList}\small\item\em Offset máximo de la caja, la base es el origen. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_b_box_collider_component_a2efeafe46f8668ae8f0ba7d019a63110}\label{class_b_box_collider_component_a2efeafe46f8668ae8f0ba7d019a63110}} 
+\mbox{\hyperlink{classvec3}{vec3}}$<$ float $>$ \mbox{\hyperlink{class_b_box_collider_component_a2efeafe46f8668ae8f0ba7d019a63110}{Min\+Offset}}
+\begin{DoxyCompactList}\small\item\em Offset minimo de la caja, la base es el origen. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
-
-
-\doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_b_box_collider_component_a369bbd760f3d32a72ea51b95437a9806}\label{class_b_box_collider_component_a369bbd760f3d32a72ea51b95437a9806}} 
-\index{BBoxColliderComponent@{BBoxColliderComponent}!BBoxColliderComponent@{BBoxColliderComponent}}
-\index{BBoxColliderComponent@{BBoxColliderComponent}!BBoxColliderComponent@{BBoxColliderComponent}}
-\doxysubsubsection{\texorpdfstring{BBoxColliderComponent()}{BBoxColliderComponent()}}
-{\footnotesize\ttfamily B\+Box\+Collider\+Component\+::\+B\+Box\+Collider\+Component (\begin{DoxyParamCaption}\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_entity}{B\+Entity}} $>$}]{parent }\end{DoxyParamCaption})}
-
-
-
-\doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_b_box_collider_component_a7a9f5c390ca0dd5e4e33b0b16e803fdf}\label{class_b_box_collider_component_a7a9f5c390ca0dd5e4e33b0b16e803fdf}} 
-\index{BBoxColliderComponent@{BBoxColliderComponent}!checkCollisions@{checkCollisions}}
-\index{checkCollisions@{checkCollisions}!BBoxColliderComponent@{BBoxColliderComponent}}
-\doxysubsubsection{\texorpdfstring{checkCollisions()}{checkCollisions()}}
-{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_entity}{B\+Entity}} $>$ B\+Box\+Collider\+Component\+::check\+Collisions (\begin{DoxyParamCaption}\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_entity}{B\+Entity}} $>$}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
-
-
-
-Implements \mbox{\hyperlink{class_b_collider_component_ae05d063d104dd02ee7995ffcf7cb0689}{B\+Collider\+Component}}.
-
-\mbox{\Hypertarget{class_b_box_collider_component_a194c92a04487a38d38cbb20eb8b53f34}\label{class_b_box_collider_component_a194c92a04487a38d38cbb20eb8b53f34}} 
-\index{BBoxColliderComponent@{BBoxColliderComponent}!initialize@{initialize}}
-\index{initialize@{initialize}!BBoxColliderComponent@{BBoxColliderComponent}}
-\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
-{\footnotesize\ttfamily bool B\+Box\+Collider\+Component\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
-
-
-
-Implements \mbox{\hyperlink{class_b_collider_component_a3e36fe62ba229800ac0da823e167e51b}{B\+Collider\+Component}}.
-
-\mbox{\Hypertarget{class_b_box_collider_component_a92c19c968e526aabd27f1f1f953eca32}\label{class_b_box_collider_component_a92c19c968e526aabd27f1f1f953eca32}} 
-\index{BBoxColliderComponent@{BBoxColliderComponent}!parse\_property@{parse\_property}}
-\index{parse\_property@{parse\_property}!BBoxColliderComponent@{BBoxColliderComponent}}
-\doxysubsubsection{\texorpdfstring{parse\_property()}{parse\_property()}}
-{\footnotesize\ttfamily bool B\+Box\+Collider\+Component\+::parse\+\_\+property (\begin{DoxyParamCaption}\item[{const string \&}]{name,  }\item[{const string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
-
-
-
-Implements \mbox{\hyperlink{class_b_collider_component_ae0aad18e7a3936be34d9d3223b4244c9}{B\+Collider\+Component}}.
-
-
-
-\doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{class_b_box_collider_component_ac38aacec6dd1df8e54f12a1fdb94cd21}\label{class_b_box_collider_component_ac38aacec6dd1df8e54f12a1fdb94cd21}} 
-\index{BBoxColliderComponent@{BBoxColliderComponent}!MaxOffset@{MaxOffset}}
-\index{MaxOffset@{MaxOffset}!BBoxColliderComponent@{BBoxColliderComponent}}
-\doxysubsubsection{\texorpdfstring{MaxOffset}{MaxOffset}}
-{\footnotesize\ttfamily \mbox{\hyperlink{structvec3}{vec3}}$<$float$>$ B\+Box\+Collider\+Component\+::\+Max\+Offset}
-
-\mbox{\Hypertarget{class_b_box_collider_component_a912fd9facccccfc911d3bc694129ada2}\label{class_b_box_collider_component_a912fd9facccccfc911d3bc694129ada2}} 
-\index{BBoxColliderComponent@{BBoxColliderComponent}!MinOffset@{MinOffset}}
-\index{MinOffset@{MinOffset}!BBoxColliderComponent@{BBoxColliderComponent}}
-\doxysubsubsection{\texorpdfstring{MinOffset}{MinOffset}}
-{\footnotesize\ttfamily \mbox{\hyperlink{structvec3}{vec3}}$<$float$>$ B\+Box\+Collider\+Component\+::\+Min\+Offset}
-
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/\+Git\+Hub/\+Barx\+Engine/\+Barx\+Engine/code/headers/\mbox{\hyperlink{_b_box_collider_component_8hpp}{B\+Box\+Collider\+Component.\+hpp}}\item 
-D\+:/\+Git\+Hub/\+Barx\+Engine/\+Barx\+Engine/code/source/\mbox{\hyperlink{_b_box_collider_component_8cpp}{B\+Box\+Collider\+Component.\+cpp}}\end{DoxyCompactItemize}
+D\+:/\+Git\+Hub/\+Barx\+Engine/\+Barx\+Engine/code/headers/B\+Box\+Collider\+Component.\+hpp\item 
+D\+:/\+Git\+Hub/\+Barx\+Engine/\+Barx\+Engine/code/source/B\+Box\+Collider\+Component.\+cpp\end{DoxyCompactItemize}

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: D:/GitHub/BarxEngine/BarxEngine/code/headers/rapidxml_utils.hpp Source File</title>
+<title>BArx Engine - Jorge Bárcena: D:/GitHub/BarxEngine/BarxEngine/code/headers/rapidxml_utils.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">BArx Engine - Jorge Bárcena
    </div>
+   <div id="projectbrief">Motor de videojuegos basado en SFML 2</div>
   </td>
  </tr>
  </tbody>
@@ -82,7 +83,7 @@ $(function() {
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacerapidxml.html">rapidxml</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>rapidxml</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> Ch = <span class="keywordtype">char</span>&gt;</div>
@@ -146,7 +147,7 @@ $(function() {
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    };</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> Ch&gt;</div>
-<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="namespacerapidxml.html#a21c1cf2814019385e6b8d09e75af1d34">   93</a></span>&#160;    <span class="keyword">inline</span> std::size_t <a class="code" href="namespacerapidxml.html#a21c1cf2814019385e6b8d09e75af1d34">count_children</a>(<a class="code" href="classrapidxml_1_1xml__node.html">xml_node&lt;Ch&gt;</a> *node)</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="rapidxml__utils_8hpp.html#a21c1cf2814019385e6b8d09e75af1d34">   93</a></span>&#160;    <span class="keyword">inline</span> std::size_t <a class="code" href="rapidxml__utils_8hpp.html#a21c1cf2814019385e6b8d09e75af1d34">count_children</a>(<a class="code" href="classrapidxml_1_1xml__node.html">xml_node&lt;Ch&gt;</a> *node)</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    {</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <a class="code" href="classrapidxml_1_1xml__node.html">xml_node&lt;Ch&gt;</a> *child = node-&gt;<a class="code" href="classrapidxml_1_1xml__node.html#acdf3691224d683f50692616a92a75d3f">first_node</a>();</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        std::size_t count = 0;</div>
@@ -159,7 +160,7 @@ $(function() {
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> Ch&gt;</div>
-<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="namespacerapidxml.html#a6255d15e5d8ad12ebcd7c60da51c97e2">  108</a></span>&#160;    <span class="keyword">inline</span> std::size_t <a class="code" href="namespacerapidxml.html#a6255d15e5d8ad12ebcd7c60da51c97e2">count_attributes</a>(<a class="code" href="classrapidxml_1_1xml__node.html">xml_node&lt;Ch&gt;</a> *node)</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="rapidxml__utils_8hpp.html#a6255d15e5d8ad12ebcd7c60da51c97e2">  108</a></span>&#160;    <span class="keyword">inline</span> std::size_t <a class="code" href="rapidxml__utils_8hpp.html#a6255d15e5d8ad12ebcd7c60da51c97e2">count_attributes</a>(<a class="code" href="classrapidxml_1_1xml__node.html">xml_node&lt;Ch&gt;</a> *node)</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    {</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <a class="code" href="classrapidxml_1_1xml__attribute.html">xml_attribute&lt;Ch&gt;</a> *attr = node-&gt;<a class="code" href="classrapidxml_1_1xml__node.html#ab816ab6f13ee4b0588d5b76b0697511c">first_attribute</a>();</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        std::size_t count = 0;</div>
@@ -175,20 +176,19 @@ $(function() {
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="arapidxml__utils_8hpp_html_a6255d15e5d8ad12ebcd7c60da51c97e2"><div class="ttname"><a href="rapidxml__utils_8hpp.html#a6255d15e5d8ad12ebcd7c60da51c97e2">rapidxml::count_attributes</a></div><div class="ttdeci">std::size_t count_attributes(xml_node&lt; Ch &gt; *node)</div><div class="ttdef"><b>Definition:</b> rapidxml_utils.hpp:108</div></div>
 <div class="ttc" id="aclassrapidxml_1_1file_html_aacd451b3def3ad056fe8342dccee35cd"><div class="ttname"><a href="classrapidxml_1_1file.html#aacd451b3def3ad056fe8342dccee35cd">rapidxml::file::size</a></div><div class="ttdeci">std::size_t size() const</div><div class="ttdef"><b>Definition:</b> rapidxml_utils.hpp:79</div></div>
-<div class="ttc" id="anamespacerapidxml_html_a21c1cf2814019385e6b8d09e75af1d34"><div class="ttname"><a href="namespacerapidxml.html#a21c1cf2814019385e6b8d09e75af1d34">rapidxml::count_children</a></div><div class="ttdeci">std::size_t count_children(xml_node&lt; Ch &gt; *node)</div><div class="ttdef"><b>Definition:</b> rapidxml_utils.hpp:93</div></div>
 <div class="ttc" id="aclassrapidxml_1_1file_html_a90707ccd991cc392dcf4bef37eed9d1f"><div class="ttname"><a href="classrapidxml_1_1file.html#a90707ccd991cc392dcf4bef37eed9d1f">rapidxml::file::file</a></div><div class="ttdeci">file(std::basic_istream&lt; Ch &gt; &amp;stream)</div><div class="ttdef"><b>Definition:</b> rapidxml_utils.hpp:51</div></div>
 <div class="ttc" id="aclassrapidxml_1_1xml__attribute_html"><div class="ttname"><a href="classrapidxml_1_1xml__attribute.html">rapidxml::xml_attribute</a></div><div class="ttdef"><b>Definition:</b> rapidxml.hpp:138</div></div>
 <div class="ttc" id="aclassrapidxml_1_1file_html"><div class="ttname"><a href="classrapidxml_1_1file.html">rapidxml::file</a></div><div class="ttdoc">Represents data loaded from a file.</div><div class="ttdef"><b>Definition:</b> rapidxml_utils.hpp:21</div></div>
 <div class="ttc" id="aclassrapidxml_1_1file_html_af1c71d65862c7af14e4708e32a80c1de"><div class="ttname"><a href="classrapidxml_1_1file.html#af1c71d65862c7af14e4708e32a80c1de">rapidxml::file::data</a></div><div class="ttdeci">Ch * data()</div><div class="ttdef"><b>Definition:</b> rapidxml_utils.hpp:65</div></div>
-<div class="ttc" id="anamespacerapidxml_html"><div class="ttname"><a href="namespacerapidxml.html">rapidxml</a></div><div class="ttdef"><b>Definition:</b> rapidxml.hpp:57</div></div>
 <div class="ttc" id="aclassrapidxml_1_1file_html_a044bdd99e59157b8a5a1b28c2f32da4d"><div class="ttname"><a href="classrapidxml_1_1file.html#a044bdd99e59157b8a5a1b28c2f32da4d">rapidxml::file::data</a></div><div class="ttdeci">const Ch * data() const</div><div class="ttdef"><b>Definition:</b> rapidxml_utils.hpp:72</div></div>
 <div class="ttc" id="aclassrapidxml_1_1xml__node_html_acdf3691224d683f50692616a92a75d3f"><div class="ttname"><a href="classrapidxml_1_1xml__node.html#acdf3691224d683f50692616a92a75d3f">rapidxml::xml_node::first_node</a></div><div class="ttdeci">xml_node&lt; Ch &gt; * first_node(const Ch *name=0, std::size_t name_size=0, bool case_sensitive=true) const</div><div class="ttdef"><b>Definition:</b> rapidxml.hpp:936</div></div>
 <div class="ttc" id="aclassrapidxml_1_1file_html_ae881a3cab1fe7152d45c92a8d7606cb3"><div class="ttname"><a href="classrapidxml_1_1file.html#ae881a3cab1fe7152d45c92a8d7606cb3">rapidxml::file::file</a></div><div class="ttdeci">file(const char *filename)</div><div class="ttdef"><b>Definition:</b> rapidxml_utils.hpp:28</div></div>
+<div class="ttc" id="arapidxml__utils_8hpp_html_a21c1cf2814019385e6b8d09e75af1d34"><div class="ttname"><a href="rapidxml__utils_8hpp.html#a21c1cf2814019385e6b8d09e75af1d34">rapidxml::count_children</a></div><div class="ttdeci">std::size_t count_children(xml_node&lt; Ch &gt; *node)</div><div class="ttdef"><b>Definition:</b> rapidxml_utils.hpp:93</div></div>
 <div class="ttc" id="aclassrapidxml_1_1xml__node_html"><div class="ttname"><a href="classrapidxml_1_1xml__node.html">rapidxml::xml_node</a></div><div class="ttdef"><b>Definition:</b> rapidxml.hpp:137</div></div>
 <div class="ttc" id="aclassrapidxml_1_1xml__attribute_html_affd0c8d0a9020df0998c507cae5474e5"><div class="ttname"><a href="classrapidxml_1_1xml__attribute.html#affd0c8d0a9020df0998c507cae5474e5">rapidxml::xml_attribute::next_attribute</a></div><div class="ttdeci">xml_attribute&lt; Ch &gt; * next_attribute(const Ch *name=0, std::size_t name_size=0, bool case_sensitive=true) const</div><div class="ttdef"><b>Definition:</b> rapidxml.hpp:856</div></div>
 <div class="ttc" id="arapidxml_8hpp_html"><div class="ttname"><a href="rapidxml_8hpp.html">rapidxml.hpp</a></div></div>
-<div class="ttc" id="anamespacerapidxml_html_a6255d15e5d8ad12ebcd7c60da51c97e2"><div class="ttname"><a href="namespacerapidxml.html#a6255d15e5d8ad12ebcd7c60da51c97e2">rapidxml::count_attributes</a></div><div class="ttdeci">std::size_t count_attributes(xml_node&lt; Ch &gt; *node)</div><div class="ttdef"><b>Definition:</b> rapidxml_utils.hpp:108</div></div>
 <div class="ttc" id="aclassrapidxml_1_1xml__node_html_ab816ab6f13ee4b0588d5b76b0697511c"><div class="ttname"><a href="classrapidxml_1_1xml__node.html#ab816ab6f13ee4b0588d5b76b0697511c">rapidxml::xml_node::first_attribute</a></div><div class="ttdeci">xml_attribute&lt; Ch &gt; * first_attribute(const Ch *name=0, std::size_t name_size=0, bool case_sensitive=true) const</div><div class="ttdef"><b>Definition:</b> rapidxml.hpp:1025</div></div>
 <div class="ttc" id="aclassrapidxml_1_1xml__node_html_ad36aa4445ced578f93c3e06770cb3ef9"><div class="ttname"><a href="classrapidxml_1_1xml__node.html#ad36aa4445ced578f93c3e06770cb3ef9">rapidxml::xml_node::next_sibling</a></div><div class="ttdeci">xml_node&lt; Ch &gt; * next_sibling(const Ch *name=0, std::size_t name_size=0, bool case_sensitive=true) const</div><div class="ttdef"><b>Definition:</b> rapidxml.hpp:1004</div></div>
 <!-- start footer part -->

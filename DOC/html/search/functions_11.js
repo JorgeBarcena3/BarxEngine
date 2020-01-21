@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['timedeltatime_639',['timeDeltatime',['../class_b_timer.html#a69c7d84a210ee34dbfd6588bed1440a5',1,'BTimer']]],
-  ['type_640',['type',['../classrapidxml_1_1xml__node.html#a5f91729128856b0aaab598d4364ace60',1,'rapidxml::xml_node::type() const'],['../classrapidxml_1_1xml__node.html#a499bbc9300c1b06821d5c08b24164c68',1,'rapidxml::xml_node::type(node_type type)']]]
+  ['_7ememory_5fpool_291',['~memory_pool',['../classrapidxml_1_1memory__pool.html#a0a3e82126e59e4077f41e933130bb5a0',1,'rapidxml::memory_pool']]]
 ];

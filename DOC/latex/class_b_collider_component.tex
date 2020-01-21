@@ -1,9 +1,5 @@
 \hypertarget{class_b_collider_component}{}\doxysection{B\+Collider\+Component Class Reference}
 \label{class_b_collider_component}\index{BColliderComponent@{BColliderComponent}}
-
-
-{\ttfamily \#include $<$B\+Collider\+Component.\+hpp$>$}
-
 Inheritance diagram for B\+Collider\+Component\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -13,97 +9,33 @@ Inheritance diagram for B\+Collider\+Component\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_b_collider_component_aa8b8fb13b70b6750dc6eae5d6b3741df}{B\+Collider\+Component}} (shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_entity}{B\+Entity}} $>$ \mbox{\hyperlink{class_b_component_a624802174f6aadf23e2dc7547ee02f4a}{parent}})
+\mbox{\Hypertarget{class_b_collider_component_aa8b8fb13b70b6750dc6eae5d6b3741df}\label{class_b_collider_component_aa8b8fb13b70b6750dc6eae5d6b3741df}} 
+{\bfseries B\+Collider\+Component} (shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_entity}{B\+Entity}} $>$ \mbox{\hyperlink{class_b_component_a624802174f6aadf23e2dc7547ee02f4a}{parent}})
 \item 
-void \mbox{\hyperlink{class_b_collider_component_aded0630c6a1a0c0e794153ad5c9786fa}{set\+Function}} (std\+::function$<$ void(shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_entity}{B\+Entity}} $>$, shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_entity}{B\+Entity}} $>$)$>$ my\+Function)
+\mbox{\Hypertarget{class_b_collider_component_aded0630c6a1a0c0e794153ad5c9786fa}\label{class_b_collider_component_aded0630c6a1a0c0e794153ad5c9786fa}} 
+void {\bfseries set\+Function} (std\+::function$<$ void(shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_entity}{B\+Entity}} $>$, shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_entity}{B\+Entity}} $>$)$>$ my\+Function)
 \item 
-virtual bool \mbox{\hyperlink{class_b_collider_component_a3e36fe62ba229800ac0da823e167e51b}{initialize}} ()=0
+\mbox{\Hypertarget{class_b_collider_component_a3e36fe62ba229800ac0da823e167e51b}\label{class_b_collider_component_a3e36fe62ba229800ac0da823e167e51b}} 
+virtual bool {\bfseries initialize} ()=0
 \item 
-virtual bool \mbox{\hyperlink{class_b_collider_component_ae0aad18e7a3936be34d9d3223b4244c9}{parse\+\_\+property}} (const string \&name, const string \&value)=0
+\mbox{\Hypertarget{class_b_collider_component_ae0aad18e7a3936be34d9d3223b4244c9}\label{class_b_collider_component_ae0aad18e7a3936be34d9d3223b4244c9}} 
+virtual bool {\bfseries parse\+\_\+property} (const string \&name, const string \&value)=0
 \item 
-virtual shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_entity}{B\+Entity}} $>$ \mbox{\hyperlink{class_b_collider_component_ae05d063d104dd02ee7995ffcf7cb0689}{check\+Collisions}} (shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_entity}{B\+Entity}} $>$ other)=0
+\mbox{\Hypertarget{class_b_collider_component_ae05d063d104dd02ee7995ffcf7cb0689}\label{class_b_collider_component_ae05d063d104dd02ee7995ffcf7cb0689}} 
+virtual shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_entity}{B\+Entity}} $>$ {\bfseries check\+Collisions} (shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_entity}{B\+Entity}} $>$ other)=0
 \item 
-\mbox{\hyperlink{_b_collider_component_8hpp_ae992fd5190f00c67df89d56a02c917db}{C\+O\+L\+L\+I\+D\+E\+R\+T\+Y\+PE}} \mbox{\hyperlink{class_b_collider_component_a924962c5e6e0c41ee906ab4311f170cc}{get\+Type}} ()
+\mbox{\Hypertarget{class_b_collider_component_a924962c5e6e0c41ee906ab4311f170cc}\label{class_b_collider_component_a924962c5e6e0c41ee906ab4311f170cc}} 
+C\+O\+L\+L\+I\+D\+E\+R\+T\+Y\+PE {\bfseries get\+Type} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{_b_collider_component_8hpp_ae992fd5190f00c67df89d56a02c917db}{C\+O\+L\+L\+I\+D\+E\+R\+T\+Y\+PE}} \mbox{\hyperlink{class_b_collider_component_ac43179b6ed9b05a3b36d86a5ca5a4f61}{type}}
-\end{DoxyCompactItemize}
-
-
-\doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_b_collider_component_aa8b8fb13b70b6750dc6eae5d6b3741df}\label{class_b_collider_component_aa8b8fb13b70b6750dc6eae5d6b3741df}} 
-\index{BColliderComponent@{BColliderComponent}!BColliderComponent@{BColliderComponent}}
-\index{BColliderComponent@{BColliderComponent}!BColliderComponent@{BColliderComponent}}
-\doxysubsubsection{\texorpdfstring{BColliderComponent()}{BColliderComponent()}}
-{\footnotesize\ttfamily B\+Collider\+Component\+::\+B\+Collider\+Component (\begin{DoxyParamCaption}\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_entity}{B\+Entity}} $>$}]{parent }\end{DoxyParamCaption})}
-
-
-
-\doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_b_collider_component_ae05d063d104dd02ee7995ffcf7cb0689}\label{class_b_collider_component_ae05d063d104dd02ee7995ffcf7cb0689}} 
-\index{BColliderComponent@{BColliderComponent}!checkCollisions@{checkCollisions}}
-\index{checkCollisions@{checkCollisions}!BColliderComponent@{BColliderComponent}}
-\doxysubsubsection{\texorpdfstring{checkCollisions()}{checkCollisions()}}
-{\footnotesize\ttfamily virtual shared\+\_\+ptr$<$\mbox{\hyperlink{class_b_entity}{B\+Entity}}$>$ B\+Collider\+Component\+::check\+Collisions (\begin{DoxyParamCaption}\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_entity}{B\+Entity}} $>$}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Implemented in \mbox{\hyperlink{class_b_box_collider_component_a7a9f5c390ca0dd5e4e33b0b16e803fdf}{B\+Box\+Collider\+Component}}, and \mbox{\hyperlink{class_b_shere_collider_component_a13494b834611dff4ebb830fd29383baa}{B\+Shere\+Collider\+Component}}.
-
-\mbox{\Hypertarget{class_b_collider_component_a924962c5e6e0c41ee906ab4311f170cc}\label{class_b_collider_component_a924962c5e6e0c41ee906ab4311f170cc}} 
-\index{BColliderComponent@{BColliderComponent}!getType@{getType}}
-\index{getType@{getType}!BColliderComponent@{BColliderComponent}}
-\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{_b_collider_component_8hpp_ae992fd5190f00c67df89d56a02c917db}{C\+O\+L\+L\+I\+D\+E\+R\+T\+Y\+PE}} B\+Collider\+Component\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\mbox{\Hypertarget{class_b_collider_component_a3e36fe62ba229800ac0da823e167e51b}\label{class_b_collider_component_a3e36fe62ba229800ac0da823e167e51b}} 
-\index{BColliderComponent@{BColliderComponent}!initialize@{initialize}}
-\index{initialize@{initialize}!BColliderComponent@{BColliderComponent}}
-\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
-{\footnotesize\ttfamily virtual bool B\+Collider\+Component\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Implements \mbox{\hyperlink{class_b_component_a0f2c3dcbd6a0c29b1fdd1c11ba9fc955}{B\+Component}}.
-
-
-
-Implemented in \mbox{\hyperlink{class_b_box_collider_component_a194c92a04487a38d38cbb20eb8b53f34}{B\+Box\+Collider\+Component}}, and \mbox{\hyperlink{class_b_shere_collider_component_a27c979685a89baadce022c5350a271ad}{B\+Shere\+Collider\+Component}}.
-
-\mbox{\Hypertarget{class_b_collider_component_ae0aad18e7a3936be34d9d3223b4244c9}\label{class_b_collider_component_ae0aad18e7a3936be34d9d3223b4244c9}} 
-\index{BColliderComponent@{BColliderComponent}!parse\_property@{parse\_property}}
-\index{parse\_property@{parse\_property}!BColliderComponent@{BColliderComponent}}
-\doxysubsubsection{\texorpdfstring{parse\_property()}{parse\_property()}}
-{\footnotesize\ttfamily virtual bool B\+Collider\+Component\+::parse\+\_\+property (\begin{DoxyParamCaption}\item[{const string \&}]{name,  }\item[{const string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Implements \mbox{\hyperlink{class_b_component_a8fdb99fe57c956bb54c2c2d8607816ac}{B\+Component}}.
-
-
-
-Implemented in \mbox{\hyperlink{class_b_box_collider_component_a92c19c968e526aabd27f1f1f953eca32}{B\+Box\+Collider\+Component}}, and \mbox{\hyperlink{class_b_shere_collider_component_ae5fa6db9444833ca8e4df70987f161dc}{B\+Shere\+Collider\+Component}}.
-
-\mbox{\Hypertarget{class_b_collider_component_aded0630c6a1a0c0e794153ad5c9786fa}\label{class_b_collider_component_aded0630c6a1a0c0e794153ad5c9786fa}} 
-\index{BColliderComponent@{BColliderComponent}!setFunction@{setFunction}}
-\index{setFunction@{setFunction}!BColliderComponent@{BColliderComponent}}
-\doxysubsubsection{\texorpdfstring{setFunction()}{setFunction()}}
-{\footnotesize\ttfamily void B\+Collider\+Component\+::set\+Function (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_entity}{B\+Entity}} $>$}]{,  }\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_entity}{B\+Entity}} $>$}]{ }\end{DoxyParamCaption})}
-
-
-
-\doxysubsection{Member Data Documentation}
 \mbox{\Hypertarget{class_b_collider_component_ac43179b6ed9b05a3b36d86a5ca5a4f61}\label{class_b_collider_component_ac43179b6ed9b05a3b36d86a5ca5a4f61}} 
-\index{BColliderComponent@{BColliderComponent}!type@{type}}
-\index{type@{type}!BColliderComponent@{BColliderComponent}}
-\doxysubsubsection{\texorpdfstring{type}{type}}
-{\footnotesize\ttfamily \mbox{\hyperlink{_b_collider_component_8hpp_ae992fd5190f00c67df89d56a02c917db}{C\+O\+L\+L\+I\+D\+E\+R\+T\+Y\+PE}} B\+Collider\+Component\+::type\hspace{0.3cm}{\ttfamily [protected]}}
-
+C\+O\+L\+L\+I\+D\+E\+R\+T\+Y\+PE {\bfseries type}
+\end{DoxyCompactItemize}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/\+Git\+Hub/\+Barx\+Engine/\+Barx\+Engine/code/headers/\mbox{\hyperlink{_b_collider_component_8hpp}{B\+Collider\+Component.\+hpp}}\item 
-D\+:/\+Git\+Hub/\+Barx\+Engine/\+Barx\+Engine/code/source/\mbox{\hyperlink{_b_collider_component_8cpp}{B\+Collider\+Component.\+cpp}}\end{DoxyCompactItemize}
+D\+:/\+Git\+Hub/\+Barx\+Engine/\+Barx\+Engine/code/headers/B\+Collider\+Component.\+hpp\item 
+D\+:/\+Git\+Hub/\+Barx\+Engine/\+Barx\+Engine/code/source/B\+Collider\+Component.\+cpp\end{DoxyCompactItemize}

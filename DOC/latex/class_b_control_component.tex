@@ -1,9 +1,5 @@
 \hypertarget{class_b_control_component}{}\doxysection{B\+Control\+Component Class Reference}
 \label{class_b_control_component}\index{BControlComponent@{BControlComponent}}
-
-
-{\ttfamily \#include $<$B\+Control\+Component.\+hpp$>$}
-
 Inheritance diagram for B\+Control\+Component\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -13,56 +9,22 @@ Inheritance diagram for B\+Control\+Component\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_b_control_component_a2327d54059fd85492c6a1a4cc66034ef}{B\+Control\+Component}} (shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_entity}{B\+Entity}} $>$ \mbox{\hyperlink{class_b_component_a624802174f6aadf23e2dc7547ee02f4a}{parent}})
+\mbox{\Hypertarget{class_b_control_component_a2327d54059fd85492c6a1a4cc66034ef}\label{class_b_control_component_a2327d54059fd85492c6a1a4cc66034ef}} 
+{\bfseries B\+Control\+Component} (shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_entity}{B\+Entity}} $>$ \mbox{\hyperlink{class_b_component_a624802174f6aadf23e2dc7547ee02f4a}{parent}})
 \item 
-void \mbox{\hyperlink{class_b_control_component_a73c3353549ddad2d2c3e2059d3ac8ae4}{set\+Function}} (std\+::function$<$ void(float, shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_entity}{B\+Entity}} $>$)$>$ my\+Function)
+\mbox{\Hypertarget{class_b_control_component_a73c3353549ddad2d2c3e2059d3ac8ae4}\label{class_b_control_component_a73c3353549ddad2d2c3e2059d3ac8ae4}} 
+void {\bfseries set\+Function} (std\+::function$<$ void(float, shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_entity}{B\+Entity}} $>$)$>$ my\+Function)
 \item 
-virtual bool \mbox{\hyperlink{class_b_control_component_a81add685fda53dc12ccd5c78113ed986}{initialize}} () override
+\mbox{\Hypertarget{class_b_control_component_a93c9428d725d0bd59609e5f158bc67dc}\label{class_b_control_component_a93c9428d725d0bd59609e5f158bc67dc}} 
+bool {\bfseries initialize} ()
 \item 
-virtual bool \mbox{\hyperlink{class_b_control_component_a3335ea1b3a32d02f6c31c682c08437bb}{parse\+\_\+property}} (const string \&name, const string \&value) override
+\mbox{\Hypertarget{class_b_control_component_a1cba94677dbd8ea0d4a556ac8c26b675}\label{class_b_control_component_a1cba94677dbd8ea0d4a556ac8c26b675}} 
+bool {\bfseries parse\+\_\+property} (const string \&name, const string \&value)
 \end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
-\doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_b_control_component_a2327d54059fd85492c6a1a4cc66034ef}\label{class_b_control_component_a2327d54059fd85492c6a1a4cc66034ef}} 
-\index{BControlComponent@{BControlComponent}!BControlComponent@{BControlComponent}}
-\index{BControlComponent@{BControlComponent}!BControlComponent@{BControlComponent}}
-\doxysubsubsection{\texorpdfstring{BControlComponent()}{BControlComponent()}}
-{\footnotesize\ttfamily B\+Control\+Component\+::\+B\+Control\+Component (\begin{DoxyParamCaption}\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_entity}{B\+Entity}} $>$}]{parent }\end{DoxyParamCaption})}
-
-
-
-\doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_b_control_component_a81add685fda53dc12ccd5c78113ed986}\label{class_b_control_component_a81add685fda53dc12ccd5c78113ed986}} 
-\index{BControlComponent@{BControlComponent}!initialize@{initialize}}
-\index{initialize@{initialize}!BControlComponent@{BControlComponent}}
-\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
-{\footnotesize\ttfamily bool B\+Control\+Component\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
-
-
-
-Implements \mbox{\hyperlink{class_b_component_a0f2c3dcbd6a0c29b1fdd1c11ba9fc955}{B\+Component}}.
-
-\mbox{\Hypertarget{class_b_control_component_a3335ea1b3a32d02f6c31c682c08437bb}\label{class_b_control_component_a3335ea1b3a32d02f6c31c682c08437bb}} 
-\index{BControlComponent@{BControlComponent}!parse\_property@{parse\_property}}
-\index{parse\_property@{parse\_property}!BControlComponent@{BControlComponent}}
-\doxysubsubsection{\texorpdfstring{parse\_property()}{parse\_property()}}
-{\footnotesize\ttfamily bool B\+Control\+Component\+::parse\+\_\+property (\begin{DoxyParamCaption}\item[{const string \&}]{name,  }\item[{const string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
-
-
-
-Implements \mbox{\hyperlink{class_b_component_a8fdb99fe57c956bb54c2c2d8607816ac}{B\+Component}}.
-
-\mbox{\Hypertarget{class_b_control_component_a73c3353549ddad2d2c3e2059d3ac8ae4}\label{class_b_control_component_a73c3353549ddad2d2c3e2059d3ac8ae4}} 
-\index{BControlComponent@{BControlComponent}!setFunction@{setFunction}}
-\index{setFunction@{setFunction}!BControlComponent@{BControlComponent}}
-\doxysubsubsection{\texorpdfstring{setFunction()}{setFunction()}}
-{\footnotesize\ttfamily void B\+Control\+Component\+::set\+Function (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(float, shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_entity}{B\+Entity}} $>$}]{ }\end{DoxyParamCaption})}
-
-
-
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/\+Git\+Hub/\+Barx\+Engine/\+Barx\+Engine/code/headers/\mbox{\hyperlink{_b_control_component_8hpp}{B\+Control\+Component.\+hpp}}\item 
-D\+:/\+Git\+Hub/\+Barx\+Engine/\+Barx\+Engine/code/source/\mbox{\hyperlink{_b_control_component_8cpp}{B\+Control\+Component.\+cpp}}\end{DoxyCompactItemize}
+D\+:/\+Git\+Hub/\+Barx\+Engine/\+Barx\+Engine/code/headers/B\+Control\+Component.\+hpp\item 
+D\+:/\+Git\+Hub/\+Barx\+Engine/\+Barx\+Engine/code/source/B\+Control\+Component.\+cpp\end{DoxyCompactItemize}

@@ -1,10 +1,11 @@
 var searchData=
 [
-  ['name_577',['name',['../classrapidxml_1_1xml__base.html#aef8ae147fbee59209f714274afc80dc4',1,'rapidxml::xml_base::name() const'],['../classrapidxml_1_1xml__base.html#ae55060ae958c6e6465d6c8db852ec6ce',1,'rapidxml::xml_base::name(const Ch *name, std::size_t size)'],['../classrapidxml_1_1xml__base.html#a4611ddc82ac83a527c65606600eb2a0d',1,'rapidxml::xml_base::name(const Ch *name)']]],
-  ['name_5fsize_578',['name_size',['../classrapidxml_1_1xml__base.html#a20c8ffbe0c7a0b4231681ab8b99330a4',1,'rapidxml::xml_base']]],
-  ['next_5fattribute_579',['next_attribute',['../classrapidxml_1_1xml__attribute.html#affd0c8d0a9020df0998c507cae5474e5',1,'rapidxml::xml_attribute']]],
-  ['next_5fsibling_580',['next_sibling',['../classrapidxml_1_1xml__node.html#ad36aa4445ced578f93c3e06770cb3ef9',1,'rapidxml::xml_node']]],
-  ['node_5fiterator_581',['node_iterator',['../classrapidxml_1_1node__iterator.html#a4e1244b9e9e1d2b5129235806d1e31ad',1,'rapidxml::node_iterator::node_iterator()'],['../classrapidxml_1_1node__iterator.html#a94c3da59b54e4bd003e226cc35b3c266',1,'rapidxml::node_iterator::node_iterator(xml_node&lt; Ch &gt; *node)']]],
-  ['normalize_582',['normalize',['../structvec3.html#aca685af3239f96f0e1a747dcea2227a3',1,'vec3']]],
-  ['nullstr_583',['nullstr',['../classrapidxml_1_1xml__base.html#ad96ff6b1e41dab3ff60b9bc4df769a75',1,'rapidxml::xml_base']]]
+  ['remove_5fall_5fattributes_271',['remove_all_attributes',['../classrapidxml_1_1xml__node.html#aa8d5d9484aa1eb5ff1841a073c84c1aa',1,'rapidxml::xml_node']]],
+  ['remove_5fall_5fnodes_272',['remove_all_nodes',['../classrapidxml_1_1xml__node.html#a95735358b079ae0adcfbbac69aa1fbc3',1,'rapidxml::xml_node']]],
+  ['remove_5fattribute_273',['remove_attribute',['../classrapidxml_1_1xml__node.html#a6f97b1b4f46a94a4587915df3c0c6b57',1,'rapidxml::xml_node']]],
+  ['remove_5ffirst_5fattribute_274',['remove_first_attribute',['../classrapidxml_1_1xml__node.html#aa95192d2a165cca16c551ed2a2a06aec',1,'rapidxml::xml_node']]],
+  ['remove_5ffirst_5fnode_275',['remove_first_node',['../classrapidxml_1_1xml__node.html#a62bf7b276cf7a651a3337f5e0a0ef6ac',1,'rapidxml::xml_node']]],
+  ['remove_5flast_5fattribute_276',['remove_last_attribute',['../classrapidxml_1_1xml__node.html#a1781a2cbedc9a51d609ad5b528125635',1,'rapidxml::xml_node']]],
+  ['remove_5flast_5fnode_277',['remove_last_node',['../classrapidxml_1_1xml__node.html#a9182512e948ec451a83f116cce7c7674',1,'rapidxml::xml_node']]],
+  ['remove_5fnode_278',['remove_node',['../classrapidxml_1_1xml__node.html#a98289923eb9e8889418a9eb0207ea35c',1,'rapidxml::xml_node']]]
 ];

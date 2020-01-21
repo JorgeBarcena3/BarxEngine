@@ -1,1226 +1,416 @@
 \begin{theindex}
 
-  \item {$\sim$BAudio}
-    \subitem {BAudio}, \hyperpage{20}
-  \item {$\sim$BComponent}
-    \subitem {BComponent}, \hyperpage{31}
-  \item {$\sim$BRenderTask}
-    \subitem {BRenderTask}, \hyperpage{48}
-  \item {$\sim$BTask}
-    \subitem {BTask}, \hyperpage{53}
-  \item {$\sim$BWindowTask}
-    \subitem {BWindowTask}, \hyperpage{58}
   \item {$\sim$memory\_pool}
-    \subitem {rapidxml::memory\_pool$<$ Ch $>$}, \hyperpage{67}
+    \subitem {rapidxml::memory\_pool$<$ Ch $>$}, \hyperpage{32}
 
   \indexspace
 
-  \item {A}
-    \subitem {BKeyboard::KEYCODE}, \hyperpage{62}
-  \item {add}
-    \subitem {BDispacher}, \hyperpage{34}
-  \item {add\_component}
-    \subitem {BEntity}, \hyperpage{35}
-  \item {add\_parameter}
-    \subitem {BMessage}, \hyperpage{44}
-  \item {add\_Task}
-    \subitem {BKernel}, \hyperpage{38}
-  \item {algoritmoBurbuja}
-    \subitem {BAlgoritmosDeOrdenacion}, \hyperpage{9}
-  \item {algoritmoInserccionDirecta}
-    \subitem {BAlgoritmosDeOrdenacion}, \hyperpage{9}
+  \item {addComponent}
+    \subitem {BEntity}, \hyperpage{15}
   \item {allocate\_attribute}
-    \subitem {rapidxml::memory\_pool$<$ Ch $>$}, \hyperpage{67}
+    \subitem {rapidxml::memory\_pool$<$ Ch $>$}, \hyperpage{32}
   \item {allocate\_node}
-    \subitem {rapidxml::memory\_pool$<$ Ch $>$}, \hyperpage{68}
+    \subitem {rapidxml::memory\_pool$<$ Ch $>$}, \hyperpage{33}
   \item {allocate\_string}
-    \subitem {rapidxml::memory\_pool$<$ Ch $>$}, \hyperpage{68}
+    \subitem {rapidxml::memory\_pool$<$ Ch $>$}, \hyperpage{33}
   \item {append\_attribute}
-    \subitem {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{85}
+    \subitem {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{56}
   \item {append\_node}
-    \subitem {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{85}
-  \item {attribute\_iterator}
-    \subitem {rapidxml::attribute\_iterator$<$ Ch $>$}, \hyperpage{18}
+    \subitem {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{56}
 
   \indexspace
 
-  \item {B}
-    \subitem {BKeyboard::KEYCODE}, \hyperpage{62}
-  \item {BAlgoritmosDeOrdenacion}, \hyperpage{9}
-    \subitem {algoritmoBurbuja}, \hyperpage{9}
-    \subitem {algoritmoInserccionDirecta}, \hyperpage{9}
-    \subitem {countShort}, \hyperpage{9}
-    \subitem {quickSort}, \hyperpage{10}
-  \item {BAudio}, \hyperpage{19}
-    \subitem {$\sim$BAudio}, \hyperpage{20}
-    \subitem {BAudio}, \hyperpage{20}
-    \subitem {loadMusic}, \hyperpage{20}
-    \subitem {loadSound}, \hyperpage{20}
-    \subitem {makeSound}, \hyperpage{20}
-    \subitem {setMusicVolume}, \hyperpage{20}
-    \subitem {setRelativePath}, \hyperpage{21}
-    \subitem {setSoundVolume}, \hyperpage{21}
-    \subitem {startMusic}, \hyperpage{21}
-    \subitem {stopAllMusic}, \hyperpage{21}
-    \subitem {stopAllSounds}, \hyperpage{21}
-    \subitem {stopChanelId}, \hyperpage{21}
-    \subitem {stopMusicId}, \hyperpage{21}
-  \item {BAudio.hpp}
-    \subitem {Mix\_Music}, \hyperpage{94}
-  \item {BAudio::BAudioInfo}, \hyperpage{22}
-    \subitem {BAudioInfo}, \hyperpage{22}
-    \subitem {channel}, \hyperpage{22}
-    \subitem {music}, \hyperpage{22}
-    \subitem {sound}, \hyperpage{22}
-  \item {BAudioInfo}
-    \subitem {BAudio::BAudioInfo}, \hyperpage{22}
-  \item {BBoxColliderComponent}, \hyperpage{23}
-    \subitem {BBoxColliderComponent}, \hyperpage{23}
-    \subitem {checkCollisions}, \hyperpage{23}
-    \subitem {initialize}, \hyperpage{23}
-    \subitem {MaxOffset}, \hyperpage{24}
-    \subitem {MinOffset}, \hyperpage{24}
-    \subitem {parse\_property}, \hyperpage{23}
-  \item {BCameraComponent}, \hyperpage{24}
-    \subitem {BCameraComponent}, \hyperpage{24}
-    \subitem {initialize}, \hyperpage{25}
-    \subitem {parse\_property}, \hyperpage{25}
-  \item {BCharacterControllerComponent}, \hyperpage{25}
-    \subitem {BCharacterControllerComponent}, \hyperpage{25}
-    \subitem {Down}, \hyperpage{26}
-    \subitem {initialize}, \hyperpage{26}
-    \subitem {Left}, \hyperpage{26}
-    \subitem {parse\_property}, \hyperpage{26}
-    \subitem {Right}, \hyperpage{26}
-    \subitem {speed}, \hyperpage{26}
-    \subitem {Up}, \hyperpage{26}
-  \item {BCharacterControllerTask}, \hyperpage{27}
-    \subitem {BCharacterControllerTask}, \hyperpage{27}
-  \item {BColliderComponent}, \hyperpage{27}
-    \subitem {BColliderComponent}, \hyperpage{28}
-    \subitem {checkCollisions}, \hyperpage{28}
-    \subitem {getType}, \hyperpage{28}
-    \subitem {initialize}, \hyperpage{28}
-    \subitem {parse\_property}, \hyperpage{28}
-    \subitem {setFunction}, \hyperpage{28}
-    \subitem {type}, \hyperpage{29}
-  \item {BColliderComponent.hpp}
-    \subitem {BOX}, \hyperpage{95}
-    \subitem {COLLIDERTYPE}, \hyperpage{95}
-    \subitem {SPHERE}, \hyperpage{95}
-  \item {BColliderTask}, \hyperpage{29}
-    \subitem {BColliderTask}, \hyperpage{29}
-    \subitem {entity}, \hyperpage{29}
-    \subitem {onCollision}, \hyperpage{29}
-    \subitem {scene}, \hyperpage{30}
-  \item {BComponent}, \hyperpage{30}
-    \subitem {$\sim$BComponent}, \hyperpage{31}
-    \subitem {BComponent}, \hyperpage{31}
-    \subitem {getTask}, \hyperpage{31}
-    \subitem {id}, \hyperpage{31}
-    \subitem {initialize}, \hyperpage{31}
-    \subitem {parent}, \hyperpage{32}
-    \subitem {parse\_property}, \hyperpage{31}
-    \subitem {task}, \hyperpage{32}
-  \item {BControlComponent}, \hyperpage{32}
-    \subitem {BControlComponent}, \hyperpage{32}
-    \subitem {initialize}, \hyperpage{32}
-    \subitem {parse\_property}, \hyperpage{33}
-    \subitem {setFunction}, \hyperpage{33}
-  \item {BControlTask}, \hyperpage{33}
-    \subitem {BControlTask}, \hyperpage{33}
-    \subitem {entityReference}, \hyperpage{34}
-    \subitem {myFunction}, \hyperpage{34}
-  \item {BDispacher}, \hyperpage{34}
-    \subitem {add}, \hyperpage{34}
-    \subitem {instance}, \hyperpage{34}
-    \subitem {Send}, \hyperpage{34}
-  \item {BEngine.hpp}
-    \subitem {Input}, \hyperpage{97}
-    \subitem {SDL\_MAIN\_HANDLED}, \hyperpage{97}
-  \item {BEntity}, \hyperpage{35}
-    \subitem {add\_component}, \hyperpage{35}
-    \subitem {BEntity}, \hyperpage{35}
-    \subitem {getComponent}, \hyperpage{35}
-    \subitem {getComponents}, \hyperpage{35}
-    \subitem {getId}, \hyperpage{35}
-    \subitem {getScene}, \hyperpage{36}
-    \subitem {getTransform}, \hyperpage{36}
-    \subitem {initialize}, \hyperpage{36}
-    \subitem {transform}, \hyperpage{36}
-  \item {BInputComponent}, \hyperpage{36}
-    \subitem {BInputComponent}, \hyperpage{36}
-    \subitem {initialize}, \hyperpage{37}
-    \subitem {parse\_property}, \hyperpage{37}
-  \item {BInputMapper}, \hyperpage{37}
-  \item {BKernel}, \hyperpage{37}
-    \subitem {add\_Task}, \hyperpage{38}
-    \subitem {BKernel}, \hyperpage{37}
-    \subitem {getScene}, \hyperpage{38}
-    \subitem {pause}, \hyperpage{38}
-    \subitem {resume}, \hyperpage{38}
-    \subitem {run}, \hyperpage{38}
-    \subitem {stop}, \hyperpage{38}
-  \item {BKeyboard}, \hyperpage{38}
-    \subitem {isKeyPresed}, \hyperpage{39}
-    \subitem {keyMapper}, \hyperpage{39}
-    \subitem {keyPresed}, \hyperpage{39}
-    \subitem {setKeyDown}, \hyperpage{39}
-    \subitem {setKeyUp}, \hyperpage{39}
-  \item {BKeyboard::KEYCODE}, \hyperpage{61}
-    \subitem {A}, \hyperpage{62}
-    \subitem {B}, \hyperpage{62}
-    \subitem {C}, \hyperpage{62}
-    \subitem {D}, \hyperpage{62}
-    \subitem {E}, \hyperpage{62}
-    \subitem {F}, \hyperpage{62}
-    \subitem {G}, \hyperpage{62}
-    \subitem {H}, \hyperpage{62}
-    \subitem {I}, \hyperpage{63}
-    \subitem {J}, \hyperpage{63}
-    \subitem {K}, \hyperpage{63}
-    \subitem {L}, \hyperpage{63}
-    \subitem {M}, \hyperpage{63}
-    \subitem {N}, \hyperpage{63}
-    \subitem {N0}, \hyperpage{63}
-    \subitem {N1}, \hyperpage{63}
-    \subitem {N2}, \hyperpage{63}
-    \subitem {N3}, \hyperpage{63}
-    \subitem {N4}, \hyperpage{64}
-    \subitem {N5}, \hyperpage{64}
-    \subitem {N6}, \hyperpage{64}
-    \subitem {N7}, \hyperpage{64}
-    \subitem {N8}, \hyperpage{64}
-    \subitem {N9}, \hyperpage{64}
-    \subitem {O}, \hyperpage{64}
-    \subitem {P}, \hyperpage{64}
-    \subitem {Q}, \hyperpage{64}
-    \subitem {R}, \hyperpage{64}
-    \subitem {S}, \hyperpage{65}
-    \subitem {T}, \hyperpage{65}
-    \subitem {U}, \hyperpage{65}
-    \subitem {V}, \hyperpage{65}
-    \subitem {W}, \hyperpage{65}
-    \subitem {X}, \hyperpage{65}
-    \subitem {Y}, \hyperpage{65}
-    \subitem {Z}, \hyperpage{65}
-  \item {BKeyboardComponent}, \hyperpage{40}
-    \subitem {BKeyboardComponent}, \hyperpage{40}
-    \subitem {handle}, \hyperpage{40}
-    \subitem {initialize}, \hyperpage{40}
-    \subitem {Keyboard}, \hyperpage{41}
-    \subitem {parse\_property}, \hyperpage{40}
-  \item {BLightComponent}, \hyperpage{41}
-    \subitem {BLightComponent}, \hyperpage{41}
-    \subitem {initialize}, \hyperpage{41}
-    \subitem {parse\_property}, \hyperpage{42}
-  \item {BMainRenderer}, \hyperpage{42}
-    \subitem {BMainRenderer}, \hyperpage{42}
-    \subitem {initialize}, \hyperpage{42}
-    \subitem {parse\_property}, \hyperpage{42}
-  \item {BMainWindowComponent}, \hyperpage{43}
-    \subitem {BMainWindowComponent}, \hyperpage{43}
-    \subitem {initialize}, \hyperpage{43}
-    \subitem {parse\_property}, \hyperpage{43}
-  \item {BMessage}, \hyperpage{44}
-    \subitem {add\_parameter}, \hyperpage{44}
-    \subitem {BMessage}, \hyperpage{44}
-    \subitem {getId}, \hyperpage{44}
-    \subitem {id}, \hyperpage{44}
-    \subitem {parameters}, \hyperpage{45}
-  \item {BMyInputHandlerTask}, \hyperpage{45}
-    \subitem {BMyInputHandlerTask}, \hyperpage{45}
-  \item {BOrbserver}, \hyperpage{45}
-    \subitem {handle}, \hyperpage{46}
-  \item {BOX}
-    \subitem {BColliderComponent.hpp}, \hyperpage{95}
-  \item {BRenderObjectComponent}, \hyperpage{46}
-    \subitem {BRenderObjectComponent}, \hyperpage{46}
-    \subitem {initialize}, \hyperpage{46}
-    \subitem {parse\_property}, \hyperpage{46}
-  \item {BRenderObjectTask}, \hyperpage{47}
-    \subitem {BRenderObjectTask}, \hyperpage{47}
-  \item {BRenderTask}, \hyperpage{47}
-    \subitem {$\sim$BRenderTask}, \hyperpage{48}
-    \subitem {BRenderTask}, \hyperpage{48}
-    \subitem {execute}, \hyperpage{48}
-    \subitem {finalize}, \hyperpage{48}
-    \subitem {getRenderer}, \hyperpage{48}
-    \subitem {getWindow}, \hyperpage{49}
-    \subitem {initialize}, \hyperpage{49}
-    \subitem {instance}, \hyperpage{49}
-    \subitem {render}, \hyperpage{49}
-  \item {BScene}, \hyperpage{49}
-    \subitem {BScene}, \hyperpage{49}
-    \subitem {entitesWithComponent}, \hyperpage{50}
-    \subitem {getDispacher}, \hyperpage{50}
-    \subitem {getEntity}, \hyperpage{50}
-    \subitem {getKeyBoardInput}, \hyperpage{50}
-    \subitem {getRootEntity}, \hyperpage{50}
-    \subitem {reloadScene}, \hyperpage{50}
-    \subitem {run}, \hyperpage{50}
-  \item {BShereColliderComponent}, \hyperpage{51}
-    \subitem {BShereColliderComponent}, \hyperpage{51}
-    \subitem {checkCollisions}, \hyperpage{51}
-    \subitem {initialize}, \hyperpage{51}
-    \subitem {parse\_property}, \hyperpage{51}
-    \subitem {radius}, \hyperpage{52}
-  \item {BTask}, \hyperpage{52}
-    \subitem {$\sim$BTask}, \hyperpage{53}
-    \subitem {BTask}, \hyperpage{53}
-    \subitem {execute}, \hyperpage{53}
-    \subitem {finalize}, \hyperpage{53}
-    \subitem {id}, \hyperpage{54}
-    \subitem {initialize}, \hyperpage{53}
-    \subitem {kernel}, \hyperpage{54}
-    \subitem {operator$<$}, \hyperpage{53}
-    \subitem {priority}, \hyperpage{54}
-    \subitem {set\_kernel}, \hyperpage{53}
-  \item {BTimer}, \hyperpage{54}
-    \subitem {BTimer}, \hyperpage{54}
-    \subitem {elapsed\_milliseconds}, \hyperpage{54}
-    \subitem {elapsed\_seconds}, \hyperpage{55}
-    \subitem {start}, \hyperpage{55}
-    \subitem {timeDeltatime}, \hyperpage{55}
-  \item {BTransformComponent}, \hyperpage{55}
-    \subitem {BTransformComponent}, \hyperpage{55}
-    \subitem {initialize}, \hyperpage{56}
-    \subitem {parse\_property}, \hyperpage{56}
-    \subitem {position}, \hyperpage{56}
-    \subitem {rotation}, \hyperpage{56}
-    \subitem {scale}, \hyperpage{56}
-  \item {BTransformTask}, \hyperpage{56}
-    \subitem {BTransformTask}, \hyperpage{57}
-  \item {BtypeDef.hpp}
-    \subitem {byte}, \hyperpage{103}
-    \subitem {COLLISIONS}, \hyperpage{103}
-    \subitem {ENTITYUPDATES}, \hyperpage{103}
-    \subitem {Id}, \hyperpage{103}
-    \subitem {INPUTSYSTEM}, \hyperpage{103}
-    \subitem {RENDERGENERAL}, \hyperpage{103}
-    \subitem {RENDEROBJECT}, \hyperpage{103}
-    \subitem {SDL\_GLContext}, \hyperpage{103}
-    \subitem {SDL\_Window}, \hyperpage{103}
-    \subitem {TASKPRIORITY}, \hyperpage{103}
-    \subitem {TRANSFORM}, \hyperpage{103}
-    \subitem {WINDOW}, \hyperpage{103}
-  \item {BWindowTask}, \hyperpage{57}
-    \subitem {$\sim$BWindowTask}, \hyperpage{58}
-    \subitem {BWindowTask}, \hyperpage{57}
-    \subitem {clear}, \hyperpage{58}
-    \subitem {execute}, \hyperpage{58}
-    \subitem {finalize}, \hyperpage{58}
-    \subitem {get\_height}, \hyperpage{58}
-    \subitem {get\_width}, \hyperpage{58}
-    \subitem {initialize}, \hyperpage{58}
-    \subitem {instance}, \hyperpage{59}
-    \subitem {set\_fullscreen}, \hyperpage{58}
-    \subitem {set\_position}, \hyperpage{59}
-    \subitem {set\_size}, \hyperpage{59}
-    \subitem {set\_windowed}, \hyperpage{59}
-    \subitem {set\_windowTitle}, \hyperpage{59}
-    \subitem {swap\_buffers}, \hyperpage{59}
-  \item {BWindowTask.cpp}
-    \subitem {DESKTOP}, \hyperpage{115}
-    \subitem {Fullscreen\_Type}, \hyperpage{114}
-    \subitem {REAL}, \hyperpage{115}
-  \item {byte}
-    \subitem {BtypeDef.hpp}, \hyperpage{103}
+  \item {BAudio}, \hyperpage{8}
+  \item {BAudio::BAudioInfo}, \hyperpage{8}
+  \item {BBoxColliderComponent}, \hyperpage{9}
+  \item {BCameraComponent}, \hyperpage{9}
+  \item {BCharacterControllerComponent}, \hyperpage{10}
+  \item {BCharacterControllerTask}, \hyperpage{11}
+  \item {BColliderComponent}, \hyperpage{11}
+  \item {BColliderTask}, \hyperpage{12}
+  \item {BComponent}, \hyperpage{13}
+  \item {BControlComponent}, \hyperpage{14}
+  \item {BControlTask}, \hyperpage{14}
+  \item {BDispacher}, \hyperpage{15}
+  \item {BEntity}, \hyperpage{15}
+    \subitem {addComponent}, \hyperpage{15}
+  \item {BInputComponent}, \hyperpage{16}
+  \item {BInputMapper}, \hyperpage{16}
+  \item {BKernel}, \hyperpage{17}
+  \item {BKeyboard}, \hyperpage{17}
+  \item {BKeyboard::KEYCODE}, \hyperpage{30}
+  \item {BKeyboardComponent}, \hyperpage{17}
+  \item {BLightComponent}, \hyperpage{18}
+  \item {BMainRenderer}, \hyperpage{19}
+  \item {BMainWindowComponent}, \hyperpage{19}
+    \subitem {BMainWindowComponent}, \hyperpage{19}
+  \item {BMessage}, \hyperpage{20}
+  \item {BMyInputHandlerTask}, \hyperpage{20}
+  \item {BOrbserver}, \hyperpage{21}
+  \item {BRenderObjectComponent}, \hyperpage{21}
+  \item {BRenderObjectTask}, \hyperpage{22}
+  \item {BRenderTask}, \hyperpage{22}
+  \item {BScene}, \hyperpage{23}
+  \item {BShereColliderComponent}, \hyperpage{23}
+  \item {BTask}, \hyperpage{24}
+  \item {BTimer}, \hyperpage{25}
+  \item {BTransformComponent}, \hyperpage{25}
+  \item {BTransformTask}, \hyperpage{26}
+  \item {BWindowTask}, \hyperpage{27}
+    \subitem {BWindowTask}, \hyperpage{27}
 
   \indexspace
 
-  \item {C}
-    \subitem {BKeyboard::KEYCODE}, \hyperpage{62}
-  \item {channel}
-    \subitem {BAudio::BAudioInfo}, \hyperpage{22}
-  \item {checkCollisions}
-    \subitem {BBoxColliderComponent}, \hyperpage{23}
-    \subitem {BColliderComponent}, \hyperpage{28}
-    \subitem {BShereColliderComponent}, \hyperpage{51}
   \item {clear}
-    \subitem {BWindowTask}, \hyperpage{58}
-    \subitem {rapidxml::memory\_pool$<$ Ch $>$}, \hyperpage{69}
-    \subitem {rapidxml::xml\_document$<$ Ch $>$}, \hyperpage{83}
+    \subitem {rapidxml::memory\_pool$<$ Ch $>$}, \hyperpage{34}
+    \subitem {rapidxml::xml\_document$<$ Ch $>$}, \hyperpage{54}
   \item {clone\_node}
-    \subitem {rapidxml::memory\_pool$<$ Ch $>$}, \hyperpage{69}
-  \item {COLLIDERTYPE}
-    \subitem {BColliderComponent.hpp}, \hyperpage{95}
-  \item {COLLISIONS}
-    \subitem {BtypeDef.hpp}, \hyperpage{103}
+    \subitem {rapidxml::memory\_pool$<$ Ch $>$}, \hyperpage{34}
   \item {count\_attributes}
-    \subitem {rapidxml}, \hyperpage{11}
+    \subitem {rapidxml\_utils.hpp}, \hyperpage{73}
   \item {count\_children}
-    \subitem {rapidxml}, \hyperpage{12}
-  \item {countShort}
-    \subitem {BAlgoritmosDeOrdenacion}, \hyperpage{9}
+    \subitem {rapidxml\_utils.hpp}, \hyperpage{73}
+  \item {cross}
+    \subitem {vec3$<$ T $>$}, \hyperpage{43}
 
   \indexspace
 
-  \item {D}
-    \subitem {BKeyboard::KEYCODE}, \hyperpage{62}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/headers/BAlgoritmosDeOrdenacion.hpp}, 
-		\hyperpage{93}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/headers/BAudio.hpp}, 
-		\hyperpage{93}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/headers/BBoxColliderComponent.hpp}, 
-		\hyperpage{94}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/headers/BCameraComponent.hpp}, 
-		\hyperpage{94}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/headers/BCharacterController.hpp}, 
-		\hyperpage{94}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/headers/BCharacterControllerTask.hpp}, 
-		\hyperpage{95}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/headers/BColliderComponent.hpp}, 
-		\hyperpage{95}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/headers/BComponent.hpp}, 
-		\hyperpage{95}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/headers/BControlComponent.hpp}, 
-		\hyperpage{96}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/headers/BControlTask.hpp}, 
-		\hyperpage{96}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/headers/BDispacher.hpp}, 
-		\hyperpage{96}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/headers/BEngine.hpp}, 
-		\hyperpage{96}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/headers/BEntity.hpp}, 
-		\hyperpage{97}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/headers/BInputComponent.hpp}, 
-		\hyperpage{97}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/headers/BInputHandlerTask.hpp}, 
-		\hyperpage{97}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/headers/BInputMapper.hpp}, 
-		\hyperpage{98}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/headers/BKernel.hpp}, 
-		\hyperpage{98}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/headers/BKeyboard.hpp}, 
-		\hyperpage{98}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/headers/BKeyboardComponent.hpp}, 
-		\hyperpage{98}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/headers/BLightComponent.hpp}, 
-		\hyperpage{99}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/headers/BMainRenderer.hpp}, 
-		\hyperpage{99}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/headers/BMainWindowComponent.hpp}, 
-		\hyperpage{99}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/headers/BMessage.hpp}, 
-		\hyperpage{99}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/headers/BObserver.hpp}, 
-		\hyperpage{99}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/headers/BRenderObjectComponent.hpp}, 
-		\hyperpage{100}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/headers/BRenderObjectTask.hpp}, 
-		\hyperpage{100}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/headers/BRenderTask.hpp}, 
-		\hyperpage{100}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/headers/BScene.hpp}, 
-		\hyperpage{100}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/headers/BShereColliderComponent.hpp}, 
-		\hyperpage{101}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/headers/BSphereCollider.cpp}, 
-		\hyperpage{101}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/headers/BSphereColliderTask.hpp}, 
-		\hyperpage{101}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/headers/BTask.hpp}, 
-		\hyperpage{101}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/headers/BTimer.hpp}, 
-		\hyperpage{101}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/headers/BTranformTask.hpp}, 
-		\hyperpage{102}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/headers/BTransformComponent.hpp}, 
-		\hyperpage{102}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/headers/BtypeDef.hpp}, 
-		\hyperpage{102}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/headers/BWindowTask.hpp}, 
-		\hyperpage{104}
   \item {D:/GitHub/BarxEngine/BarxEngine/code/headers/rapidxml.hpp}, 
-		\hyperpage{104}
+		\hyperpage{65}
   \item {D:/GitHub/BarxEngine/BarxEngine/code/headers/rapidxml\_iterators.hpp}, 
-		\hyperpage{105}
+		\hyperpage{70}
   \item {D:/GitHub/BarxEngine/BarxEngine/code/headers/rapidxml\_print.hpp}, 
-		\hyperpage{106}
+		\hyperpage{70}
   \item {D:/GitHub/BarxEngine/BarxEngine/code/headers/rapidxml\_utils.hpp}, 
-		\hyperpage{106}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/source/BAudio.cpp}, 
-		\hyperpage{107}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/source/BBoxColliderComponent.cpp}, 
-		\hyperpage{107}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/source/BCameraComponent.cpp}, 
-		\hyperpage{107}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/source/BCharacterController.cpp}, 
-		\hyperpage{108}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/source/BCharacterControllerTask.cpp}, 
-		\hyperpage{108}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/source/BColliderComponent.cpp}, 
-		\hyperpage{108}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/source/BColliderTask.cpp}, 
-		\hyperpage{108}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/source/BComponent.cpp}, 
-		\hyperpage{109}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/source/BControlComponent.cpp}, 
-		\hyperpage{109}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/source/BControlTask.cpp}, 
-		\hyperpage{109}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/source/BDispacher.cpp}, 
-		\hyperpage{109}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/source/BEngine.cpp}, 
-		\hyperpage{110}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/source/BEntity.cpp}, 
-		\hyperpage{110}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/source/BInputComponent.cpp}, 
-		\hyperpage{110}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/source/BInputHandlerTask.cpp}, 
-		\hyperpage{110}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/source/BKernel.cpp}, 
-		\hyperpage{110}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/source/BKeyboard.cpp}, 
-		\hyperpage{111}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/source/BKeyboardComponent.cpp}, 
-		\hyperpage{111}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/source/BLightComponent.cpp}, 
-		\hyperpage{111}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/source/BMainRenderer.cpp}, 
-		\hyperpage{111}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/source/BMainWindowComponent.cpp}, 
-		\hyperpage{112}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/source/BRenderObjectComponent.cpp}, 
-		\hyperpage{112}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/source/BRenderObjectTask.cpp}, 
-		\hyperpage{112}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/source/BRenderTask.cpp}, 
-		\hyperpage{112}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/source/BScene.cpp}, 
-		\hyperpage{113}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/source/BShereColliderComponent.cpp}, 
-		\hyperpage{113}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/source/BTask.cpp}, 
-		\hyperpage{113}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/source/BTimer.cpp}, 
-		\hyperpage{113}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/source/BTransformComponent.cpp}, 
-		\hyperpage{114}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/source/BTransformTask.cpp}, 
-		\hyperpage{114}
-  \item {D:/GitHub/BarxEngine/BarxEngine/code/source/BWindowTask.cpp}, 
-		\hyperpage{114}
+		\hyperpage{72}
   \item {data}
-    \subitem {rapidxml::file$<$ Ch $>$}, \hyperpage{60, 61}
-  \item {DESKTOP}
-    \subitem {BWindowTask.cpp}, \hyperpage{115}
-  \item {difference\_type}
-    \subitem {rapidxml::attribute\_iterator$<$ Ch $>$}, \hyperpage{17}
-    \subitem {rapidxml::node\_iterator$<$ Ch $>$}, \hyperpage{70}
+    \subitem {rapidxml::file$<$ Ch $>$}, \hyperpage{29}
   \item {document}
-    \subitem {rapidxml::xml\_attribute$<$ Ch $>$}, \hyperpage{76}
-    \subitem {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{85}
-  \item {Down}
-    \subitem {BCharacterControllerComponent}, \hyperpage{26}
+    \subitem {rapidxml::xml\_attribute$<$ Ch $>$}, \hyperpage{47}
+    \subitem {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{57}
 
   \indexspace
 
-  \item {E}
-    \subitem {BKeyboard::KEYCODE}, \hyperpage{62}
-  \item {elapsed\_milliseconds}
-    \subitem {BTimer}, \hyperpage{54}
-  \item {elapsed\_seconds}
-    \subitem {BTimer}, \hyperpage{55}
-  \item {entitesWithComponent}
-    \subitem {BScene}, \hyperpage{50}
-  \item {entity}
-    \subitem {BColliderTask}, \hyperpage{29}
-  \item {entityReference}
-    \subitem {BControlTask}, \hyperpage{34}
-  \item {ENTITYUPDATES}
-    \subitem {BtypeDef.hpp}, \hyperpage{103}
-  \item {execute}
-    \subitem {BRenderTask}, \hyperpage{48}
-    \subitem {BTask}, \hyperpage{53}
-    \subitem {BWindowTask}, \hyperpage{58}
-
-  \indexspace
-
-  \item {F}
-    \subitem {BKeyboard::KEYCODE}, \hyperpage{62}
   \item {file}
-    \subitem {rapidxml::file$<$ Ch $>$}, \hyperpage{60}
-  \item {finalize}
-    \subitem {BRenderTask}, \hyperpage{48}
-    \subitem {BTask}, \hyperpage{53}
-    \subitem {BWindowTask}, \hyperpage{58}
+    \subitem {rapidxml::file$<$ Ch $>$}, \hyperpage{28}
   \item {first\_attribute}
-    \subitem {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{86}
+    \subitem {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{57}
   \item {first\_node}
-    \subitem {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{86}
-  \item {Fullscreen\_Type}
-    \subitem {BWindowTask.cpp}, \hyperpage{114}
+    \subitem {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{57}
 
   \indexspace
 
-  \item {G}
-    \subitem {BKeyboard::KEYCODE}, \hyperpage{62}
-  \item {get\_height}
-    \subitem {BWindowTask}, \hyperpage{58}
-  \item {get\_width}
-    \subitem {BWindowTask}, \hyperpage{58}
-  \item {getComponent}
-    \subitem {BEntity}, \hyperpage{35}
-  \item {getComponents}
-    \subitem {BEntity}, \hyperpage{35}
-  \item {getDispacher}
-    \subitem {BScene}, \hyperpage{50}
-  \item {getEntity}
-    \subitem {BScene}, \hyperpage{50}
-  \item {getId}
-    \subitem {BEntity}, \hyperpage{35}
-    \subitem {BMessage}, \hyperpage{44}
-  \item {getKeyBoardInput}
-    \subitem {BScene}, \hyperpage{50}
-  \item {getRenderer}
-    \subitem {BRenderTask}, \hyperpage{48}
-  \item {getRootEntity}
-    \subitem {BScene}, \hyperpage{50}
-  \item {getScene}
-    \subitem {BEntity}, \hyperpage{36}
-    \subitem {BKernel}, \hyperpage{38}
-  \item {getTask}
-    \subitem {BComponent}, \hyperpage{31}
-  \item {getTransform}
-    \subitem {BEntity}, \hyperpage{36}
-  \item {getType}
-    \subitem {BColliderComponent}, \hyperpage{28}
-  \item {getWindow}
-    \subitem {BRenderTask}, \hyperpage{49}
-  \item {glt}, \hyperpage{10}
-
-  \indexspace
-
-  \item {H}
-    \subitem {BKeyboard::KEYCODE}, \hyperpage{62}
-  \item {handle}
-    \subitem {BKeyboardComponent}, \hyperpage{40}
-    \subitem {BOrbserver}, \hyperpage{46}
-
-  \indexspace
-
-  \item {I}
-    \subitem {BKeyboard::KEYCODE}, \hyperpage{63}
-  \item {Id}
-    \subitem {BtypeDef.hpp}, \hyperpage{103}
-  \item {id}
-    \subitem {BComponent}, \hyperpage{31}
-    \subitem {BMessage}, \hyperpage{44}
-    \subitem {BTask}, \hyperpage{54}
-  \item {initialize}
-    \subitem {BBoxColliderComponent}, \hyperpage{23}
-    \subitem {BCameraComponent}, \hyperpage{25}
-    \subitem {BCharacterControllerComponent}, \hyperpage{26}
-    \subitem {BColliderComponent}, \hyperpage{28}
-    \subitem {BComponent}, \hyperpage{31}
-    \subitem {BControlComponent}, \hyperpage{32}
-    \subitem {BEntity}, \hyperpage{36}
-    \subitem {BInputComponent}, \hyperpage{37}
-    \subitem {BKeyboardComponent}, \hyperpage{40}
-    \subitem {BLightComponent}, \hyperpage{41}
-    \subitem {BMainRenderer}, \hyperpage{42}
-    \subitem {BMainWindowComponent}, \hyperpage{43}
-    \subitem {BRenderObjectComponent}, \hyperpage{46}
-    \subitem {BRenderTask}, \hyperpage{49}
-    \subitem {BShereColliderComponent}, \hyperpage{51}
-    \subitem {BTask}, \hyperpage{53}
-    \subitem {BTransformComponent}, \hyperpage{56}
-    \subitem {BWindowTask}, \hyperpage{58}
-  \item {Input}
-    \subitem {BEngine.hpp}, \hyperpage{97}
-  \item {INPUTSYSTEM}
-    \subitem {BtypeDef.hpp}, \hyperpage{103}
   \item {insert\_attribute}
-    \subitem {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{86}
+    \subitem {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{58}
   \item {insert\_node}
-    \subitem {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{87}
-  \item {instance}
-    \subitem {BDispacher}, \hyperpage{34}
-    \subitem {BRenderTask}, \hyperpage{49}
-    \subitem {BWindowTask}, \hyperpage{59}
+    \subitem {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{58}
   \item {inv\_length}
-    \subitem {vec3$<$ T $>$}, \hyperpage{74}
-  \item {isKeyPresed}
-    \subitem {BKeyboard}, \hyperpage{39}
-  \item {iterator\_category}
-    \subitem {rapidxml::attribute\_iterator$<$ Ch $>$}, \hyperpage{17}
-    \subitem {rapidxml::node\_iterator$<$ Ch $>$}, \hyperpage{70}
+    \subitem {vec2$<$ T $>$}, \hyperpage{39}
+  \item {invLengthd}
+    \subitem {vec3$<$ T $>$}, \hyperpage{43}
 
   \indexspace
 
-  \item {J}
-    \subitem {BKeyboard::KEYCODE}, \hyperpage{63}
-
-  \indexspace
-
-  \item {K}
-    \subitem {BKeyboard::KEYCODE}, \hyperpage{63}
-  \item {kernel}
-    \subitem {BTask}, \hyperpage{54}
-  \item {Keyboard}
-    \subitem {BKeyboardComponent}, \hyperpage{41}
-  \item {keyMapper}
-    \subitem {BKeyboard}, \hyperpage{39}
-  \item {keyPresed}
-    \subitem {BKeyboard}, \hyperpage{39}
-
-  \indexspace
-
-  \item {L}
-    \subitem {BKeyboard::KEYCODE}, \hyperpage{63}
   \item {last\_attribute}
-    \subitem {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{87}
+    \subitem {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{58}
   \item {last\_node}
-    \subitem {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{87}
-  \item {Left}
-    \subitem {BCharacterControllerComponent}, \hyperpage{26}
-  \item {loadMusic}
-    \subitem {BAudio}, \hyperpage{20}
-  \item {loadSound}
-    \subitem {BAudio}, \hyperpage{20}
+    \subitem {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{59}
+  \item {length}
+    \subitem {vec2$<$ T $>$}, \hyperpage{39}
+    \subitem {vec3$<$ T $>$}, \hyperpage{43}
 
   \indexspace
 
-  \item {M}
-    \subitem {BKeyboard::KEYCODE}, \hyperpage{63}
-  \item {m\_name}
-    \subitem {rapidxml::xml\_base$<$ Ch $>$}, \hyperpage{81}
-  \item {m\_name\_size}
-    \subitem {rapidxml::xml\_base$<$ Ch $>$}, \hyperpage{81}
-  \item {m\_parent}
-    \subitem {rapidxml::xml\_base$<$ Ch $>$}, \hyperpage{81}
-  \item {m\_value}
-    \subitem {rapidxml::xml\_base$<$ Ch $>$}, \hyperpage{82}
-  \item {m\_value\_size}
-    \subitem {rapidxml::xml\_base$<$ Ch $>$}, \hyperpage{82}
-  \item {makeSound}
-    \subitem {BAudio}, \hyperpage{20}
-  \item {MaxOffset}
-    \subitem {BBoxColliderComponent}, \hyperpage{24}
-  \item {memory\_pool}
-    \subitem {rapidxml::memory\_pool$<$ Ch $>$}, \hyperpage{67}
-  \item {MinOffset}
-    \subitem {BBoxColliderComponent}, \hyperpage{24}
-  \item {Mix\_Music}
-    \subitem {BAudio.hpp}, \hyperpage{94}
-  \item {music}
-    \subitem {BAudio::BAudioInfo}, \hyperpage{22}
-  \item {myFunction}
-    \subitem {BControlTask}, \hyperpage{34}
-
-  \indexspace
-
-  \item {N}
-    \subitem {BKeyboard::KEYCODE}, \hyperpage{63}
-  \item {N0}
-    \subitem {BKeyboard::KEYCODE}, \hyperpage{63}
-  \item {N1}
-    \subitem {BKeyboard::KEYCODE}, \hyperpage{63}
-  \item {N2}
-    \subitem {BKeyboard::KEYCODE}, \hyperpage{63}
-  \item {N3}
-    \subitem {BKeyboard::KEYCODE}, \hyperpage{63}
-  \item {N4}
-    \subitem {BKeyboard::KEYCODE}, \hyperpage{64}
-  \item {N5}
-    \subitem {BKeyboard::KEYCODE}, \hyperpage{64}
-  \item {N6}
-    \subitem {BKeyboard::KEYCODE}, \hyperpage{64}
-  \item {N7}
-    \subitem {BKeyboard::KEYCODE}, \hyperpage{64}
-  \item {N8}
-    \subitem {BKeyboard::KEYCODE}, \hyperpage{64}
-  \item {N9}
-    \subitem {BKeyboard::KEYCODE}, \hyperpage{64}
   \item {name}
-    \subitem {rapidxml::xml\_base$<$ Ch $>$}, \hyperpage{79}
+    \subitem {rapidxml::xml\_base$<$ Ch $>$}, \hyperpage{50}
   \item {name\_size}
-    \subitem {rapidxml::xml\_base$<$ Ch $>$}, \hyperpage{79}
+    \subitem {rapidxml::xml\_base$<$ Ch $>$}, \hyperpage{51}
   \item {next\_attribute}
-    \subitem {rapidxml::xml\_attribute$<$ Ch $>$}, \hyperpage{76}
+    \subitem {rapidxml::xml\_attribute$<$ Ch $>$}, \hyperpage{47}
   \item {next\_sibling}
-    \subitem {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{88}
+    \subitem {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{59}
   \item {node\_cdata}
-    \subitem {rapidxml}, \hyperpage{11}
+    \subitem {rapidxml.hpp}, \hyperpage{66}
   \item {node\_comment}
-    \subitem {rapidxml}, \hyperpage{11}
+    \subitem {rapidxml.hpp}, \hyperpage{66}
   \item {node\_data}
-    \subitem {rapidxml}, \hyperpage{11}
+    \subitem {rapidxml.hpp}, \hyperpage{66}
   \item {node\_declaration}
-    \subitem {rapidxml}, \hyperpage{11}
+    \subitem {rapidxml.hpp}, \hyperpage{66}
   \item {node\_doctype}
-    \subitem {rapidxml}, \hyperpage{11}
+    \subitem {rapidxml.hpp}, \hyperpage{66}
   \item {node\_document}
-    \subitem {rapidxml}, \hyperpage{11}
+    \subitem {rapidxml.hpp}, \hyperpage{66}
   \item {node\_element}
-    \subitem {rapidxml}, \hyperpage{11}
-  \item {node\_iterator}
-    \subitem {rapidxml::node\_iterator$<$ Ch $>$}, \hyperpage{71}
+    \subitem {rapidxml.hpp}, \hyperpage{66}
   \item {node\_pi}
-    \subitem {rapidxml}, \hyperpage{11}
+    \subitem {rapidxml.hpp}, \hyperpage{66}
   \item {node\_type}
-    \subitem {rapidxml}, \hyperpage{11}
+    \subitem {rapidxml.hpp}, \hyperpage{66}
   \item {normalize}
-    \subitem {vec3$<$ T $>$}, \hyperpage{74}
-  \item {nullstr}
-    \subitem {rapidxml::xml\_base$<$ Ch $>$}, \hyperpage{80}
+    \subitem {vec2$<$ T $>$}, \hyperpage{39}
+    \subitem {vec3$<$ T $>$}, \hyperpage{43}
 
   \indexspace
 
-  \item {O}
-    \subitem {BKeyboard::KEYCODE}, \hyperpage{64}
-  \item {onCollision}
-    \subitem {BColliderTask}, \hyperpage{29}
   \item {operator!=}
-    \subitem {rapidxml::attribute\_iterator$<$ Ch $>$}, \hyperpage{18}
-    \subitem {rapidxml::node\_iterator$<$ Ch $>$}, \hyperpage{71}
-  \item {operator$<$}
-    \subitem {BTask}, \hyperpage{53}
+    \subitem {vec2$<$ T $>$}, \hyperpage{39}
+    \subitem {vec3$<$ T $>$}, \hyperpage{44}
   \item {operator$<$$<$}
-    \subitem {rapidxml}, \hyperpage{12}
+    \subitem {rapidxml\_print.hpp}, \hyperpage{71}
   \item {operator$\ast$}
-    \subitem {rapidxml::attribute\_iterator$<$ Ch $>$}, \hyperpage{18}
-    \subitem {rapidxml::node\_iterator$<$ Ch $>$}, \hyperpage{71}
-  \item {operator++}
-    \subitem {rapidxml::attribute\_iterator$<$ Ch $>$}, \hyperpage{19}
-    \subitem {rapidxml::node\_iterator$<$ Ch $>$}, \hyperpage{71, 72}
-  \item {operator-\/$>$}
-    \subitem {rapidxml::attribute\_iterator$<$ Ch $>$}, \hyperpage{19}
-    \subitem {rapidxml::node\_iterator$<$ Ch $>$}, \hyperpage{72}
-  \item {operator-\/-\/}
-    \subitem {rapidxml::attribute\_iterator$<$ Ch $>$}, \hyperpage{19}
-    \subitem {rapidxml::node\_iterator$<$ Ch $>$}, \hyperpage{72}
+    \subitem {vec2$<$ T $>$}, \hyperpage{39}
+    \subitem {vec3$<$ T $>$}, \hyperpage{44}
+  \item {operator$\ast$=}
+    \subitem {vec2$<$ T $>$}, \hyperpage{39}
+    \subitem {vec3$<$ T $>$}, \hyperpage{44}
+  \item {operator+}
+    \subitem {vec2$<$ T $>$}, \hyperpage{40}
+    \subitem {vec3$<$ T $>$}, \hyperpage{44}
+  \item {operator+=}
+    \subitem {vec2$<$ T $>$}, \hyperpage{40}
+    \subitem {vec3$<$ T $>$}, \hyperpage{44}
+  \item {operator-\/}
+    \subitem {vec2$<$ T $>$}, \hyperpage{40}
+    \subitem {vec3$<$ T $>$}, \hyperpage{44}
+  \item {operator-\/=}
+    \subitem {vec2$<$ T $>$}, \hyperpage{40}
+    \subitem {vec3$<$ T $>$}, \hyperpage{45}
+  \item {operator/}
+    \subitem {vec3$<$ T $>$}, \hyperpage{45}
+  \item {operator/=}
+    \subitem {vec2$<$ T $>$}, \hyperpage{40}
+    \subitem {vec3$<$ T $>$}, \hyperpage{45}
+  \item {operator=}
+    \subitem {vec2$<$ T $>$}, \hyperpage{40}
+    \subitem {vec3$<$ T $>$}, \hyperpage{45}
   \item {operator==}
-    \subitem {rapidxml::attribute\_iterator$<$ Ch $>$}, \hyperpage{19}
-    \subitem {rapidxml::node\_iterator$<$ Ch $>$}, \hyperpage{72}
+    \subitem {vec2$<$ T $>$}, \hyperpage{41}
+    \subitem {vec3$<$ T $>$}, \hyperpage{45}
+  \item {operator[]}
+    \subitem {vec2$<$ T $>$}, \hyperpage{41}
+    \subitem {vec3$<$ T $>$}, \hyperpage{45, 46}
 
   \indexspace
 
-  \item {P}
-    \subitem {BKeyboard::KEYCODE}, \hyperpage{64}
-  \item {parameters}
-    \subitem {BMessage}, \hyperpage{45}
   \item {parent}
-    \subitem {BComponent}, \hyperpage{32}
-    \subitem {rapidxml::xml\_base$<$ Ch $>$}, \hyperpage{80}
+    \subitem {rapidxml::xml\_base$<$ Ch $>$}, \hyperpage{51}
   \item {parse}
-    \subitem {rapidxml::xml\_document$<$ Ch $>$}, \hyperpage{83}
+    \subitem {rapidxml::xml\_document$<$ Ch $>$}, \hyperpage{54}
   \item {parse\_comment\_nodes}
-    \subitem {rapidxml}, \hyperpage{13}
+    \subitem {rapidxml.hpp}, \hyperpage{67}
   \item {parse\_declaration\_node}
-    \subitem {rapidxml}, \hyperpage{13}
+    \subitem {rapidxml.hpp}, \hyperpage{67}
   \item {parse\_default}
-    \subitem {rapidxml}, \hyperpage{13}
+    \subitem {rapidxml.hpp}, \hyperpage{67}
   \item {parse\_doctype\_node}
-    \subitem {rapidxml}, \hyperpage{14}
-  \item {parse\_error}
-    \subitem {rapidxml::parse\_error}, \hyperpage{73}
+    \subitem {rapidxml.hpp}, \hyperpage{67}
   \item {parse\_fastest}
-    \subitem {rapidxml}, \hyperpage{14}
+    \subitem {rapidxml.hpp}, \hyperpage{67}
   \item {parse\_full}
-    \subitem {rapidxml}, \hyperpage{14}
+    \subitem {rapidxml.hpp}, \hyperpage{67}
   \item {parse\_no\_data\_nodes}
-    \subitem {rapidxml}, \hyperpage{14}
+    \subitem {rapidxml.hpp}, \hyperpage{68}
   \item {parse\_no\_element\_values}
-    \subitem {rapidxml}, \hyperpage{14}
+    \subitem {rapidxml.hpp}, \hyperpage{68}
   \item {parse\_no\_entity\_translation}
-    \subitem {rapidxml}, \hyperpage{14}
+    \subitem {rapidxml.hpp}, \hyperpage{68}
   \item {parse\_no\_string\_terminators}
-    \subitem {rapidxml}, \hyperpage{15}
+    \subitem {rapidxml.hpp}, \hyperpage{68}
   \item {parse\_no\_utf8}
-    \subitem {rapidxml}, \hyperpage{15}
+    \subitem {rapidxml.hpp}, \hyperpage{68}
   \item {parse\_non\_destructive}
-    \subitem {rapidxml}, \hyperpage{15}
+    \subitem {rapidxml.hpp}, \hyperpage{69}
   \item {parse\_normalize\_whitespace}
-    \subitem {rapidxml}, \hyperpage{15}
+    \subitem {rapidxml.hpp}, \hyperpage{69}
   \item {parse\_pi\_nodes}
-    \subitem {rapidxml}, \hyperpage{15}
-  \item {parse\_property}
-    \subitem {BBoxColliderComponent}, \hyperpage{23}
-    \subitem {BCameraComponent}, \hyperpage{25}
-    \subitem {BCharacterControllerComponent}, \hyperpage{26}
-    \subitem {BColliderComponent}, \hyperpage{28}
-    \subitem {BComponent}, \hyperpage{31}
-    \subitem {BControlComponent}, \hyperpage{33}
-    \subitem {BInputComponent}, \hyperpage{37}
-    \subitem {BKeyboardComponent}, \hyperpage{40}
-    \subitem {BLightComponent}, \hyperpage{42}
-    \subitem {BMainRenderer}, \hyperpage{42}
-    \subitem {BMainWindowComponent}, \hyperpage{43}
-    \subitem {BRenderObjectComponent}, \hyperpage{46}
-    \subitem {BShereColliderComponent}, \hyperpage{51}
-    \subitem {BTransformComponent}, \hyperpage{56}
+    \subitem {rapidxml.hpp}, \hyperpage{69}
   \item {parse\_trim\_whitespace}
-    \subitem {rapidxml}, \hyperpage{15}
+    \subitem {rapidxml.hpp}, \hyperpage{69}
   \item {parse\_validate\_closing\_tags}
-    \subitem {rapidxml}, \hyperpage{16}
-  \item {pause}
-    \subitem {BKernel}, \hyperpage{38}
-  \item {pointer}
-    \subitem {rapidxml::attribute\_iterator$<$ Ch $>$}, \hyperpage{18}
-    \subitem {rapidxml::node\_iterator$<$ Ch $>$}, \hyperpage{70}
-  \item {position}
-    \subitem {BTransformComponent}, \hyperpage{56}
+    \subitem {rapidxml.hpp}, \hyperpage{69}
   \item {prepend\_attribute}
-    \subitem {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{88}
+    \subitem {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{60}
   \item {prepend\_node}
-    \subitem {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{89}
+    \subitem {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{60}
   \item {previous\_attribute}
-    \subitem {rapidxml::xml\_attribute$<$ Ch $>$}, \hyperpage{77}
+    \subitem {rapidxml::xml\_attribute$<$ Ch $>$}, \hyperpage{48}
   \item {previous\_sibling}
-    \subitem {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{89}
+    \subitem {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{61}
   \item {print}
-    \subitem {rapidxml}, \hyperpage{12, 13}
-  \item {print\_no\_indenting}
-    \subitem {rapidxml}, \hyperpage{16}
-  \item {priority}
-    \subitem {BTask}, \hyperpage{54}
+    \subitem {rapidxml\_print.hpp}, \hyperpage{71, 72}
+  \item {producto\_escalar}
+    \subitem {vec2$<$ T $>$}, \hyperpage{41}
+    \subitem {vec3$<$ T $>$}, \hyperpage{46}
 
   \indexspace
 
-  \item {Q}
-    \subitem {BKeyboard::KEYCODE}, \hyperpage{64}
-  \item {quickSort}
-    \subitem {BAlgoritmosDeOrdenacion}, \hyperpage{10}
-
-  \indexspace
-
-  \item {R}
-    \subitem {BKeyboard::KEYCODE}, \hyperpage{64}
-  \item {radius}
-    \subitem {BShereColliderComponent}, \hyperpage{52}
-  \item {rapidxml}, \hyperpage{10}
-    \subitem {count\_attributes}, \hyperpage{11}
-    \subitem {count\_children}, \hyperpage{12}
-    \subitem {node\_cdata}, \hyperpage{11}
-    \subitem {node\_comment}, \hyperpage{11}
-    \subitem {node\_data}, \hyperpage{11}
-    \subitem {node\_declaration}, \hyperpage{11}
-    \subitem {node\_doctype}, \hyperpage{11}
-    \subitem {node\_document}, \hyperpage{11}
-    \subitem {node\_element}, \hyperpage{11}
-    \subitem {node\_pi}, \hyperpage{11}
-    \subitem {node\_type}, \hyperpage{11}
-    \subitem {operator$<$$<$}, \hyperpage{12}
-    \subitem {parse\_comment\_nodes}, \hyperpage{13}
-    \subitem {parse\_declaration\_node}, \hyperpage{13}
-    \subitem {parse\_default}, \hyperpage{13}
-    \subitem {parse\_doctype\_node}, \hyperpage{14}
-    \subitem {parse\_fastest}, \hyperpage{14}
-    \subitem {parse\_full}, \hyperpage{14}
-    \subitem {parse\_no\_data\_nodes}, \hyperpage{14}
-    \subitem {parse\_no\_element\_values}, \hyperpage{14}
-    \subitem {parse\_no\_entity\_translation}, \hyperpage{14}
-    \subitem {parse\_no\_string\_terminators}, \hyperpage{15}
-    \subitem {parse\_no\_utf8}, \hyperpage{15}
-    \subitem {parse\_non\_destructive}, \hyperpage{15}
-    \subitem {parse\_normalize\_whitespace}, \hyperpage{15}
-    \subitem {parse\_pi\_nodes}, \hyperpage{15}
-    \subitem {parse\_trim\_whitespace}, \hyperpage{15}
-    \subitem {parse\_validate\_closing\_tags}, \hyperpage{16}
-    \subitem {print}, \hyperpage{12, 13}
-    \subitem {print\_no\_indenting}, \hyperpage{16}
   \item {rapidxml.hpp}
-    \subitem {RAPIDXML\_ALIGNMENT}, \hyperpage{105}
-    \subitem {RAPIDXML\_DYNAMIC\_POOL\_SIZE}, \hyperpage{105}
-    \subitem {RAPIDXML\_PARSE\_ERROR}, \hyperpage{105}
-    \subitem {RAPIDXML\_STATIC\_POOL\_SIZE}, \hyperpage{105}
-  \item {rapidxml::attribute\_iterator$<$ Ch $>$}, \hyperpage{17}
-    \subitem {attribute\_iterator}, \hyperpage{18}
-    \subitem {difference\_type}, \hyperpage{17}
-    \subitem {iterator\_category}, \hyperpage{17}
-    \subitem {operator!=}, \hyperpage{18}
-    \subitem {operator$\ast$}, \hyperpage{18}
-    \subitem {operator++}, \hyperpage{19}
-    \subitem {operator-\/$>$}, \hyperpage{19}
-    \subitem {operator-\/-\/}, \hyperpage{19}
-    \subitem {operator==}, \hyperpage{19}
-    \subitem {pointer}, \hyperpage{18}
-    \subitem {reference}, \hyperpage{18}
-    \subitem {value\_type}, \hyperpage{18}
-  \item {rapidxml::file$<$ Ch $>$}, \hyperpage{59}
-    \subitem {data}, \hyperpage{60, 61}
-    \subitem {file}, \hyperpage{60}
-    \subitem {size}, \hyperpage{61}
-  \item {rapidxml::memory\_pool$<$ Ch $>$}, \hyperpage{66}
-    \subitem {$\sim$memory\_pool}, \hyperpage{67}
-    \subitem {allocate\_attribute}, \hyperpage{67}
-    \subitem {allocate\_node}, \hyperpage{68}
-    \subitem {allocate\_string}, \hyperpage{68}
-    \subitem {clear}, \hyperpage{69}
-    \subitem {clone\_node}, \hyperpage{69}
-    \subitem {memory\_pool}, \hyperpage{67}
-    \subitem {set\_allocator}, \hyperpage{69}
-  \item {rapidxml::node\_iterator$<$ Ch $>$}, \hyperpage{70}
-    \subitem {difference\_type}, \hyperpage{70}
-    \subitem {iterator\_category}, \hyperpage{70}
-    \subitem {node\_iterator}, \hyperpage{71}
-    \subitem {operator!=}, \hyperpage{71}
-    \subitem {operator$\ast$}, \hyperpage{71}
-    \subitem {operator++}, \hyperpage{71, 72}
-    \subitem {operator-\/$>$}, \hyperpage{72}
-    \subitem {operator-\/-\/}, \hyperpage{72}
-    \subitem {operator==}, \hyperpage{72}
-    \subitem {pointer}, \hyperpage{70}
-    \subitem {reference}, \hyperpage{71}
-    \subitem {value\_type}, \hyperpage{71}
-  \item {rapidxml::parse\_error}, \hyperpage{72}
-    \subitem {parse\_error}, \hyperpage{73}
-    \subitem {what}, \hyperpage{73}
-    \subitem {where}, \hyperpage{73}
-  \item {rapidxml::xml\_attribute$<$ Ch $>$}, \hyperpage{75}
-    \subitem {document}, \hyperpage{76}
-    \subitem {next\_attribute}, \hyperpage{76}
-    \subitem {previous\_attribute}, \hyperpage{77}
-    \subitem {xml\_attribute}, \hyperpage{76}
-    \subitem {xml\_node$<$ Ch $>$}, \hyperpage{77}
-  \item {rapidxml::xml\_base$<$ Ch $>$}, \hyperpage{77}
-    \subitem {m\_name}, \hyperpage{81}
-    \subitem {m\_name\_size}, \hyperpage{81}
-    \subitem {m\_parent}, \hyperpage{81}
-    \subitem {m\_value}, \hyperpage{82}
-    \subitem {m\_value\_size}, \hyperpage{82}
-    \subitem {name}, \hyperpage{79}
-    \subitem {name\_size}, \hyperpage{79}
-    \subitem {nullstr}, \hyperpage{80}
-    \subitem {parent}, \hyperpage{80}
-    \subitem {value}, \hyperpage{80}
-    \subitem {value\_size}, \hyperpage{81}
-    \subitem {xml\_base}, \hyperpage{78}
-  \item {rapidxml::xml\_document$<$ Ch $>$}, \hyperpage{82}
-    \subitem {clear}, \hyperpage{83}
-    \subitem {parse}, \hyperpage{83}
-    \subitem {xml\_document}, \hyperpage{83}
-  \item {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{83}
-    \subitem {append\_attribute}, \hyperpage{85}
-    \subitem {append\_node}, \hyperpage{85}
-    \subitem {document}, \hyperpage{85}
-    \subitem {first\_attribute}, \hyperpage{86}
-    \subitem {first\_node}, \hyperpage{86}
-    \subitem {insert\_attribute}, \hyperpage{86}
-    \subitem {insert\_node}, \hyperpage{87}
-    \subitem {last\_attribute}, \hyperpage{87}
-    \subitem {last\_node}, \hyperpage{87}
-    \subitem {next\_sibling}, \hyperpage{88}
-    \subitem {prepend\_attribute}, \hyperpage{88}
-    \subitem {prepend\_node}, \hyperpage{89}
-    \subitem {previous\_sibling}, \hyperpage{89}
-    \subitem {remove\_all\_attributes}, \hyperpage{89}
-    \subitem {remove\_all\_nodes}, \hyperpage{89}
-    \subitem {remove\_attribute}, \hyperpage{90}
-    \subitem {remove\_first\_attribute}, \hyperpage{90}
-    \subitem {remove\_first\_node}, \hyperpage{90}
-    \subitem {remove\_last\_attribute}, \hyperpage{90}
-    \subitem {remove\_last\_node}, \hyperpage{90}
-    \subitem {remove\_node}, \hyperpage{90}
-    \subitem {type}, \hyperpage{90, 91}
-    \subitem {xml\_node}, \hyperpage{85}
-  \item {RAPIDXML\_ALIGNMENT}
-    \subitem {rapidxml.hpp}, \hyperpage{105}
-  \item {RAPIDXML\_DYNAMIC\_POOL\_SIZE}
-    \subitem {rapidxml.hpp}, \hyperpage{105}
-  \item {RAPIDXML\_PARSE\_ERROR}
-    \subitem {rapidxml.hpp}, \hyperpage{105}
-  \item {RAPIDXML\_STATIC\_POOL\_SIZE}
-    \subitem {rapidxml.hpp}, \hyperpage{105}
-  \item {REAL}
-    \subitem {BWindowTask.cpp}, \hyperpage{115}
-  \item {reference}
-    \subitem {rapidxml::attribute\_iterator$<$ Ch $>$}, \hyperpage{18}
-    \subitem {rapidxml::node\_iterator$<$ Ch $>$}, \hyperpage{71}
-  \item {reloadScene}
-    \subitem {BScene}, \hyperpage{50}
-  \item {remove\_all\_attributes}
-    \subitem {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{89}
-  \item {remove\_all\_nodes}
-    \subitem {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{89}
+    \subitem {node\_cdata}, \hyperpage{66}
+    \subitem {node\_comment}, \hyperpage{66}
+    \subitem {node\_data}, \hyperpage{66}
+    \subitem {node\_declaration}, \hyperpage{66}
+    \subitem {node\_doctype}, \hyperpage{66}
+    \subitem {node\_document}, \hyperpage{66}
+    \subitem {node\_element}, \hyperpage{66}
+    \subitem {node\_pi}, \hyperpage{66}
+    \subitem {node\_type}, \hyperpage{66}
+    \subitem {parse\_comment\_nodes}, \hyperpage{67}
+    \subitem {parse\_declaration\_node}, \hyperpage{67}
+    \subitem {parse\_default}, \hyperpage{67}
+    \subitem {parse\_doctype\_node}, \hyperpage{67}
+    \subitem {parse\_fastest}, \hyperpage{67}
+    \subitem {parse\_full}, \hyperpage{67}
+    \subitem {parse\_no\_data\_nodes}, \hyperpage{68}
+    \subitem {parse\_no\_element\_values}, \hyperpage{68}
+    \subitem {parse\_no\_entity\_translation}, \hyperpage{68}
+    \subitem {parse\_no\_string\_terminators}, \hyperpage{68}
+    \subitem {parse\_no\_utf8}, \hyperpage{68}
+    \subitem {parse\_non\_destructive}, \hyperpage{69}
+    \subitem {parse\_normalize\_whitespace}, \hyperpage{69}
+    \subitem {parse\_pi\_nodes}, \hyperpage{69}
+    \subitem {parse\_trim\_whitespace}, \hyperpage{69}
+    \subitem {parse\_validate\_closing\_tags}, \hyperpage{69}
+  \item {rapidxml::attribute\_iterator$<$ Ch $>$}, \hyperpage{7}
+  \item {rapidxml::file$<$ Ch $>$}, \hyperpage{28}
+    \subitem {data}, \hyperpage{29}
+    \subitem {file}, \hyperpage{28}
+    \subitem {size}, \hyperpage{29}
+  \item {rapidxml::memory\_pool$<$ Ch $>$}, \hyperpage{31}
+    \subitem {$\sim$memory\_pool}, \hyperpage{32}
+    \subitem {allocate\_attribute}, \hyperpage{32}
+    \subitem {allocate\_node}, \hyperpage{33}
+    \subitem {allocate\_string}, \hyperpage{33}
+    \subitem {clear}, \hyperpage{34}
+    \subitem {clone\_node}, \hyperpage{34}
+    \subitem {set\_allocator}, \hyperpage{34}
+  \item {rapidxml::node\_iterator$<$ Ch $>$}, \hyperpage{35}
+  \item {rapidxml::parse\_error}, \hyperpage{36}
+    \subitem {what}, \hyperpage{36}
+    \subitem {where}, \hyperpage{36}
+  \item {rapidxml::xml\_attribute$<$ Ch $>$}, \hyperpage{46}
+    \subitem {document}, \hyperpage{47}
+    \subitem {next\_attribute}, \hyperpage{47}
+    \subitem {previous\_attribute}, \hyperpage{48}
+    \subitem {xml\_attribute}, \hyperpage{47}
+  \item {rapidxml::xml\_base$<$ Ch $>$}, \hyperpage{49}
+    \subitem {name}, \hyperpage{50}
+    \subitem {name\_size}, \hyperpage{51}
+    \subitem {parent}, \hyperpage{51}
+    \subitem {value}, \hyperpage{51, 52}
+    \subitem {value\_size}, \hyperpage{52}
+  \item {rapidxml::xml\_document$<$ Ch $>$}, \hyperpage{53}
+    \subitem {clear}, \hyperpage{54}
+    \subitem {parse}, \hyperpage{54}
+  \item {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{54}
+    \subitem {append\_attribute}, \hyperpage{56}
+    \subitem {append\_node}, \hyperpage{56}
+    \subitem {document}, \hyperpage{57}
+    \subitem {first\_attribute}, \hyperpage{57}
+    \subitem {first\_node}, \hyperpage{57}
+    \subitem {insert\_attribute}, \hyperpage{58}
+    \subitem {insert\_node}, \hyperpage{58}
+    \subitem {last\_attribute}, \hyperpage{58}
+    \subitem {last\_node}, \hyperpage{59}
+    \subitem {next\_sibling}, \hyperpage{59}
+    \subitem {prepend\_attribute}, \hyperpage{60}
+    \subitem {prepend\_node}, \hyperpage{60}
+    \subitem {previous\_sibling}, \hyperpage{61}
+    \subitem {remove\_attribute}, \hyperpage{61}
+    \subitem {remove\_first\_attribute}, \hyperpage{61}
+    \subitem {remove\_first\_node}, \hyperpage{62}
+    \subitem {remove\_last\_attribute}, \hyperpage{62}
+    \subitem {remove\_last\_node}, \hyperpage{62}
+    \subitem {type}, \hyperpage{62}
+    \subitem {xml\_node}, \hyperpage{56}
+  \item {rapidxml\_print.hpp}
+    \subitem {operator$<$$<$}, \hyperpage{71}
+    \subitem {print}, \hyperpage{71, 72}
+  \item {rapidxml\_utils.hpp}
+    \subitem {count\_attributes}, \hyperpage{73}
+    \subitem {count\_children}, \hyperpage{73}
   \item {remove\_attribute}
-    \subitem {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{90}
+    \subitem {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{61}
   \item {remove\_first\_attribute}
-    \subitem {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{90}
+    \subitem {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{61}
   \item {remove\_first\_node}
-    \subitem {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{90}
+    \subitem {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{62}
   \item {remove\_last\_attribute}
-    \subitem {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{90}
+    \subitem {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{62}
   \item {remove\_last\_node}
-    \subitem {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{90}
-  \item {remove\_node}
-    \subitem {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{90}
-  \item {render}
-    \subitem {BRenderTask}, \hyperpage{49}
-  \item {RENDERGENERAL}
-    \subitem {BtypeDef.hpp}, \hyperpage{103}
-  \item {RENDEROBJECT}
-    \subitem {BtypeDef.hpp}, \hyperpage{103}
-  \item {resume}
-    \subitem {BKernel}, \hyperpage{38}
-  \item {Right}
-    \subitem {BCharacterControllerComponent}, \hyperpage{26}
-  \item {rotation}
-    \subitem {BTransformComponent}, \hyperpage{56}
-  \item {run}
-    \subitem {BKernel}, \hyperpage{38}
-    \subitem {BScene}, \hyperpage{50}
+    \subitem {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{62}
 
   \indexspace
 
-  \item {S}
-    \subitem {BKeyboard::KEYCODE}, \hyperpage{65}
-  \item {scale}
-    \subitem {BTransformComponent}, \hyperpage{56}
-  \item {scene}
-    \subitem {BColliderTask}, \hyperpage{30}
-  \item {SDL\_GLContext}
-    \subitem {BtypeDef.hpp}, \hyperpage{103}
-  \item {SDL\_MAIN\_HANDLED}
-    \subitem {BEngine.hpp}, \hyperpage{97}
-  \item {SDL\_Window}
-    \subitem {BtypeDef.hpp}, \hyperpage{103}
-  \item {Send}
-    \subitem {BDispacher}, \hyperpage{34}
   \item {set\_allocator}
-    \subitem {rapidxml::memory\_pool$<$ Ch $>$}, \hyperpage{69}
-  \item {set\_fullscreen}
-    \subitem {BWindowTask}, \hyperpage{58}
-  \item {set\_kernel}
-    \subitem {BTask}, \hyperpage{53}
-  \item {set\_position}
-    \subitem {BWindowTask}, \hyperpage{59}
-  \item {set\_size}
-    \subitem {BWindowTask}, \hyperpage{59}
-  \item {set\_windowed}
-    \subitem {BWindowTask}, \hyperpage{59}
-  \item {set\_windowTitle}
-    \subitem {BWindowTask}, \hyperpage{59}
-  \item {setFunction}
-    \subitem {BColliderComponent}, \hyperpage{28}
-    \subitem {BControlComponent}, \hyperpage{33}
-  \item {setKeyDown}
-    \subitem {BKeyboard}, \hyperpage{39}
-  \item {setKeyUp}
-    \subitem {BKeyboard}, \hyperpage{39}
-  \item {setMusicVolume}
-    \subitem {BAudio}, \hyperpage{20}
-  \item {setRelativePath}
-    \subitem {BAudio}, \hyperpage{21}
-  \item {setSoundVolume}
-    \subitem {BAudio}, \hyperpage{21}
-  \item {setValues}
-    \subitem {vec3$<$ T $>$}, \hyperpage{74}
+    \subitem {rapidxml::memory\_pool$<$ Ch $>$}, \hyperpage{34}
   \item {size}
-    \subitem {rapidxml::file$<$ Ch $>$}, \hyperpage{61}
-  \item {sound}
-    \subitem {BAudio::BAudioInfo}, \hyperpage{22}
-  \item {speed}
-    \subitem {BCharacterControllerComponent}, \hyperpage{26}
-  \item {SPHERE}
-    \subitem {BColliderComponent.hpp}, \hyperpage{95}
-  \item {start}
-    \subitem {BTimer}, \hyperpage{55}
-  \item {startMusic}
-    \subitem {BAudio}, \hyperpage{21}
-  \item {stop}
-    \subitem {BKernel}, \hyperpage{38}
-  \item {stopAllMusic}
-    \subitem {BAudio}, \hyperpage{21}
-  \item {stopAllSounds}
-    \subitem {BAudio}, \hyperpage{21}
-  \item {stopChanelId}
-    \subitem {BAudio}, \hyperpage{21}
-  \item {stopMusicId}
-    \subitem {BAudio}, \hyperpage{21}
-  \item {swap\_buffers}
-    \subitem {BWindowTask}, \hyperpage{59}
+    \subitem {rapidxml::file$<$ Ch $>$}, \hyperpage{29}
 
   \indexspace
 
-  \item {T}
-    \subitem {BKeyboard::KEYCODE}, \hyperpage{65}
-  \item {task}
-    \subitem {BComponent}, \hyperpage{32}
-  \item {TASKPRIORITY}
-    \subitem {BtypeDef.hpp}, \hyperpage{103}
-  \item {timeDeltatime}
-    \subitem {BTimer}, \hyperpage{55}
-  \item {TRANSFORM}
-    \subitem {BtypeDef.hpp}, \hyperpage{103}
-  \item {transform}
-    \subitem {BEntity}, \hyperpage{36}
   \item {type}
-    \subitem {BColliderComponent}, \hyperpage{29}
-    \subitem {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{90, 91}
+    \subitem {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{62}
 
   \indexspace
 
-  \item {U}
-    \subitem {BKeyboard::KEYCODE}, \hyperpage{65}
-  \item {Up}
-    \subitem {BCharacterControllerComponent}, \hyperpage{26}
-
-  \indexspace
-
-  \item {V}
-    \subitem {BKeyboard::KEYCODE}, \hyperpage{65}
   \item {value}
-    \subitem {rapidxml::xml\_base$<$ Ch $>$}, \hyperpage{80}
+    \subitem {rapidxml::xml\_base$<$ Ch $>$}, \hyperpage{51, 52}
   \item {value\_size}
-    \subitem {rapidxml::xml\_base$<$ Ch $>$}, \hyperpage{81}
-  \item {value\_type}
-    \subitem {rapidxml::attribute\_iterator$<$ Ch $>$}, \hyperpage{18}
-    \subitem {rapidxml::node\_iterator$<$ Ch $>$}, \hyperpage{71}
+    \subitem {rapidxml::xml\_base$<$ Ch $>$}, \hyperpage{52}
+  \item {vec2}
+    \subitem {vec2$<$ T $>$}, \hyperpage{38}
+  \item {vec2$<$ T $>$}, \hyperpage{37}
+    \subitem {inv\_length}, \hyperpage{39}
+    \subitem {length}, \hyperpage{39}
+    \subitem {normalize}, \hyperpage{39}
+    \subitem {operator!=}, \hyperpage{39}
+    \subitem {operator$\ast$}, \hyperpage{39}
+    \subitem {operator$\ast$=}, \hyperpage{39}
+    \subitem {operator+}, \hyperpage{40}
+    \subitem {operator+=}, \hyperpage{40}
+    \subitem {operator-\/}, \hyperpage{40}
+    \subitem {operator-\/=}, \hyperpage{40}
+    \subitem {operator/=}, \hyperpage{40}
+    \subitem {operator=}, \hyperpage{40}
+    \subitem {operator==}, \hyperpage{41}
+    \subitem {operator[]}, \hyperpage{41}
+    \subitem {producto\_escalar}, \hyperpage{41}
+    \subitem {vec2}, \hyperpage{38}
   \item {vec3}
-    \subitem {vec3$<$ T $>$}, \hyperpage{74}
-  \item {vec3$<$ T $>$}, \hyperpage{74}
-    \subitem {inv\_length}, \hyperpage{74}
-    \subitem {normalize}, \hyperpage{74}
-    \subitem {setValues}, \hyperpage{74}
-    \subitem {vec3}, \hyperpage{74}
-    \subitem {x}, \hyperpage{75}
-    \subitem {y}, \hyperpage{75}
-    \subitem {z}, \hyperpage{75}
+    \subitem {vec3$<$ T $>$}, \hyperpage{42, 43}
+  \item {vec3$<$ T $>$}, \hyperpage{41}
+    \subitem {cross}, \hyperpage{43}
+    \subitem {invLengthd}, \hyperpage{43}
+    \subitem {length}, \hyperpage{43}
+    \subitem {normalize}, \hyperpage{43}
+    \subitem {operator!=}, \hyperpage{44}
+    \subitem {operator$\ast$}, \hyperpage{44}
+    \subitem {operator$\ast$=}, \hyperpage{44}
+    \subitem {operator+}, \hyperpage{44}
+    \subitem {operator+=}, \hyperpage{44}
+    \subitem {operator-\/}, \hyperpage{44}
+    \subitem {operator-\/=}, \hyperpage{45}
+    \subitem {operator/}, \hyperpage{45}
+    \subitem {operator/=}, \hyperpage{45}
+    \subitem {operator=}, \hyperpage{45}
+    \subitem {operator==}, \hyperpage{45}
+    \subitem {operator[]}, \hyperpage{45, 46}
+    \subitem {producto\_escalar}, \hyperpage{46}
+    \subitem {vec3}, \hyperpage{42, 43}
 
   \indexspace
 
-  \item {W}
-    \subitem {BKeyboard::KEYCODE}, \hyperpage{65}
   \item {what}
-    \subitem {rapidxml::parse\_error}, \hyperpage{73}
+    \subitem {rapidxml::parse\_error}, \hyperpage{36}
   \item {where}
-    \subitem {rapidxml::parse\_error}, \hyperpage{73}
-  \item {WINDOW}
-    \subitem {BtypeDef.hpp}, \hyperpage{103}
+    \subitem {rapidxml::parse\_error}, \hyperpage{36}
 
   \indexspace
 
-  \item {X}
-    \subitem {BKeyboard::KEYCODE}, \hyperpage{65}
-  \item {x}
-    \subitem {vec3$<$ T $>$}, \hyperpage{75}
   \item {xml\_attribute}
-    \subitem {rapidxml::xml\_attribute$<$ Ch $>$}, \hyperpage{76}
-  \item {xml\_base}
-    \subitem {rapidxml::xml\_base$<$ Ch $>$}, \hyperpage{78}
-  \item {xml\_document}
-    \subitem {rapidxml::xml\_document$<$ Ch $>$}, \hyperpage{83}
+    \subitem {rapidxml::xml\_attribute$<$ Ch $>$}, \hyperpage{47}
   \item {xml\_node}
-    \subitem {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{85}
-  \item {xml\_node$<$ Ch $>$}
-    \subitem {rapidxml::xml\_attribute$<$ Ch $>$}, \hyperpage{77}
-
-  \indexspace
-
-  \item {Y}
-    \subitem {BKeyboard::KEYCODE}, \hyperpage{65}
-  \item {y}
-    \subitem {vec3$<$ T $>$}, \hyperpage{75}
-
-  \indexspace
-
-  \item {Z}
-    \subitem {BKeyboard::KEYCODE}, \hyperpage{65}
-  \item {z}
-    \subitem {vec3$<$ T $>$}, \hyperpage{75}
+    \subitem {rapidxml::xml\_node$<$ Ch $>$}, \hyperpage{56}
 
 \end{theindex}

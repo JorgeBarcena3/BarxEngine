@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: BControlTask Class Reference</title>
+<title>BArx Engine - Jorge BÃ¡rcena: BControlTask Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">BArx Engine - Jorge BÃ¡rcena
    </div>
+   <div id="projectbrief">Motor de videojuegos basado en SFML 2</div>
   </td>
  </tr>
  </tbody>
@@ -69,8 +70,6 @@ $(function() {
 <div class="title">BControlTask Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="_b_control_task_8hpp_source.html">BControlTask.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for BControlTask:</div>
 <div class="dyncontent">
@@ -83,87 +82,51 @@ Inheritance diagram for BControlTask:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7a732c4bc49aab49fa51690d4437c35f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_control_task.html#a7a732c4bc49aab49fa51690d4437c35f">BControlTask</a> (shared_ptr&lt; <a class="el" href="class_b_entity.html">BEntity</a> &gt; <a class="el" href="class_b_control_task.html#ab3a493746418fc6e53f7b874cb133a1c">entityReference</a>)</td></tr>
+<tr class="memitem:a7a732c4bc49aab49fa51690d4437c35f"><td class="memItemLeft" align="right" valign="top"><a id="a7a732c4bc49aab49fa51690d4437c35f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>BControlTask</b> (shared_ptr&lt; <a class="el" href="class_b_entity.html">BEntity</a> &gt; <a class="el" href="class_b_control_task.html#a0211401db9ffc56f2212b46dd0f8c8d9">entityReference</a>)</td></tr>
 <tr class="separator:a7a732c4bc49aab49fa51690d4437c35f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_b_task"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_b_task')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_b_task.html">BTask</a></td></tr>
-<tr class="memitem:ab66ae1c91f1d3d9922526e619fce5f85 inherit pub_methods_class_b_task"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_task.html#ab66ae1c91f1d3d9922526e619fce5f85">BTask</a> (int <a class="el" href="class_b_task.html#a73c4582df33382f0cebcc73fe4381871">priority</a>=0)</td></tr>
+<tr class="memitem:ab66ae1c91f1d3d9922526e619fce5f85 inherit pub_methods_class_b_task"><td class="memItemLeft" align="right" valign="top"><a id="ab66ae1c91f1d3d9922526e619fce5f85"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>BTask</b> (int <a class="el" href="class_b_task.html#a73c4582df33382f0cebcc73fe4381871">priority</a>=0)</td></tr>
 <tr class="separator:ab66ae1c91f1d3d9922526e619fce5f85 inherit pub_methods_class_b_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e2ded655be2051c574bd3460de202cd inherit pub_methods_class_b_task"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_task.html#a4e2ded655be2051c574bd3460de202cd">~BTask</a> ()</td></tr>
-<tr class="separator:a4e2ded655be2051c574bd3460de202cd inherit pub_methods_class_b_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae653926d5405e35c60c2da5f00ad1a3b inherit pub_methods_class_b_task"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_task.html#ae653926d5405e35c60c2da5f00ad1a3b">set_kernel</a> (<a class="el" href="class_b_kernel.html">BKernel</a> *new_kernel)</td></tr>
-<tr class="separator:ae653926d5405e35c60c2da5f00ad1a3b inherit pub_methods_class_b_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3a690ac74f7616d769caf2cdde59a90 inherit pub_methods_class_b_task"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_task.html#aa3a690ac74f7616d769caf2cdde59a90">operator&lt;</a> (const <a class="el" href="class_b_task.html">BTask</a> &amp;other) const</td></tr>
+<tr class="memitem:a854a52f3e8f0b26c0e015558e65c03f7 inherit pub_methods_class_b_task"><td class="memItemLeft" align="right" valign="top"><a id="a854a52f3e8f0b26c0e015558e65c03f7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setKernel</b> (<a class="el" href="class_b_kernel.html">BKernel</a> *new_kernel)</td></tr>
+<tr class="separator:a854a52f3e8f0b26c0e015558e65c03f7 inherit pub_methods_class_b_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3a690ac74f7616d769caf2cdde59a90 inherit pub_methods_class_b_task"><td class="memItemLeft" align="right" valign="top"><a id="aa3a690ac74f7616d769caf2cdde59a90"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;</b> (const <a class="el" href="class_b_task.html">BTask</a> &amp;other) const</td></tr>
 <tr class="separator:aa3a690ac74f7616d769caf2cdde59a90 inherit pub_methods_class_b_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ab3a493746418fc6e53f7b874cb133a1c"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; <a class="el" href="class_b_entity.html">BEntity</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_control_task.html#ab3a493746418fc6e53f7b874cb133a1c">entityReference</a></td></tr>
-<tr class="separator:ab3a493746418fc6e53f7b874cb133a1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52e739ff9a28b7c24f0256951fd3c135"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(float, shared_ptr&lt; <a class="el" href="class_b_entity.html">BEntity</a> &gt;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_control_task.html#a52e739ff9a28b7c24f0256951fd3c135">myFunction</a></td></tr>
-<tr class="separator:a52e739ff9a28b7c24f0256951fd3c135"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0211401db9ffc56f2212b46dd0f8c8d9"><td class="memItemLeft" align="right" valign="top"><a id="a0211401db9ffc56f2212b46dd0f8c8d9"></a>
+shared_ptr&lt; <a class="el" href="class_b_entity.html">BEntity</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_control_task.html#a0211401db9ffc56f2212b46dd0f8c8d9">entityReference</a></td></tr>
+<tr class="memdesc:a0211401db9ffc56f2212b46dd0f8c8d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Referencia a la entidad padre. <br /></td></tr>
+<tr class="separator:a0211401db9ffc56f2212b46dd0f8c8d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3f282b3834bf7c9aa0d222405a33baa"><td class="memItemLeft" align="right" valign="top"><a id="af3f282b3834bf7c9aa0d222405a33baa"></a>
+std::function&lt; void(float, shared_ptr&lt; <a class="el" href="class_b_entity.html">BEntity</a> &gt;) &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_control_task.html#af3f282b3834bf7c9aa0d222405a33baa">myFunction</a></td></tr>
+<tr class="memdesc:af3f282b3834bf7c9aa0d222405a33baa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcion que se ejecutará en cada ciclo. <br /></td></tr>
+<tr class="separator:af3f282b3834bf7c9aa0d222405a33baa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_class_b_task"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_b_task')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_b_task.html">BTask</a></td></tr>
-<tr class="memitem:a73c4582df33382f0cebcc73fe4381871 inherit pub_attribs_class_b_task"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_task.html#a73c4582df33382f0cebcc73fe4381871">priority</a></td></tr>
+<tr class="memitem:a73c4582df33382f0cebcc73fe4381871 inherit pub_attribs_class_b_task"><td class="memItemLeft" align="right" valign="top"><a id="a73c4582df33382f0cebcc73fe4381871"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_task.html#a73c4582df33382f0cebcc73fe4381871">priority</a></td></tr>
+<tr class="memdesc:a73c4582df33382f0cebcc73fe4381871 inherit pub_attribs_class_b_task"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prioridad de la tarea. <br /></td></tr>
 <tr class="separator:a73c4582df33382f0cebcc73fe4381871 inherit pub_attribs_class_b_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_class_b_task"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_b_task')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_b_task.html">BTask</a></td></tr>
-<tr class="memitem:a761666cd408350310fee5be15023c09a inherit pro_attribs_class_b_task"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_b_kernel.html">BKernel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_task.html#a761666cd408350310fee5be15023c09a">kernel</a></td></tr>
+<tr class="memitem:a761666cd408350310fee5be15023c09a inherit pro_attribs_class_b_task"><td class="memItemLeft" align="right" valign="top"><a id="a761666cd408350310fee5be15023c09a"></a>
+<a class="el" href="class_b_kernel.html">BKernel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_task.html#a761666cd408350310fee5be15023c09a">kernel</a></td></tr>
+<tr class="memdesc:a761666cd408350310fee5be15023c09a inherit pro_attribs_class_b_task"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kernel al que está adjudicado la tarea. <br /></td></tr>
 <tr class="separator:a761666cd408350310fee5be15023c09a inherit pro_attribs_class_b_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59554c3b9556e40fe65fb95cba680758 inherit pro_attribs_class_b_task"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_task.html#a59554c3b9556e40fe65fb95cba680758">id</a></td></tr>
+<tr class="memitem:a59554c3b9556e40fe65fb95cba680758 inherit pro_attribs_class_b_task"><td class="memItemLeft" align="right" valign="top"><a id="a59554c3b9556e40fe65fb95cba680758"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_b_task.html#a59554c3b9556e40fe65fb95cba680758">id</a></td></tr>
+<tr class="memdesc:a59554c3b9556e40fe65fb95cba680758 inherit pro_attribs_class_b_task"><td class="mdescLeft">&#160;</td><td class="mdescRight">Id de la tarea. <br /></td></tr>
 <tr class="separator:a59554c3b9556e40fe65fb95cba680758 inherit pro_attribs_class_b_task"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a7a732c4bc49aab49fa51690d4437c35f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a732c4bc49aab49fa51690d4437c35f">&#9670;&nbsp;</a></span>BControlTask()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">BControlTask::BControlTask </td>
-          <td>(</td>
-          <td class="paramtype">shared_ptr&lt; <a class="el" href="class_b_entity.html">BEntity</a> &gt;&#160;</td>
-          <td class="paramname"><em>entityReference</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="ab3a493746418fc6e53f7b874cb133a1c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab3a493746418fc6e53f7b874cb133a1c">&#9670;&nbsp;</a></span>entityReference</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">shared_ptr&lt;<a class="el" href="class_b_entity.html">BEntity</a>&gt; BControlTask::entityReference</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a52e739ff9a28b7c24f0256951fd3c135"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52e739ff9a28b7c24f0256951fd3c135">&#9670;&nbsp;</a></span>myFunction</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::function&lt;void(float, shared_ptr&lt;<a class="el" href="class_b_entity.html">BEntity</a>&gt;)&gt; BControlTask::myFunction</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>D:/GitHub/BarxEngine/BarxEngine/code/headers/<a class="el" href="_b_control_task_8hpp_source.html">BControlTask.hpp</a></li>
-<li>D:/GitHub/BarxEngine/BarxEngine/code/source/<a class="el" href="_b_control_task_8cpp.html">BControlTask.cpp</a></li>
+<li>D:/GitHub/BarxEngine/BarxEngine/code/source/BControlTask.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

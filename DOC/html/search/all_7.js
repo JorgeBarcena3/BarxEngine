@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['h_166',['H',['../struct_b_keyboard_1_1_k_e_y_c_o_d_e.html#ae9cd59ffd8d12a6a0eb28a57022694b1',1,'BKeyboard::KEYCODE']]],
-  ['handle_167',['handle',['../class_b_keyboard_component.html#a9bb235e5b50a7cad10aad93e95bef051',1,'BKeyboardComponent::handle()'],['../class_b_orbserver.html#a04eb887479788fd7793047e987fbb2c8',1,'BOrbserver::handle()']]]
+  ['kernel_61',['kernel',['../class_b_task.html#a761666cd408350310fee5be15023c09a',1,'BTask']]],
+  ['keyboard_62',['Keyboard',['../class_b_keyboard_component.html#ac1543f2c702953550360105ba99d7a04',1,'BKeyboardComponent']]],
+  ['keycode_63',['KEYCODE',['../struct_b_keyboard_1_1_k_e_y_c_o_d_e.html',1,'BKeyboard']]]
 ];

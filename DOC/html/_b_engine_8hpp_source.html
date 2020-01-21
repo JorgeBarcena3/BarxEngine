@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: D:/GitHub/BarxEngine/BarxEngine/code/headers/BEngine.hpp Source File</title>
+<title>BArx Engine - Jorge BÃ¡rcena: D:/GitHub/BarxEngine/BarxEngine/code/headers/BEngine.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">BArx Engine - Jorge BÃ¡rcena
    </div>
+   <div id="projectbrief">Motor de videojuegos basado en SFML 2</div>
   </td>
  </tr>
  </tbody>
@@ -69,7 +70,7 @@ $(function() {
 <div class="title">BEngine.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_b_engine_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// File: BEngine.hpp</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// File: BEngine.hpp</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Author: Jorge Bárcena Lumbreras</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// © Copyright (C) 2019  Jorge Bárcena Lumbreras</span></div>
@@ -86,36 +87,27 @@ $(function() {
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// You should have received a copy of the GNU General Public License</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="_b_engine_8hpp.html#a51f528deaaeb973f417b46a2ec36f850">   20</a></span>&#160;<span class="preprocessor">#define SDL_MAIN_HANDLED</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_btype_def_8hpp.html">BtypeDef.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_b_scene_8hpp.html">BScene.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_b_entity_8hpp.html">BEntity.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_b_component_8hpp.html">BComponent.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_b_control_component_8hpp.html">BControlComponent.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_b_collider_component_8hpp.html">BColliderComponent.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_b_transform_component_8hpp.html">BTransformComponent.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_b_keyboard_8hpp.html">BKeyboard.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_b_audio_8hpp.html">BAudio.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_b_window_task_8hpp.html">BWindowTask.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="_b_engine_8hpp.html#af2259c078f8a133e816999d8c39033a5">   32</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="class_b_keyboard.html">BKeyboard</a> <a class="code" href="_b_engine_8hpp.html#af2259c078f8a133e816999d8c39033a5">Input</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifndef BARX_ENGINE_BENGINE</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define BARX_ENGINE_BENGINE</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#define SDL_MAIN_HANDLED</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;BtypeDef.hpp&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;BScene.hpp&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;BEntity.hpp&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;BComponent.hpp&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;BControlComponent.hpp&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;BColliderComponent.hpp&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;BTransformComponent.hpp&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;BKeyboard.hpp&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;BAudio.hpp&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;BWindowTask.hpp&quot;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">typedef</span> <a class="code" href="class_b_keyboard.html">BKeyboard</a> <a class="code" href="class_b_keyboard.html">Input</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="a_b_keyboard_8hpp_html"><div class="ttname"><a href="_b_keyboard_8hpp.html">BKeyboard.hpp</a></div></div>
-<div class="ttc" id="a_b_engine_8hpp_html_af2259c078f8a133e816999d8c39033a5"><div class="ttname"><a href="_b_engine_8hpp.html#af2259c078f8a133e816999d8c39033a5">Input</a></div><div class="ttdeci">BKeyboard Input</div><div class="ttdef"><b>Definition:</b> BEngine.hpp:32</div></div>
-<div class="ttc" id="a_btype_def_8hpp_html"><div class="ttname"><a href="_btype_def_8hpp.html">BtypeDef.hpp</a></div></div>
-<div class="ttc" id="a_b_entity_8hpp_html"><div class="ttname"><a href="_b_entity_8hpp.html">BEntity.hpp</a></div></div>
-<div class="ttc" id="a_b_audio_8hpp_html"><div class="ttname"><a href="_b_audio_8hpp.html">BAudio.hpp</a></div></div>
-<div class="ttc" id="a_b_control_component_8hpp_html"><div class="ttname"><a href="_b_control_component_8hpp.html">BControlComponent.hpp</a></div></div>
-<div class="ttc" id="a_b_transform_component_8hpp_html"><div class="ttname"><a href="_b_transform_component_8hpp.html">BTransformComponent.hpp</a></div></div>
-<div class="ttc" id="a_b_component_8hpp_html"><div class="ttname"><a href="_b_component_8hpp.html">BComponent.hpp</a></div></div>
-<div class="ttc" id="aclass_b_keyboard_html"><div class="ttname"><a href="class_b_keyboard.html">BKeyboard</a></div><div class="ttdef"><b>Definition:</b> BKeyboard.hpp:4</div></div>
-<div class="ttc" id="a_b_scene_8hpp_html"><div class="ttname"><a href="_b_scene_8hpp.html">BScene.hpp</a></div></div>
-<div class="ttc" id="a_b_collider_component_8hpp_html"><div class="ttname"><a href="_b_collider_component_8hpp.html">BColliderComponent.hpp</a></div></div>
-<div class="ttc" id="a_b_window_task_8hpp_html"><div class="ttname"><a href="_b_window_task_8hpp.html">BWindowTask.hpp</a></div></div>
+<div class="ttc" id="aclass_b_keyboard_html"><div class="ttname"><a href="class_b_keyboard.html">BKeyboard</a></div><div class="ttdef"><b>Definition:</b> BKeyboard.hpp:27</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

@@ -13,6 +13,7 @@ Inheritance diagram for rapidxml\+::xml\+\_\+document$<$ Ch $>$\+:\begin{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{classrapidxml_1_1xml__document_aae8841b15085ba8f32ff46587ace28f5}\label{classrapidxml_1_1xml__document_aae8841b15085ba8f32ff46587ace28f5}} 
 \mbox{\hyperlink{classrapidxml_1_1xml__document_aae8841b15085ba8f32ff46587ace28f5}{xml\+\_\+document}} ()
 \begin{DoxyCompactList}\small\item\em Constructs empty X\+ML document. \end{DoxyCompactList}\item 
 {\footnotesize template$<$int Flags$>$ }\\void \mbox{\hyperlink{classrapidxml_1_1xml__document_ac6e73ff9ac323bf5a370c38feb03a6b1}{parse}} (Ch $\ast$text)
@@ -33,20 +34,6 @@ This class represents root of the D\+OM hierarchy. It is also an \mbox{\hyperlin
 \end{DoxyParams}
 
 
-\doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classrapidxml_1_1xml__document_aae8841b15085ba8f32ff46587ace28f5}\label{classrapidxml_1_1xml__document_aae8841b15085ba8f32ff46587ace28f5}} 
-\index{rapidxml::xml\_document$<$ Ch $>$@{rapidxml::xml\_document$<$ Ch $>$}!xml\_document@{xml\_document}}
-\index{xml\_document@{xml\_document}!rapidxml::xml\_document$<$ Ch $>$@{rapidxml::xml\_document$<$ Ch $>$}}
-\doxysubsubsection{\texorpdfstring{xml\_document()}{xml\_document()}}
-{\footnotesize\ttfamily template$<$class Ch  = char$>$ \\
-\mbox{\hyperlink{classrapidxml_1_1xml__document}{rapidxml\+::xml\+\_\+document}}$<$ Ch $>$\+::\mbox{\hyperlink{classrapidxml_1_1xml__document}{xml\+\_\+document}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-
-
-Constructs empty X\+ML document. 
-
-
-
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classrapidxml_1_1xml__document_a826929ff54242532198701f19ff5f83f}\label{classrapidxml_1_1xml__document_a826929ff54242532198701f19ff5f83f}} 
 \index{rapidxml::xml\_document$<$ Ch $>$@{rapidxml::xml\_document$<$ Ch $>$}!clear@{clear}}
@@ -63,7 +50,7 @@ Clears the document by deleting all nodes and clearing the memory pool. All node
 template$<$int Flags$>$ \\
 void \mbox{\hyperlink{classrapidxml_1_1xml__document}{rapidxml\+::xml\+\_\+document}}$<$ Ch $>$\+::parse (\begin{DoxyParamCaption}\item[{Ch $\ast$}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Parses zero-\/terminated X\+ML string according to given flags. Passed string will be modified by the parser, unless \mbox{\hyperlink{namespacerapidxml_a45d4d8fef551beaaba23a83b847fd6a3}{rapidxml\+::parse\+\_\+non\+\_\+destructive}} flag is used. The string must persist for the lifetime of the document. In case of error, \mbox{\hyperlink{classrapidxml_1_1parse__error}{rapidxml\+::parse\+\_\+error}} exception will be thrown. ~\newline
+Parses zero-\/terminated X\+ML string according to given flags. Passed string will be modified by the parser, unless rapidxml\+::parse\+\_\+non\+\_\+destructive flag is used. The string must persist for the lifetime of the document. In case of error, \mbox{\hyperlink{classrapidxml_1_1parse__error}{rapidxml\+::parse\+\_\+error}} exception will be thrown. ~\newline
 ~\newline
  If you want to parse contents of a file, you must first load the file into the memory, and pass pointer to its beginning. Make sure that data is zero-\/terminated. ~\newline
 ~\newline

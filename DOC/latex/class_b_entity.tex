@@ -1,100 +1,56 @@
 \hypertarget{class_b_entity}{}\doxysection{B\+Entity Class Reference}
 \label{class_b_entity}\index{BEntity@{BEntity}}
-
-
-{\ttfamily \#include $<$B\+Entity.\+hpp$>$}
-
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_b_entity_a6ba0327428216fb920af098763c648af}{B\+Entity}} (string id, shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_scene}{B\+Scene}} $>$ scene)
+\mbox{\Hypertarget{class_b_entity_a6ba0327428216fb920af098763c648af}\label{class_b_entity_a6ba0327428216fb920af098763c648af}} 
+{\bfseries B\+Entity} (string id, shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_scene}{B\+Scene}} $>$ scene)
 \item 
-bool \mbox{\hyperlink{class_b_entity_a75b04d5267b452cb4adf95ee74836bcf}{initialize}} ()
+\mbox{\Hypertarget{class_b_entity_a75b04d5267b452cb4adf95ee74836bcf}\label{class_b_entity_a75b04d5267b452cb4adf95ee74836bcf}} 
+bool {\bfseries initialize} ()
 \item 
-shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_transform_component}{B\+Transform\+Component}} $>$ \mbox{\hyperlink{class_b_entity_a906eb2f4c2572dbbd5c192ae56c08fd8}{get\+Transform}} ()
+\mbox{\Hypertarget{class_b_entity_a906eb2f4c2572dbbd5c192ae56c08fd8}\label{class_b_entity_a906eb2f4c2572dbbd5c192ae56c08fd8}} 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_transform_component}{B\+Transform\+Component}} $>$ {\bfseries get\+Transform} ()
 \item 
-shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_scene}{B\+Scene}} $>$ \mbox{\hyperlink{class_b_entity_ad4606661b1af0608e1f9013d23b310ce}{get\+Scene}} ()
+\mbox{\Hypertarget{class_b_entity_a9f291e72e12a5ba183a2ae3d6fcafa00}\label{class_b_entity_a9f291e72e12a5ba183a2ae3d6fcafa00}} 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_scene}{B\+Scene}} $>$ {\bfseries get\+Scene} ()
 \item 
-bool \mbox{\hyperlink{class_b_entity_a0dda9a220f68ca22262d3760d95d354e}{add\+\_\+component}} (const string \&type, shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_component}{B\+Component}} $>$ \&component)
+bool \mbox{\hyperlink{class_b_entity_a4ed4edf5625b57d1aac915ae543c54ee}{add\+Component}} (const string \&type, shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_component}{B\+Component}} $>$ \&component)
 \item 
-{\footnotesize template$<$class T $>$ }\\shared\+\_\+ptr$<$ T $>$ \mbox{\hyperlink{class_b_entity_a391bb16b1610fd94160310dee76e1451}{get\+Component}} ()
+\mbox{\Hypertarget{class_b_entity_a391bb16b1610fd94160310dee76e1451}\label{class_b_entity_a391bb16b1610fd94160310dee76e1451}} 
+{\footnotesize template$<$class T $>$ }\\shared\+\_\+ptr$<$ T $>$ {\bfseries get\+Component} ()
 \item 
-const string \mbox{\hyperlink{class_b_entity_a0c20d0d8afe90899b8597b026231ebb4}{get\+Id}} ()
+\mbox{\Hypertarget{class_b_entity_a0c20d0d8afe90899b8597b026231ebb4}\label{class_b_entity_a0c20d0d8afe90899b8597b026231ebb4}} 
+const string {\bfseries get\+Id} ()
 \item 
-list$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_component}{B\+Component}} $>$ $>$ \mbox{\hyperlink{class_b_entity_a6980b99fe2a9b3885b180360e8db9c1d}{get\+Components}} ()
+\mbox{\Hypertarget{class_b_entity_a6980b99fe2a9b3885b180360e8db9c1d}\label{class_b_entity_a6980b99fe2a9b3885b180360e8db9c1d}} 
+list$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_component}{B\+Component}} $>$ $>$ {\bfseries get\+Components} ()
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_component}{B\+Component}} $>$ \mbox{\hyperlink{class_b_entity_afa868361d7728087d3cacafd421c0cda}{transform}}
-\end{DoxyCompactItemize}
-
-
-\doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_b_entity_a6ba0327428216fb920af098763c648af}\label{class_b_entity_a6ba0327428216fb920af098763c648af}} 
-\index{BEntity@{BEntity}!BEntity@{BEntity}}
-\index{BEntity@{BEntity}!BEntity@{BEntity}}
-\doxysubsubsection{\texorpdfstring{BEntity()}{BEntity()}}
-{\footnotesize\ttfamily B\+Entity\+::\+B\+Entity (\begin{DoxyParamCaption}\item[{string}]{id,  }\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_scene}{B\+Scene}} $>$}]{scene }\end{DoxyParamCaption})}
-
+\mbox{\Hypertarget{class_b_entity_a19edae5a4404814e4d3a23e1f3ea84a9}\label{class_b_entity_a19edae5a4404814e4d3a23e1f3ea84a9}} 
+shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_component}{B\+Component}} $>$ \mbox{\hyperlink{class_b_entity_a19edae5a4404814e4d3a23e1f3ea84a9}{transform}}
+\begin{DoxyCompactList}\small\item\em Transform de la entidad. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_b_entity_a0dda9a220f68ca22262d3760d95d354e}\label{class_b_entity_a0dda9a220f68ca22262d3760d95d354e}} 
-\index{BEntity@{BEntity}!add\_component@{add\_component}}
-\index{add\_component@{add\_component}!BEntity@{BEntity}}
-\doxysubsubsection{\texorpdfstring{add\_component()}{add\_component()}}
-{\footnotesize\ttfamily bool B\+Entity\+::add\+\_\+component (\begin{DoxyParamCaption}\item[{const string \&}]{type,  }\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_component}{B\+Component}} $>$ \&}]{component }\end{DoxyParamCaption})}
-
-\mbox{\Hypertarget{class_b_entity_a391bb16b1610fd94160310dee76e1451}\label{class_b_entity_a391bb16b1610fd94160310dee76e1451}} 
-\index{BEntity@{BEntity}!getComponent@{getComponent}}
-\index{getComponent@{getComponent}!BEntity@{BEntity}}
-\doxysubsubsection{\texorpdfstring{getComponent()}{getComponent()}}
-{\footnotesize\ttfamily template$<$class T $>$ \\
-shared\+\_\+ptr$<$T$>$ B\+Entity\+::get\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\mbox{\Hypertarget{class_b_entity_a6980b99fe2a9b3885b180360e8db9c1d}\label{class_b_entity_a6980b99fe2a9b3885b180360e8db9c1d}} 
-\index{BEntity@{BEntity}!getComponents@{getComponents}}
-\index{getComponents@{getComponents}!BEntity@{BEntity}}
-\doxysubsubsection{\texorpdfstring{getComponents()}{getComponents()}}
-{\footnotesize\ttfamily list$<$ shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_component}{B\+Component}} $>$ $>$ B\+Entity\+::get\+Components (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-\mbox{\Hypertarget{class_b_entity_a0c20d0d8afe90899b8597b026231ebb4}\label{class_b_entity_a0c20d0d8afe90899b8597b026231ebb4}} 
-\index{BEntity@{BEntity}!getId@{getId}}
-\index{getId@{getId}!BEntity@{BEntity}}
-\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
-{\footnotesize\ttfamily const string B\+Entity\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\mbox{\Hypertarget{class_b_entity_ad4606661b1af0608e1f9013d23b310ce}\label{class_b_entity_ad4606661b1af0608e1f9013d23b310ce}} 
-\index{BEntity@{BEntity}!getScene@{getScene}}
-\index{getScene@{getScene}!BEntity@{BEntity}}
-\doxysubsubsection{\texorpdfstring{getScene()}{getScene()}}
-{\footnotesize\ttfamily shared\+\_\+ptr$<$\mbox{\hyperlink{class_b_scene}{B\+Scene}}$>$ B\+Entity\+::get\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\mbox{\Hypertarget{class_b_entity_a906eb2f4c2572dbbd5c192ae56c08fd8}\label{class_b_entity_a906eb2f4c2572dbbd5c192ae56c08fd8}} 
-\index{BEntity@{BEntity}!getTransform@{getTransform}}
-\index{getTransform@{getTransform}!BEntity@{BEntity}}
-\doxysubsubsection{\texorpdfstring{getTransform()}{getTransform()}}
-{\footnotesize\ttfamily shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_transform_component}{B\+Transform\+Component}} $>$ B\+Entity\+::get\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-\mbox{\Hypertarget{class_b_entity_a75b04d5267b452cb4adf95ee74836bcf}\label{class_b_entity_a75b04d5267b452cb4adf95ee74836bcf}} 
-\index{BEntity@{BEntity}!initialize@{initialize}}
-\index{initialize@{initialize}!BEntity@{BEntity}}
-\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
-{\footnotesize\ttfamily bool B\+Entity\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{class_b_entity_a4ed4edf5625b57d1aac915ae543c54ee}\label{class_b_entity_a4ed4edf5625b57d1aac915ae543c54ee}} 
+\index{BEntity@{BEntity}!addComponent@{addComponent}}
+\index{addComponent@{addComponent}!BEntity@{BEntity}}
+\doxysubsubsection{\texorpdfstring{addComponent()}{addComponent()}}
+{\footnotesize\ttfamily bool B\+Entity\+::add\+Component (\begin{DoxyParamCaption}\item[{const string \&}]{type,  }\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{class_b_component}{B\+Component}} $>$ \&}]{component }\end{DoxyParamCaption})}
 
 
-
-\doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{class_b_entity_afa868361d7728087d3cacafd421c0cda}\label{class_b_entity_afa868361d7728087d3cacafd421c0cda}} 
-\index{BEntity@{BEntity}!transform@{transform}}
-\index{transform@{transform}!BEntity@{BEntity}}
-\doxysubsubsection{\texorpdfstring{transform}{transform}}
-{\footnotesize\ttfamily shared\+\_\+ptr$<$\mbox{\hyperlink{class_b_component}{B\+Component}}$>$ B\+Entity\+::transform}
-
+\begin{DoxyParams}{Parameters}
+{\em type} & Tipo de componente \\
+\hline
+{\em component} & Componente que hay que añadir \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/\+Git\+Hub/\+Barx\+Engine/\+Barx\+Engine/code/headers/\mbox{\hyperlink{_b_entity_8hpp}{B\+Entity.\+hpp}}\item 
-D\+:/\+Git\+Hub/\+Barx\+Engine/\+Barx\+Engine/code/source/\mbox{\hyperlink{_b_entity_8cpp}{B\+Entity.\+cpp}}\end{DoxyCompactItemize}
+D\+:/\+Git\+Hub/\+Barx\+Engine/\+Barx\+Engine/code/headers/B\+Entity.\+hpp\item 
+D\+:/\+Git\+Hub/\+Barx\+Engine/\+Barx\+Engine/code/source/B\+Entity.\+cpp\end{DoxyCompactItemize}

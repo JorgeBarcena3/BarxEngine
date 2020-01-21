@@ -1,608 +1,213 @@
 \@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
-\contentsline {chapter}{\numberline {1}Namespace Index}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Namespace List}{1}{section.1.1}%
-\contentsline {chapter}{\numberline {2}Hierarchical Index}{3}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Class Hierarchy}{3}{section.2.1}%
-\contentsline {chapter}{\numberline {3}Class Index}{5}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Class List}{5}{section.3.1}%
-\contentsline {chapter}{\numberline {4}File Index}{7}{chapter.4}%
-\contentsline {section}{\numberline {4.1}File List}{7}{section.4.1}%
-\contentsline {chapter}{\numberline {5}Namespace Documentation}{9}{chapter.5}%
-\contentsline {section}{\numberline {5.1}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Algoritmos\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}De\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ordenacion Namespace Reference}{9}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Function Documentation}{9}{subsection.5.1.1}%
-\contentsline {subsubsection}{\numberline {5.1.1.1}algoritmoBurbuja()}{9}{subsubsection.5.1.1.1}%
-\contentsline {subsubsection}{\numberline {5.1.1.2}algoritmoInserccionDirecta()}{9}{subsubsection.5.1.1.2}%
-\contentsline {subsubsection}{\numberline {5.1.1.3}countShort()}{10}{subsubsection.5.1.1.3}%
-\contentsline {subsubsection}{\numberline {5.1.1.4}quickSort()}{10}{subsubsection.5.1.1.4}%
-\contentsline {section}{\numberline {5.2}glt Namespace Reference}{10}{section.5.2}%
-\contentsline {section}{\numberline {5.3}rapidxml Namespace Reference}{10}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Enumeration Type Documentation}{11}{subsection.5.3.1}%
-\contentsline {subsubsection}{\numberline {5.3.1.1}node\_type}{11}{subsubsection.5.3.1.1}%
-\contentsline {subsection}{\numberline {5.3.2}Function Documentation}{11}{subsection.5.3.2}%
-\contentsline {subsubsection}{\numberline {5.3.2.1}count\_attributes()}{12}{subsubsection.5.3.2.1}%
-\contentsline {subsubsection}{\numberline {5.3.2.2}count\_children()}{12}{subsubsection.5.3.2.2}%
-\contentsline {subsubsection}{\numberline {5.3.2.3}operator$<$$<$()}{12}{subsubsection.5.3.2.3}%
-\contentsline {subsubsection}{\numberline {5.3.2.4}print()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{12}{subsubsection.5.3.2.4}%
-\contentsline {subsubsection}{\numberline {5.3.2.5}print()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{13}{subsubsection.5.3.2.5}%
-\contentsline {subsection}{\numberline {5.3.3}Variable Documentation}{13}{subsection.5.3.3}%
-\contentsline {subsubsection}{\numberline {5.3.3.1}parse\_comment\_nodes}{13}{subsubsection.5.3.3.1}%
-\contentsline {subsubsection}{\numberline {5.3.3.2}parse\_declaration\_node}{13}{subsubsection.5.3.3.2}%
-\contentsline {subsubsection}{\numberline {5.3.3.3}parse\_default}{13}{subsubsection.5.3.3.3}%
-\contentsline {subsubsection}{\numberline {5.3.3.4}parse\_doctype\_node}{14}{subsubsection.5.3.3.4}%
-\contentsline {subsubsection}{\numberline {5.3.3.5}parse\_fastest}{14}{subsubsection.5.3.3.5}%
-\contentsline {subsubsection}{\numberline {5.3.3.6}parse\_full}{14}{subsubsection.5.3.3.6}%
-\contentsline {subsubsection}{\numberline {5.3.3.7}parse\_no\_data\_nodes}{14}{subsubsection.5.3.3.7}%
-\contentsline {subsubsection}{\numberline {5.3.3.8}parse\_no\_element\_values}{14}{subsubsection.5.3.3.8}%
-\contentsline {subsubsection}{\numberline {5.3.3.9}parse\_no\_entity\_translation}{15}{subsubsection.5.3.3.9}%
-\contentsline {subsubsection}{\numberline {5.3.3.10}parse\_no\_string\_terminators}{15}{subsubsection.5.3.3.10}%
-\contentsline {subsubsection}{\numberline {5.3.3.11}parse\_no\_utf8}{15}{subsubsection.5.3.3.11}%
-\contentsline {subsubsection}{\numberline {5.3.3.12}parse\_non\_destructive}{15}{subsubsection.5.3.3.12}%
-\contentsline {subsubsection}{\numberline {5.3.3.13}parse\_normalize\_whitespace}{15}{subsubsection.5.3.3.13}%
-\contentsline {subsubsection}{\numberline {5.3.3.14}parse\_pi\_nodes}{15}{subsubsection.5.3.3.14}%
-\contentsline {subsubsection}{\numberline {5.3.3.15}parse\_trim\_whitespace}{16}{subsubsection.5.3.3.15}%
-\contentsline {subsubsection}{\numberline {5.3.3.16}parse\_validate\_closing\_tags}{16}{subsubsection.5.3.3.16}%
-\contentsline {subsubsection}{\numberline {5.3.3.17}print\_no\_indenting}{16}{subsubsection.5.3.3.17}%
-\contentsline {chapter}{\numberline {6}Class Documentation}{17}{chapter.6}%
-\contentsline {section}{\numberline {6.1}rapidxml\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::attribute\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}iterator$<$ Ch $>$ Class Template Reference}{17}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Detailed Description}{17}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Member Typedef Documentation}{17}{subsection.6.1.2}%
-\contentsline {subsubsection}{\numberline {6.1.2.1}difference\_type}{17}{subsubsection.6.1.2.1}%
-\contentsline {subsubsection}{\numberline {6.1.2.2}iterator\_category}{18}{subsubsection.6.1.2.2}%
-\contentsline {subsubsection}{\numberline {6.1.2.3}pointer}{18}{subsubsection.6.1.2.3}%
-\contentsline {subsubsection}{\numberline {6.1.2.4}reference}{18}{subsubsection.6.1.2.4}%
-\contentsline {subsubsection}{\numberline {6.1.2.5}value\_type}{18}{subsubsection.6.1.2.5}%
-\contentsline {subsection}{\numberline {6.1.3}Constructor \& Destructor Documentation}{18}{subsection.6.1.3}%
-\contentsline {subsubsection}{\numberline {6.1.3.1}attribute\_iterator()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{18}{subsubsection.6.1.3.1}%
-\contentsline {subsubsection}{\numberline {6.1.3.2}attribute\_iterator()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{18}{subsubsection.6.1.3.2}%
-\contentsline {subsection}{\numberline {6.1.4}Member Function Documentation}{18}{subsection.6.1.4}%
-\contentsline {subsubsection}{\numberline {6.1.4.1}operator"!=()}{18}{subsubsection.6.1.4.1}%
-\contentsline {subsubsection}{\numberline {6.1.4.2}operator$\ast $()}{19}{subsubsection.6.1.4.2}%
-\contentsline {subsubsection}{\numberline {6.1.4.3}operator++()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{19}{subsubsection.6.1.4.3}%
-\contentsline {subsubsection}{\numberline {6.1.4.4}operator++()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{19}{subsubsection.6.1.4.4}%
-\contentsline {subsubsection}{\numberline {6.1.4.5}operator-\/-\/()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{19}{subsubsection.6.1.4.5}%
-\contentsline {subsubsection}{\numberline {6.1.4.6}operator-\/-\/()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{19}{subsubsection.6.1.4.6}%
-\contentsline {subsubsection}{\numberline {6.1.4.7}operator-\/$>$()}{19}{subsubsection.6.1.4.7}%
-\contentsline {subsubsection}{\numberline {6.1.4.8}operator==()}{19}{subsubsection.6.1.4.8}%
-\contentsline {section}{\numberline {6.2}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Audio Class Reference}{19}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Constructor \& Destructor Documentation}{20}{subsection.6.2.1}%
-\contentsline {subsubsection}{\numberline {6.2.1.1}BAudio()}{20}{subsubsection.6.2.1.1}%
-\contentsline {subsubsection}{\numberline {6.2.1.2}$\sim $BAudio()}{20}{subsubsection.6.2.1.2}%
-\contentsline {subsection}{\numberline {6.2.2}Member Function Documentation}{20}{subsection.6.2.2}%
-\contentsline {subsubsection}{\numberline {6.2.2.1}loadMusic()}{20}{subsubsection.6.2.2.1}%
-\contentsline {subsubsection}{\numberline {6.2.2.2}loadSound()}{20}{subsubsection.6.2.2.2}%
-\contentsline {subsubsection}{\numberline {6.2.2.3}makeSound()}{20}{subsubsection.6.2.2.3}%
-\contentsline {subsubsection}{\numberline {6.2.2.4}setMusicVolume()}{21}{subsubsection.6.2.2.4}%
-\contentsline {subsubsection}{\numberline {6.2.2.5}setRelativePath()}{21}{subsubsection.6.2.2.5}%
-\contentsline {subsubsection}{\numberline {6.2.2.6}setSoundVolume()}{21}{subsubsection.6.2.2.6}%
-\contentsline {subsubsection}{\numberline {6.2.2.7}startMusic()}{21}{subsubsection.6.2.2.7}%
-\contentsline {subsubsection}{\numberline {6.2.2.8}stopAllMusic()}{21}{subsubsection.6.2.2.8}%
-\contentsline {subsubsection}{\numberline {6.2.2.9}stopAllSounds()}{21}{subsubsection.6.2.2.9}%
-\contentsline {subsubsection}{\numberline {6.2.2.10}stopChanelId()}{21}{subsubsection.6.2.2.10}%
-\contentsline {subsubsection}{\numberline {6.2.2.11}stopMusicId()}{21}{subsubsection.6.2.2.11}%
-\contentsline {section}{\numberline {6.3}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Audio\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Audio\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Info Struct Reference}{22}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Constructor \& Destructor Documentation}{22}{subsection.6.3.1}%
-\contentsline {subsubsection}{\numberline {6.3.1.1}BAudioInfo()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{22}{subsubsection.6.3.1.1}%
-\contentsline {subsubsection}{\numberline {6.3.1.2}BAudioInfo()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{22}{subsubsection.6.3.1.2}%
-\contentsline {subsection}{\numberline {6.3.2}Member Data Documentation}{22}{subsection.6.3.2}%
-\contentsline {subsubsection}{\numberline {6.3.2.1}channel}{22}{subsubsection.6.3.2.1}%
-\contentsline {subsubsection}{\numberline {6.3.2.2}music}{22}{subsubsection.6.3.2.2}%
-\contentsline {subsubsection}{\numberline {6.3.2.3}sound}{22}{subsubsection.6.3.2.3}%
-\contentsline {section}{\numberline {6.4}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Box\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Collider\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component Class Reference}{23}{section.6.4}%
-\contentsline {subsection}{\numberline {6.4.1}Constructor \& Destructor Documentation}{23}{subsection.6.4.1}%
-\contentsline {subsubsection}{\numberline {6.4.1.1}BBoxColliderComponent()}{23}{subsubsection.6.4.1.1}%
-\contentsline {subsection}{\numberline {6.4.2}Member Function Documentation}{23}{subsection.6.4.2}%
-\contentsline {subsubsection}{\numberline {6.4.2.1}checkCollisions()}{23}{subsubsection.6.4.2.1}%
-\contentsline {subsubsection}{\numberline {6.4.2.2}initialize()}{23}{subsubsection.6.4.2.2}%
-\contentsline {subsubsection}{\numberline {6.4.2.3}parse\_property()}{24}{subsubsection.6.4.2.3}%
-\contentsline {subsection}{\numberline {6.4.3}Member Data Documentation}{24}{subsection.6.4.3}%
-\contentsline {subsubsection}{\numberline {6.4.3.1}MaxOffset}{24}{subsubsection.6.4.3.1}%
-\contentsline {subsubsection}{\numberline {6.4.3.2}MinOffset}{24}{subsubsection.6.4.3.2}%
-\contentsline {section}{\numberline {6.5}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Camera\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component Class Reference}{24}{section.6.5}%
-\contentsline {subsection}{\numberline {6.5.1}Constructor \& Destructor Documentation}{24}{subsection.6.5.1}%
-\contentsline {subsubsection}{\numberline {6.5.1.1}BCameraComponent()}{24}{subsubsection.6.5.1.1}%
-\contentsline {subsection}{\numberline {6.5.2}Member Function Documentation}{25}{subsection.6.5.2}%
-\contentsline {subsubsection}{\numberline {6.5.2.1}initialize()}{25}{subsubsection.6.5.2.1}%
-\contentsline {subsubsection}{\numberline {6.5.2.2}parse\_property()}{25}{subsubsection.6.5.2.2}%
-\contentsline {section}{\numberline {6.6}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Character\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component Class Reference}{25}{section.6.6}%
-\contentsline {subsection}{\numberline {6.6.1}Constructor \& Destructor Documentation}{25}{subsection.6.6.1}%
-\contentsline {subsubsection}{\numberline {6.6.1.1}BCharacterControllerComponent()}{26}{subsubsection.6.6.1.1}%
-\contentsline {subsection}{\numberline {6.6.2}Member Function Documentation}{26}{subsection.6.6.2}%
-\contentsline {subsubsection}{\numberline {6.6.2.1}initialize()}{26}{subsubsection.6.6.2.1}%
-\contentsline {subsubsection}{\numberline {6.6.2.2}parse\_property()}{26}{subsubsection.6.6.2.2}%
-\contentsline {subsection}{\numberline {6.6.3}Member Data Documentation}{26}{subsection.6.6.3}%
-\contentsline {subsubsection}{\numberline {6.6.3.1}Down}{26}{subsubsection.6.6.3.1}%
-\contentsline {subsubsection}{\numberline {6.6.3.2}Left}{26}{subsubsection.6.6.3.2}%
-\contentsline {subsubsection}{\numberline {6.6.3.3}Right}{26}{subsubsection.6.6.3.3}%
-\contentsline {subsubsection}{\numberline {6.6.3.4}speed}{26}{subsubsection.6.6.3.4}%
-\contentsline {subsubsection}{\numberline {6.6.3.5}Up}{26}{subsubsection.6.6.3.5}%
-\contentsline {section}{\numberline {6.7}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Character\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Task Class Reference}{27}{section.6.7}%
-\contentsline {subsection}{\numberline {6.7.1}Constructor \& Destructor Documentation}{27}{subsection.6.7.1}%
-\contentsline {subsubsection}{\numberline {6.7.1.1}BCharacterControllerTask()}{27}{subsubsection.6.7.1.1}%
-\contentsline {section}{\numberline {6.8}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Collider\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component Class Reference}{27}{section.6.8}%
-\contentsline {subsection}{\numberline {6.8.1}Constructor \& Destructor Documentation}{28}{subsection.6.8.1}%
-\contentsline {subsubsection}{\numberline {6.8.1.1}BColliderComponent()}{28}{subsubsection.6.8.1.1}%
-\contentsline {subsection}{\numberline {6.8.2}Member Function Documentation}{28}{subsection.6.8.2}%
-\contentsline {subsubsection}{\numberline {6.8.2.1}checkCollisions()}{28}{subsubsection.6.8.2.1}%
-\contentsline {subsubsection}{\numberline {6.8.2.2}getType()}{28}{subsubsection.6.8.2.2}%
-\contentsline {subsubsection}{\numberline {6.8.2.3}initialize()}{28}{subsubsection.6.8.2.3}%
-\contentsline {subsubsection}{\numberline {6.8.2.4}parse\_property()}{28}{subsubsection.6.8.2.4}%
-\contentsline {subsubsection}{\numberline {6.8.2.5}setFunction()}{28}{subsubsection.6.8.2.5}%
-\contentsline {subsection}{\numberline {6.8.3}Member Data Documentation}{29}{subsection.6.8.3}%
-\contentsline {subsubsection}{\numberline {6.8.3.1}type}{29}{subsubsection.6.8.3.1}%
-\contentsline {section}{\numberline {6.9}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Collider\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Task Class Reference}{29}{section.6.9}%
-\contentsline {subsection}{\numberline {6.9.1}Constructor \& Destructor Documentation}{29}{subsection.6.9.1}%
-\contentsline {subsubsection}{\numberline {6.9.1.1}BColliderTask()}{29}{subsubsection.6.9.1.1}%
-\contentsline {subsection}{\numberline {6.9.2}Member Data Documentation}{29}{subsection.6.9.2}%
-\contentsline {subsubsection}{\numberline {6.9.2.1}entity}{29}{subsubsection.6.9.2.1}%
-\contentsline {subsubsection}{\numberline {6.9.2.2}onCollision}{30}{subsubsection.6.9.2.2}%
-\contentsline {subsubsection}{\numberline {6.9.2.3}scene}{30}{subsubsection.6.9.2.3}%
-\contentsline {section}{\numberline {6.10}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component Class Reference}{30}{section.6.10}%
-\contentsline {subsection}{\numberline {6.10.1}Constructor \& Destructor Documentation}{31}{subsection.6.10.1}%
-\contentsline {subsubsection}{\numberline {6.10.1.1}BComponent()}{31}{subsubsection.6.10.1.1}%
-\contentsline {subsubsection}{\numberline {6.10.1.2}$\sim $BComponent()}{31}{subsubsection.6.10.1.2}%
-\contentsline {subsection}{\numberline {6.10.2}Member Function Documentation}{31}{subsection.6.10.2}%
-\contentsline {subsubsection}{\numberline {6.10.2.1}getTask()}{31}{subsubsection.6.10.2.1}%
-\contentsline {subsubsection}{\numberline {6.10.2.2}initialize()}{31}{subsubsection.6.10.2.2}%
-\contentsline {subsubsection}{\numberline {6.10.2.3}parse\_property()}{31}{subsubsection.6.10.2.3}%
-\contentsline {subsection}{\numberline {6.10.3}Member Data Documentation}{31}{subsection.6.10.3}%
-\contentsline {subsubsection}{\numberline {6.10.3.1}id}{32}{subsubsection.6.10.3.1}%
-\contentsline {subsubsection}{\numberline {6.10.3.2}parent}{32}{subsubsection.6.10.3.2}%
-\contentsline {subsubsection}{\numberline {6.10.3.3}task}{32}{subsubsection.6.10.3.3}%
-\contentsline {section}{\numberline {6.11}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Control\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component Class Reference}{32}{section.6.11}%
-\contentsline {subsection}{\numberline {6.11.1}Constructor \& Destructor Documentation}{32}{subsection.6.11.1}%
-\contentsline {subsubsection}{\numberline {6.11.1.1}BControlComponent()}{32}{subsubsection.6.11.1.1}%
-\contentsline {subsection}{\numberline {6.11.2}Member Function Documentation}{32}{subsection.6.11.2}%
-\contentsline {subsubsection}{\numberline {6.11.2.1}initialize()}{33}{subsubsection.6.11.2.1}%
-\contentsline {subsubsection}{\numberline {6.11.2.2}parse\_property()}{33}{subsubsection.6.11.2.2}%
-\contentsline {subsubsection}{\numberline {6.11.2.3}setFunction()}{33}{subsubsection.6.11.2.3}%
-\contentsline {section}{\numberline {6.12}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Control\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Task Class Reference}{33}{section.6.12}%
-\contentsline {subsection}{\numberline {6.12.1}Constructor \& Destructor Documentation}{33}{subsection.6.12.1}%
-\contentsline {subsubsection}{\numberline {6.12.1.1}BControlTask()}{33}{subsubsection.6.12.1.1}%
-\contentsline {subsection}{\numberline {6.12.2}Member Data Documentation}{34}{subsection.6.12.2}%
-\contentsline {subsubsection}{\numberline {6.12.2.1}entityReference}{34}{subsubsection.6.12.2.1}%
-\contentsline {subsubsection}{\numberline {6.12.2.2}myFunction}{34}{subsubsection.6.12.2.2}%
-\contentsline {section}{\numberline {6.13}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dispacher Class Reference}{34}{section.6.13}%
-\contentsline {subsection}{\numberline {6.13.1}Member Function Documentation}{34}{subsection.6.13.1}%
-\contentsline {subsubsection}{\numberline {6.13.1.1}add()}{34}{subsubsection.6.13.1.1}%
-\contentsline {subsubsection}{\numberline {6.13.1.2}instance()}{34}{subsubsection.6.13.1.2}%
-\contentsline {subsubsection}{\numberline {6.13.1.3}Send()}{34}{subsubsection.6.13.1.3}%
-\contentsline {section}{\numberline {6.14}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Entity Class Reference}{35}{section.6.14}%
-\contentsline {subsection}{\numberline {6.14.1}Constructor \& Destructor Documentation}{35}{subsection.6.14.1}%
-\contentsline {subsubsection}{\numberline {6.14.1.1}BEntity()}{35}{subsubsection.6.14.1.1}%
-\contentsline {subsection}{\numberline {6.14.2}Member Function Documentation}{35}{subsection.6.14.2}%
-\contentsline {subsubsection}{\numberline {6.14.2.1}add\_component()}{35}{subsubsection.6.14.2.1}%
-\contentsline {subsubsection}{\numberline {6.14.2.2}getComponent()}{35}{subsubsection.6.14.2.2}%
-\contentsline {subsubsection}{\numberline {6.14.2.3}getComponents()}{35}{subsubsection.6.14.2.3}%
-\contentsline {subsubsection}{\numberline {6.14.2.4}getId()}{36}{subsubsection.6.14.2.4}%
-\contentsline {subsubsection}{\numberline {6.14.2.5}getScene()}{36}{subsubsection.6.14.2.5}%
-\contentsline {subsubsection}{\numberline {6.14.2.6}getTransform()}{36}{subsubsection.6.14.2.6}%
-\contentsline {subsubsection}{\numberline {6.14.2.7}initialize()}{36}{subsubsection.6.14.2.7}%
-\contentsline {subsection}{\numberline {6.14.3}Member Data Documentation}{36}{subsection.6.14.3}%
-\contentsline {subsubsection}{\numberline {6.14.3.1}transform}{36}{subsubsection.6.14.3.1}%
-\contentsline {section}{\numberline {6.15}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Input\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component Class Reference}{36}{section.6.15}%
-\contentsline {subsection}{\numberline {6.15.1}Constructor \& Destructor Documentation}{36}{subsection.6.15.1}%
-\contentsline {subsubsection}{\numberline {6.15.1.1}BInputComponent()}{37}{subsubsection.6.15.1.1}%
-\contentsline {subsection}{\numberline {6.15.2}Member Function Documentation}{37}{subsection.6.15.2}%
-\contentsline {subsubsection}{\numberline {6.15.2.1}initialize()}{37}{subsubsection.6.15.2.1}%
-\contentsline {subsubsection}{\numberline {6.15.2.2}parse\_property()}{37}{subsubsection.6.15.2.2}%
-\contentsline {section}{\numberline {6.16}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Input\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mapper Class Reference}{37}{section.6.16}%
-\contentsline {section}{\numberline {6.17}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Kernel Class Reference}{37}{section.6.17}%
-\contentsline {subsection}{\numberline {6.17.1}Constructor \& Destructor Documentation}{37}{subsection.6.17.1}%
-\contentsline {subsubsection}{\numberline {6.17.1.1}BKernel()}{38}{subsubsection.6.17.1.1}%
-\contentsline {subsection}{\numberline {6.17.2}Member Function Documentation}{38}{subsection.6.17.2}%
-\contentsline {subsubsection}{\numberline {6.17.2.1}add\_Task()}{38}{subsubsection.6.17.2.1}%
-\contentsline {subsubsection}{\numberline {6.17.2.2}getScene()}{38}{subsubsection.6.17.2.2}%
-\contentsline {subsubsection}{\numberline {6.17.2.3}pause()}{38}{subsubsection.6.17.2.3}%
-\contentsline {subsubsection}{\numberline {6.17.2.4}resume()}{38}{subsubsection.6.17.2.4}%
-\contentsline {subsubsection}{\numberline {6.17.2.5}run()}{38}{subsubsection.6.17.2.5}%
-\contentsline {subsubsection}{\numberline {6.17.2.6}stop()}{38}{subsubsection.6.17.2.6}%
-\contentsline {section}{\numberline {6.18}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Keyboard Class Reference}{38}{section.6.18}%
-\contentsline {subsection}{\numberline {6.18.1}Member Function Documentation}{39}{subsection.6.18.1}%
-\contentsline {subsubsection}{\numberline {6.18.1.1}isKeyPresed()}{39}{subsubsection.6.18.1.1}%
-\contentsline {subsubsection}{\numberline {6.18.1.2}setKeyDown()}{39}{subsubsection.6.18.1.2}%
-\contentsline {subsubsection}{\numberline {6.18.1.3}setKeyUp()}{39}{subsubsection.6.18.1.3}%
-\contentsline {subsection}{\numberline {6.18.2}Member Data Documentation}{39}{subsection.6.18.2}%
-\contentsline {subsubsection}{\numberline {6.18.2.1}keyMapper}{39}{subsubsection.6.18.2.1}%
-\contentsline {subsubsection}{\numberline {6.18.2.2}keyPresed}{39}{subsubsection.6.18.2.2}%
-\contentsline {section}{\numberline {6.19}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Keyboard\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component Class Reference}{40}{section.6.19}%
-\contentsline {subsection}{\numberline {6.19.1}Constructor \& Destructor Documentation}{40}{subsection.6.19.1}%
-\contentsline {subsubsection}{\numberline {6.19.1.1}BKeyboardComponent()}{40}{subsubsection.6.19.1.1}%
-\contentsline {subsection}{\numberline {6.19.2}Member Function Documentation}{40}{subsection.6.19.2}%
-\contentsline {subsubsection}{\numberline {6.19.2.1}handle()}{40}{subsubsection.6.19.2.1}%
-\contentsline {subsubsection}{\numberline {6.19.2.2}initialize()}{40}{subsubsection.6.19.2.2}%
-\contentsline {subsubsection}{\numberline {6.19.2.3}parse\_property()}{41}{subsubsection.6.19.2.3}%
-\contentsline {subsection}{\numberline {6.19.3}Member Data Documentation}{41}{subsection.6.19.3}%
-\contentsline {subsubsection}{\numberline {6.19.3.1}Keyboard}{41}{subsubsection.6.19.3.1}%
-\contentsline {section}{\numberline {6.20}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Light\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component Class Reference}{41}{section.6.20}%
-\contentsline {subsection}{\numberline {6.20.1}Constructor \& Destructor Documentation}{41}{subsection.6.20.1}%
-\contentsline {subsubsection}{\numberline {6.20.1.1}BLightComponent()}{41}{subsubsection.6.20.1.1}%
-\contentsline {subsection}{\numberline {6.20.2}Member Function Documentation}{41}{subsection.6.20.2}%
-\contentsline {subsubsection}{\numberline {6.20.2.1}initialize()}{42}{subsubsection.6.20.2.1}%
-\contentsline {subsubsection}{\numberline {6.20.2.2}parse\_property()}{42}{subsubsection.6.20.2.2}%
-\contentsline {section}{\numberline {6.21}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Renderer Class Reference}{42}{section.6.21}%
-\contentsline {subsection}{\numberline {6.21.1}Constructor \& Destructor Documentation}{42}{subsection.6.21.1}%
-\contentsline {subsubsection}{\numberline {6.21.1.1}BMainRenderer()}{42}{subsubsection.6.21.1.1}%
-\contentsline {subsection}{\numberline {6.21.2}Member Function Documentation}{42}{subsection.6.21.2}%
-\contentsline {subsubsection}{\numberline {6.21.2.1}initialize()}{42}{subsubsection.6.21.2.1}%
-\contentsline {subsubsection}{\numberline {6.21.2.2}parse\_property()}{43}{subsubsection.6.21.2.2}%
-\contentsline {section}{\numberline {6.22}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Window\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component Class Reference}{43}{section.6.22}%
-\contentsline {subsection}{\numberline {6.22.1}Constructor \& Destructor Documentation}{43}{subsection.6.22.1}%
-\contentsline {subsubsection}{\numberline {6.22.1.1}BMainWindowComponent()}{43}{subsubsection.6.22.1.1}%
-\contentsline {subsection}{\numberline {6.22.2}Member Function Documentation}{43}{subsection.6.22.2}%
-\contentsline {subsubsection}{\numberline {6.22.2.1}initialize()}{43}{subsubsection.6.22.2.1}%
-\contentsline {subsubsection}{\numberline {6.22.2.2}parse\_property()}{44}{subsubsection.6.22.2.2}%
-\contentsline {section}{\numberline {6.23}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Message Class Reference}{44}{section.6.23}%
-\contentsline {subsection}{\numberline {6.23.1}Constructor \& Destructor Documentation}{44}{subsection.6.23.1}%
-\contentsline {subsubsection}{\numberline {6.23.1.1}BMessage()}{44}{subsubsection.6.23.1.1}%
-\contentsline {subsection}{\numberline {6.23.2}Member Function Documentation}{44}{subsection.6.23.2}%
-\contentsline {subsubsection}{\numberline {6.23.2.1}add\_parameter()}{44}{subsubsection.6.23.2.1}%
-\contentsline {subsubsection}{\numberline {6.23.2.2}getId()}{44}{subsubsection.6.23.2.2}%
-\contentsline {subsection}{\numberline {6.23.3}Member Data Documentation}{44}{subsection.6.23.3}%
-\contentsline {subsubsection}{\numberline {6.23.3.1}id}{45}{subsubsection.6.23.3.1}%
-\contentsline {subsubsection}{\numberline {6.23.3.2}parameters}{45}{subsubsection.6.23.3.2}%
-\contentsline {section}{\numberline {6.24}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}My\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Input\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Handler\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Task Class Reference}{45}{section.6.24}%
-\contentsline {subsection}{\numberline {6.24.1}Constructor \& Destructor Documentation}{45}{subsection.6.24.1}%
-\contentsline {subsubsection}{\numberline {6.24.1.1}BMyInputHandlerTask()}{45}{subsubsection.6.24.1.1}%
-\contentsline {section}{\numberline {6.25}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Orbserver Class Reference}{45}{section.6.25}%
-\contentsline {subsection}{\numberline {6.25.1}Member Function Documentation}{46}{subsection.6.25.1}%
-\contentsline {subsubsection}{\numberline {6.25.1.1}handle()}{46}{subsubsection.6.25.1.1}%
-\contentsline {section}{\numberline {6.26}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Render\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Object\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component Class Reference}{46}{section.6.26}%
-\contentsline {subsection}{\numberline {6.26.1}Constructor \& Destructor Documentation}{46}{subsection.6.26.1}%
-\contentsline {subsubsection}{\numberline {6.26.1.1}BRenderObjectComponent()}{46}{subsubsection.6.26.1.1}%
-\contentsline {subsection}{\numberline {6.26.2}Member Function Documentation}{46}{subsection.6.26.2}%
-\contentsline {subsubsection}{\numberline {6.26.2.1}initialize()}{46}{subsubsection.6.26.2.1}%
-\contentsline {subsubsection}{\numberline {6.26.2.2}parse\_property()}{47}{subsubsection.6.26.2.2}%
-\contentsline {section}{\numberline {6.27}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Render\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Object\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Task Class Reference}{47}{section.6.27}%
-\contentsline {subsection}{\numberline {6.27.1}Constructor \& Destructor Documentation}{47}{subsection.6.27.1}%
-\contentsline {subsubsection}{\numberline {6.27.1.1}BRenderObjectTask()}{47}{subsubsection.6.27.1.1}%
-\contentsline {section}{\numberline {6.28}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Render\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Task Class Reference}{47}{section.6.28}%
-\contentsline {subsection}{\numberline {6.28.1}Constructor \& Destructor Documentation}{48}{subsection.6.28.1}%
-\contentsline {subsubsection}{\numberline {6.28.1.1}BRenderTask()}{48}{subsubsection.6.28.1.1}%
-\contentsline {subsubsection}{\numberline {6.28.1.2}$\sim $BRenderTask()}{48}{subsubsection.6.28.1.2}%
-\contentsline {subsection}{\numberline {6.28.2}Member Function Documentation}{48}{subsection.6.28.2}%
-\contentsline {subsubsection}{\numberline {6.28.2.1}execute()}{48}{subsubsection.6.28.2.1}%
-\contentsline {subsubsection}{\numberline {6.28.2.2}finalize()}{48}{subsubsection.6.28.2.2}%
-\contentsline {subsubsection}{\numberline {6.28.2.3}getRenderer()}{49}{subsubsection.6.28.2.3}%
-\contentsline {subsubsection}{\numberline {6.28.2.4}getWindow()}{49}{subsubsection.6.28.2.4}%
-\contentsline {subsubsection}{\numberline {6.28.2.5}initialize()}{49}{subsubsection.6.28.2.5}%
-\contentsline {subsubsection}{\numberline {6.28.2.6}render()}{49}{subsubsection.6.28.2.6}%
-\contentsline {subsection}{\numberline {6.28.3}Member Data Documentation}{49}{subsection.6.28.3}%
-\contentsline {subsubsection}{\numberline {6.28.3.1}instance}{49}{subsubsection.6.28.3.1}%
-\contentsline {section}{\numberline {6.29}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Scene Class Reference}{49}{section.6.29}%
-\contentsline {subsection}{\numberline {6.29.1}Constructor \& Destructor Documentation}{49}{subsection.6.29.1}%
-\contentsline {subsubsection}{\numberline {6.29.1.1}BScene()}{50}{subsubsection.6.29.1.1}%
-\contentsline {subsection}{\numberline {6.29.2}Member Function Documentation}{50}{subsection.6.29.2}%
-\contentsline {subsubsection}{\numberline {6.29.2.1}entitesWithComponent()}{50}{subsubsection.6.29.2.1}%
-\contentsline {subsubsection}{\numberline {6.29.2.2}getDispacher()}{50}{subsubsection.6.29.2.2}%
-\contentsline {subsubsection}{\numberline {6.29.2.3}getEntity()}{50}{subsubsection.6.29.2.3}%
-\contentsline {subsubsection}{\numberline {6.29.2.4}getKeyBoardInput()}{50}{subsubsection.6.29.2.4}%
-\contentsline {subsubsection}{\numberline {6.29.2.5}getRootEntity()}{50}{subsubsection.6.29.2.5}%
-\contentsline {subsubsection}{\numberline {6.29.2.6}reloadScene()}{50}{subsubsection.6.29.2.6}%
-\contentsline {subsubsection}{\numberline {6.29.2.7}run()}{50}{subsubsection.6.29.2.7}%
-\contentsline {section}{\numberline {6.30}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Shere\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Collider\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component Class Reference}{51}{section.6.30}%
-\contentsline {subsection}{\numberline {6.30.1}Constructor \& Destructor Documentation}{51}{subsection.6.30.1}%
-\contentsline {subsubsection}{\numberline {6.30.1.1}BShereColliderComponent()}{51}{subsubsection.6.30.1.1}%
-\contentsline {subsection}{\numberline {6.30.2}Member Function Documentation}{51}{subsection.6.30.2}%
-\contentsline {subsubsection}{\numberline {6.30.2.1}checkCollisions()}{51}{subsubsection.6.30.2.1}%
-\contentsline {subsubsection}{\numberline {6.30.2.2}initialize()}{51}{subsubsection.6.30.2.2}%
-\contentsline {subsubsection}{\numberline {6.30.2.3}parse\_property()}{52}{subsubsection.6.30.2.3}%
-\contentsline {subsection}{\numberline {6.30.3}Member Data Documentation}{52}{subsection.6.30.3}%
-\contentsline {subsubsection}{\numberline {6.30.3.1}radius}{52}{subsubsection.6.30.3.1}%
-\contentsline {section}{\numberline {6.31}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Task Class Reference}{52}{section.6.31}%
-\contentsline {subsection}{\numberline {6.31.1}Constructor \& Destructor Documentation}{53}{subsection.6.31.1}%
-\contentsline {subsubsection}{\numberline {6.31.1.1}BTask()}{53}{subsubsection.6.31.1.1}%
-\contentsline {subsubsection}{\numberline {6.31.1.2}$\sim $BTask()}{53}{subsubsection.6.31.1.2}%
-\contentsline {subsection}{\numberline {6.31.2}Member Function Documentation}{53}{subsection.6.31.2}%
-\contentsline {subsubsection}{\numberline {6.31.2.1}execute()}{53}{subsubsection.6.31.2.1}%
-\contentsline {subsubsection}{\numberline {6.31.2.2}finalize()}{53}{subsubsection.6.31.2.2}%
-\contentsline {subsubsection}{\numberline {6.31.2.3}initialize()}{53}{subsubsection.6.31.2.3}%
-\contentsline {subsubsection}{\numberline {6.31.2.4}operator$<$()}{53}{subsubsection.6.31.2.4}%
-\contentsline {subsubsection}{\numberline {6.31.2.5}set\_kernel()}{54}{subsubsection.6.31.2.5}%
-\contentsline {subsection}{\numberline {6.31.3}Member Data Documentation}{54}{subsection.6.31.3}%
-\contentsline {subsubsection}{\numberline {6.31.3.1}id}{54}{subsubsection.6.31.3.1}%
-\contentsline {subsubsection}{\numberline {6.31.3.2}kernel}{54}{subsubsection.6.31.3.2}%
-\contentsline {subsubsection}{\numberline {6.31.3.3}priority}{54}{subsubsection.6.31.3.3}%
-\contentsline {section}{\numberline {6.32}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Timer Class Reference}{54}{section.6.32}%
-\contentsline {subsection}{\numberline {6.32.1}Constructor \& Destructor Documentation}{54}{subsection.6.32.1}%
-\contentsline {subsubsection}{\numberline {6.32.1.1}BTimer()}{54}{subsubsection.6.32.1.1}%
-\contentsline {subsection}{\numberline {6.32.2}Member Function Documentation}{54}{subsection.6.32.2}%
-\contentsline {subsubsection}{\numberline {6.32.2.1}elapsed\_milliseconds()}{55}{subsubsection.6.32.2.1}%
-\contentsline {subsubsection}{\numberline {6.32.2.2}elapsed\_seconds()}{55}{subsubsection.6.32.2.2}%
-\contentsline {subsubsection}{\numberline {6.32.2.3}start()}{55}{subsubsection.6.32.2.3}%
-\contentsline {subsubsection}{\numberline {6.32.2.4}timeDeltatime()}{55}{subsubsection.6.32.2.4}%
-\contentsline {section}{\numberline {6.33}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Transform\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component Class Reference}{55}{section.6.33}%
-\contentsline {subsection}{\numberline {6.33.1}Constructor \& Destructor Documentation}{55}{subsection.6.33.1}%
-\contentsline {subsubsection}{\numberline {6.33.1.1}BTransformComponent()}{56}{subsubsection.6.33.1.1}%
-\contentsline {subsection}{\numberline {6.33.2}Member Function Documentation}{56}{subsection.6.33.2}%
-\contentsline {subsubsection}{\numberline {6.33.2.1}initialize()}{56}{subsubsection.6.33.2.1}%
-\contentsline {subsubsection}{\numberline {6.33.2.2}parse\_property()}{56}{subsubsection.6.33.2.2}%
-\contentsline {subsection}{\numberline {6.33.3}Member Data Documentation}{56}{subsection.6.33.3}%
-\contentsline {subsubsection}{\numberline {6.33.3.1}position}{56}{subsubsection.6.33.3.1}%
-\contentsline {subsubsection}{\numberline {6.33.3.2}rotation}{56}{subsubsection.6.33.3.2}%
-\contentsline {subsubsection}{\numberline {6.33.3.3}scale}{56}{subsubsection.6.33.3.3}%
-\contentsline {section}{\numberline {6.34}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Transform\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Task Class Reference}{56}{section.6.34}%
-\contentsline {subsection}{\numberline {6.34.1}Constructor \& Destructor Documentation}{57}{subsection.6.34.1}%
-\contentsline {subsubsection}{\numberline {6.34.1.1}BTransformTask()}{57}{subsubsection.6.34.1.1}%
-\contentsline {section}{\numberline {6.35}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Window\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Task Class Reference}{57}{section.6.35}%
-\contentsline {subsection}{\numberline {6.35.1}Constructor \& Destructor Documentation}{57}{subsection.6.35.1}%
-\contentsline {subsubsection}{\numberline {6.35.1.1}BWindowTask()}{58}{subsubsection.6.35.1.1}%
-\contentsline {subsubsection}{\numberline {6.35.1.2}$\sim $BWindowTask()}{58}{subsubsection.6.35.1.2}%
-\contentsline {subsection}{\numberline {6.35.2}Member Function Documentation}{58}{subsection.6.35.2}%
-\contentsline {subsubsection}{\numberline {6.35.2.1}clear()}{58}{subsubsection.6.35.2.1}%
-\contentsline {subsubsection}{\numberline {6.35.2.2}execute()}{58}{subsubsection.6.35.2.2}%
-\contentsline {subsubsection}{\numberline {6.35.2.3}finalize()}{58}{subsubsection.6.35.2.3}%
-\contentsline {subsubsection}{\numberline {6.35.2.4}get\_height()}{58}{subsubsection.6.35.2.4}%
-\contentsline {subsubsection}{\numberline {6.35.2.5}get\_width()}{58}{subsubsection.6.35.2.5}%
-\contentsline {subsubsection}{\numberline {6.35.2.6}initialize()}{58}{subsubsection.6.35.2.6}%
-\contentsline {subsubsection}{\numberline {6.35.2.7}set\_fullscreen()}{59}{subsubsection.6.35.2.7}%
-\contentsline {subsubsection}{\numberline {6.35.2.8}set\_position()}{59}{subsubsection.6.35.2.8}%
-\contentsline {subsubsection}{\numberline {6.35.2.9}set\_size()}{59}{subsubsection.6.35.2.9}%
-\contentsline {subsubsection}{\numberline {6.35.2.10}set\_windowed()}{59}{subsubsection.6.35.2.10}%
-\contentsline {subsubsection}{\numberline {6.35.2.11}set\_windowTitle()}{59}{subsubsection.6.35.2.11}%
-\contentsline {subsubsection}{\numberline {6.35.2.12}swap\_buffers()}{59}{subsubsection.6.35.2.12}%
-\contentsline {subsection}{\numberline {6.35.3}Member Data Documentation}{59}{subsection.6.35.3}%
-\contentsline {subsubsection}{\numberline {6.35.3.1}instance}{59}{subsubsection.6.35.3.1}%
-\contentsline {section}{\numberline {6.36}rapidxml\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::file$<$ Ch $>$ Class Template Reference}{59}{section.6.36}%
-\contentsline {subsection}{\numberline {6.36.1}Detailed Description}{60}{subsection.6.36.1}%
-\contentsline {subsection}{\numberline {6.36.2}Constructor \& Destructor Documentation}{60}{subsection.6.36.2}%
-\contentsline {subsubsection}{\numberline {6.36.2.1}file()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{60}{subsubsection.6.36.2.1}%
-\contentsline {subsubsection}{\numberline {6.36.2.2}file()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{60}{subsubsection.6.36.2.2}%
-\contentsline {subsection}{\numberline {6.36.3}Member Function Documentation}{60}{subsection.6.36.3}%
-\contentsline {subsubsection}{\numberline {6.36.3.1}data()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{60}{subsubsection.6.36.3.1}%
-\contentsline {subsubsection}{\numberline {6.36.3.2}data()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{61}{subsubsection.6.36.3.2}%
-\contentsline {subsubsection}{\numberline {6.36.3.3}size()}{61}{subsubsection.6.36.3.3}%
-\contentsline {section}{\numberline {6.37}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Keyboard\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::K\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}E\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Y\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}O\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}DE Struct Reference}{61}{section.6.37}%
-\contentsline {subsection}{\numberline {6.37.1}Member Data Documentation}{62}{subsection.6.37.1}%
-\contentsline {subsubsection}{\numberline {6.37.1.1}A}{62}{subsubsection.6.37.1.1}%
-\contentsline {subsubsection}{\numberline {6.37.1.2}B}{62}{subsubsection.6.37.1.2}%
-\contentsline {subsubsection}{\numberline {6.37.1.3}C}{62}{subsubsection.6.37.1.3}%
-\contentsline {subsubsection}{\numberline {6.37.1.4}D}{62}{subsubsection.6.37.1.4}%
-\contentsline {subsubsection}{\numberline {6.37.1.5}E}{62}{subsubsection.6.37.1.5}%
-\contentsline {subsubsection}{\numberline {6.37.1.6}F}{62}{subsubsection.6.37.1.6}%
-\contentsline {subsubsection}{\numberline {6.37.1.7}G}{62}{subsubsection.6.37.1.7}%
-\contentsline {subsubsection}{\numberline {6.37.1.8}H}{63}{subsubsection.6.37.1.8}%
-\contentsline {subsubsection}{\numberline {6.37.1.9}I}{63}{subsubsection.6.37.1.9}%
-\contentsline {subsubsection}{\numberline {6.37.1.10}J}{63}{subsubsection.6.37.1.10}%
-\contentsline {subsubsection}{\numberline {6.37.1.11}K}{63}{subsubsection.6.37.1.11}%
-\contentsline {subsubsection}{\numberline {6.37.1.12}L}{63}{subsubsection.6.37.1.12}%
-\contentsline {subsubsection}{\numberline {6.37.1.13}M}{63}{subsubsection.6.37.1.13}%
-\contentsline {subsubsection}{\numberline {6.37.1.14}N}{63}{subsubsection.6.37.1.14}%
-\contentsline {subsubsection}{\numberline {6.37.1.15}N0}{63}{subsubsection.6.37.1.15}%
-\contentsline {subsubsection}{\numberline {6.37.1.16}N1}{63}{subsubsection.6.37.1.16}%
-\contentsline {subsubsection}{\numberline {6.37.1.17}N2}{63}{subsubsection.6.37.1.17}%
-\contentsline {subsubsection}{\numberline {6.37.1.18}N3}{64}{subsubsection.6.37.1.18}%
-\contentsline {subsubsection}{\numberline {6.37.1.19}N4}{64}{subsubsection.6.37.1.19}%
-\contentsline {subsubsection}{\numberline {6.37.1.20}N5}{64}{subsubsection.6.37.1.20}%
-\contentsline {subsubsection}{\numberline {6.37.1.21}N6}{64}{subsubsection.6.37.1.21}%
-\contentsline {subsubsection}{\numberline {6.37.1.22}N7}{64}{subsubsection.6.37.1.22}%
-\contentsline {subsubsection}{\numberline {6.37.1.23}N8}{64}{subsubsection.6.37.1.23}%
-\contentsline {subsubsection}{\numberline {6.37.1.24}N9}{64}{subsubsection.6.37.1.24}%
-\contentsline {subsubsection}{\numberline {6.37.1.25}O}{64}{subsubsection.6.37.1.25}%
-\contentsline {subsubsection}{\numberline {6.37.1.26}P}{64}{subsubsection.6.37.1.26}%
-\contentsline {subsubsection}{\numberline {6.37.1.27}Q}{64}{subsubsection.6.37.1.27}%
-\contentsline {subsubsection}{\numberline {6.37.1.28}R}{65}{subsubsection.6.37.1.28}%
-\contentsline {subsubsection}{\numberline {6.37.1.29}S}{65}{subsubsection.6.37.1.29}%
-\contentsline {subsubsection}{\numberline {6.37.1.30}T}{65}{subsubsection.6.37.1.30}%
-\contentsline {subsubsection}{\numberline {6.37.1.31}U}{65}{subsubsection.6.37.1.31}%
-\contentsline {subsubsection}{\numberline {6.37.1.32}V}{65}{subsubsection.6.37.1.32}%
-\contentsline {subsubsection}{\numberline {6.37.1.33}W}{65}{subsubsection.6.37.1.33}%
-\contentsline {subsubsection}{\numberline {6.37.1.34}X}{65}{subsubsection.6.37.1.34}%
-\contentsline {subsubsection}{\numberline {6.37.1.35}Y}{65}{subsubsection.6.37.1.35}%
-\contentsline {subsubsection}{\numberline {6.37.1.36}Z}{65}{subsubsection.6.37.1.36}%
-\contentsline {section}{\numberline {6.38}rapidxml\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::memory\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}pool$<$ Ch $>$ Class Template Reference}{66}{section.6.38}%
-\contentsline {subsection}{\numberline {6.38.1}Detailed Description}{66}{subsection.6.38.1}%
-\contentsline {subsection}{\numberline {6.38.2}Constructor \& Destructor Documentation}{67}{subsection.6.38.2}%
-\contentsline {subsubsection}{\numberline {6.38.2.1}memory\_pool()}{67}{subsubsection.6.38.2.1}%
-\contentsline {subsubsection}{\numberline {6.38.2.2}$\sim $memory\_pool()}{67}{subsubsection.6.38.2.2}%
-\contentsline {subsection}{\numberline {6.38.3}Member Function Documentation}{67}{subsection.6.38.3}%
-\contentsline {subsubsection}{\numberline {6.38.3.1}allocate\_attribute()}{67}{subsubsection.6.38.3.1}%
-\contentsline {subsubsection}{\numberline {6.38.3.2}allocate\_node()}{68}{subsubsection.6.38.3.2}%
-\contentsline {subsubsection}{\numberline {6.38.3.3}allocate\_string()}{68}{subsubsection.6.38.3.3}%
-\contentsline {subsubsection}{\numberline {6.38.3.4}clear()}{69}{subsubsection.6.38.3.4}%
-\contentsline {subsubsection}{\numberline {6.38.3.5}clone\_node()}{69}{subsubsection.6.38.3.5}%
-\contentsline {subsubsection}{\numberline {6.38.3.6}set\_allocator()}{69}{subsubsection.6.38.3.6}%
-\contentsline {section}{\numberline {6.39}rapidxml\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::node\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}iterator$<$ Ch $>$ Class Template Reference}{70}{section.6.39}%
-\contentsline {subsection}{\numberline {6.39.1}Detailed Description}{70}{subsection.6.39.1}%
-\contentsline {subsection}{\numberline {6.39.2}Member Typedef Documentation}{70}{subsection.6.39.2}%
-\contentsline {subsubsection}{\numberline {6.39.2.1}difference\_type}{70}{subsubsection.6.39.2.1}%
-\contentsline {subsubsection}{\numberline {6.39.2.2}iterator\_category}{70}{subsubsection.6.39.2.2}%
-\contentsline {subsubsection}{\numberline {6.39.2.3}pointer}{71}{subsubsection.6.39.2.3}%
-\contentsline {subsubsection}{\numberline {6.39.2.4}reference}{71}{subsubsection.6.39.2.4}%
-\contentsline {subsubsection}{\numberline {6.39.2.5}value\_type}{71}{subsubsection.6.39.2.5}%
-\contentsline {subsection}{\numberline {6.39.3}Constructor \& Destructor Documentation}{71}{subsection.6.39.3}%
-\contentsline {subsubsection}{\numberline {6.39.3.1}node\_iterator()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{71}{subsubsection.6.39.3.1}%
-\contentsline {subsubsection}{\numberline {6.39.3.2}node\_iterator()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{71}{subsubsection.6.39.3.2}%
-\contentsline {subsection}{\numberline {6.39.4}Member Function Documentation}{71}{subsection.6.39.4}%
-\contentsline {subsubsection}{\numberline {6.39.4.1}operator"!=()}{71}{subsubsection.6.39.4.1}%
-\contentsline {subsubsection}{\numberline {6.39.4.2}operator$\ast $()}{71}{subsubsection.6.39.4.2}%
-\contentsline {subsubsection}{\numberline {6.39.4.3}operator++()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{72}{subsubsection.6.39.4.3}%
-\contentsline {subsubsection}{\numberline {6.39.4.4}operator++()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{72}{subsubsection.6.39.4.4}%
-\contentsline {subsubsection}{\numberline {6.39.4.5}operator-\/-\/()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{72}{subsubsection.6.39.4.5}%
-\contentsline {subsubsection}{\numberline {6.39.4.6}operator-\/-\/()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{72}{subsubsection.6.39.4.6}%
-\contentsline {subsubsection}{\numberline {6.39.4.7}operator-\/$>$()}{72}{subsubsection.6.39.4.7}%
-\contentsline {subsubsection}{\numberline {6.39.4.8}operator==()}{72}{subsubsection.6.39.4.8}%
-\contentsline {section}{\numberline {6.40}rapidxml\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::parse\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}error Class Reference}{72}{section.6.40}%
-\contentsline {subsection}{\numberline {6.40.1}Detailed Description}{73}{subsection.6.40.1}%
-\contentsline {subsection}{\numberline {6.40.2}Constructor \& Destructor Documentation}{73}{subsection.6.40.2}%
-\contentsline {subsubsection}{\numberline {6.40.2.1}parse\_error()}{73}{subsubsection.6.40.2.1}%
-\contentsline {subsection}{\numberline {6.40.3}Member Function Documentation}{73}{subsection.6.40.3}%
-\contentsline {subsubsection}{\numberline {6.40.3.1}what()}{73}{subsubsection.6.40.3.1}%
-\contentsline {subsubsection}{\numberline {6.40.3.2}where()}{73}{subsubsection.6.40.3.2}%
-\contentsline {section}{\numberline {6.41}vec3$<$ T $>$ Struct Template Reference}{74}{section.6.41}%
-\contentsline {subsection}{\numberline {6.41.1}Constructor \& Destructor Documentation}{74}{subsection.6.41.1}%
-\contentsline {subsubsection}{\numberline {6.41.1.1}vec3()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{74}{subsubsection.6.41.1.1}%
-\contentsline {subsubsection}{\numberline {6.41.1.2}vec3()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{74}{subsubsection.6.41.1.2}%
-\contentsline {subsection}{\numberline {6.41.2}Member Function Documentation}{74}{subsection.6.41.2}%
-\contentsline {subsubsection}{\numberline {6.41.2.1}inv\_length()}{74}{subsubsection.6.41.2.1}%
-\contentsline {subsubsection}{\numberline {6.41.2.2}normalize()}{74}{subsubsection.6.41.2.2}%
-\contentsline {subsubsection}{\numberline {6.41.2.3}setValues()}{75}{subsubsection.6.41.2.3}%
-\contentsline {subsection}{\numberline {6.41.3}Member Data Documentation}{75}{subsection.6.41.3}%
-\contentsline {subsubsection}{\numberline {6.41.3.1}x}{75}{subsubsection.6.41.3.1}%
-\contentsline {subsubsection}{\numberline {6.41.3.2}y}{75}{subsubsection.6.41.3.2}%
-\contentsline {subsubsection}{\numberline {6.41.3.3}z}{75}{subsubsection.6.41.3.3}%
-\contentsline {section}{\numberline {6.42}rapidxml\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::xml\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}attribute$<$ Ch $>$ Class Template Reference}{75}{section.6.42}%
-\contentsline {subsection}{\numberline {6.42.1}Detailed Description}{76}{subsection.6.42.1}%
-\contentsline {subsection}{\numberline {6.42.2}Constructor \& Destructor Documentation}{76}{subsection.6.42.2}%
-\contentsline {subsubsection}{\numberline {6.42.2.1}xml\_attribute()}{76}{subsubsection.6.42.2.1}%
-\contentsline {subsection}{\numberline {6.42.3}Member Function Documentation}{76}{subsection.6.42.3}%
-\contentsline {subsubsection}{\numberline {6.42.3.1}document()}{76}{subsubsection.6.42.3.1}%
-\contentsline {subsubsection}{\numberline {6.42.3.2}next\_attribute()}{76}{subsubsection.6.42.3.2}%
-\contentsline {subsubsection}{\numberline {6.42.3.3}previous\_attribute()}{77}{subsubsection.6.42.3.3}%
-\contentsline {subsection}{\numberline {6.42.4}Friends And Related Function Documentation}{77}{subsection.6.42.4}%
-\contentsline {subsubsection}{\numberline {6.42.4.1}xml\_node$<$ Ch $>$}{77}{subsubsection.6.42.4.1}%
-\contentsline {section}{\numberline {6.43}rapidxml\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::xml\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}base$<$ Ch $>$ Class Template Reference}{77}{section.6.43}%
-\contentsline {subsection}{\numberline {6.43.1}Detailed Description}{78}{subsection.6.43.1}%
-\contentsline {subsection}{\numberline {6.43.2}Constructor \& Destructor Documentation}{78}{subsection.6.43.2}%
-\contentsline {subsubsection}{\numberline {6.43.2.1}xml\_base()}{78}{subsubsection.6.43.2.1}%
-\contentsline {subsection}{\numberline {6.43.3}Member Function Documentation}{79}{subsection.6.43.3}%
-\contentsline {subsubsection}{\numberline {6.43.3.1}name()\hspace {0.1cm}{\footnotesize \ttfamily [1/3]}}{79}{subsubsection.6.43.3.1}%
-\contentsline {subsubsection}{\numberline {6.43.3.2}name()\hspace {0.1cm}{\footnotesize \ttfamily [2/3]}}{79}{subsubsection.6.43.3.2}%
-\contentsline {subsubsection}{\numberline {6.43.3.3}name()\hspace {0.1cm}{\footnotesize \ttfamily [3/3]}}{79}{subsubsection.6.43.3.3}%
-\contentsline {subsubsection}{\numberline {6.43.3.4}name\_size()}{80}{subsubsection.6.43.3.4}%
-\contentsline {subsubsection}{\numberline {6.43.3.5}nullstr()}{80}{subsubsection.6.43.3.5}%
-\contentsline {subsubsection}{\numberline {6.43.3.6}parent()}{80}{subsubsection.6.43.3.6}%
-\contentsline {subsubsection}{\numberline {6.43.3.7}value()\hspace {0.1cm}{\footnotesize \ttfamily [1/3]}}{80}{subsubsection.6.43.3.7}%
-\contentsline {subsubsection}{\numberline {6.43.3.8}value()\hspace {0.1cm}{\footnotesize \ttfamily [2/3]}}{80}{subsubsection.6.43.3.8}%
-\contentsline {subsubsection}{\numberline {6.43.3.9}value()\hspace {0.1cm}{\footnotesize \ttfamily [3/3]}}{81}{subsubsection.6.43.3.9}%
-\contentsline {subsubsection}{\numberline {6.43.3.10}value\_size()}{81}{subsubsection.6.43.3.10}%
-\contentsline {subsection}{\numberline {6.43.4}Member Data Documentation}{81}{subsection.6.43.4}%
-\contentsline {subsubsection}{\numberline {6.43.4.1}m\_name}{81}{subsubsection.6.43.4.1}%
-\contentsline {subsubsection}{\numberline {6.43.4.2}m\_name\_size}{81}{subsubsection.6.43.4.2}%
-\contentsline {subsubsection}{\numberline {6.43.4.3}m\_parent}{82}{subsubsection.6.43.4.3}%
-\contentsline {subsubsection}{\numberline {6.43.4.4}m\_value}{82}{subsubsection.6.43.4.4}%
-\contentsline {subsubsection}{\numberline {6.43.4.5}m\_value\_size}{82}{subsubsection.6.43.4.5}%
-\contentsline {section}{\numberline {6.44}rapidxml\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::xml\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}document$<$ Ch $>$ Class Template Reference}{82}{section.6.44}%
-\contentsline {subsection}{\numberline {6.44.1}Detailed Description}{82}{subsection.6.44.1}%
-\contentsline {subsection}{\numberline {6.44.2}Constructor \& Destructor Documentation}{83}{subsection.6.44.2}%
-\contentsline {subsubsection}{\numberline {6.44.2.1}xml\_document()}{83}{subsubsection.6.44.2.1}%
-\contentsline {subsection}{\numberline {6.44.3}Member Function Documentation}{83}{subsection.6.44.3}%
-\contentsline {subsubsection}{\numberline {6.44.3.1}clear()}{83}{subsubsection.6.44.3.1}%
-\contentsline {subsubsection}{\numberline {6.44.3.2}parse()}{83}{subsubsection.6.44.3.2}%
-\contentsline {section}{\numberline {6.45}rapidxml\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::xml\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}node$<$ Ch $>$ Class Template Reference}{83}{section.6.45}%
-\contentsline {subsection}{\numberline {6.45.1}Detailed Description}{84}{subsection.6.45.1}%
-\contentsline {subsection}{\numberline {6.45.2}Constructor \& Destructor Documentation}{85}{subsection.6.45.2}%
-\contentsline {subsubsection}{\numberline {6.45.2.1}xml\_node()}{85}{subsubsection.6.45.2.1}%
-\contentsline {subsection}{\numberline {6.45.3}Member Function Documentation}{85}{subsection.6.45.3}%
-\contentsline {subsubsection}{\numberline {6.45.3.1}append\_attribute()}{85}{subsubsection.6.45.3.1}%
-\contentsline {subsubsection}{\numberline {6.45.3.2}append\_node()}{85}{subsubsection.6.45.3.2}%
-\contentsline {subsubsection}{\numberline {6.45.3.3}document()}{86}{subsubsection.6.45.3.3}%
-\contentsline {subsubsection}{\numberline {6.45.3.4}first\_attribute()}{86}{subsubsection.6.45.3.4}%
-\contentsline {subsubsection}{\numberline {6.45.3.5}first\_node()}{86}{subsubsection.6.45.3.5}%
-\contentsline {subsubsection}{\numberline {6.45.3.6}insert\_attribute()}{87}{subsubsection.6.45.3.6}%
-\contentsline {subsubsection}{\numberline {6.45.3.7}insert\_node()}{87}{subsubsection.6.45.3.7}%
-\contentsline {subsubsection}{\numberline {6.45.3.8}last\_attribute()}{87}{subsubsection.6.45.3.8}%
-\contentsline {subsubsection}{\numberline {6.45.3.9}last\_node()}{88}{subsubsection.6.45.3.9}%
-\contentsline {subsubsection}{\numberline {6.45.3.10}next\_sibling()}{88}{subsubsection.6.45.3.10}%
-\contentsline {subsubsection}{\numberline {6.45.3.11}prepend\_attribute()}{88}{subsubsection.6.45.3.11}%
-\contentsline {subsubsection}{\numberline {6.45.3.12}prepend\_node()}{89}{subsubsection.6.45.3.12}%
-\contentsline {subsubsection}{\numberline {6.45.3.13}previous\_sibling()}{89}{subsubsection.6.45.3.13}%
-\contentsline {subsubsection}{\numberline {6.45.3.14}remove\_all\_attributes()}{89}{subsubsection.6.45.3.14}%
-\contentsline {subsubsection}{\numberline {6.45.3.15}remove\_all\_nodes()}{89}{subsubsection.6.45.3.15}%
-\contentsline {subsubsection}{\numberline {6.45.3.16}remove\_attribute()}{90}{subsubsection.6.45.3.16}%
-\contentsline {subsubsection}{\numberline {6.45.3.17}remove\_first\_attribute()}{90}{subsubsection.6.45.3.17}%
-\contentsline {subsubsection}{\numberline {6.45.3.18}remove\_first\_node()}{90}{subsubsection.6.45.3.18}%
-\contentsline {subsubsection}{\numberline {6.45.3.19}remove\_last\_attribute()}{90}{subsubsection.6.45.3.19}%
-\contentsline {subsubsection}{\numberline {6.45.3.20}remove\_last\_node()}{90}{subsubsection.6.45.3.20}%
-\contentsline {subsubsection}{\numberline {6.45.3.21}remove\_node()}{90}{subsubsection.6.45.3.21}%
-\contentsline {subsubsection}{\numberline {6.45.3.22}type()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{91}{subsubsection.6.45.3.22}%
-\contentsline {subsubsection}{\numberline {6.45.3.23}type()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{91}{subsubsection.6.45.3.23}%
-\contentsline {chapter}{\numberline {7}File Documentation}{93}{chapter.7}%
-\contentsline {section}{\numberline {7.1}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Algoritmos\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}De\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Ordenacion.hpp File Reference}{93}{section.7.1}%
-\contentsline {section}{\numberline {7.2}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Audio.hpp File Reference}{93}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Typedef Documentation}{94}{subsection.7.2.1}%
-\contentsline {subsubsection}{\numberline {7.2.1.1}Mix\_Music}{94}{subsubsection.7.2.1.1}%
-\contentsline {section}{\numberline {7.3}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Box\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Collider\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component.hpp File Reference}{94}{section.7.3}%
-\contentsline {section}{\numberline {7.4}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Camera\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component.hpp File Reference}{94}{section.7.4}%
-\contentsline {section}{\numberline {7.5}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Character\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Controller.hpp File Reference}{94}{section.7.5}%
-\contentsline {section}{\numberline {7.6}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Character\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Task.hpp File Reference}{95}{section.7.6}%
-\contentsline {section}{\numberline {7.7}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Collider\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component.hpp File Reference}{95}{section.7.7}%
-\contentsline {subsection}{\numberline {7.7.1}Enumeration Type Documentation}{95}{subsection.7.7.1}%
-\contentsline {subsubsection}{\numberline {7.7.1.1}COLLIDERTYPE}{95}{subsubsection.7.7.1.1}%
-\contentsline {section}{\numberline {7.8}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component.hpp File Reference}{95}{section.7.8}%
-\contentsline {section}{\numberline {7.9}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Control\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component.hpp File Reference}{96}{section.7.9}%
-\contentsline {section}{\numberline {7.10}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Control\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Task.hpp File Reference}{96}{section.7.10}%
-\contentsline {section}{\numberline {7.11}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dispacher.hpp File Reference}{96}{section.7.11}%
-\contentsline {section}{\numberline {7.12}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine.hpp File Reference}{96}{section.7.12}%
-\contentsline {subsection}{\numberline {7.12.1}Macro Definition Documentation}{97}{subsection.7.12.1}%
-\contentsline {subsubsection}{\numberline {7.12.1.1}SDL\_MAIN\_HANDLED}{97}{subsubsection.7.12.1.1}%
-\contentsline {subsection}{\numberline {7.12.2}Typedef Documentation}{97}{subsection.7.12.2}%
-\contentsline {subsubsection}{\numberline {7.12.2.1}Input}{97}{subsubsection.7.12.2.1}%
-\contentsline {section}{\numberline {7.13}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Entity.hpp File Reference}{97}{section.7.13}%
-\contentsline {section}{\numberline {7.14}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Input\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component.hpp File Reference}{97}{section.7.14}%
-\contentsline {section}{\numberline {7.15}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Input\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Handler\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Task.hpp File Reference}{97}{section.7.15}%
-\contentsline {section}{\numberline {7.16}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Input\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mapper.hpp File Reference}{98}{section.7.16}%
-\contentsline {section}{\numberline {7.17}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Kernel.hpp File Reference}{98}{section.7.17}%
-\contentsline {section}{\numberline {7.18}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Keyboard.hpp File Reference}{98}{section.7.18}%
-\contentsline {section}{\numberline {7.19}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Keyboard\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component.hpp File Reference}{98}{section.7.19}%
-\contentsline {section}{\numberline {7.20}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Light\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component.hpp File Reference}{99}{section.7.20}%
-\contentsline {section}{\numberline {7.21}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Renderer.hpp File Reference}{99}{section.7.21}%
-\contentsline {section}{\numberline {7.22}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Window\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component.hpp File Reference}{99}{section.7.22}%
-\contentsline {section}{\numberline {7.23}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Message.hpp File Reference}{99}{section.7.23}%
-\contentsline {section}{\numberline {7.24}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Observer.hpp File Reference}{99}{section.7.24}%
-\contentsline {section}{\numberline {7.25}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Render\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Object\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component.hpp File Reference}{100}{section.7.25}%
-\contentsline {section}{\numberline {7.26}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Render\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Object\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Task.hpp File Reference}{100}{section.7.26}%
-\contentsline {section}{\numberline {7.27}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Render\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Task.hpp File Reference}{100}{section.7.27}%
-\contentsline {section}{\numberline {7.28}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Scene.hpp File Reference}{100}{section.7.28}%
-\contentsline {section}{\numberline {7.29}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Shere\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Collider\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component.hpp File Reference}{101}{section.7.29}%
-\contentsline {section}{\numberline {7.30}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sphere\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Collider.cpp File Reference}{101}{section.7.30}%
-\contentsline {section}{\numberline {7.31}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sphere\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Collider\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Task.hpp File Reference}{101}{section.7.31}%
-\contentsline {section}{\numberline {7.32}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Task.hpp File Reference}{101}{section.7.32}%
-\contentsline {section}{\numberline {7.33}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Timer.hpp File Reference}{101}{section.7.33}%
-\contentsline {section}{\numberline {7.34}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tranform\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Task.hpp File Reference}{102}{section.7.34}%
-\contentsline {section}{\numberline {7.35}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Transform\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component.hpp File Reference}{102}{section.7.35}%
-\contentsline {section}{\numberline {7.36}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Btype\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Def.hpp File Reference}{102}{section.7.36}%
-\contentsline {subsection}{\numberline {7.36.1}Typedef Documentation}{103}{subsection.7.36.1}%
-\contentsline {subsubsection}{\numberline {7.36.1.1}byte}{103}{subsubsection.7.36.1.1}%
-\contentsline {subsubsection}{\numberline {7.36.1.2}Id}{103}{subsubsection.7.36.1.2}%
-\contentsline {subsubsection}{\numberline {7.36.1.3}SDL\_GLContext}{103}{subsubsection.7.36.1.3}%
-\contentsline {subsubsection}{\numberline {7.36.1.4}SDL\_Window}{103}{subsubsection.7.36.1.4}%
-\contentsline {subsection}{\numberline {7.36.2}Enumeration Type Documentation}{103}{subsection.7.36.2}%
-\contentsline {subsubsection}{\numberline {7.36.2.1}TASKPRIORITY}{103}{subsubsection.7.36.2.1}%
-\contentsline {section}{\numberline {7.37}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Window\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Task.hpp File Reference}{104}{section.7.37}%
-\contentsline {section}{\numberline {7.38}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/rapidxml.hpp File Reference}{104}{section.7.38}%
-\contentsline {subsection}{\numberline {7.38.1}Detailed Description}{105}{subsection.7.38.1}%
-\contentsline {subsection}{\numberline {7.38.2}Macro Definition Documentation}{105}{subsection.7.38.2}%
-\contentsline {subsubsection}{\numberline {7.38.2.1}RAPIDXML\_ALIGNMENT}{105}{subsubsection.7.38.2.1}%
-\contentsline {subsubsection}{\numberline {7.38.2.2}RAPIDXML\_DYNAMIC\_POOL\_SIZE}{105}{subsubsection.7.38.2.2}%
-\contentsline {subsubsection}{\numberline {7.38.2.3}RAPIDXML\_PARSE\_ERROR}{105}{subsubsection.7.38.2.3}%
-\contentsline {subsubsection}{\numberline {7.38.2.4}RAPIDXML\_STATIC\_POOL\_SIZE}{105}{subsubsection.7.38.2.4}%
-\contentsline {section}{\numberline {7.39}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/rapidxml\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}iterators.hpp File Reference}{105}{section.7.39}%
-\contentsline {subsection}{\numberline {7.39.1}Detailed Description}{106}{subsection.7.39.1}%
-\contentsline {section}{\numberline {7.40}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/rapidxml\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}print.hpp File Reference}{106}{section.7.40}%
-\contentsline {subsection}{\numberline {7.40.1}Detailed Description}{106}{subsection.7.40.1}%
-\contentsline {section}{\numberline {7.41}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/rapidxml\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}utils.hpp File Reference}{106}{section.7.41}%
-\contentsline {subsection}{\numberline {7.41.1}Detailed Description}{107}{subsection.7.41.1}%
-\contentsline {section}{\numberline {7.42}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Audio.cpp File Reference}{107}{section.7.42}%
-\contentsline {section}{\numberline {7.43}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Box\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Collider\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component.cpp File Reference}{107}{section.7.43}%
-\contentsline {section}{\numberline {7.44}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Camera\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component.cpp File Reference}{107}{section.7.44}%
-\contentsline {section}{\numberline {7.45}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Character\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Controller.cpp File Reference}{108}{section.7.45}%
-\contentsline {section}{\numberline {7.46}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Character\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Task.cpp File Reference}{108}{section.7.46}%
-\contentsline {section}{\numberline {7.47}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Collider\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component.cpp File Reference}{108}{section.7.47}%
-\contentsline {section}{\numberline {7.48}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Collider\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Task.cpp File Reference}{108}{section.7.48}%
-\contentsline {section}{\numberline {7.49}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component.cpp File Reference}{109}{section.7.49}%
-\contentsline {section}{\numberline {7.50}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Control\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component.cpp File Reference}{109}{section.7.50}%
-\contentsline {section}{\numberline {7.51}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Control\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Task.cpp File Reference}{109}{section.7.51}%
-\contentsline {section}{\numberline {7.52}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dispacher.cpp File Reference}{109}{section.7.52}%
-\contentsline {section}{\numberline {7.53}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine.cpp File Reference}{110}{section.7.53}%
-\contentsline {section}{\numberline {7.54}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Entity.cpp File Reference}{110}{section.7.54}%
-\contentsline {section}{\numberline {7.55}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Input\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component.cpp File Reference}{110}{section.7.55}%
-\contentsline {section}{\numberline {7.56}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Input\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Handler\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Task.cpp File Reference}{110}{section.7.56}%
-\contentsline {section}{\numberline {7.57}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Kernel.cpp File Reference}{110}{section.7.57}%
-\contentsline {section}{\numberline {7.58}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Keyboard.cpp File Reference}{111}{section.7.58}%
-\contentsline {section}{\numberline {7.59}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Keyboard\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component.cpp File Reference}{111}{section.7.59}%
-\contentsline {section}{\numberline {7.60}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Light\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component.cpp File Reference}{111}{section.7.60}%
-\contentsline {section}{\numberline {7.61}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Renderer.cpp File Reference}{111}{section.7.61}%
-\contentsline {section}{\numberline {7.62}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Window\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component.cpp File Reference}{112}{section.7.62}%
-\contentsline {section}{\numberline {7.63}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Render\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Object\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component.cpp File Reference}{112}{section.7.63}%
-\contentsline {section}{\numberline {7.64}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Render\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Object\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Task.cpp File Reference}{112}{section.7.64}%
-\contentsline {section}{\numberline {7.65}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Render\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Task.cpp File Reference}{112}{section.7.65}%
-\contentsline {section}{\numberline {7.66}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Scene.cpp File Reference}{113}{section.7.66}%
-\contentsline {section}{\numberline {7.67}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Shere\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Collider\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component.cpp File Reference}{113}{section.7.67}%
-\contentsline {section}{\numberline {7.68}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Task.cpp File Reference}{113}{section.7.68}%
-\contentsline {section}{\numberline {7.69}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Timer.cpp File Reference}{113}{section.7.69}%
-\contentsline {section}{\numberline {7.70}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Transform\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component.cpp File Reference}{114}{section.7.70}%
-\contentsline {section}{\numberline {7.71}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Transform\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Task.cpp File Reference}{114}{section.7.71}%
-\contentsline {section}{\numberline {7.72}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/source/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Window\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Task.cpp File Reference}{114}{section.7.72}%
-\contentsline {subsection}{\numberline {7.72.1}Enumeration Type Documentation}{114}{subsection.7.72.1}%
-\contentsline {subsubsection}{\numberline {7.72.1.1}Fullscreen\_Type}{114}{subsubsection.7.72.1.1}%
-\contentsline {chapter}{Index}{117}{section*.194}%
+\contentsline {chapter}{\numberline {1}Hierarchical Index}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Class Hierarchy}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Class Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Class List}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}File Index}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}File List}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Class Documentation}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}rapidxml\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::attribute\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}iterator$<$ Ch $>$ Class Template Reference}{7}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Detailed Description}{7}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Audio Class Reference}{8}{section.4.2}%
+\contentsline {section}{\numberline {4.3}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Audio\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Audio\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Info Struct Reference}{8}{section.4.3}%
+\contentsline {section}{\numberline {4.4}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Box\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Collider\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component Class Reference}{9}{section.4.4}%
+\contentsline {section}{\numberline {4.5}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Camera\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component Class Reference}{9}{section.4.5}%
+\contentsline {section}{\numberline {4.6}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Character\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component Class Reference}{10}{section.4.6}%
+\contentsline {section}{\numberline {4.7}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Character\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Controller\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Task Class Reference}{11}{section.4.7}%
+\contentsline {section}{\numberline {4.8}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Collider\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component Class Reference}{11}{section.4.8}%
+\contentsline {section}{\numberline {4.9}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Collider\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Task Class Reference}{12}{section.4.9}%
+\contentsline {section}{\numberline {4.10}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component Class Reference}{13}{section.4.10}%
+\contentsline {section}{\numberline {4.11}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Control\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component Class Reference}{14}{section.4.11}%
+\contentsline {section}{\numberline {4.12}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Control\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Task Class Reference}{14}{section.4.12}%
+\contentsline {section}{\numberline {4.13}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dispacher Class Reference}{15}{section.4.13}%
+\contentsline {section}{\numberline {4.14}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Entity Class Reference}{15}{section.4.14}%
+\contentsline {subsection}{\numberline {4.14.1}Member Function Documentation}{15}{subsection.4.14.1}%
+\contentsline {subsubsection}{\numberline {4.14.1.1}addComponent()}{15}{subsubsection.4.14.1.1}%
+\contentsline {section}{\numberline {4.15}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Input\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component Class Reference}{16}{section.4.15}%
+\contentsline {section}{\numberline {4.16}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Input\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mapper Class Reference}{16}{section.4.16}%
+\contentsline {section}{\numberline {4.17}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Kernel Class Reference}{17}{section.4.17}%
+\contentsline {section}{\numberline {4.18}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Keyboard Class Reference}{17}{section.4.18}%
+\contentsline {section}{\numberline {4.19}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Keyboard\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component Class Reference}{17}{section.4.19}%
+\contentsline {section}{\numberline {4.20}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Light\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component Class Reference}{18}{section.4.20}%
+\contentsline {section}{\numberline {4.21}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Renderer Class Reference}{19}{section.4.21}%
+\contentsline {section}{\numberline {4.22}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Window\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component Class Reference}{19}{section.4.22}%
+\contentsline {subsection}{\numberline {4.22.1}Constructor \& Destructor Documentation}{19}{subsection.4.22.1}%
+\contentsline {subsubsection}{\numberline {4.22.1.1}BMainWindowComponent()}{20}{subsubsection.4.22.1.1}%
+\contentsline {section}{\numberline {4.23}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Message Class Reference}{20}{section.4.23}%
+\contentsline {section}{\numberline {4.24}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}My\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Input\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Handler\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Task Class Reference}{20}{section.4.24}%
+\contentsline {section}{\numberline {4.25}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Orbserver Class Reference}{21}{section.4.25}%
+\contentsline {section}{\numberline {4.26}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Render\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Object\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component Class Reference}{21}{section.4.26}%
+\contentsline {section}{\numberline {4.27}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Render\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Object\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Task Class Reference}{22}{section.4.27}%
+\contentsline {section}{\numberline {4.28}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Render\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Task Class Reference}{22}{section.4.28}%
+\contentsline {section}{\numberline {4.29}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Scene Class Reference}{23}{section.4.29}%
+\contentsline {section}{\numberline {4.30}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Shere\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Collider\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component Class Reference}{23}{section.4.30}%
+\contentsline {section}{\numberline {4.31}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Task Class Reference}{24}{section.4.31}%
+\contentsline {section}{\numberline {4.32}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Timer Class Reference}{25}{section.4.32}%
+\contentsline {section}{\numberline {4.33}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Transform\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Component Class Reference}{25}{section.4.33}%
+\contentsline {section}{\numberline {4.34}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Transform\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Task Class Reference}{26}{section.4.34}%
+\contentsline {section}{\numberline {4.35}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Window\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Task Class Reference}{27}{section.4.35}%
+\contentsline {subsection}{\numberline {4.35.1}Constructor \& Destructor Documentation}{27}{subsection.4.35.1}%
+\contentsline {subsubsection}{\numberline {4.35.1.1}BWindowTask()}{27}{subsubsection.4.35.1.1}%
+\contentsline {section}{\numberline {4.36}rapidxml\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::file$<$ Ch $>$ Class Template Reference}{28}{section.4.36}%
+\contentsline {subsection}{\numberline {4.36.1}Detailed Description}{28}{subsection.4.36.1}%
+\contentsline {subsection}{\numberline {4.36.2}Constructor \& Destructor Documentation}{28}{subsection.4.36.2}%
+\contentsline {subsubsection}{\numberline {4.36.2.1}file()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{28}{subsubsection.4.36.2.1}%
+\contentsline {subsubsection}{\numberline {4.36.2.2}file()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{29}{subsubsection.4.36.2.2}%
+\contentsline {subsection}{\numberline {4.36.3}Member Function Documentation}{29}{subsection.4.36.3}%
+\contentsline {subsubsection}{\numberline {4.36.3.1}data()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{29}{subsubsection.4.36.3.1}%
+\contentsline {subsubsection}{\numberline {4.36.3.2}data()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{29}{subsubsection.4.36.3.2}%
+\contentsline {subsubsection}{\numberline {4.36.3.3}size()}{30}{subsubsection.4.36.3.3}%
+\contentsline {section}{\numberline {4.37}B\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Keyboard\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::K\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}E\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Y\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}O\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}DE Struct Reference}{30}{section.4.37}%
+\contentsline {section}{\numberline {4.38}rapidxml\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::memory\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}pool$<$ Ch $>$ Class Template Reference}{31}{section.4.38}%
+\contentsline {subsection}{\numberline {4.38.1}Detailed Description}{31}{subsection.4.38.1}%
+\contentsline {subsection}{\numberline {4.38.2}Constructor \& Destructor Documentation}{32}{subsection.4.38.2}%
+\contentsline {subsubsection}{\numberline {4.38.2.1}$\sim $memory\_pool()}{32}{subsubsection.4.38.2.1}%
+\contentsline {subsection}{\numberline {4.38.3}Member Function Documentation}{32}{subsection.4.38.3}%
+\contentsline {subsubsection}{\numberline {4.38.3.1}allocate\_attribute()}{32}{subsubsection.4.38.3.1}%
+\contentsline {subsubsection}{\numberline {4.38.3.2}allocate\_node()}{33}{subsubsection.4.38.3.2}%
+\contentsline {subsubsection}{\numberline {4.38.3.3}allocate\_string()}{33}{subsubsection.4.38.3.3}%
+\contentsline {subsubsection}{\numberline {4.38.3.4}clear()}{34}{subsubsection.4.38.3.4}%
+\contentsline {subsubsection}{\numberline {4.38.3.5}clone\_node()}{34}{subsubsection.4.38.3.5}%
+\contentsline {subsubsection}{\numberline {4.38.3.6}set\_allocator()}{34}{subsubsection.4.38.3.6}%
+\contentsline {section}{\numberline {4.39}rapidxml\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::node\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}iterator$<$ Ch $>$ Class Template Reference}{35}{section.4.39}%
+\contentsline {subsection}{\numberline {4.39.1}Detailed Description}{35}{subsection.4.39.1}%
+\contentsline {section}{\numberline {4.40}rapidxml\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::parse\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}error Class Reference}{36}{section.4.40}%
+\contentsline {subsection}{\numberline {4.40.1}Detailed Description}{36}{subsection.4.40.1}%
+\contentsline {subsection}{\numberline {4.40.2}Member Function Documentation}{36}{subsection.4.40.2}%
+\contentsline {subsubsection}{\numberline {4.40.2.1}what()}{36}{subsubsection.4.40.2.1}%
+\contentsline {subsubsection}{\numberline {4.40.2.2}where()}{37}{subsubsection.4.40.2.2}%
+\contentsline {section}{\numberline {4.41}vec2$<$ T $>$ Class Template Reference}{37}{section.4.41}%
+\contentsline {subsection}{\numberline {4.41.1}Detailed Description}{38}{subsection.4.41.1}%
+\contentsline {subsection}{\numberline {4.41.2}Constructor \& Destructor Documentation}{38}{subsection.4.41.2}%
+\contentsline {subsubsection}{\numberline {4.41.2.1}vec2()\hspace {0.1cm}{\footnotesize \ttfamily [1/3]}}{38}{subsubsection.4.41.2.1}%
+\contentsline {subsubsection}{\numberline {4.41.2.2}vec2()\hspace {0.1cm}{\footnotesize \ttfamily [2/3]}}{38}{subsubsection.4.41.2.2}%
+\contentsline {subsubsection}{\numberline {4.41.2.3}vec2()\hspace {0.1cm}{\footnotesize \ttfamily [3/3]}}{38}{subsubsection.4.41.2.3}%
+\contentsline {subsection}{\numberline {4.41.3}Member Function Documentation}{39}{subsection.4.41.3}%
+\contentsline {subsubsection}{\numberline {4.41.3.1}inv\_length()}{39}{subsubsection.4.41.3.1}%
+\contentsline {subsubsection}{\numberline {4.41.3.2}length()}{39}{subsubsection.4.41.3.2}%
+\contentsline {subsubsection}{\numberline {4.41.3.3}normalize()}{39}{subsubsection.4.41.3.3}%
+\contentsline {subsubsection}{\numberline {4.41.3.4}operator"!=()}{39}{subsubsection.4.41.3.4}%
+\contentsline {subsubsection}{\numberline {4.41.3.5}operator$\ast $()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{39}{subsubsection.4.41.3.5}%
+\contentsline {subsubsection}{\numberline {4.41.3.6}operator$\ast $()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{39}{subsubsection.4.41.3.6}%
+\contentsline {subsubsection}{\numberline {4.41.3.7}operator$\ast $=()}{40}{subsubsection.4.41.3.7}%
+\contentsline {subsubsection}{\numberline {4.41.3.8}operator+()}{40}{subsubsection.4.41.3.8}%
+\contentsline {subsubsection}{\numberline {4.41.3.9}operator+=()}{40}{subsubsection.4.41.3.9}%
+\contentsline {subsubsection}{\numberline {4.41.3.10}operator-\/()}{40}{subsubsection.4.41.3.10}%
+\contentsline {subsubsection}{\numberline {4.41.3.11}operator-\/=()}{40}{subsubsection.4.41.3.11}%
+\contentsline {subsubsection}{\numberline {4.41.3.12}operator/=()}{40}{subsubsection.4.41.3.12}%
+\contentsline {subsubsection}{\numberline {4.41.3.13}operator=()}{41}{subsubsection.4.41.3.13}%
+\contentsline {subsubsection}{\numberline {4.41.3.14}operator==()}{41}{subsubsection.4.41.3.14}%
+\contentsline {subsubsection}{\numberline {4.41.3.15}operator[]()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{41}{subsubsection.4.41.3.15}%
+\contentsline {subsubsection}{\numberline {4.41.3.16}operator[]()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{41}{subsubsection.4.41.3.16}%
+\contentsline {subsubsection}{\numberline {4.41.3.17}producto\_escalar()}{41}{subsubsection.4.41.3.17}%
+\contentsline {section}{\numberline {4.42}vec3$<$ T $>$ Class Template Reference}{41}{section.4.42}%
+\contentsline {subsection}{\numberline {4.42.1}Detailed Description}{42}{subsection.4.42.1}%
+\contentsline {subsection}{\numberline {4.42.2}Constructor \& Destructor Documentation}{42}{subsection.4.42.2}%
+\contentsline {subsubsection}{\numberline {4.42.2.1}vec3()\hspace {0.1cm}{\footnotesize \ttfamily [1/3]}}{43}{subsubsection.4.42.2.1}%
+\contentsline {subsubsection}{\numberline {4.42.2.2}vec3()\hspace {0.1cm}{\footnotesize \ttfamily [2/3]}}{43}{subsubsection.4.42.2.2}%
+\contentsline {subsubsection}{\numberline {4.42.2.3}vec3()\hspace {0.1cm}{\footnotesize \ttfamily [3/3]}}{43}{subsubsection.4.42.2.3}%
+\contentsline {subsection}{\numberline {4.42.3}Member Function Documentation}{43}{subsection.4.42.3}%
+\contentsline {subsubsection}{\numberline {4.42.3.1}cross()}{43}{subsubsection.4.42.3.1}%
+\contentsline {subsubsection}{\numberline {4.42.3.2}invLengthd()}{43}{subsubsection.4.42.3.2}%
+\contentsline {subsubsection}{\numberline {4.42.3.3}length()}{43}{subsubsection.4.42.3.3}%
+\contentsline {subsubsection}{\numberline {4.42.3.4}normalize()}{44}{subsubsection.4.42.3.4}%
+\contentsline {subsubsection}{\numberline {4.42.3.5}operator"!=()}{44}{subsubsection.4.42.3.5}%
+\contentsline {subsubsection}{\numberline {4.42.3.6}operator$\ast $()}{44}{subsubsection.4.42.3.6}%
+\contentsline {subsubsection}{\numberline {4.42.3.7}operator$\ast $=()}{44}{subsubsection.4.42.3.7}%
+\contentsline {subsubsection}{\numberline {4.42.3.8}operator+()}{44}{subsubsection.4.42.3.8}%
+\contentsline {subsubsection}{\numberline {4.42.3.9}operator+=()}{44}{subsubsection.4.42.3.9}%
+\contentsline {subsubsection}{\numberline {4.42.3.10}operator-\/()}{45}{subsubsection.4.42.3.10}%
+\contentsline {subsubsection}{\numberline {4.42.3.11}operator-\/=()}{45}{subsubsection.4.42.3.11}%
+\contentsline {subsubsection}{\numberline {4.42.3.12}operator/()}{45}{subsubsection.4.42.3.12}%
+\contentsline {subsubsection}{\numberline {4.42.3.13}operator/=()}{45}{subsubsection.4.42.3.13}%
+\contentsline {subsubsection}{\numberline {4.42.3.14}operator=()}{45}{subsubsection.4.42.3.14}%
+\contentsline {subsubsection}{\numberline {4.42.3.15}operator==()}{45}{subsubsection.4.42.3.15}%
+\contentsline {subsubsection}{\numberline {4.42.3.16}operator[]()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{46}{subsubsection.4.42.3.16}%
+\contentsline {subsubsection}{\numberline {4.42.3.17}operator[]()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{46}{subsubsection.4.42.3.17}%
+\contentsline {subsubsection}{\numberline {4.42.3.18}producto\_escalar()}{46}{subsubsection.4.42.3.18}%
+\contentsline {section}{\numberline {4.43}rapidxml\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::xml\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}attribute$<$ Ch $>$ Class Template Reference}{46}{section.4.43}%
+\contentsline {subsection}{\numberline {4.43.1}Detailed Description}{47}{subsection.4.43.1}%
+\contentsline {subsection}{\numberline {4.43.2}Constructor \& Destructor Documentation}{47}{subsection.4.43.2}%
+\contentsline {subsubsection}{\numberline {4.43.2.1}xml\_attribute()}{47}{subsubsection.4.43.2.1}%
+\contentsline {subsection}{\numberline {4.43.3}Member Function Documentation}{47}{subsection.4.43.3}%
+\contentsline {subsubsection}{\numberline {4.43.3.1}document()}{47}{subsubsection.4.43.3.1}%
+\contentsline {subsubsection}{\numberline {4.43.3.2}next\_attribute()}{48}{subsubsection.4.43.3.2}%
+\contentsline {subsubsection}{\numberline {4.43.3.3}previous\_attribute()}{48}{subsubsection.4.43.3.3}%
+\contentsline {section}{\numberline {4.44}rapidxml\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::xml\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}base$<$ Ch $>$ Class Template Reference}{49}{section.4.44}%
+\contentsline {subsection}{\numberline {4.44.1}Detailed Description}{49}{subsection.4.44.1}%
+\contentsline {subsection}{\numberline {4.44.2}Member Function Documentation}{50}{subsection.4.44.2}%
+\contentsline {subsubsection}{\numberline {4.44.2.1}name()\hspace {0.1cm}{\footnotesize \ttfamily [1/3]}}{50}{subsubsection.4.44.2.1}%
+\contentsline {subsubsection}{\numberline {4.44.2.2}name()\hspace {0.1cm}{\footnotesize \ttfamily [2/3]}}{50}{subsubsection.4.44.2.2}%
+\contentsline {subsubsection}{\numberline {4.44.2.3}name()\hspace {0.1cm}{\footnotesize \ttfamily [3/3]}}{50}{subsubsection.4.44.2.3}%
+\contentsline {subsubsection}{\numberline {4.44.2.4}name\_size()}{51}{subsubsection.4.44.2.4}%
+\contentsline {subsubsection}{\numberline {4.44.2.5}parent()}{51}{subsubsection.4.44.2.5}%
+\contentsline {subsubsection}{\numberline {4.44.2.6}value()\hspace {0.1cm}{\footnotesize \ttfamily [1/3]}}{51}{subsubsection.4.44.2.6}%
+\contentsline {subsubsection}{\numberline {4.44.2.7}value()\hspace {0.1cm}{\footnotesize \ttfamily [2/3]}}{52}{subsubsection.4.44.2.7}%
+\contentsline {subsubsection}{\numberline {4.44.2.8}value()\hspace {0.1cm}{\footnotesize \ttfamily [3/3]}}{52}{subsubsection.4.44.2.8}%
+\contentsline {subsubsection}{\numberline {4.44.2.9}value\_size()}{52}{subsubsection.4.44.2.9}%
+\contentsline {section}{\numberline {4.45}rapidxml\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::xml\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}document$<$ Ch $>$ Class Template Reference}{53}{section.4.45}%
+\contentsline {subsection}{\numberline {4.45.1}Detailed Description}{53}{subsection.4.45.1}%
+\contentsline {subsection}{\numberline {4.45.2}Member Function Documentation}{54}{subsection.4.45.2}%
+\contentsline {subsubsection}{\numberline {4.45.2.1}clear()}{54}{subsubsection.4.45.2.1}%
+\contentsline {subsubsection}{\numberline {4.45.2.2}parse()}{54}{subsubsection.4.45.2.2}%
+\contentsline {section}{\numberline {4.46}rapidxml\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::xml\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}node$<$ Ch $>$ Class Template Reference}{54}{section.4.46}%
+\contentsline {subsection}{\numberline {4.46.1}Detailed Description}{55}{subsection.4.46.1}%
+\contentsline {subsection}{\numberline {4.46.2}Constructor \& Destructor Documentation}{56}{subsection.4.46.2}%
+\contentsline {subsubsection}{\numberline {4.46.2.1}xml\_node()}{56}{subsubsection.4.46.2.1}%
+\contentsline {subsection}{\numberline {4.46.3}Member Function Documentation}{56}{subsection.4.46.3}%
+\contentsline {subsubsection}{\numberline {4.46.3.1}append\_attribute()}{56}{subsubsection.4.46.3.1}%
+\contentsline {subsubsection}{\numberline {4.46.3.2}append\_node()}{56}{subsubsection.4.46.3.2}%
+\contentsline {subsubsection}{\numberline {4.46.3.3}document()}{57}{subsubsection.4.46.3.3}%
+\contentsline {subsubsection}{\numberline {4.46.3.4}first\_attribute()}{57}{subsubsection.4.46.3.4}%
+\contentsline {subsubsection}{\numberline {4.46.3.5}first\_node()}{57}{subsubsection.4.46.3.5}%
+\contentsline {subsubsection}{\numberline {4.46.3.6}insert\_attribute()}{58}{subsubsection.4.46.3.6}%
+\contentsline {subsubsection}{\numberline {4.46.3.7}insert\_node()}{58}{subsubsection.4.46.3.7}%
+\contentsline {subsubsection}{\numberline {4.46.3.8}last\_attribute()}{59}{subsubsection.4.46.3.8}%
+\contentsline {subsubsection}{\numberline {4.46.3.9}last\_node()}{59}{subsubsection.4.46.3.9}%
+\contentsline {subsubsection}{\numberline {4.46.3.10}next\_sibling()}{60}{subsubsection.4.46.3.10}%
+\contentsline {subsubsection}{\numberline {4.46.3.11}prepend\_attribute()}{60}{subsubsection.4.46.3.11}%
+\contentsline {subsubsection}{\numberline {4.46.3.12}prepend\_node()}{60}{subsubsection.4.46.3.12}%
+\contentsline {subsubsection}{\numberline {4.46.3.13}previous\_sibling()}{61}{subsubsection.4.46.3.13}%
+\contentsline {subsubsection}{\numberline {4.46.3.14}remove\_attribute()}{61}{subsubsection.4.46.3.14}%
+\contentsline {subsubsection}{\numberline {4.46.3.15}remove\_first\_attribute()}{61}{subsubsection.4.46.3.15}%
+\contentsline {subsubsection}{\numberline {4.46.3.16}remove\_first\_node()}{62}{subsubsection.4.46.3.16}%
+\contentsline {subsubsection}{\numberline {4.46.3.17}remove\_last\_attribute()}{62}{subsubsection.4.46.3.17}%
+\contentsline {subsubsection}{\numberline {4.46.3.18}remove\_last\_node()}{62}{subsubsection.4.46.3.18}%
+\contentsline {subsubsection}{\numberline {4.46.3.19}type()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{62}{subsubsection.4.46.3.19}%
+\contentsline {subsubsection}{\numberline {4.46.3.20}type()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{62}{subsubsection.4.46.3.20}%
+\contentsline {chapter}{\numberline {5}File Documentation}{65}{chapter.5}%
+\contentsline {section}{\numberline {5.1}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/rapidxml.hpp File Reference}{65}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Detailed Description}{66}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Enumeration Type Documentation}{66}{subsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.2.1}node\_type}{66}{subsubsection.5.1.2.1}%
+\contentsline {subsection}{\numberline {5.1.3}Variable Documentation}{67}{subsection.5.1.3}%
+\contentsline {subsubsection}{\numberline {5.1.3.1}parse\_comment\_nodes}{67}{subsubsection.5.1.3.1}%
+\contentsline {subsubsection}{\numberline {5.1.3.2}parse\_declaration\_node}{67}{subsubsection.5.1.3.2}%
+\contentsline {subsubsection}{\numberline {5.1.3.3}parse\_default}{67}{subsubsection.5.1.3.3}%
+\contentsline {subsubsection}{\numberline {5.1.3.4}parse\_doctype\_node}{67}{subsubsection.5.1.3.4}%
+\contentsline {subsubsection}{\numberline {5.1.3.5}parse\_fastest}{67}{subsubsection.5.1.3.5}%
+\contentsline {subsubsection}{\numberline {5.1.3.6}parse\_full}{68}{subsubsection.5.1.3.6}%
+\contentsline {subsubsection}{\numberline {5.1.3.7}parse\_no\_data\_nodes}{68}{subsubsection.5.1.3.7}%
+\contentsline {subsubsection}{\numberline {5.1.3.8}parse\_no\_element\_values}{68}{subsubsection.5.1.3.8}%
+\contentsline {subsubsection}{\numberline {5.1.3.9}parse\_no\_entity\_translation}{68}{subsubsection.5.1.3.9}%
+\contentsline {subsubsection}{\numberline {5.1.3.10}parse\_no\_string\_terminators}{68}{subsubsection.5.1.3.10}%
+\contentsline {subsubsection}{\numberline {5.1.3.11}parse\_no\_utf8}{69}{subsubsection.5.1.3.11}%
+\contentsline {subsubsection}{\numberline {5.1.3.12}parse\_non\_destructive}{69}{subsubsection.5.1.3.12}%
+\contentsline {subsubsection}{\numberline {5.1.3.13}parse\_normalize\_whitespace}{69}{subsubsection.5.1.3.13}%
+\contentsline {subsubsection}{\numberline {5.1.3.14}parse\_pi\_nodes}{69}{subsubsection.5.1.3.14}%
+\contentsline {subsubsection}{\numberline {5.1.3.15}parse\_trim\_whitespace}{69}{subsubsection.5.1.3.15}%
+\contentsline {subsubsection}{\numberline {5.1.3.16}parse\_validate\_closing\_tags}{70}{subsubsection.5.1.3.16}%
+\contentsline {section}{\numberline {5.2}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/rapidxml\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}iterators.hpp File Reference}{70}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Detailed Description}{70}{subsection.5.2.1}%
+\contentsline {section}{\numberline {5.3}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/rapidxml\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}print.hpp File Reference}{70}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Detailed Description}{71}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Function Documentation}{71}{subsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.2.1}operator$<$$<$()}{71}{subsubsection.5.3.2.1}%
+\contentsline {subsubsection}{\numberline {5.3.2.2}print()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{71}{subsubsection.5.3.2.2}%
+\contentsline {subsubsection}{\numberline {5.3.2.3}print()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{72}{subsubsection.5.3.2.3}%
+\contentsline {section}{\numberline {5.4}D\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Git\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Hub/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Barx\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine/code/headers/rapidxml\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}utils.hpp File Reference}{72}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Detailed Description}{73}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Function Documentation}{73}{subsection.5.4.2}%
+\contentsline {subsubsection}{\numberline {5.4.2.1}count\_attributes()}{73}{subsubsection.5.4.2.1}%
+\contentsline {subsubsection}{\numberline {5.4.2.2}count\_children()}{73}{subsubsection.5.4.2.2}%
+\contentsline {chapter}{Index}{75}{section*.145}%

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: D:/GitHub/BarxEngine/BarxEngine/code/headers/BtypeDef.hpp Source File</title>
+<title>BArx Engine - Jorge BÃ¡rcena: D:/GitHub/BarxEngine/BarxEngine/code/headers/BtypeDef.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">BArx Engine - Jorge BÃ¡rcena
    </div>
+   <div id="projectbrief">Motor de videojuegos basado en SFML 2</div>
   </td>
  </tr>
  </tbody>
@@ -69,7 +70,7 @@ $(function() {
 <div class="title">BtypeDef.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_btype_def_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// File: BTypeDef.hpp</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// File: BtypeDef.hpp</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Author: Jorge Bárcena Lumbreras</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// © Copyright (C) 2019  Jorge Bárcena Lumbreras</span></div>
@@ -86,117 +87,60 @@ $(function() {
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// You should have received a copy of the GNU General Public License</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;set&gt;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;thread&gt;</span> </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span> </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;cstdlib&gt;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;assert.h&gt;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;iterator&gt;</span>  </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifndef BARX_ENGINE_BTYPEDEF</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define BARX_ENGINE_BTYPEDEF</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;set&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;thread&gt;</span> </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span> </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;cstdlib&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;assert.h&gt;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;iterator&gt;</span>  </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;BMath.hpp&quot;</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="_btype_def_8hpp.html#a4e3104d96ae050d74d2cfa6d3d808f2e">   38</a></span>&#160;<span class="keyword">typedef</span> int_fast16_t <a class="code" href="_btype_def_8hpp.html#a4e3104d96ae050d74d2cfa6d3d808f2e">Id</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">using namespace </span>std;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="_btype_def_8hpp.html#ab5c2ddf51329cf93dbf1bb6966f48fa1">   40</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">short</span> <a class="code" href="_btype_def_8hpp.html#ab5c2ddf51329cf93dbf1bb6966f48fa1">byte</a>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">typedef</span> int_fast16_t Id;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="_btype_def_8hpp.html#a55a196c7d3b8497538632c79ae1e6392">   44</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="_btype_def_8hpp.html#a55a196c7d3b8497538632c79ae1e6392">SDL_Window</a>   <a class="code" href="_btype_def_8hpp.html#a55a196c7d3b8497538632c79ae1e6392">SDL_Window</a>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="_btype_def_8hpp.html#a0d64dcf67c9685d09cbe051448e1b3f3">   45</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">void</span>* <a class="code" href="_btype_def_8hpp.html#a0d64dcf67c9685d09cbe051448e1b3f3">SDL_GLContext</a>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">class </span>Render_Node;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">short</span> byte;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="namespaceglt.html">   48</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceglt.html">glt</a></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">class </span>Render_Node;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">class </span>Model;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">class </span>Camera;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">class </span>Light;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="structvec3.html">   60</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structvec3.html">vec3</a> {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>SDL_Window   SDL_Window;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">void</span>* SDL_GLContext;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">class </span>Render_Node;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">namespace </span>glt</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">class </span>Render_Node;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">class </span>Model;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">class </span>Camera;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">class </span>Light;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="structvec3.html#a3f1f0c60e13b8bf67f64b1afc9cd6d1a">   62</a></span>&#160;    T <a class="code" href="structvec3.html#a3f1f0c60e13b8bf67f64b1afc9cd6d1a">x</a>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="structvec3.html#a77c2f238c0b2b7895304f5ca64b8d770">   63</a></span>&#160;    T <a class="code" href="structvec3.html#a77c2f238c0b2b7895304f5ca64b8d770">y</a>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="structvec3.html#a7879033e3409225479ae0079c92d9afd">   64</a></span>&#160;    T <a class="code" href="structvec3.html#a7879033e3409225479ae0079c92d9afd">z</a>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="structvec3.html#afb7342872bc442bf0da6a7da1671e77e">   66</a></span>&#160;    <a class="code" href="structvec3.html#afb7342872bc442bf0da6a7da1671e77e">vec3</a>() {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="structvec3.html#a70b4645f1ef288d95a9b13376dd9c14a">   70</a></span>&#160;    <a class="code" href="structvec3.html#a70b4645f1ef288d95a9b13376dd9c14a">vec3</a>(T _x, T _y, T _z) {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        x = _x;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        y = _y;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        z = _z;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="structvec3.html#ad3a263758f1a667a89a470af3569129f">   76</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="structvec3.html#ad3a263758f1a667a89a470af3569129f">setValues</a>(T _x, T _y, T _z) {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        x = _x;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        y = _y;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        z = _z;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="structvec3.html#aca685af3239f96f0e1a747dcea2227a3">   82</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="structvec3.html#aca685af3239f96f0e1a747dcea2227a3">normalize</a>() {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordtype">float</span> inv_magnitude = inv_length();</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        x = x * inv_magnitude;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        y = y * inv_magnitude;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        z = z * inv_magnitude;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="structvec3.html#ac223cf1793b4750fdc77cada70e69a6a">   90</a></span>&#160;    T <a class="code" href="structvec3.html#ac223cf1793b4750fdc77cada70e69a6a">inv_length</a>() {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">return</span> 1 / sqrt((x * x) + (y * y) + (z * z));</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;};</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="_btype_def_8hpp.html#a00d413c16e2ce578c325006a5f5a38f0">   96</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="_btype_def_8hpp.html#a00d413c16e2ce578c325006a5f5a38f0">TASKPRIORITY</a> {</div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="_btype_def_8hpp.html#a00d413c16e2ce578c325006a5f5a38f0a6e0f01f52fc70b478a06d943db6235cf">   97</a></span>&#160;    <a class="code" href="_btype_def_8hpp.html#a00d413c16e2ce578c325006a5f5a38f0a6e0f01f52fc70b478a06d943db6235cf">WINDOW</a> = 0,</div>
-<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="_btype_def_8hpp.html#a00d413c16e2ce578c325006a5f5a38f0a5832750cd5ecd10f1cf1bf22a64cb18c">   98</a></span>&#160;    <a class="code" href="_btype_def_8hpp.html#a00d413c16e2ce578c325006a5f5a38f0a5832750cd5ecd10f1cf1bf22a64cb18c">INPUTSYSTEM</a> = 1,</div>
-<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="_btype_def_8hpp.html#a00d413c16e2ce578c325006a5f5a38f0a21bf525c4961c860cf1f001e039dce77">   99</a></span>&#160;    <a class="code" href="_btype_def_8hpp.html#a00d413c16e2ce578c325006a5f5a38f0a21bf525c4961c860cf1f001e039dce77">COLLISIONS</a> = 2,</div>
-<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="_btype_def_8hpp.html#a00d413c16e2ce578c325006a5f5a38f0a25f73324dc93d9024c0c75b4e6815335">  100</a></span>&#160;    <a class="code" href="_btype_def_8hpp.html#a00d413c16e2ce578c325006a5f5a38f0a25f73324dc93d9024c0c75b4e6815335">TRANSFORM</a> = 3,</div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="_btype_def_8hpp.html#a00d413c16e2ce578c325006a5f5a38f0a79ae8c893ff475037b515f810bf8bfe2">  101</a></span>&#160;    <a class="code" href="_btype_def_8hpp.html#a00d413c16e2ce578c325006a5f5a38f0a79ae8c893ff475037b515f810bf8bfe2">ENTITYUPDATES</a> = 4,</div>
-<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="_btype_def_8hpp.html#a00d413c16e2ce578c325006a5f5a38f0ae5f72e29bef558cbef02cc32c515d752">  102</a></span>&#160;    <a class="code" href="_btype_def_8hpp.html#a00d413c16e2ce578c325006a5f5a38f0ae5f72e29bef558cbef02cc32c515d752">RENDEROBJECT</a> = 5,</div>
-<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="_btype_def_8hpp.html#a00d413c16e2ce578c325006a5f5a38f0af9c126c2017e483bdb67239adfb4af23">  103</a></span>&#160;    <a class="code" href="_btype_def_8hpp.html#a00d413c16e2ce578c325006a5f5a38f0af9c126c2017e483bdb67239adfb4af23">RENDERGENERAL</a> = 6</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;};</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">enum</span> TASKPRIORITY {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    WINDOW = 0,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    INPUTSYSTEM = 1,</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    COLLISIONS = 2,</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    TRANSFORM = 3,</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    ENTITYUPDATES = 4,</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    RENDEROBJECT = 5,</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    RENDERGENERAL = 6</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="a_btype_def_8hpp_html_a00d413c16e2ce578c325006a5f5a38f0a79ae8c893ff475037b515f810bf8bfe2"><div class="ttname"><a href="_btype_def_8hpp.html#a00d413c16e2ce578c325006a5f5a38f0a79ae8c893ff475037b515f810bf8bfe2">ENTITYUPDATES</a></div><div class="ttdef"><b>Definition:</b> BtypeDef.hpp:101</div></div>
-<div class="ttc" id="a_btype_def_8hpp_html_a4e3104d96ae050d74d2cfa6d3d808f2e"><div class="ttname"><a href="_btype_def_8hpp.html#a4e3104d96ae050d74d2cfa6d3d808f2e">Id</a></div><div class="ttdeci">int_fast16_t Id</div><div class="ttdef"><b>Definition:</b> BtypeDef.hpp:38</div></div>
-<div class="ttc" id="astructvec3_html_afb7342872bc442bf0da6a7da1671e77e"><div class="ttname"><a href="structvec3.html#afb7342872bc442bf0da6a7da1671e77e">vec3::vec3</a></div><div class="ttdeci">vec3()</div><div class="ttdef"><b>Definition:</b> BtypeDef.hpp:66</div></div>
-<div class="ttc" id="a_btype_def_8hpp_html_a55a196c7d3b8497538632c79ae1e6392"><div class="ttname"><a href="_btype_def_8hpp.html#a55a196c7d3b8497538632c79ae1e6392">SDL_Window</a></div><div class="ttdeci">struct SDL_Window SDL_Window</div><div class="ttdef"><b>Definition:</b> BtypeDef.hpp:44</div></div>
-<div class="ttc" id="a_btype_def_8hpp_html_a00d413c16e2ce578c325006a5f5a38f0a25f73324dc93d9024c0c75b4e6815335"><div class="ttname"><a href="_btype_def_8hpp.html#a00d413c16e2ce578c325006a5f5a38f0a25f73324dc93d9024c0c75b4e6815335">TRANSFORM</a></div><div class="ttdef"><b>Definition:</b> BtypeDef.hpp:100</div></div>
-<div class="ttc" id="a_btype_def_8hpp_html_ab5c2ddf51329cf93dbf1bb6966f48fa1"><div class="ttname"><a href="_btype_def_8hpp.html#ab5c2ddf51329cf93dbf1bb6966f48fa1">byte</a></div><div class="ttdeci">short byte</div><div class="ttdef"><b>Definition:</b> BtypeDef.hpp:40</div></div>
-<div class="ttc" id="astructvec3_html_a7879033e3409225479ae0079c92d9afd"><div class="ttname"><a href="structvec3.html#a7879033e3409225479ae0079c92d9afd">vec3::z</a></div><div class="ttdeci">T z</div><div class="ttdef"><b>Definition:</b> BtypeDef.hpp:64</div></div>
-<div class="ttc" id="astructvec3_html_ac223cf1793b4750fdc77cada70e69a6a"><div class="ttname"><a href="structvec3.html#ac223cf1793b4750fdc77cada70e69a6a">vec3::inv_length</a></div><div class="ttdeci">T inv_length()</div><div class="ttdef"><b>Definition:</b> BtypeDef.hpp:90</div></div>
-<div class="ttc" id="astructvec3_html"><div class="ttname"><a href="structvec3.html">vec3</a></div><div class="ttdef"><b>Definition:</b> BtypeDef.hpp:60</div></div>
-<div class="ttc" id="anamespaceglt_html"><div class="ttname"><a href="namespaceglt.html">glt</a></div><div class="ttdef"><b>Definition:</b> BtypeDef.hpp:48</div></div>
-<div class="ttc" id="a_btype_def_8hpp_html_a0d64dcf67c9685d09cbe051448e1b3f3"><div class="ttname"><a href="_btype_def_8hpp.html#a0d64dcf67c9685d09cbe051448e1b3f3">SDL_GLContext</a></div><div class="ttdeci">void * SDL_GLContext</div><div class="ttdef"><b>Definition:</b> BtypeDef.hpp:45</div></div>
-<div class="ttc" id="a_btype_def_8hpp_html_a00d413c16e2ce578c325006a5f5a38f0"><div class="ttname"><a href="_btype_def_8hpp.html#a00d413c16e2ce578c325006a5f5a38f0">TASKPRIORITY</a></div><div class="ttdeci">TASKPRIORITY</div><div class="ttdef"><b>Definition:</b> BtypeDef.hpp:96</div></div>
-<div class="ttc" id="a_btype_def_8hpp_html_a00d413c16e2ce578c325006a5f5a38f0af9c126c2017e483bdb67239adfb4af23"><div class="ttname"><a href="_btype_def_8hpp.html#a00d413c16e2ce578c325006a5f5a38f0af9c126c2017e483bdb67239adfb4af23">RENDERGENERAL</a></div><div class="ttdef"><b>Definition:</b> BtypeDef.hpp:103</div></div>
-<div class="ttc" id="astructvec3_html_a77c2f238c0b2b7895304f5ca64b8d770"><div class="ttname"><a href="structvec3.html#a77c2f238c0b2b7895304f5ca64b8d770">vec3::y</a></div><div class="ttdeci">T y</div><div class="ttdef"><b>Definition:</b> BtypeDef.hpp:63</div></div>
-<div class="ttc" id="a_btype_def_8hpp_html_a00d413c16e2ce578c325006a5f5a38f0a21bf525c4961c860cf1f001e039dce77"><div class="ttname"><a href="_btype_def_8hpp.html#a00d413c16e2ce578c325006a5f5a38f0a21bf525c4961c860cf1f001e039dce77">COLLISIONS</a></div><div class="ttdef"><b>Definition:</b> BtypeDef.hpp:99</div></div>
-<div class="ttc" id="astructvec3_html_a70b4645f1ef288d95a9b13376dd9c14a"><div class="ttname"><a href="structvec3.html#a70b4645f1ef288d95a9b13376dd9c14a">vec3::vec3</a></div><div class="ttdeci">vec3(T _x, T _y, T _z)</div><div class="ttdef"><b>Definition:</b> BtypeDef.hpp:70</div></div>
-<div class="ttc" id="astructvec3_html_a3f1f0c60e13b8bf67f64b1afc9cd6d1a"><div class="ttname"><a href="structvec3.html#a3f1f0c60e13b8bf67f64b1afc9cd6d1a">vec3::x</a></div><div class="ttdeci">T x</div><div class="ttdef"><b>Definition:</b> BtypeDef.hpp:62</div></div>
-<div class="ttc" id="astructvec3_html_ad3a263758f1a667a89a470af3569129f"><div class="ttname"><a href="structvec3.html#ad3a263758f1a667a89a470af3569129f">vec3::setValues</a></div><div class="ttdeci">void setValues(T _x, T _y, T _z)</div><div class="ttdef"><b>Definition:</b> BtypeDef.hpp:76</div></div>
-<div class="ttc" id="a_btype_def_8hpp_html_a00d413c16e2ce578c325006a5f5a38f0ae5f72e29bef558cbef02cc32c515d752"><div class="ttname"><a href="_btype_def_8hpp.html#a00d413c16e2ce578c325006a5f5a38f0ae5f72e29bef558cbef02cc32c515d752">RENDEROBJECT</a></div><div class="ttdef"><b>Definition:</b> BtypeDef.hpp:102</div></div>
-<div class="ttc" id="a_btype_def_8hpp_html_a00d413c16e2ce578c325006a5f5a38f0a5832750cd5ecd10f1cf1bf22a64cb18c"><div class="ttname"><a href="_btype_def_8hpp.html#a00d413c16e2ce578c325006a5f5a38f0a5832750cd5ecd10f1cf1bf22a64cb18c">INPUTSYSTEM</a></div><div class="ttdef"><b>Definition:</b> BtypeDef.hpp:98</div></div>
-<div class="ttc" id="a_btype_def_8hpp_html_a00d413c16e2ce578c325006a5f5a38f0a6e0f01f52fc70b478a06d943db6235cf"><div class="ttname"><a href="_btype_def_8hpp.html#a00d413c16e2ce578c325006a5f5a38f0a6e0f01f52fc70b478a06d943db6235cf">WINDOW</a></div><div class="ttdef"><b>Definition:</b> BtypeDef.hpp:97</div></div>
-<div class="ttc" id="astructvec3_html_aca685af3239f96f0e1a747dcea2227a3"><div class="ttname"><a href="structvec3.html#aca685af3239f96f0e1a747dcea2227a3">vec3::normalize</a></div><div class="ttdeci">void normalize()</div><div class="ttdef"><b>Definition:</b> BtypeDef.hpp:82</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

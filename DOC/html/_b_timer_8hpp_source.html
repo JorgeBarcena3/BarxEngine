@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: D:/GitHub/BarxEngine/BarxEngine/code/headers/BTimer.hpp Source File</title>
+<title>BArx Engine - Jorge BÃ¡rcena: D:/GitHub/BarxEngine/BarxEngine/code/headers/BTimer.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">BArx Engine - Jorge BÃ¡rcena
    </div>
+   <div id="projectbrief">Motor de videojuegos basado en SFML 2</div>
   </td>
  </tr>
  </tbody>
@@ -69,53 +70,69 @@ $(function() {
 <div class="title">BTimer.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_b_timer_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_btype_def_8hpp.html">BtypeDef.hpp</a>&quot;</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// File: BTimer.hpp</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Author: Jorge Bárcena Lumbreras</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// This is free code released into the public domain.</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// Drafted by Ángel on March 2017.</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// Use it at your own risk. It might have bugs.</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// angel.rodriguez@esne.edu</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// © Copyright (C) 2019  Jorge Bárcena Lumbreras</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// This program is free software: you can redistribute it and/or modify</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">// the Free Software Foundation, either version 3 of the License, or</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// (at your option) any later version.</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;cstdint&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_b_timer.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_b_timer.html">BTimer</a></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// This program is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// GNU General Public License for more details.</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    uint32_t start_ticks;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    uint32_t last_ticks;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// You should have received a copy of the GNU General Public License</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifndef BARX_ENGINE_BTIMER</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define BARX_ENGINE_BTIMER</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_b_timer.html#afa1f8e29c391f4902b95cc401a44dfd7">   22</a></span>&#160;    <a class="code" href="class_b_timer.html#afa1f8e29c391f4902b95cc401a44dfd7">BTimer</a>()</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="class_b_timer.html#a28544e857398274a23bb1dca30344306">start</a>();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_b_timer.html#a28544e857398274a23bb1dca30344306">start</a>();</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_b_timer.html#a367c44873596e155d6c093dee5abf3ce">   29</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_b_timer.html#a367c44873596e155d6c093dee5abf3ce">elapsed_seconds</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordflow">return</span> float(<a class="code" href="class_b_timer.html#a3561c97560a5eda2a74507f07cf7d743">elapsed_milliseconds</a>()) / 1000.f;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    uint32_t <a class="code" href="class_b_timer.html#a3561c97560a5eda2a74507f07cf7d743">elapsed_milliseconds</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_b_timer.html#a69c7d84a210ee34dbfd6588bed1440a5">timeDeltatime</a>();</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;BtypeDef.hpp&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">* Clase que maneja el tiempo</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_b_timer.html">   27</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_b_timer.html">BTimer</a></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    uint32_t startTick; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    uint32_t lastTick ; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">    * Constructor</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">    */</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="class_b_timer.html">BTimer</a>();</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">    * Comienza el contador</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">    */</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> start();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">    * Devuelve los segundos transcurridos</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">    */</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">float</span> elapsedSeconds() <span class="keyword">const</span>;  </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">    * Devuelve los milisegundos transcurridos</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">    */</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    uint32_t elapsedMiliseconds() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">    * Devuelve el timDeltaTime</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">    */</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">float</span> timeDeltatime();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclass_b_timer_html_afa1f8e29c391f4902b95cc401a44dfd7"><div class="ttname"><a href="class_b_timer.html#afa1f8e29c391f4902b95cc401a44dfd7">BTimer::BTimer</a></div><div class="ttdeci">BTimer()</div><div class="ttdef"><b>Definition:</b> BTimer.hpp:22</div></div>
-<div class="ttc" id="a_btype_def_8hpp_html"><div class="ttname"><a href="_btype_def_8hpp.html">BtypeDef.hpp</a></div></div>
-<div class="ttc" id="aclass_b_timer_html_a3561c97560a5eda2a74507f07cf7d743"><div class="ttname"><a href="class_b_timer.html#a3561c97560a5eda2a74507f07cf7d743">BTimer::elapsed_milliseconds</a></div><div class="ttdeci">uint32_t elapsed_milliseconds() const</div><div class="ttdef"><b>Definition:</b> BTimer.cpp:10</div></div>
-<div class="ttc" id="aclass_b_timer_html_a28544e857398274a23bb1dca30344306"><div class="ttname"><a href="class_b_timer.html#a28544e857398274a23bb1dca30344306">BTimer::start</a></div><div class="ttdeci">void start()</div><div class="ttdef"><b>Definition:</b> BTimer.cpp:4</div></div>
-<div class="ttc" id="aclass_b_timer_html"><div class="ttname"><a href="class_b_timer.html">BTimer</a></div><div class="ttdef"><b>Definition:</b> BTimer.hpp:13</div></div>
-<div class="ttc" id="aclass_b_timer_html_a367c44873596e155d6c093dee5abf3ce"><div class="ttname"><a href="class_b_timer.html#a367c44873596e155d6c093dee5abf3ce">BTimer::elapsed_seconds</a></div><div class="ttdeci">float elapsed_seconds() const</div><div class="ttdef"><b>Definition:</b> BTimer.hpp:29</div></div>
-<div class="ttc" id="aclass_b_timer_html_a69c7d84a210ee34dbfd6588bed1440a5"><div class="ttname"><a href="class_b_timer.html#a69c7d84a210ee34dbfd6588bed1440a5">BTimer::timeDeltatime</a></div><div class="ttdeci">float timeDeltatime()</div><div class="ttdef"><b>Definition:</b> BTimer.cpp:15</div></div>
+<div class="ttc" id="aclass_b_timer_html"><div class="ttname"><a href="class_b_timer.html">BTimer</a></div><div class="ttdef"><b>Definition:</b> BTimer.hpp:27</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

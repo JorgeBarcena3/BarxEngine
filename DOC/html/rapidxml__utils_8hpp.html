@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: D:/GitHub/BarxEngine/BarxEngine/code/headers/rapidxml_utils.hpp File Reference</title>
+<title>BArx Engine - Jorge Bárcena: D:/GitHub/BarxEngine/BarxEngine/code/headers/rapidxml_utils.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">BArx Engine - Jorge Bárcena
    </div>
+   <div id="projectbrief">Motor de videojuegos basado en SFML 2</div>
   </td>
  </tr>
  </tbody>
@@ -67,7 +68,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">rapidxml_utils.hpp File Reference</div>  </div>
@@ -87,23 +87,77 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents data loaded from a file.  <a href="classrapidxml_1_1file.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespacerapidxml"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerapidxml.html">rapidxml</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a21c1cf2814019385e6b8d09e75af1d34"><td class="memTemplParams" colspan="2">template&lt;class Ch &gt; </td></tr>
-<tr class="memitem:a21c1cf2814019385e6b8d09e75af1d34"><td class="memTemplItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacerapidxml.html#a21c1cf2814019385e6b8d09e75af1d34">rapidxml::count_children</a> (xml_node&lt; Ch &gt; *node)</td></tr>
+<tr class="memitem:a21c1cf2814019385e6b8d09e75af1d34"><td class="memTemplItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="rapidxml__utils_8hpp.html#a21c1cf2814019385e6b8d09e75af1d34">rapidxml::count_children</a> (xml_node&lt; Ch &gt; *node)</td></tr>
 <tr class="separator:a21c1cf2814019385e6b8d09e75af1d34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6255d15e5d8ad12ebcd7c60da51c97e2"><td class="memTemplParams" colspan="2">template&lt;class Ch &gt; </td></tr>
-<tr class="memitem:a6255d15e5d8ad12ebcd7c60da51c97e2"><td class="memTemplItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacerapidxml.html#a6255d15e5d8ad12ebcd7c60da51c97e2">rapidxml::count_attributes</a> (xml_node&lt; Ch &gt; *node)</td></tr>
+<tr class="memitem:a6255d15e5d8ad12ebcd7c60da51c97e2"><td class="memTemplItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="rapidxml__utils_8hpp.html#a6255d15e5d8ad12ebcd7c60da51c97e2">rapidxml::count_attributes</a> (xml_node&lt; Ch &gt; *node)</td></tr>
 <tr class="separator:a6255d15e5d8ad12ebcd7c60da51c97e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file contains high-level rapidxml utilities that can be useful in certain simple scenarios. They should probably not be used if maximizing performance is the main objective. </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="file_a6255d15e5d8ad12ebcd7c60da51c97e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#file_a6255d15e5d8ad12ebcd7c60da51c97e2">&#9670;&nbsp;</a></span>count_attributes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Ch &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t rapidxml::count_attributes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classrapidxml_1_1xml__node.html">xml_node</a>&lt; Ch &gt; *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Counts attributes of node. Time complexity is O(n). </p><dl class="section return"><dt>Returns</dt><dd>Number of attributes of node </dd></dl>
+
+</div>
+</div>
+<a id="file_a21c1cf2814019385e6b8d09e75af1d34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#file_a21c1cf2814019385e6b8d09e75af1d34">&#9670;&nbsp;</a></span>count_children()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Ch &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t rapidxml::count_children </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classrapidxml_1_1xml__node.html">xml_node</a>&lt; Ch &gt; *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Counts children of node. Time complexity is O(n). </p><dl class="section return"><dt>Returns</dt><dd>Number of children of node </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
