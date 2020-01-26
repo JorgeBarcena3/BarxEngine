@@ -35,7 +35,7 @@
       <radius>0.1</radius>
     </component>
     <component type="BRenderObjectComponent" >
-      <model>../assets/models/spider-man.obj</model>
+      <model>../../../binaries/assets/models/spider-man.obj</model>
     </component>
     <component type="BCharacterController">
       <speed>5</speed>
@@ -54,7 +54,7 @@
       <scale>16,2,10</scale>
     </component>
     <component type="BRenderObjectComponent" >
-      <model>../assets/models/plane.obj</model>
+      <model>../../../binaries/assets/models/plane.obj</model>
     </component>
   </entity>
 
@@ -65,7 +65,7 @@
       <scale>5,1,1</scale>
     </component>
     <component type="BRenderObjectComponent" >
-      <model>../assets/models/wall.obj</model>
+      <model>../../../binaries/assets/models/wall.obj</model>
     </component> 
     <component type="BBoxColliderComponent" >
       <max>16,0,2  </max>
@@ -80,7 +80,7 @@
       <scale>8,1,1</scale>
     </component>
     <component type="BRenderObjectComponent" >
-      <model>../assets/models/wall.obj</model>
+      <model>../../../binaries/assets/models/wall.obj</model>
     </component>
     <component type="BBoxColliderComponent" >
       <max>1,2,16</max>
@@ -95,7 +95,7 @@
       <scale>5,1,1</scale>
     </component>
     <component type="BRenderObjectComponent" >
-      <model>../assets/models/wall.obj</model>
+      <model>../../../binaries/assets/models/wall.obj</model>
     </component>
     <component type="BBoxColliderComponent" >
       <max>14,0,2  </max>
@@ -110,7 +110,7 @@
       <scale>8,1,1</scale>
     </component>
     <component type="BRenderObjectComponent" >
-      <model>../assets/models/wall.obj</model>
+      <model>../../../binaries/assets/models/wall.obj</model>
     </component>
     <component type="BBoxColliderComponent" >
       <max>2,0,0</max>
@@ -128,7 +128,7 @@
       <radius>0.1</radius>
     </component>
     <component type="BRenderObjectComponent" >
-      <model>../assets/models/pig.obj</model>
+      <model>../../../binaries/assets/models/pig.obj</model>
     </component>
     <component type="BControlComponent"/>
   </entity>
@@ -143,7 +143,7 @@
       <radius>0.1</radius>
     </component>
     <component type="BRenderObjectComponent" >
-      <model>../assets/models/pig.obj</model>
+      <model>../../../binaries/assets/models/pig.obj</model>
     </component>
     <component type="BControlComponent"/>
   </entity>
@@ -158,7 +158,7 @@
       <radius>0.1</radius>
     </component>
     <component type="BRenderObjectComponent" >
-      <model>../assets/models/pig.obj</model>
+      <model>../../../binaries/assets/models/pig.obj</model>
     </component>
     <component type="BControlComponent"/>
   </entity>
@@ -173,7 +173,7 @@
       <radius>0.1</radius>
     </component>
     <component type="BRenderObjectComponent" >
-      <model>../assets/models/pig.obj</model>
+      <model>../../../binaries/assets/models/pig.obj</model>
     </component>
     <component type="BControlComponent"/>
   </entity>

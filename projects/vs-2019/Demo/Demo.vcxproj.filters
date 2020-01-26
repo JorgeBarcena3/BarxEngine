@@ -20,7 +20,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Xml Include="..\..\..\binaries\assets\scene\scene.xml">
+    <Xml Include="resources\scene.xml">
       <Filter>Resource Files</Filter>
     </Xml>
   </ItemGroup>

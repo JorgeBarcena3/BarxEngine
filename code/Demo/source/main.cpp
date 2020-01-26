@@ -51,7 +51,7 @@ void EnemyControlFunction(float time, shared_ptr<BEntity> entity)
 void OnCollision(shared_ptr<BEntity> A, shared_ptr<BEntity> B)
 {
 
-    if (B->getId() == "Player" && (A->getId().find("Wall") || A->getId().find("Enemy")) != std::string::npos)
+    if (B->getId() == "Player" && (A->getId().find("Wall") != std::string::npos || A->getId().find("Enemy") != std::string::npos) )
     {
         audio.makeSound(collisionID);
     }
@@ -60,7 +60,7 @@ void OnCollision(shared_ptr<BEntity> A, shared_ptr<BEntity> B)
 
 int main() {
 
-    scene = new BScene("../../../binaries/assets/scene/scene.xml");
+    scene = new BScene("resources/scene.xml");
 
     ////////////// PLAYER ////////////// 
 
