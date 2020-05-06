@@ -28,7 +28,7 @@
 #include <Render_Node.hpp>
 #include <SDL.h>
 
-
+#define ANGLE_TO_RADIANS ( 3.1514 / 180 )
 
 BTransformTask::BTransformTask(string _id, shared_ptr<BTransformComponent> _transformComponent) : BTask(TASKPRIORITY::TRANSFORM)
 {
@@ -51,6 +51,14 @@ bool BTransformTask::finalize()
 bool BTransformTask::execute(float time)
 {
    
+    glm::mat4 trans = glm::mat4(1.0f);
 
+    trans = glm::translate(trans, glm::vec3(transform->position.x, transform->position.y, transform->position.z));
+    trans = glm::rotate(trans, glm::radians(transform->rotation.x), glm::vec3(1.0f, 0.0f, 0.0f));
+    trans = glm::rotate(trans, glm::radians(transform->rotation.y), glm::vec3(0.0f, 1.0f, 0.0f));
+    trans = glm::rotate(trans, glm::radians(transform->rotation.z), glm::vec3(0.0f, 0.0f, 1.0f));
+
+    transform->transformationMatrix = trans;
+    
     return true;
 }

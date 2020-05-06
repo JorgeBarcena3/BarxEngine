@@ -43,7 +43,7 @@ bool BPhysicsTask::execute(float time)
     return true;
 }
 
-BPhysicsTask::BPhysicsTask(string _id, shared_ptr< BPhysicsCompmponent > _physics_component) : BTask(TASKPRIORITY::PHYSICSOBJET)
+BPhysicsTask::BPhysicsTask(string _id, shared_ptr< BPhysicsCompmponent > _physics_component) : BTask(TASKPRIORITY::PHYSICSOBJECT)
 {
     physicsComponent = _physics_component;
     id = _id;
