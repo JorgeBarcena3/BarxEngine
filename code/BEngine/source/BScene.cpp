@@ -108,7 +108,7 @@ void BScene::load(const string& scene_description_file_path)
             else if (typeComponent == "BControlComponent")
                 currentComponent = shared_ptr<BControlComponent>(new BControlComponent(entity));
             else if (typeComponent == "BShereColliderComponent")
-                currentComponent = shared_ptr<BShereColliderComponent>(new BShereColliderComponent(entity));
+                currentComponent = shared_ptr<BSphereColliderComponent>(new BSphereColliderComponent(entity));
             else if (typeComponent == "BBoxColliderComponent")
                 currentComponent = shared_ptr<BBoxColliderComponent>(new BBoxColliderComponent(entity));
             else if (typeComponent == "BCharacterController")

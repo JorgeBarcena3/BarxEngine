@@ -35,6 +35,8 @@ public:
     vec3<float> rotation; ///< Rotacion de la entidad
     vec3<float> scale   ; ///< Escala de la entidad
 
+    glt::Matrix44 transformationMatrix;
+
     /**
     * Constructor por defecto de la clase
     */

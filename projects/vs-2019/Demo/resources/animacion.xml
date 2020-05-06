@@ -26,30 +26,42 @@
 
   <entity id="Ball">
     <component type="BTransform_Component" >
-      <position>0, +10, -2</position>
+      <position>0, +5, -4</position>
       <rotation>0, 0, 0</rotation>
       <scale>1,1,1</scale>
     </component>
     <component type="BRenderObjectComponent" >
       <model>../../../binaries/assets/models/sphere.obj</model>
     </component>
+    <component type="BShereColliderComponent">
+      <radius>0.5</radius>
+    </component>
     <component type="BPhysicsCompmponent">
       <type>DYNAMIC</type>
       <mass>1</mass>
-    </component>  
+      <restitution>1</restitution>
+      <friction>0</friction>
+    </component>
+    <component type="BControlComponent"/>
   </entity>
-  
+
   <entity id="Floor">
     <component type="BTransform_Component" >
-      <position>0, -1, -2</position>
+      <position>0, -2, -4</position>
       <rotation>0, 0, 0</rotation>
-      <scale>2,5,2</scale>
+      <scale>8,1,2</scale>
     </component>
     <component type="BRenderObjectComponent" >
-      <model>../../../binaries/assets/models/plane.obj</model>
+      <model>../../../binaries/assets/models/cube_centered.obj</model>
+    </component>
+    <component type="BBoxColliderComponent" >
+      <boxShape>4,0.5,1</boxShape>
     </component>
     <component type="BPhysicsCompmponent">
       <type>STATIC</type>
+      <mass>0</mass>
+      <restitution>0.5</restitution>
+      <friction>0</friction>
     </component>
   </entity>
 

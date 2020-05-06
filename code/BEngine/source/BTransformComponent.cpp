@@ -82,13 +82,7 @@ bool BTransformComponent::parse_property(const string& name, const string& value
 
 shared_ptr<glt::Matrix44> BTransformComponent::getOpenGLMatrix()
 {
-    glm::mat4 trans = glm::mat4(1.0f);
+    transformationMatrix = glm::scale(transformationMatrix, glm::vec3(scale.x, scale.y, scale.z));
 
-    trans = glm::translate(trans, glm::vec3(position.x, position.y, position.z));
-    trans = glm::rotate(trans, rotation.x, glm::vec3(1.0f, 0.0f, 0.0f));
-    trans = glm::rotate(trans, rotation.x, glm::vec3(0.0f, 1.0f, 0.0f));
-    trans = glm::rotate(trans, rotation.x, glm::vec3(0.0f, 0.0f, 1.0f));
-    trans = glm::scale(trans, glm::vec3(scale.x, scale.y, scale.z));
-
-    return shared_ptr<glm::mat4>(new glm::mat4(trans));
+    return shared_ptr<glm::mat4>(new glm::mat4(transformationMatrix));
 }

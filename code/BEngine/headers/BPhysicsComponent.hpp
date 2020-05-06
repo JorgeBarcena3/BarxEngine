@@ -44,7 +44,7 @@ enum BPSHYSIC_TYPE
 class BPhysicsCompmponent : public BComponent
 {
 
-private:
+public:
 
     /**
     * Tipo de fisica del objeto
@@ -52,7 +52,9 @@ private:
     BPSHYSIC_TYPE type;
 
     float  mass;
-
+    float  damping;
+    float  friction;
+    float  restitution;
 
     /**
     * Shape de bullet

@@ -8,11 +8,16 @@
 #include "../headers/BPhysicsTask.hpp"
 #include <btBulletDynamicsCommon.h>
 #include <LinearMath\btVector3.h>
+#include "../headers/BColliderComponent.hpp"
+#include "../headers/BBoxColliderComponent.hpp"
+#include "../headers/BShereColliderComponent.hpp"
 
 BPhysicsCompmponent::BPhysicsCompmponent(shared_ptr<BEntity> parent) : BComponent(parent)
 {
     type = BPSHYSIC_TYPE::DYNAMIC;
     task = shared_ptr<BPhysicsTask>(new BPhysicsTask(parent->getId(), shared_ptr<BPhysicsCompmponent>(this)));
+    friction = 0;
+    restitution = 0;
 }
 
 bool BPhysicsCompmponent::initialize()
@@ -36,7 +41,22 @@ bool BPhysicsCompmponent::parse_property(const string& name, const string& value
         }
     }
     else if (name == "mass")
+    {
         mass = atof(value.c_str());
+    } 
+    else if (name == "damping")
+    {
+        damping = atof(value.c_str());
+    } 
+    else if (name == "friction")
+    {
+        friction = atof(value.c_str());
+    }
+    else if (name == "restitution")
+    {
+        restitution = atof(value.c_str());
+    }
+     
 
     return true;
 }
@@ -50,71 +70,75 @@ void BPhysicsCompmponent::createBulletRigidBody()
 {
 
     shared_ptr<BTransformComponent> transformComponent = getEntity()->getTransform();
+    shared_ptr<BColliderComponent> colliderComponent = getEntity()->getComponent<BColliderComponent>();
+
+    if (colliderComponent->getType() == COLLIDERTYPE::BOX)
+    {
+        shared_ptr< BBoxColliderComponent > boxCollider = dynamic_pointer_cast<BBoxColliderComponent>(colliderComponent);
+
+        shape = shared_ptr< btCollisionShape >(new btBoxShape(btVector3(boxCollider->btBoxShape.x, boxCollider->btBoxShape.y, boxCollider->btBoxShape.z)));
+
+
+        btVector3 center;
+        btScalar radius;
+        shape->getBoundingSphere(center, radius);
+
+    }
+    else if(colliderComponent->getType() == COLLIDERTYPE::SPHERE)
+    { 
+
+        shared_ptr< BSphereColliderComponent > sphereCollider = dynamic_pointer_cast<BSphereColliderComponent>(colliderComponent);
+
+        shape = shared_ptr< btCollisionShape >(new btSphereShape(btScalar(sphereCollider->radius)));
+
+
+    }
+
+    btTransform transform;
+    transform.setIdentity();
+    transform.setOrigin(btVector3(transformComponent->position.x, transformComponent->position.y, transformComponent->position.z));
+    btQuaternion qt;
+    qt.setEuler(transformComponent->rotation.x, transformComponent->rotation.y, transformComponent->rotation.z);
+    transform.setRotation(qt);
+    state = shared_ptr< btDefaultMotionState >(new btDefaultMotionState(transform));
+
 
     if (type == BPSHYSIC_TYPE::STATIC)
     {
         // GROUND
         {
-            shape = shared_ptr< btCollisionShape >(new btBoxShape(btVector3(25,0.1f,25)));
-
-
-            btTransform transform;
-            transform.setIdentity();
-            transform.setOrigin(btVector3(transformComponent->position.x, transformComponent->position.y, transformComponent->position.z));
-
-
             // Using motionstate is optional for static objects.
 
-            state = shared_ptr< btDefaultMotionState >(new btDefaultMotionState());
             btRigidBody::btRigidBodyConstructionInfo info_S(0, state.get(), shape.get());
             body = shared_ptr< btRigidBody >(new btRigidBody(info_S));
 
-            body->setRestitution(0.7f);
-
-            // Add the body to the dynamics world.
-
-            BMainPhysicsComponent::instance->dynamicsWorld->addRigidBody(body.get());
-
-            // Save the smart pointers for automatic cleanup.
-
-            BMainPhysicsComponent::instance->rigidBodies.push_back(body);
-            BMainPhysicsComponent::instance->motionStates.push_back(state);
-            BMainPhysicsComponent::instance->collisionShapes.push_back(shape);
         }
     }
     else
     {
-         shape = shared_ptr< btCollisionShape >(new btSphereShape(btScalar(0.1f)));
-
-        // Create Dynamic Objects.
-
-        btTransform transform;
-        transform.setIdentity();
-        transform.setOrigin(btVector3(transformComponent->position.x, transformComponent->position.y, transformComponent->position.z));
-
+              
         btScalar _mass = mass;
         btVector3 localInercia(0, 0, 0);
         shape->calculateLocalInertia(_mass, localInercia);
 
-        // Using motionstate is recommended, it provides interpolation capabilities, and only synchronizes 'active' objects
+        btRigidBody::btRigidBodyConstructionInfo info_D(_mass, state.get(), shape.get());
 
-        state = shared_ptr< btDefaultMotionState >(new btDefaultMotionState(transform));
-        btRigidBody::btRigidBodyConstructionInfo info_D(0, state.get(), shape.get());
-        body = shared_ptr< btRigidBody >(new btRigidBody(info_D));
+        body.reset(new btRigidBody(info_D));
 
-        shared_ptr< btDefaultMotionState >       state(new btDefaultMotionState(transform));
-        btRigidBody::btRigidBodyConstructionInfo info(_mass, state.get(), shape.get(), localInercia);
-
-        body.reset(new btRigidBody(info));
-
-        body->setRestitution(1.0);
-
-        BMainPhysicsComponent::instance->dynamicsWorld->addRigidBody(body.get());
-
-        // Save the smart pointers for automatic cleanup.
-
-        BMainPhysicsComponent::instance->rigidBodies.push_back(body);
-        BMainPhysicsComponent::instance->motionStates.push_back(state);
-        BMainPhysicsComponent::instance->collisionShapes.push_back(shape);
     }
+
+    body->setRestitution(restitution);
+    body->setFriction(friction);
+
+    // Add the body to the dynamics world.
+
+    BMainPhysicsComponent::instance->dynamicsWorld->addRigidBody(body.get());
+
+    // Save the smart pointers for automatic cleanup.
+
+    BMainPhysicsComponent::instance->rigidBodies.push_back(body);
+    BMainPhysicsComponent::instance->motionStates.push_back(state);
+    BMainPhysicsComponent::instance->collisionShapes.push_back(shape);
+
+
 }
