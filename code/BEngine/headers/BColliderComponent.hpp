@@ -33,7 +33,7 @@ class BEntity;
 enum class COLLIDERTYPE {
     SPHERE = 0,
     BOX = 1,
-    CYLINDER = 2
+    CAPSULE = 2
 };
 
 /**

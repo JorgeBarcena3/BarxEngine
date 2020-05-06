@@ -12,6 +12,7 @@
 #include "../headers/BBoxColliderComponent.hpp"
 #include "../headers/BShereColliderComponent.hpp"
 #include <btBulletDynamicsCommon.h>
+#include "../headers/BCapsulleColliderComponent.hpp"
 
 
 BPhysicsCompmponent::BPhysicsCompmponent(shared_ptr<BEntity> parent) : BComponent(parent)
@@ -70,10 +71,21 @@ shared_ptr<btRigidBody> BPhysicsCompmponent::getPhysicalBody()
 
 void BPhysicsCompmponent::addForce(vec3<float> force, vec3<float> point)
 {
-    body->setActivationState(DISABLE_DEACTIVATION);
-
+    setActiveStatus();
     body->applyForce(btVector3(force.x, force.y, force.z), btVector3(point.x, point.y, point.z));
 
+}
+
+void BPhysicsCompmponent::setGravity(vec3<float> g)
+{
+    setActiveStatus();
+    body->setGravity(btVector3(g.x, g.y, g.z));
+}
+
+void BPhysicsCompmponent::setLinearVelocity(vec3<float> v)
+{
+    setActiveStatus();
+    body->setLinearVelocity(btVector3(v.x, v.y, v.z));
 }
 
 void BPhysicsCompmponent::createBulletRigidBody()
@@ -89,10 +101,6 @@ void BPhysicsCompmponent::createBulletRigidBody()
         shape = shared_ptr< btCollisionShape >(new btBoxShape(btVector3(boxCollider->btBoxShape.x, boxCollider->btBoxShape.y, boxCollider->btBoxShape.z)));
         
 
-        btVector3 center;
-        btScalar radius;
-        shape->getBoundingSphere(center, radius);
-
     }
     else if(colliderComponent->getType() == COLLIDERTYPE::SPHERE)
     { 
@@ -101,6 +109,13 @@ void BPhysicsCompmponent::createBulletRigidBody()
 
         shape = shared_ptr< btCollisionShape >(new btSphereShape(btScalar(sphereCollider->radius)));
 
+
+    }
+    else if (colliderComponent->getType() == COLLIDERTYPE::CAPSULE)
+    {
+        shared_ptr< BCapsulleColliderComponent > capsuleCollider = dynamic_pointer_cast<BCapsulleColliderComponent>(colliderComponent);
+
+        shape = shared_ptr< btCollisionShape >(new btCapsuleShape(capsuleCollider->radius, capsuleCollider->height));
 
     }
 
@@ -150,4 +165,9 @@ void BPhysicsCompmponent::createBulletRigidBody()
     BMainPhysicsComponent::instance->collisionShapes.push_back(shape);
 
 
+}
+
+void BPhysicsCompmponent::setActiveStatus()
+{
+    body->setActivationState(DISABLE_DEACTIVATION);
 }

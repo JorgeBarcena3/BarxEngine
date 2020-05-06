@@ -40,6 +40,7 @@
 #include "..\headers\BShereColliderComponent.hpp"
 #include "..\headers\BBoxColliderComponent.hpp"
 #include "../headers/BPhysicsComponent.hpp"
+#include "../headers/BCapsulleColliderComponent.hpp"
 
 BScene::BScene(const string& _scene_description_file_path)
 {
@@ -110,7 +111,9 @@ void BScene::load(const string& scene_description_file_path)
             else if (typeComponent == "BShereColliderComponent")
                 currentComponent = shared_ptr<BSphereColliderComponent>(new BSphereColliderComponent(entity));
             else if (typeComponent == "BBoxColliderComponent")
-                currentComponent = shared_ptr<BBoxColliderComponent>(new BBoxColliderComponent(entity));
+                currentComponent = shared_ptr<BBoxColliderComponent>(new BBoxColliderComponent(entity)); 
+            else if (typeComponent == "BCapsulleColliderComponent")
+                currentComponent = shared_ptr<BCapsulleColliderComponent>(new BCapsulleColliderComponent(entity));
             else if (typeComponent == "BCharacterController")
                 currentComponent = shared_ptr<BCharacterControllerComponent>(new BCharacterControllerComponent(entity));
             else if (typeComponent == "BCameraComponent")

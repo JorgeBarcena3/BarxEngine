@@ -36,6 +36,10 @@
     <component type="BShereColliderComponent">
       <radius>0.5</radius>
     </component>
+    <!--<component type="BCapsulleColliderComponent">
+      <radius>1</radius>
+      <height>0.25</height>
+    </component>-->
     <component type="BPhysicsCompmponent">
       <type>DYNAMIC</type>
       <mass>1</mass>
@@ -59,7 +63,7 @@
     </component>
     <component type="BPhysicsCompmponent">
       <type>STATIC</type>
-      <mass>5</mass>
+      <mass>0</mass>
       <restitution>0.7</restitution>
       <friction>1</friction>
     </component>

@@ -15,6 +15,7 @@
     <ClInclude Include="..\..\..\code\BEngine\headers\BAudio.hpp" />
     <ClInclude Include="..\..\..\code\BEngine\headers\BBoxColliderComponent.hpp" />
     <ClInclude Include="..\..\..\code\BEngine\headers\BCameraComponent.hpp" />
+    <ClInclude Include="..\..\..\code\BEngine\headers\BCapsulleColliderComponent.hpp" />
     <ClInclude Include="..\..\..\code\BEngine\headers\BCharacterController.hpp" />
     <ClInclude Include="..\..\..\code\BEngine\headers\BCharacterControllerTask.hpp" />
     <ClInclude Include="..\..\..\code\BEngine\headers\BColliderComponent.hpp" />
@@ -63,6 +64,7 @@
     <ClCompile Include="..\..\..\code\BEngine\source\BAudio.cpp" />
     <ClCompile Include="..\..\..\code\BEngine\source\BBoxColliderComponent.cpp" />
     <ClCompile Include="..\..\..\code\BEngine\source\BCameraComponent.cpp" />
+    <ClCompile Include="..\..\..\code\BEngine\source\BCapsulleColliderComponent.cpp" />
     <ClCompile Include="..\..\..\code\BEngine\source\BCharacterController.cpp" />
     <ClCompile Include="..\..\..\code\BEngine\source\BCharacterControllerTask.cpp" />
     <ClCompile Include="..\..\..\code\BEngine\source\BColliderComponent.cpp" />
