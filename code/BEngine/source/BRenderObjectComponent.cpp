@@ -34,7 +34,7 @@ BRenderObjectComponent::BRenderObjectComponent(shared_ptr<BEntity> parent) : BCo
 {
     renderTask = BRenderTask::instance;
     id         = parent->getId();
-    task       = shared_ptr<BRenderObjectTask>(new BRenderObjectTask(id, renderTask));
+    task       = shared_ptr<BRenderObjectTask>(new BRenderObjectTask(id, renderTask, parent));
     color      = vec3<float>(.4f, .5f, .5f);
 }
 
@@ -44,6 +44,7 @@ bool BRenderObjectComponent::initialize()
     {
         model = shared_ptr<Model>(new Model);
         model->add(shared_ptr< Drawable >(new Cube), Material::default_material());
+
     }
     else
     {

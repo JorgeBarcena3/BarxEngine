@@ -59,7 +59,6 @@ namespace glt
 
 }
 
-
 enum TASKPRIORITY {
     WINDOW = 0,
     INPUTSYSTEM = 1,

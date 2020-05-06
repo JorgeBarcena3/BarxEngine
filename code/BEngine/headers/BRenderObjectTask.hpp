@@ -27,6 +27,7 @@
 class BTask;
 class BRenderTask;
 class BTransformComponent;
+class BEntity;
 
 /**
 * Tarea de renderizar un objeto
@@ -39,10 +40,11 @@ public:
     /**
     * Constructor por defecto
     */
-    BRenderObjectTask(string id, shared_ptr< BRenderTask > instance);
+    BRenderObjectTask(string id, shared_ptr< BRenderTask > instance, shared_ptr< BEntity > trnas);
 
 private:
 
+    shared_ptr< BEntity >             entity;
 
     shared_ptr< BRenderTask >         instance  ; ///< Instancia de la clase de render general
 

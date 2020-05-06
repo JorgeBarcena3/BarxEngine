@@ -74,6 +74,8 @@ public:
     * Devuelve la tarea que tiene asignada, en caso de que la tenga
     */
     shared_ptr<BTask> getTask();
+
+    shared_ptr<BEntity> getEntity();
   
 };
 #endif

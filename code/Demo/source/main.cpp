@@ -60,48 +60,48 @@ void OnCollision(shared_ptr<BEntity> A, shared_ptr<BEntity> B)
 
 int main() {
 
-    scene = new BScene("resources/scene.xml");
+    scene = new BScene("resources/animacion.xml");
 
     ////////////// PLAYER ////////////// 
 
-    player = scene->getEntity("Player");
-    player->getComponent<BColliderComponent>()->setFunction(OnCollision);
+    //player = scene->getEntity("Player");
+    //player->getComponent<BColliderComponent>()->setFunction(OnCollision);
 
-    ////////////// CAMERA ////////////// 
+    //////////////// CAMERA ////////////// 
 
-    scene->getEntity("Camera")->getComponent<BControlComponent>()->setFunction(cameraControlFunction);
+    //scene->getEntity("Camera")->getComponent<BControlComponent>()->setFunction(cameraControlFunction);
 
-    cameraPlayerDistance = vec3<float>(
-        scene->getEntity("Camera")->getTransform()->position.x - player->getTransform()->position.x,
-        scene->getEntity("Camera")->getTransform()->position.y - player->getTransform()->position.y,
-        scene->getEntity("Camera")->getTransform()->position.z - player->getTransform()->position.z        
-        );
+    //cameraPlayerDistance = vec3<float>(
+    //    scene->getEntity("Camera")->getTransform()->position.x - player->getTransform()->position.x,
+    //    scene->getEntity("Camera")->getTransform()->position.y - player->getTransform()->position.y,
+    //    scene->getEntity("Camera")->getTransform()->position.z - player->getTransform()->position.z        
+    //    );
 
-    //////////////  PROPS ////////////// 
+    ////////////////  PROPS ////////////// 
 
-    scene->getEntity("Wall1")->getComponent<BColliderComponent>()->setFunction(OnCollision);
-    scene->getEntity("Wall2")->getComponent<BColliderComponent>()->setFunction(OnCollision);
-    scene->getEntity("Wall3")->getComponent<BColliderComponent>()->setFunction(OnCollision);
-    scene->getEntity("Wall4")->getComponent<BColliderComponent>()->setFunction(OnCollision);
+    //scene->getEntity("Wall1")->getComponent<BColliderComponent>()->setFunction(OnCollision);
+    //scene->getEntity("Wall2")->getComponent<BColliderComponent>()->setFunction(OnCollision);
+    //scene->getEntity("Wall3")->getComponent<BColliderComponent>()->setFunction(OnCollision);
+    //scene->getEntity("Wall4")->getComponent<BColliderComponent>()->setFunction(OnCollision);
 
-    //////////////  ENEMIES ////////////// 
+    ////////////////  ENEMIES ////////////// 
 
-    scene->getEntity("Enemy1")->getComponent<BControlComponent>()->setFunction(EnemyControlFunction);
-    scene->getEntity("Enemy1")->getComponent<BColliderComponent>()->setFunction(OnCollision);
+    //scene->getEntity("Enemy1")->getComponent<BControlComponent>()->setFunction(EnemyControlFunction);
+    //scene->getEntity("Enemy1")->getComponent<BColliderComponent>()->setFunction(OnCollision);
 
-    scene->getEntity("Enemy2")->getComponent<BControlComponent>()->setFunction(EnemyControlFunction);
-    scene->getEntity("Enemy2")->getComponent<BColliderComponent>()->setFunction(OnCollision);
+    //scene->getEntity("Enemy2")->getComponent<BControlComponent>()->setFunction(EnemyControlFunction);
+    //scene->getEntity("Enemy2")->getComponent<BColliderComponent>()->setFunction(OnCollision);
 
-    scene->getEntity("Enemy3")->getComponent<BControlComponent>()->setFunction(EnemyControlFunction);
-    scene->getEntity("Enemy3")->getComponent<BColliderComponent>()->setFunction(OnCollision);
+    //scene->getEntity("Enemy3")->getComponent<BControlComponent>()->setFunction(EnemyControlFunction);
+    //scene->getEntity("Enemy3")->getComponent<BColliderComponent>()->setFunction(OnCollision);
 
-    scene->getEntity("Enemy4")->getComponent<BControlComponent>()->setFunction(EnemyControlFunction);
-    scene->getEntity("Enemy4")->getComponent<BColliderComponent>()->setFunction(OnCollision);
+    //scene->getEntity("Enemy4")->getComponent<BControlComponent>()->setFunction(EnemyControlFunction);
+    //scene->getEntity("Enemy4")->getComponent<BColliderComponent>()->setFunction(OnCollision);
 
 
-    ////////////// AUDIO ////////////// 
+    //////////////// AUDIO ////////////// 
 
-    collisionID = audio.loadSound("../../../binaries/assets/sfx/collision.wav");
+    //collisionID = audio.loadSound("../../../binaries/assets/sfx/collision.wav");
 
     scene->run();
 

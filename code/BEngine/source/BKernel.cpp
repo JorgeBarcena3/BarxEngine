@@ -50,7 +50,7 @@ void BKernel::run()
         task->initialize();
     }
 
-    float time = 1.f / 60.f;
+    float time = 1.f / 30.f;
 
     BTimer timer;
 
@@ -69,8 +69,6 @@ void BKernel::run()
         {
             std::this_thread::sleep_for(std::chrono::seconds(TimeToSleep));
         }
-
-
 
         for (auto task : BTasks)
         {

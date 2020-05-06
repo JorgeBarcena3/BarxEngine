@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<scene WindowName="Demo - BarxEngine" windowWidth="800" windowHeith="600" fullScreen="0">
+
+  <entity id="Camera">
+    <component type="BTransform_Component" >
+      <position>0,0,5</position>
+      <rotation>0, 0, 0</rotation>
+      <scale>1,1,1</scale>
+    </component>
+    <component type="BCameraComponent">
+      <fov>20</fov>
+      <near>1</near>
+      <far>50</far>
+      <aspectRatio>1</aspectRatio>
+    </component>
+  </entity>
+
+  <entity id="Light">
+    <component type="BTransform_Component" >
+      <position>10,10,10</position>
+      <rotation>0, 0, 0</rotation>
+      <scale>1,1,1</scale>
+    </component>
+    <component type="BLightComponent"/>
+  </entity>
+
+  <entity id="Ball">
+    <component type="BTransform_Component" >
+      <position>0, +10, -2</position>
+      <rotation>0, 0, 0</rotation>
+      <scale>1,1,1</scale>
+    </component>
+    <component type="BRenderObjectComponent" >
+      <model>../../../binaries/assets/models/sphere.obj</model>
+    </component>
+    <component type="BPhysicsCompmponent">
+      <type>DYNAMIC</type>
+      <mass>1</mass>
+    </component>  
+  </entity>
+  
+  <entity id="Floor">
+    <component type="BTransform_Component" >
+      <position>0, -1, -2</position>
+      <rotation>0, 0, 0</rotation>
+      <scale>2,5,2</scale>
+    </component>
+    <component type="BRenderObjectComponent" >
+      <model>../../../binaries/assets/models/plane.obj</model>
+    </component>
+    <component type="BPhysicsCompmponent">
+      <type>STATIC</type>
+    </component>
+  </entity>
+
+
+</scene>

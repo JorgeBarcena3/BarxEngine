@@ -28,10 +28,12 @@
 #include <SDL.h>
 
 
-BRenderObjectTask::BRenderObjectTask(string _id, const shared_ptr<BRenderTask> _instance) : BTask(TASKPRIORITY::RENDEROBJECT)
+
+BRenderObjectTask::BRenderObjectTask(string _id, const shared_ptr<BRenderTask> _instance, shared_ptr< BEntity > ent) : BTask(TASKPRIORITY::RENDEROBJECT)
 {
     instance = _instance;
     id = _id;
+    entity = ent;
 }
 
 bool BRenderObjectTask::initialize()
@@ -47,7 +49,10 @@ bool BRenderObjectTask::finalize()
 
 bool BRenderObjectTask::execute(float time)
 {
-    //EN EL FUTURO SE AÑADIRAN MATERIALES Y DEMAS
+
+    shared_ptr<glt::Matrix44> transform = entity->getTransform()->getOpenGLMatrix();
+    auto obj = BRenderTask::instance->getRenderer()->get(id);
+    obj->set_transformation(*transform);
 
     return true;
 }

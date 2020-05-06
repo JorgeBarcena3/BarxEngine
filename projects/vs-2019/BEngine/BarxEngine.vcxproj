@@ -32,11 +32,15 @@
     <ClInclude Include="..\..\..\code\BEngine\headers\BKeyboard.hpp" />
     <ClInclude Include="..\..\..\code\BEngine\headers\BKeyboardComponent.hpp" />
     <ClInclude Include="..\..\..\code\BEngine\headers\BLightComponent.hpp" />
+    <ClInclude Include="..\..\..\code\BEngine\headers\BMainPhysicsComponent.hpp" />
+    <ClInclude Include="..\..\..\code\BEngine\headers\BMainPhysicsTask.hpp" />
     <ClInclude Include="..\..\..\code\BEngine\headers\BMainRenderer.hpp" />
     <ClInclude Include="..\..\..\code\BEngine\headers\BMainWindowComponent.hpp" />
     <ClInclude Include="..\..\..\code\BEngine\headers\BMath.hpp" />
     <ClInclude Include="..\..\..\code\BEngine\headers\BMessage.hpp" />
     <ClInclude Include="..\..\..\code\BEngine\headers\BObserver.hpp" />
+    <ClInclude Include="..\..\..\code\BEngine\headers\BPhysicsComponent.hpp" />
+    <ClInclude Include="..\..\..\code\BEngine\headers\BPhysicsTask.hpp" />
     <ClInclude Include="..\..\..\code\BEngine\headers\BRenderObjectComponent.hpp" />
     <ClInclude Include="..\..\..\code\BEngine\headers\BRenderObjectTask.hpp" />
     <ClInclude Include="..\..\..\code\BEngine\headers\BRenderTask.hpp" />
@@ -72,9 +76,13 @@
     <ClCompile Include="..\..\..\code\BEngine\source\BKeyboard.cpp" />
     <ClCompile Include="..\..\..\code\BEngine\source\BKeyboardComponent.cpp" />
     <ClCompile Include="..\..\..\code\BEngine\source\BLightComponent.cpp" />
+    <ClCompile Include="..\..\..\code\BEngine\source\BMainPhysics.cpp" />
+    <ClCompile Include="..\..\..\code\BEngine\source\BMainPhysicsTask.cpp" />
     <ClCompile Include="..\..\..\code\BEngine\source\BMainRenderer.cpp" />
     <ClCompile Include="..\..\..\code\BEngine\source\BMainWindowComponent.cpp" />
     <ClCompile Include="..\..\..\code\BEngine\source\BMessage.cpp" />
+    <ClCompile Include="..\..\..\code\BEngine\source\BPhysicsComponent.cpp" />
+    <ClCompile Include="..\..\..\code\BEngine\source\BPhysicsTask.cpp" />
     <ClCompile Include="..\..\..\code\BEngine\source\BRenderObjectComponent.cpp" />
     <ClCompile Include="..\..\..\code\BEngine\source\BRenderObjectTask.cpp" />
     <ClCompile Include="..\..\..\code\BEngine\source\BRenderTask.cpp" />
@@ -136,7 +144,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>../../../libraries/win/sdl2-mixer/include/;../../../libraries/win/sdl2-2.0.10/include/;../../../libraries/win/opengl-toolkit/headers/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../libraries/win/sdl2-mixer/include/;../../../libraries/win/sdl2-2.0.10/include/;../../../libraries/win/opengl-toolkit/headers/;../../../libraries/win/bullet3/headers/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -144,8 +152,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Lib>
-      <AdditionalLibraryDirectories>../../../libraries/win/sdl2-mixer/lib/x64;../../../libraries/win/sdl2-2.0.10/lib/x64;../../../libraries/win/opengl-toolkit/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>../../../libraries/win/sdl2-2.0.10/lib/x64/SDL2.lib;../../../libraries/win/sdl2-mixer/lib/x64/SDL2_mixer.lib;../../../libraries/win/opengl-toolkit/lib/OpenGL Toolkit-d.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../../libraries/win/sdl2-mixer/lib/x64;../../../libraries/win/sdl2-2.0.10/lib/x64;../../../libraries/win/opengl-toolkit/lib;../../../libraries/win/bullet3/lib/x64/debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>../../../libraries/win/sdl2-2.0.10/lib/x64/SDL2.lib;../../../libraries/win/sdl2-mixer/lib/x64/SDL2_mixer.lib;../../../libraries/win/opengl-toolkit/lib/OpenGL Toolkit-d.lib;BulletCollision.lib;BulletDynamics.lib;LinearMath.lib</AdditionalDependencies>
     </Lib>
     <ProjectReference>
       <LinkLibraryDependencies>true</LinkLibraryDependencies>
@@ -160,7 +168,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>../../../libraries/win/sdl2-mixer/include/;../../../libraries/win/sdl2-2.0.10/include/;../../../libraries/win/opengl-toolkit/headers/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../../../libraries/win/sdl2-mixer/include/;../../../libraries/win/sdl2-2.0.10/include/;../../../libraries/win/opengl-toolkit/headers/;../../../libraries/win/bullet3/headers/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -170,8 +178,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Lib>
-      <AdditionalLibraryDirectories>../../../libraries/win/sdl2-mixer/lib/x64;../../../libraries/win/sdl2-2.0.10/lib/x64;../../../libraries/win/opengl-toolkit/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>../../../libraries/win/sdl2-2.0.10/lib/x64/SDL2.lib;../../../libraries/win/sdl2-mixer/lib/x64/SDL2_mixer.lib;../../../libraries/win/opengl-toolkit/lib/OpenGL Toolkit-r.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../../libraries/win/sdl2-mixer/lib/x64;../../../libraries/win/sdl2-2.0.10/lib/x64;../../../libraries/win/opengl-toolkit/lib;../../../libraries/win/bullet3/lib/x64/release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>../../../libraries/win/sdl2-2.0.10/lib/x64/SDL2.lib;../../../libraries/win/sdl2-mixer/lib/x64/SDL2_mixer.lib;../../../libraries/win/opengl-toolkit/lib/OpenGL Toolkit-r.lib;BulletCollision.lib;BulletDynamics.lib;LinearMath.lib</AdditionalDependencies>
     </Lib>
     <ProjectReference>
       <LinkLibraryDependencies>true</LinkLibraryDependencies>

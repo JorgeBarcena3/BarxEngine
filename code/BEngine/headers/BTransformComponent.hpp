@@ -21,6 +21,7 @@
 
 #include "BtypeDef.hpp"
 #include "BComponent.hpp"
+#include "Math.hpp"
 
 /**
 * Clase que se encarga de manejar la posicion de los objetos en la escena
@@ -50,6 +51,12 @@ public:
     * Parsea las propiedades del xml
     */
     bool parse_property(const string& name, const string& value); 
+
+
+    /**
+    * Obtiene la matriz de transformacion
+    */
+    shared_ptr<glt::Matrix44> getOpenGLMatrix();
 
 };
 #endif

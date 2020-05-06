@@ -33,4 +33,8 @@ shared_ptr<BTask> BComponent::getTask()
         return task;
 
     return shared_ptr<BTask>(nullptr);
-};
+}
+shared_ptr<BEntity> BComponent::getEntity()
+{
+    return parent;
+}

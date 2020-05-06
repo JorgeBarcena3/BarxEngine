@@ -28,6 +28,7 @@
 #include "..\headers\BRenderTask.hpp"
 #include "..\headers\BMainRenderer.hpp"
 #include "..\headers\BMainWindowComponent.hpp"
+#include "..\headers\BMainPhysicsComponent.hpp"
 #include "..\headers\BInputComponent.hpp"
 #include "..\headers\rapidxml.hpp"
 #include "..\headers\rapidxml_utils.hpp"
@@ -38,6 +39,7 @@
 #include "..\headers\BLightComponent.hpp"
 #include "..\headers\BShereColliderComponent.hpp"
 #include "..\headers\BBoxColliderComponent.hpp"
+#include "../headers/BPhysicsComponent.hpp"
 
 BScene::BScene(const string& _scene_description_file_path)
 {
@@ -81,11 +83,13 @@ void BScene::load(const string& scene_description_file_path)
     shared_ptr<BComponent> mainRenderComponent = shared_ptr<BMainRenderer>(new BMainRenderer(root));
     shared_ptr<BComponent> inputComponent = shared_ptr<BInputComponent>(new BInputComponent(root));
     shared_ptr<BComponent> keyboardComponent = shared_ptr<BKeyboardComponent>(new BKeyboardComponent(root));
+    shared_ptr<BComponent> mainPhysicsComponent = shared_ptr<BMainPhysicsComponent>(new BMainPhysicsComponent(root));
 
     root->addComponent("mainRenderComponent", mainRenderComponent);
     root->addComponent("windowComponent", windowComponent);
     root->addComponent("inputComponent", inputComponent);
     root->addComponent("keyboardComponent", keyboardComponent);
+    root->addComponent("mainPhysicsComponent ", mainPhysicsComponent);
 
 
     for (rapidxml::xml_node<>* entityNode = rootNode->first_node(); entityNode; entityNode = entityNode->next_sibling()) //Son las entidades
@@ -113,6 +117,8 @@ void BScene::load(const string& scene_description_file_path)
                 currentComponent = shared_ptr<BCameraComponent>(new BCameraComponent(entity));
             else if (typeComponent == "BLightComponent")
                 currentComponent = shared_ptr<BLightComponent>(new BLightComponent(entity));
+            else if (typeComponent == "BPhysicsCompmponent")
+                currentComponent = shared_ptr<BPhysicsCompmponent>(new BPhysicsCompmponent(entity));
 
             // Añadimos todos los componentes que vayamos creando en el motor
 
@@ -135,6 +141,7 @@ void BScene::init_kernel()
 {
     kernel->addTask(root->getComponent<BMainWindowComponent>()->getTask());
     kernel->addTask(root->getComponent<BInputComponent>()->getTask());
+    kernel->addTask(root->getComponent<BMainPhysicsComponent>()->getTask());
 
     for (auto entity : *entities)
     {

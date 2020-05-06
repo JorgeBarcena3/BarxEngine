@@ -21,6 +21,12 @@
 #include "..\headers\BTransformComponent.hpp"
 #include "..\headers\BEntity.hpp"
 #include "..\headers\BTranformTask.hpp"
+#include <btBulletDynamicsCommon.h>
+#include <LinearMath\btVector3.h>
+#include <Math.hpp>
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+
 
 using namespace glt;
 
@@ -72,4 +78,17 @@ bool BTransformComponent::parse_property(const string& name, const string& value
     }
     
     return true;
+}
+
+shared_ptr<glt::Matrix44> BTransformComponent::getOpenGLMatrix()
+{
+    glm::mat4 trans = glm::mat4(1.0f);
+
+    trans = glm::translate(trans, glm::vec3(position.x, position.y, position.z));
+    trans = glm::rotate(trans, rotation.x, glm::vec3(1.0f, 0.0f, 0.0f));
+    trans = glm::rotate(trans, rotation.x, glm::vec3(0.0f, 1.0f, 0.0f));
+    trans = glm::rotate(trans, rotation.x, glm::vec3(0.0f, 0.0f, 1.0f));
+    trans = glm::scale(trans, glm::vec3(scale.x, scale.y, scale.z));
+
+    return shared_ptr<glm::mat4>(new glm::mat4(trans));
 }
