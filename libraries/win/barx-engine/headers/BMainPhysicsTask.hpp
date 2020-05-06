@@ -1,4 +1,4 @@
-// File: BComponent.hpp
+// File: BRenderTask.hpp
 // Author: Jorge Bárcena Lumbreras
 
 // © Copyright (C) 2019  Jorge Bárcena Lumbreras
@@ -16,66 +16,52 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-#ifndef BARX_ENGINE_BCOMPONENT
-#define BARX_ENGINE_BCOMPONENT
+#ifndef BARX_ENGINE_BMAINPHYSICSTASK
+#define BARX_ENGINE_BMAINPHYSICSTASK
 
 #include "BtypeDef.hpp"
+#include "BTask.hpp"
 
 /**
 * Clases adelantadas
 */
-class BEntity;
-class BTask;
-class BTransformTask;
-class BRenderTask;
-
-using namespace glt;
+class BMainPhysicsComponent;
 
 /**
-* Componentes que son poseidos por las entidades
+* Tarea de render
 */
-class BComponent
+class BMainPhysicsTask : public BTask
 {
-protected:
 
-    string              id     ;  ///< Id del componente
-    shared_ptr<BEntity> parent ;  ///< Entidad que posee el componente
-    shared_ptr<BTask  >   task ;  ///< Tarea que tiene asignada
+    shared_ptr< BMainPhysicsComponent >      physicsComponent; ///< Puntero a la ventana que se esta ejecutando
 
 public:
 
     /**
     * Constructor por defecto
     */
-    BComponent(shared_ptr<BEntity> parent);
+    BMainPhysicsTask(shared_ptr< BMainPhysicsComponent > _phyComp);
 
     /**
     * Destructor por defecto
     */
-    virtual ~BComponent();
+    ~BMainPhysicsTask();
+
+      
+    /**
+    * Inicializa la tarea
+    */
+    virtual bool initialize() override;
 
     /**
-    * Función virtual pura
-    * Se ejetua al inicializar el componente
+    * Finaliza la tarea
     */
-    virtual bool initialize() = 0;
+    virtual bool finalize() override;
 
     /**
-    * Función virtual pura  
-    * Parsea las propiedades del xml
+    * Ejecuta la tarea
     */
-    virtual bool parse_property
-    (
-        const string& name,
-        const string& value
-    ) = 0;
+    virtual bool execute(float time) override;
 
-    /**
-    * Devuelve la tarea que tiene asignada, en caso de que la tenga
-    */
-    shared_ptr<BTask> getTask();
-
-    shared_ptr<BEntity> getEntity();
-  
 };
 #endif

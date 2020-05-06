@@ -23,17 +23,18 @@
 #include "BComponent.hpp"
 #include "Math.hpp"
 
+
 /**
 * Clase que se encarga de manejar la posicion de los objetos en la escena
 */
 class BTransformComponent : public BComponent
 {
-    
+
 public:
 
     vec3<float> position; ///< Posicion de la entidad
     vec3<float> rotation; ///< Rotacion de la entidad
-    vec3<float> scale   ; ///< Escala de la entidad
+    vec3<float> scale; ///< Escala de la entidad
 
     glt::Matrix44 transformationMatrix;
 
@@ -52,7 +53,7 @@ public:
     * Heredado del componente
     * Parsea las propiedades del xml
     */
-    bool parse_property(const string& name, const string& value); 
+    bool parse_property(const string& name, const string& value);
 
 
     /**

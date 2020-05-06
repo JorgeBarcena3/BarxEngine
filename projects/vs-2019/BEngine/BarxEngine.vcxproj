@@ -49,7 +49,9 @@
     <ClInclude Include="..\..\..\code\BEngine\headers\BTask.hpp" />
     <ClInclude Include="..\..\..\code\BEngine\headers\BTimer.hpp" />
     <ClInclude Include="..\..\..\code\BEngine\headers\BTranformTask.hpp" />
-    <ClInclude Include="..\..\..\code\BEngine\headers\BTransformComponent.hpp" />
+    <ClInclude Include="..\..\..\code\BEngine\headers\BTransformComponent.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClInclude>
     <ClInclude Include="..\..\..\code\BEngine\headers\BtypeDef.hpp" />
     <ClInclude Include="..\..\..\code\BEngine\headers\BWindowTask.hpp" />
     <ClInclude Include="..\..\..\code\BEngine\headers\rapidxml.hpp" />

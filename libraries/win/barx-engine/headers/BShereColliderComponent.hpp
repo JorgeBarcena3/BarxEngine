@@ -31,7 +31,7 @@ class BTransformComponent;
 /**
 * Tipo de colisionador de esfera
 */
-class BShereColliderComponent : public BColliderComponent
+class BSphereColliderComponent : public BColliderComponent
 {
 
     shared_ptr < BTransformComponent > transform; ///< Posición del objeto
@@ -43,7 +43,7 @@ public:
     /**
     * Constructor por defecto del collider de la esfera
     */
-    BShereColliderComponent(shared_ptr <BEntity> parent);
+    BSphereColliderComponent(shared_ptr <BEntity> parent);
 
     /**
     * Heredado del componente

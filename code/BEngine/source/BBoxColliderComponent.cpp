@@ -17,6 +17,7 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 #include "..\headers\BtypeDef.hpp"
+#include <Math.hpp>
 #include "..\headers\BColliderComponent.hpp"
 #include "..\headers\BBoxColliderComponent.hpp"
 #include "..\headers\BShereColliderComponent.hpp"

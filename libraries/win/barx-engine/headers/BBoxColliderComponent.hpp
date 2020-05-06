@@ -38,8 +38,7 @@ class BBoxColliderComponent : public BColliderComponent
 
 public:
    
-    vec3< float >                      MaxOffset; ///< Offset máximo de la caja, la base es el origen
-    vec3< float >                      MinOffset; ///< Offset minimo de la caja, la base es el origen
+    vec3< float >                      btBoxShape; ///< Offset máximo de la caja, la base es el origen
 
     /**
     * Constructor de una caja

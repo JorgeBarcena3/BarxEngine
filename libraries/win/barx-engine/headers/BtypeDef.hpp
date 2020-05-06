@@ -51,14 +51,12 @@ class Render_Node;
 
 namespace glt
 {
-
     class Render_Node;
     class Model;
     class Camera;
     class Light;
 
 }
-
 
 enum TASKPRIORITY {
     WINDOW = 0,

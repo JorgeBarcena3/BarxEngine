@@ -23,7 +23,7 @@
 #include <btBulletDynamicsCommon.h>
 
 
-BMainPhysicsTask::BMainPhysicsTask(shared_ptr<BMainPhysicsComponent> _phyComp) : BTask(TASKPRIORITY::COLLISIONS)
+BMainPhysicsTask::BMainPhysicsTask(shared_ptr<BMainPhysicsComponent> _phyComp) : BTask(TASKPRIORITY::PHYSICSWORLD)
 {
     physicsComponent = _phyComp;
 }

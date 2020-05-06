@@ -21,18 +21,22 @@
 
 #include "BtypeDef.hpp"
 #include "BComponent.hpp"
+#include "Math.hpp"
+
 
 /**
 * Clase que se encarga de manejar la posicion de los objetos en la escena
 */
 class BTransformComponent : public BComponent
 {
-    
+
 public:
 
     vec3<float> position; ///< Posicion de la entidad
     vec3<float> rotation; ///< Rotacion de la entidad
-    vec3<float> scale   ; ///< Escala de la entidad
+    vec3<float> scale; ///< Escala de la entidad
+
+    glt::Matrix44 transformationMatrix;
 
     /**
     * Constructor por defecto de la clase
@@ -49,7 +53,13 @@ public:
     * Heredado del componente
     * Parsea las propiedades del xml
     */
-    bool parse_property(const string& name, const string& value); 
+    bool parse_property(const string& name, const string& value);
+
+
+    /**
+    * Obtiene la matriz de transformacion
+    */
+    shared_ptr<glt::Matrix44> getOpenGLMatrix();
 
 };
 #endif

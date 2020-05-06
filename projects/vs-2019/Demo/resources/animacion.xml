@@ -39,8 +39,8 @@
     <component type="BPhysicsCompmponent">
       <type>DYNAMIC</type>
       <mass>1</mass>
-      <restitution>1</restitution>
-      <friction>0</friction>
+      <restitution>0.5</restitution>
+      <friction>0.5</friction>
     </component>
     <component type="BControlComponent"/>
   </entity>
@@ -59,9 +59,9 @@
     </component>
     <component type="BPhysicsCompmponent">
       <type>STATIC</type>
-      <mass>0</mass>
-      <restitution>0.5</restitution>
-      <friction>0</friction>
+      <mass>5</mass>
+      <restitution>0.7</restitution>
+      <friction>1</friction>
     </component>
   </entity>
 

@@ -38,12 +38,12 @@ bool BPhysicsTask::execute(float time)
 
     physics_transform.getOpenGLMatrix(glm::value_ptr(matrix));
 
-    transform->transformationMatrix = matrix;
+    (transform->transformationMatrix) = matrix;
 
     return true;
 }
 
-BPhysicsTask::BPhysicsTask(string _id, shared_ptr< BPhysicsCompmponent > _physics_component) : BTask(TASKPRIORITY::COLLISIONS)
+BPhysicsTask::BPhysicsTask(string _id, shared_ptr< BPhysicsCompmponent > _physics_component) : BTask(TASKPRIORITY::PHYSICSOBJET)
 {
     physicsComponent = _physics_component;
     id = _id;

@@ -32,7 +32,8 @@ class BEntity;
 */
 enum class COLLIDERTYPE {
     SPHERE = 0,
-    BOX = 1
+    BOX = 1,
+    CYLINDER = 2
 };
 
 /**
@@ -40,7 +41,7 @@ enum class COLLIDERTYPE {
 */
 class BColliderComponent : public BComponent
 {
-    
+
 protected:
 
     /**
@@ -82,6 +83,6 @@ public:
     * Devuelve el tipo de collider que es
     */
     COLLIDERTYPE getType();
-   
+
 };
 #endif

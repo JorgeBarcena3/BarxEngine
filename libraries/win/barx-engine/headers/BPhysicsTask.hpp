@@ -1,4 +1,4 @@
-// File: BEngine.hpp
+// File: BTranformTask.hpp
 // Author: Jorge Bárcena Lumbreras
 
 // © Copyright (C) 2019  Jorge Bárcena Lumbreras
@@ -16,22 +16,45 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-#ifndef BARX_ENGINE_BENGINE
-#define BARX_ENGINE_BENGINE
-#define SDL_MAIN_HANDLED
+#ifndef BARX_ENGINE_BPHYSICSTASK
+#define BARX_ENGINE_BPHYSICSTASK
 
 #include "BtypeDef.hpp"
-#include "BScene.hpp"
-#include "BEntity.hpp"
-#include "BComponent.hpp"
-#include "BControlComponent.hpp"
-#include "BColliderComponent.hpp"
-#include "BTransformComponent.hpp"
-#include "BKeyboard.hpp"
-#include "BAudio.hpp"
-#include "BWindowTask.hpp"
-#include "BPhysicsComponent.hpp"
 
-typedef BKeyboard Input;
+/**
+* Clases adelantadas
+*/
+class BTask;
+class BPhysicsCompmponent;
 
+/**
+* Tarea del transform
+*/
+class BPhysicsTask : public BTask
+{
+
+    shared_ptr< BPhysicsCompmponent > physicsComponent; ///< Transform de la entidad referencia
+
+    /**
+    * Inicializa la tarea
+    */
+    virtual bool initialize() override;
+
+    /**
+    * Finaliza la tarea
+    */
+    virtual bool finalize() override;
+
+    /**
+    * Ejecuta la tarea 
+    */
+    virtual bool execute(float time) override;
+
+public:
+
+    /**
+    * Constructor por defecto
+    */
+    BPhysicsTask(string id, shared_ptr< BPhysicsCompmponent > physics_component);
+};
 #endif

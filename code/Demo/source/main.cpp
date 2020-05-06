@@ -17,46 +17,24 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 //
 
+
 #include <BEngine.hpp>
+#include "../../BEngine/headers/BKeyboardComponent.hpp"
 
-shared_ptr<BEntity> player;
-BAudio audio;
-Id collisionID;
-vec3<float> cameraPlayerDistance;
+
 BScene* scene;
+shared_ptr< BKeyboardComponent            > InputManager; ///< ImputManager para manejar los eventos
 
-void cameraControlFunction(float time, shared_ptr<BEntity> entity)
+
+
+void ballControl(float time, shared_ptr<BEntity> entity)
 {
-    auto cameraTransform = entity->getTransform();
-    auto playerTransform = player->getTransform();
+    auto physics = entity->getComponent<BPhysicsCompmponent>();
 
-    cameraTransform->position.x =  playerTransform->position.x - cameraPlayerDistance.x;
-    cameraTransform->position.z =  playerTransform->position.z + cameraPlayerDistance.z;
+    if (InputManager->Keyboard->isKeyPresed("F"))
+        physics->addForce(vec3<float>(0, 3, 0), vec3<float>(0, -1, 0));
 
 }
-
-void EnemyControlFunction(float time, shared_ptr<BEntity> entity)
-{
-    auto transform = entity->getTransform();
-
-    vec3<float> direction = transform->position - player->getTransform()->position;
-    direction.normalize();
-
-    transform->position.x -= direction.x * 0.002f;
-    transform->position.y -= direction.y * 0.002f;
-    transform->position.z -= direction.z * 0.002f;
-
-}
-
-void OnCollision(shared_ptr<BEntity> A, shared_ptr<BEntity> B)
-{
-
-    if (B->getId() == "Player" && (A->getId().find("Wall") != std::string::npos || A->getId().find("Enemy") != std::string::npos) )
-    {
-        audio.makeSound(collisionID);
-    }
-
-};
 
 int main() {
 
@@ -95,7 +73,8 @@ int main() {
     //scene->getEntity("Enemy3")->getComponent<BControlComponent>()->setFunction(EnemyControlFunction);
     //scene->getEntity("Enemy3")->getComponent<BColliderComponent>()->setFunction(OnCollision);
 
-    //scene->getEntity("Enemy4")->getComponent<BControlComponent>()->setFunction(EnemyControlFunction);
+    scene->getEntity("Ball")->getComponent<BControlComponent>()->setFunction(ballControl);
+    InputManager = scene->getRootEntity()->getComponent< BKeyboardComponent  >();
     //scene->getEntity("Enemy4")->getComponent<BColliderComponent>()->setFunction(OnCollision);
 
 

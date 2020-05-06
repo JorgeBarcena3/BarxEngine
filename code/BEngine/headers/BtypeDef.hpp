@@ -51,7 +51,6 @@ class Render_Node;
 
 namespace glt
 {
-
     class Render_Node;
     class Model;
     class Camera;
@@ -64,8 +63,10 @@ enum TASKPRIORITY {
     INPUTSYSTEM = 1,
     COLLISIONS = 2,
     TRANSFORM = 3,
-    ENTITYUPDATES = 4,
-    RENDEROBJECT = 5,
-    RENDERGENERAL = 6
+    PHYSICSOBJET = 4,
+    PHYSICSWORLD = 5,
+    ENTITYUPDATES = 6,
+    RENDEROBJECT = 7,
+    RENDERGENERAL = 8
 };
 #endif

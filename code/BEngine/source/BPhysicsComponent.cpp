@@ -11,6 +11,8 @@
 #include "../headers/BColliderComponent.hpp"
 #include "../headers/BBoxColliderComponent.hpp"
 #include "../headers/BShereColliderComponent.hpp"
+#include <btBulletDynamicsCommon.h>
+
 
 BPhysicsCompmponent::BPhysicsCompmponent(shared_ptr<BEntity> parent) : BComponent(parent)
 {
@@ -66,6 +68,14 @@ shared_ptr<btRigidBody> BPhysicsCompmponent::getPhysicalBody()
     return body;
 }
 
+void BPhysicsCompmponent::addForce(vec3<float> force, vec3<float> point)
+{
+    body->setActivationState(DISABLE_DEACTIVATION);
+
+    body->applyForce(btVector3(force.x, force.y, force.z), btVector3(point.x, point.y, point.z));
+
+}
+
 void BPhysicsCompmponent::createBulletRigidBody()
 {
 
@@ -77,7 +87,7 @@ void BPhysicsCompmponent::createBulletRigidBody()
         shared_ptr< BBoxColliderComponent > boxCollider = dynamic_pointer_cast<BBoxColliderComponent>(colliderComponent);
 
         shape = shared_ptr< btCollisionShape >(new btBoxShape(btVector3(boxCollider->btBoxShape.x, boxCollider->btBoxShape.y, boxCollider->btBoxShape.z)));
-
+        
 
         btVector3 center;
         btScalar radius;
@@ -121,9 +131,8 @@ void BPhysicsCompmponent::createBulletRigidBody()
         btVector3 localInercia(0, 0, 0);
         shape->calculateLocalInertia(_mass, localInercia);
 
-        btRigidBody::btRigidBodyConstructionInfo info_D(_mass, state.get(), shape.get());
-
-        body.reset(new btRigidBody(info_D));
+        btRigidBody::btRigidBodyConstructionInfo info_S(mass, state.get(), shape.get());
+        body = shared_ptr< btRigidBody >(new btRigidBody(info_S));
 
     }
 
