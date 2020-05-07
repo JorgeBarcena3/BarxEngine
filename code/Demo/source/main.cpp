@@ -19,7 +19,6 @@
 
 
 #include <BEngine.hpp>
-#include "../../BEngine/headers/BKeyboardComponent.hpp"
 
 
 BScene* scene;
@@ -29,58 +28,29 @@ shared_ptr< BKeyboardComponent            > InputManager; ///< ImputManager para
 
 void ballControl(float time, shared_ptr<BEntity> entity)
 {
+
     auto physics = entity->getComponent<BPhysicsCompmponent>();
 
     if (InputManager->Keyboard->isKeyPresed("F"))
-        physics->addForce(vec3<float>(0, 3, 0), vec3<float>(0, -1, 0));
+        physics->addForce(vec3<float>(15, 0, 0), vec3<float>(0, 0, 0));
 
+}
+
+void collisionCheck(BEntity * me, BEntity* other)
+{
+    auto physics = me->getComponent<BPhysicsCompmponent>();
+
+    physics->setLinearVelocity(vec3<float>(0,10,0));
 }
 
 int main() {
 
     scene = new BScene("resources/animacion.xml");
 
-    ////////////// PLAYER ////////////// 
-
-    //player = scene->getEntity("Player");
-    //player->getComponent<BColliderComponent>()->setFunction(OnCollision);
-
-    //////////////// CAMERA ////////////// 
-
-    //scene->getEntity("Camera")->getComponent<BControlComponent>()->setFunction(cameraControlFunction);
-
-    //cameraPlayerDistance = vec3<float>(
-    //    scene->getEntity("Camera")->getTransform()->position.x - player->getTransform()->position.x,
-    //    scene->getEntity("Camera")->getTransform()->position.y - player->getTransform()->position.y,
-    //    scene->getEntity("Camera")->getTransform()->position.z - player->getTransform()->position.z        
-    //    );
-
-    ////////////////  PROPS ////////////// 
-
-    //scene->getEntity("Wall1")->getComponent<BColliderComponent>()->setFunction(OnCollision);
-    //scene->getEntity("Wall2")->getComponent<BColliderComponent>()->setFunction(OnCollision);
-    //scene->getEntity("Wall3")->getComponent<BColliderComponent>()->setFunction(OnCollision);
-    //scene->getEntity("Wall4")->getComponent<BColliderComponent>()->setFunction(OnCollision);
-
-    ////////////////  ENEMIES ////////////// 
-
-    //scene->getEntity("Enemy1")->getComponent<BControlComponent>()->setFunction(EnemyControlFunction);
-    //scene->getEntity("Enemy1")->getComponent<BColliderComponent>()->setFunction(OnCollision);
-
-    //scene->getEntity("Enemy2")->getComponent<BControlComponent>()->setFunction(EnemyControlFunction);
-    //scene->getEntity("Enemy2")->getComponent<BColliderComponent>()->setFunction(OnCollision);
-
-    //scene->getEntity("Enemy3")->getComponent<BControlComponent>()->setFunction(EnemyControlFunction);
-    //scene->getEntity("Enemy3")->getComponent<BColliderComponent>()->setFunction(OnCollision);
+    InputManager = scene->getRootEntity()->getComponent< BKeyboardComponent  >();  
 
     scene->getEntity("Ball")->getComponent<BControlComponent>()->setFunction(ballControl);
-    InputManager = scene->getRootEntity()->getComponent< BKeyboardComponent  >();
-    //scene->getEntity("Enemy4")->getComponent<BColliderComponent>()->setFunction(OnCollision);
-
-
-    //////////////// AUDIO ////////////// 
-
-    //collisionID = audio.loadSound("../../../binaries/assets/sfx/collision.wav");
+    scene->getEntity("Ball")->getComponent<BColliderComponent>()->setFunction(collisionCheck);
 
     scene->run();
 

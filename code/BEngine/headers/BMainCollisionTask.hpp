@@ -1,4 +1,4 @@
-// File: BColliderTask.hpp
+// File: BRenderTask.hpp
 // Author: Jorge Bárcena Lumbreras
 
 // © Copyright (C) 2019  Jorge Bárcena Lumbreras
@@ -16,8 +16,8 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-#ifndef BARX_ENGINE_BCOLLIDERTASK
-#define BARX_ENGINE_BCOLLIDERTASK
+#ifndef BARX_ENGINE_BMAINPHYSICSTASK
+#define BARX_ENGINE_BMAINPHYSICSTASK
 
 #include "BtypeDef.hpp"
 #include "BTask.hpp"
@@ -25,32 +25,32 @@
 /**
 * Clases adelantadas
 */
-class BEntity;
-class BScene;
+class BMainCollisionComponent;
 
 /**
-* Tarea de colision
+* Tarea de render
 */
-class BColliderTask : public BTask
+class BMainCollisionTask : public BTask
 {
+
+private:
+
+    float current_time;
+
+    shared_ptr< BMainCollisionComponent >      mainCollisionComponent; ///< Puntero a la ventana que se esta ejecutando
 
 public:
 
     /**
-    * Constructor de collider
+    * Constructor por defecto
     */
-    BColliderTask(shared_ptr<BEntity> transfom, shared_ptr<BScene> scene);
+    BMainCollisionTask(string _id, shared_ptr<BMainCollisionComponent> _mainCollisionComponent);
 
-    shared_ptr<BEntity>                                           entity     ;  ///< Entidad de referencia
+    /**
+    * Destructor por defecto
+    */
+    ~BMainCollisionTask();
 
-    std::function<void(shared_ptr<BEntity>, shared_ptr<BEntity>)> onCollision;  ///< Funcion que se ejecuta cuando hay colision
-
-
-private:
-
-    shared_ptr<BTransformComponent> transform      ;  ///< Transform de la entidad
-
-    list < shared_ptr<BEntity> >    colliderEntites; ///< Entidades que son colisionadoras
 
     /**
     * Inicializa la tarea
@@ -63,7 +63,7 @@ private:
     virtual bool finalize() override;
 
     /**
-    * Ejecuta la tarea 
+    * Ejecuta la tarea
     */
     virtual bool execute(float time) override;
 

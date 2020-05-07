@@ -105,6 +105,9 @@ public:
    */
     void setLinearVelocity(vec3<float> v);
 
+    void applyImpulse(vec3<float> force, vec3<float> point);
+    float getMass();
+
 
 
 private:

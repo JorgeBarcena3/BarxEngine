@@ -21,7 +21,6 @@
 #include "..\headers\BColliderComponent.hpp"
 #include "..\headers\BBoxColliderComponent.hpp"
 #include "..\headers\BShereColliderComponent.hpp"
-#include "..\headers\BColliderTask.hpp"
 #include "..\headers\BTransformComponent.hpp"
 #include "..\headers\BEntity.hpp"
 

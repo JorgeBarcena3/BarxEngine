@@ -19,6 +19,8 @@
 #include "..\headers\BKernel.hpp"
 #include "..\headers\BTask.hpp"
 #include "..\headers\BAlgoritmosDeOrdenacion.hpp"
+#include <SDL.h>
+#include <SDL_timer.h>
 
 
 BKernel::BKernel(shared_ptr<BScene> _scene)
@@ -50,33 +52,44 @@ void BKernel::run()
         task->initialize();
     }
 
-    float time = 1.f / 30.f;
 
     BTimer timer;
+    timer.start();
 
-    int now = timer.elapsedMiliseconds();
-    int lastFrame = timer.elapsedMiliseconds();
-    long TimeToSleep = (1000 / 60) / 1000;
+    float sec = 0;
+    int frames = 0;
+
+    short timePerFrame = 1000 / 60; // miliseconds
+    float deltatime = timer.timeDeltatime();
 
     do
     {
-        now = timer.elapsedMiliseconds();
-        int delta = now - lastFrame;
-        lastFrame = now;
+        deltatime = timer.timeDeltatime();
 
-        //Limitamos a 60 el numero de FPS
-        if (delta < TimeToSleep)
+        if (sec > 1)
         {
-            std::this_thread::sleep_for(std::chrono::seconds(TimeToSleep));
+            cout << frames << endl;
+            sec = 0;
+            frames = 0;
+
+        }
+
+        sec += deltatime;
+        frames++;
+
+        
+        //Limitamos a 60 el numero de FPS
+        if (deltatime < timePerFrame)
+        {
+            SDL_Delay(timePerFrame - deltatime);
         }
 
         for (auto task : BTasks)
         {
-            if (!task->execute(time))
+            if (!task->execute(deltatime))
                 exit = true;
         }
 
-        time = (float)timer.elapsedMiliseconds();
 
 
     } while (!exit);

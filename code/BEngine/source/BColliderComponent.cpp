@@ -17,18 +17,15 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 #include "..\headers\BColliderComponent.hpp"
-#include "..\headers\BColliderTask.hpp"
 #include "..\headers\BEntity.hpp"
 
 BColliderComponent::BColliderComponent(shared_ptr<BEntity> parent) : BComponent(parent)
 {
-    task = shared_ptr<BColliderTask>(new BColliderTask(parent, parent->getScene()));
 }
 
-void BColliderComponent::setFunction(std::function<void(shared_ptr<BEntity>, shared_ptr<BEntity>)> myFunction)
+void BColliderComponent::setFunction(std::function<void(BEntity * , BEntity *)> myFunction)
 {
-    auto colliderComponet         = dynamic_pointer_cast<BColliderTask>(task);
-    colliderComponet->onCollision = myFunction;
+    collisionFunction = myFunction;
 }
 
 COLLIDERTYPE BColliderComponent::getType()

@@ -31,6 +31,7 @@
 #include "BAudio.hpp"
 #include "BWindowTask.hpp"
 #include "BPhysicsComponent.hpp"
+#include "BKeyboardComponent.hpp"
 
 typedef BKeyboard Input;
 

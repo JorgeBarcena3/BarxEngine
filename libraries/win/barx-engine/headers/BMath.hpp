@@ -21,6 +21,7 @@
 #include <iostream>
 
 
+
 /*** Implementacion de la clase de Vector2 con sus respectivos operandos
 */
 template <class T>

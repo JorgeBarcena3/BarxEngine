@@ -19,10 +19,8 @@
     <ClInclude Include="..\..\..\code\BEngine\headers\BCharacterController.hpp" />
     <ClInclude Include="..\..\..\code\BEngine\headers\BCharacterControllerTask.hpp" />
     <ClInclude Include="..\..\..\code\BEngine\headers\BColliderComponent.hpp" />
-    <ClInclude Include="..\..\..\code\BEngine\headers\BColliderTask.hpp" />
     <ClInclude Include="..\..\..\code\BEngine\headers\BComponent.hpp" />
     <ClInclude Include="..\..\..\code\BEngine\headers\BControlComponent.hpp" />
-    <ClInclude Include="..\..\..\code\BEngine\headers\BControlTask.hpp" />
     <ClInclude Include="..\..\..\code\BEngine\headers\BDispacher.hpp" />
     <ClInclude Include="..\..\..\code\BEngine\headers\BEngine.hpp" />
     <ClInclude Include="..\..\..\code\BEngine\headers\BEntity.hpp" />
@@ -33,6 +31,8 @@
     <ClInclude Include="..\..\..\code\BEngine\headers\BKeyboard.hpp" />
     <ClInclude Include="..\..\..\code\BEngine\headers\BKeyboardComponent.hpp" />
     <ClInclude Include="..\..\..\code\BEngine\headers\BLightComponent.hpp" />
+    <ClInclude Include="..\..\..\code\BEngine\headers\BMainCollisionComponent.hpp" />
+    <ClInclude Include="..\..\..\code\BEngine\headers\BMainCollisionTask.hpp" />
     <ClInclude Include="..\..\..\code\BEngine\headers\BMainPhysicsComponent.hpp" />
     <ClInclude Include="..\..\..\code\BEngine\headers\BMainPhysicsTask.hpp" />
     <ClInclude Include="..\..\..\code\BEngine\headers\BMainRenderer.hpp" />
@@ -68,7 +68,6 @@
     <ClCompile Include="..\..\..\code\BEngine\source\BCharacterController.cpp" />
     <ClCompile Include="..\..\..\code\BEngine\source\BCharacterControllerTask.cpp" />
     <ClCompile Include="..\..\..\code\BEngine\source\BColliderComponent.cpp" />
-    <ClCompile Include="..\..\..\code\BEngine\source\BColliderTask.cpp" />
     <ClCompile Include="..\..\..\code\BEngine\source\BComponent.cpp" />
     <ClCompile Include="..\..\..\code\BEngine\source\BControlComponent.cpp" />
     <ClCompile Include="..\..\..\code\BEngine\source\BControlTask.cpp" />
@@ -80,6 +79,8 @@
     <ClCompile Include="..\..\..\code\BEngine\source\BKeyboard.cpp" />
     <ClCompile Include="..\..\..\code\BEngine\source\BKeyboardComponent.cpp" />
     <ClCompile Include="..\..\..\code\BEngine\source\BLightComponent.cpp" />
+    <ClCompile Include="..\..\..\code\BEngine\source\BMainCollisionComponent.cpp" />
+    <ClCompile Include="..\..\..\code\BEngine\source\BMainCollisionTask.cpp" />
     <ClCompile Include="..\..\..\code\BEngine\source\BMainPhysics.cpp" />
     <ClCompile Include="..\..\..\code\BEngine\source\BMainPhysicsTask.cpp" />
     <ClCompile Include="..\..\..\code\BEngine\source\BMainRenderer.cpp" />

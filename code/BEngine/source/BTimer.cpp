@@ -39,6 +39,11 @@ uint32_t BTimer::elapsedMiliseconds() const
     return SDL_GetTicks() - startTick;
 }
 
+uint32_t BTimer::lastFrameElapsedMiliseconds() const
+{
+    return uint32_t();
+}
+
 float BTimer::timeDeltatime()
 {
     float time = (SDL_GetTicks() - lastTick) / 1000.f;

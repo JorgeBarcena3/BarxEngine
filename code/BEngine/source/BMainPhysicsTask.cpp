@@ -19,8 +19,11 @@
 #include "..\headers\BTask.hpp"
 #include "..\headers\BMainPhysicsTask.hpp"
 #include "..\headers\BtypeDef.hpp"
+#include "..\headers\BEntity.hpp"
 #include "..\headers\BMainPhysicsComponent.hpp"
 #include <btBulletDynamicsCommon.h>
+#include <btBulletCollisionCommon.h>
+#include "../headers/BColliderComponent.hpp"
 
 
 BMainPhysicsTask::BMainPhysicsTask(shared_ptr<BMainPhysicsComponent> _phyComp) : BTask(TASKPRIORITY::PHYSICSWORLD)
@@ -45,6 +48,11 @@ bool BMainPhysicsTask::finalize()
 
 bool BMainPhysicsTask::execute(float time)
 {
+
+
     physicsComponent->dynamicsWorld->stepSimulation(1.f / 60.f);
+
+    //BEntity* other = static_cast<BEntity*>((body->getUserPointer()));
+
     return true;
 }

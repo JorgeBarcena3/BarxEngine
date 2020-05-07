@@ -95,9 +95,23 @@ public:
     */
     void addForce(vec3<float> force, vec3<float> point);
 
+    /**
+   * Añade x fuerza al cuerpo
+   */
+    void setGravity(vec3<float> g);
+
+    /**
+   * Añade x fuerza al cuerpo
+   */
+    void setLinearVelocity(vec3<float> v);
+
+
+
 private:
 
     void createBulletRigidBody();
+
+    void setActiveStatus();
 
 };
 #endif;

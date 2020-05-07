@@ -53,6 +53,11 @@ public:
     uint32_t elapsedMiliseconds() const;
 
     /**
+   * Devuelve los milisegundos transcurridos
+   */
+    uint32_t lastFrameElapsedMiliseconds() const;
+
+    /**
     * Devuelve el timDeltaTime
     */
     float timeDeltatime();

@@ -52,6 +52,13 @@ protected:
 public:
 
     /**
+    * Funcion de colision
+    */
+    std::function<void(BEntity*, BEntity* )> collisionFunction;
+
+public:
+
+    /**
     * Unico constructor
     */
     BColliderComponent(shared_ptr <BEntity> parent);
@@ -59,7 +66,7 @@ public:
     /**
     * Determina la funcion que se va a ejecutar cuando se produzca la colisión
     */
-    void setFunction(std::function<void(shared_ptr<BEntity>, shared_ptr<BEntity>)> myFunction);
+    void setFunction(std::function<void(BEntity*, BEntity*)> myFunction);
 
     /**
     * Heredado del componente

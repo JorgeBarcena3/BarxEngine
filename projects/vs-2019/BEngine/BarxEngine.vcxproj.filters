@@ -111,12 +111,6 @@
     <ClInclude Include="..\..\..\code\BEngine\headers\BComponent.hpp">
       <Filter>Headers\Components\Base</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\code\BEngine\headers\BColliderTask.hpp">
-      <Filter>Headers\Task</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\code\BEngine\headers\BControlTask.hpp">
-      <Filter>Headers\Task</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\code\BEngine\headers\BInputHandlerTask.hpp">
       <Filter>Headers\Task</Filter>
     </ClInclude>
@@ -177,6 +171,12 @@
     <ClInclude Include="..\..\..\code\BEngine\headers\BCapsulleColliderComponent.hpp">
       <Filter>Headers\Components</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\code\BEngine\headers\BMainCollisionComponent.hpp">
+      <Filter>Headers\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\code\BEngine\headers\BMainCollisionTask.hpp">
+      <Filter>Headers\Task</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\code\BEngine\source\BAudio.cpp">
@@ -195,9 +195,6 @@
       <Filter>Source</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\code\BEngine\source\BColliderComponent.cpp">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\code\BEngine\source\BColliderTask.cpp">
       <Filter>Source</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\code\BEngine\source\BComponent.cpp">
@@ -285,6 +282,12 @@
       <Filter>Source</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\code\BEngine\source\BCapsulleColliderComponent.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\code\BEngine\source\BMainCollisionComponent.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\code\BEngine\source\BMainCollisionTask.cpp">
       <Filter>Source</Filter>
     </ClCompile>
   </ItemGroup>

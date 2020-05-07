@@ -4,10 +4,10 @@
 
 #include "Bullet3Common/b3AlignedObjectArray.h"
 
-enum
+enum 
 {
-	B3_POOL_HANDLE_TERMINAL_FREE = -1,
-	B3_POOL_HANDLE_TERMINAL_USED = -2
+	B3_POOL_HANDLE_TERMINAL_FREE=-1,
+	B3_POOL_HANDLE_TERMINAL_USED =-2
 };
 
 template <typename U>
@@ -20,23 +20,25 @@ struct b3PoolBodyHandle : public U
 	{
 		m_nextFreeHandle = next;
 	}
-	int getNextFree() const
+	int	getNextFree() const
 	{
 		return m_nextFreeHandle;
 	}
 };
 
-template <typename T>
+template <typename T> 
 class b3ResizablePool
 {
+
 protected:
-	b3AlignedObjectArray<T> m_bodyHandles;
-	int m_numUsedHandles;   // number of active handles
-	int m_firstFreeHandle;  // free handles list
+	b3AlignedObjectArray<T>	m_bodyHandles;
+	int m_numUsedHandles;						// number of active handles
+	int	m_firstFreeHandle;		// free handles list
 
 	T* getHandleInternal(int handle)
 	{
 		return &m_bodyHandles[handle];
+
 	}
 	const T* getHandleInternal(int handle) const
 	{
@@ -44,16 +46,17 @@ protected:
 	}
 
 public:
+	
 	b3ResizablePool()
 	{
 		initHandles();
 	}
-
+	
 	virtual ~b3ResizablePool()
 	{
 		exitHandles();
 	}
-	///handle management
+///handle management
 
 	int getNumHandles() const
 	{
@@ -62,40 +65,44 @@ public:
 
 	void getUsedHandles(b3AlignedObjectArray<int>& usedHandles) const
 	{
-		for (int i = 0; i < m_bodyHandles.size(); i++)
+
+		for (int i=0;i<m_bodyHandles.size();i++)
 		{
-			if (m_bodyHandles[i].getNextFree() == B3_POOL_HANDLE_TERMINAL_USED)
+			if (m_bodyHandles[i].getNextFree()==B3_POOL_HANDLE_TERMINAL_USED)
 			{
 				usedHandles.push_back(i);
 			}
 		}
 	}
 
+	
+
 	T* getHandle(int handle)
 	{
-		b3Assert(handle >= 0);
-		b3Assert(handle < m_bodyHandles.size());
-		if ((handle < 0) || (handle >= m_bodyHandles.size()))
+		b3Assert(handle>=0);
+		b3Assert(handle<m_bodyHandles.size());
+		if ((handle<0) || (handle>=m_bodyHandles.size()))
 		{
 			return 0;
 		}
 
-		if (m_bodyHandles[handle].getNextFree() == B3_POOL_HANDLE_TERMINAL_USED)
+		if (m_bodyHandles[handle].getNextFree()==B3_POOL_HANDLE_TERMINAL_USED)
 		{
 			return &m_bodyHandles[handle];
 		}
 		return 0;
+
 	}
 	const T* getHandle(int handle) const
 	{
-		b3Assert(handle >= 0);
-		b3Assert(handle < m_bodyHandles.size());
-		if ((handle < 0) || (handle >= m_bodyHandles.size()))
+		b3Assert(handle>=0);
+		b3Assert(handle<m_bodyHandles.size());
+		if ((handle<0) || (handle>=m_bodyHandles.size()))
 		{
 			return 0;
 		}
 
-		if (m_bodyHandles[handle].getNextFree() == B3_POOL_HANDLE_TERMINAL_USED)
+		if (m_bodyHandles[handle].getNextFree()==B3_POOL_HANDLE_TERMINAL_USED)
 		{
 			return &m_bodyHandles[handle];
 		}
@@ -112,6 +119,7 @@ public:
 		{
 			for (int i = curCapacity; i < newCapacity; i++)
 				m_bodyHandles[i].setNextFree(i + 1);
+
 
 			m_bodyHandles[newCapacity - 1].setNextFree(-1);
 		}
@@ -134,17 +142,18 @@ public:
 
 	int allocHandle()
 	{
-		b3Assert(m_firstFreeHandle >= 0);
+		b3Assert(m_firstFreeHandle>=0);
 
 		int handle = m_firstFreeHandle;
 		m_firstFreeHandle = getHandleInternal(handle)->getNextFree();
 		m_numUsedHandles++;
 
-		if (m_firstFreeHandle < 0)
+		if (m_firstFreeHandle<0)
 		{
 			//int curCapacity = m_bodyHandles.size();
-			int additionalCapacity = m_bodyHandles.size();
+			int additionalCapacity= m_bodyHandles.size();
 			increaseHandleCapacity(additionalCapacity);
+
 
 			getHandleInternal(handle)->setNextFree(m_firstFreeHandle);
 		}
@@ -153,11 +162,12 @@ public:
 		return handle;
 	}
 
+
 	void freeHandle(int handle)
 	{
 		b3Assert(handle >= 0);
 
-		if (m_bodyHandles[handle].getNextFree() == B3_POOL_HANDLE_TERMINAL_USED)
+		if (m_bodyHandles[handle].getNextFree()==B3_POOL_HANDLE_TERMINAL_USED)
 		{
 			getHandleInternal(handle)->clear();
 			getHandleInternal(handle)->setNextFree(m_firstFreeHandle);
@@ -166,6 +176,7 @@ public:
 		}
 	}
 };
-///end handle management
-
-#endif  //B3_RESIZABLE_POOL_H
+	///end handle management
+	
+	#endif //B3_RESIZABLE_POOL_H
+	

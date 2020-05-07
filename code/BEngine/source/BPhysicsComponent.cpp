@@ -6,6 +6,7 @@
 #include "..\headers\BEntity.hpp"
 #include "..\headers\BTranformTask.hpp"
 #include "../headers/BPhysicsTask.hpp"
+#include <btBulletCollisionCommon.h>
 #include <btBulletDynamicsCommon.h>
 #include <LinearMath\btVector3.h>
 #include "../headers/BColliderComponent.hpp"
@@ -46,11 +47,11 @@ bool BPhysicsCompmponent::parse_property(const string& name, const string& value
     else if (name == "mass")
     {
         mass = atof(value.c_str());
-    } 
+    }
     else if (name == "damping")
     {
         damping = atof(value.c_str());
-    } 
+    }
     else if (name == "friction")
     {
         friction = atof(value.c_str());
@@ -59,7 +60,7 @@ bool BPhysicsCompmponent::parse_property(const string& name, const string& value
     {
         restitution = atof(value.c_str());
     }
-     
+
 
     return true;
 }
@@ -73,7 +74,17 @@ void BPhysicsCompmponent::addForce(vec3<float> force, vec3<float> point)
 {
     setActiveStatus();
     body->applyForce(btVector3(force.x, force.y, force.z), btVector3(point.x, point.y, point.z));
+}
 
+void BPhysicsCompmponent::applyImpulse(vec3<float> force, vec3<float> point)
+{
+    setActiveStatus();
+    body->applyImpulse(btVector3(force.x, force.y, force.z), btVector3(point.x, point.y, point.z));
+}
+
+float BPhysicsCompmponent::getMass()
+{
+    return body->getInvMass();
 }
 
 void BPhysicsCompmponent::setGravity(vec3<float> g)
@@ -100,10 +111,11 @@ void BPhysicsCompmponent::createBulletRigidBody()
 
         shape = shared_ptr< btCollisionShape >(new btBoxShape(btVector3(boxCollider->btBoxShape.x, boxCollider->btBoxShape.y, boxCollider->btBoxShape.z)));
         
+        
 
     }
-    else if(colliderComponent->getType() == COLLIDERTYPE::SPHERE)
-    { 
+    else if (colliderComponent->getType() == COLLIDERTYPE::SPHERE)
+    {
 
         shared_ptr< BSphereColliderComponent > sphereCollider = dynamic_pointer_cast<BSphereColliderComponent>(colliderComponent);
 
@@ -119,6 +131,8 @@ void BPhysicsCompmponent::createBulletRigidBody()
 
     }
 
+    
+
     btTransform transform;
     transform.setIdentity();
     transform.setOrigin(btVector3(transformComponent->position.x, transformComponent->position.y, transformComponent->position.z));
@@ -126,25 +140,20 @@ void BPhysicsCompmponent::createBulletRigidBody()
     qt.setEuler(transformComponent->rotation.x, transformComponent->rotation.y, transformComponent->rotation.z);
     transform.setRotation(qt);
     state = shared_ptr< btDefaultMotionState >(new btDefaultMotionState(transform));
-
+    
 
     if (type == BPSHYSIC_TYPE::STATIC)
     {
-        // GROUND
-        {
-            // Using motionstate is optional for static objects.
 
-            btRigidBody::btRigidBodyConstructionInfo info_S(0, state.get(), shape.get());
-            body = shared_ptr< btRigidBody >(new btRigidBody(info_S));
 
-        }
+        btRigidBody::btRigidBodyConstructionInfo info_S(0, state.get(), shape.get());
+        body = shared_ptr< btRigidBody >(new btRigidBody(info_S));
+
+
     }
     else
     {
-              
-        btScalar _mass = mass;
-        btVector3 localInercia(0, 0, 0);
-        shape->calculateLocalInertia(_mass, localInercia);
+
 
         btRigidBody::btRigidBodyConstructionInfo info_S(mass, state.get(), shape.get());
         body = shared_ptr< btRigidBody >(new btRigidBody(info_S));
@@ -153,7 +162,9 @@ void BPhysicsCompmponent::createBulletRigidBody()
 
     body->setRestitution(restitution);
     body->setFriction(friction);
-
+    body->setUserPointer(parent.get());
+    
+    
     // Add the body to the dynamics world.
 
     BMainPhysicsComponent::instance->dynamicsWorld->addRigidBody(body.get());

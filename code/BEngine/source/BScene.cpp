@@ -41,6 +41,7 @@
 #include "..\headers\BBoxColliderComponent.hpp"
 #include "../headers/BPhysicsComponent.hpp"
 #include "../headers/BCapsulleColliderComponent.hpp"
+#include "../headers/BMainCollisionComponent.hpp"
 
 BScene::BScene(const string& _scene_description_file_path)
 {
@@ -85,12 +86,14 @@ void BScene::load(const string& scene_description_file_path)
     shared_ptr<BComponent> inputComponent = shared_ptr<BInputComponent>(new BInputComponent(root));
     shared_ptr<BComponent> keyboardComponent = shared_ptr<BKeyboardComponent>(new BKeyboardComponent(root));
     shared_ptr<BComponent> mainPhysicsComponent = shared_ptr<BMainPhysicsComponent>(new BMainPhysicsComponent(root));
+    shared_ptr<BComponent> mainCollisionsComponent = shared_ptr<BMainCollisionComponent>(new BMainCollisionComponent(root));
 
     root->addComponent("mainRenderComponent", mainRenderComponent);
     root->addComponent("windowComponent", windowComponent);
     root->addComponent("inputComponent", inputComponent);
     root->addComponent("keyboardComponent", keyboardComponent);
-    root->addComponent("mainPhysicsComponent ", mainPhysicsComponent);
+    root->addComponent("mainCollisionsComponent", mainCollisionsComponent);
+    root->addComponent("mainPhysicsComponent", mainPhysicsComponent);
 
 
     for (rapidxml::xml_node<>* entityNode = rootNode->first_node(); entityNode; entityNode = entityNode->next_sibling()) //Son las entidades
@@ -145,6 +148,7 @@ void BScene::init_kernel()
     kernel->addTask(root->getComponent<BMainWindowComponent>()->getTask());
     kernel->addTask(root->getComponent<BInputComponent>()->getTask());
     kernel->addTask(root->getComponent<BMainPhysicsComponent>()->getTask());
+    kernel->addTask(root->getComponent<BMainCollisionComponent>()->getTask());
 
     for (auto entity : *entities)
     {

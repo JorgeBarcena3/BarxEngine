@@ -25,7 +25,7 @@ BMainPhysicsComponent::BMainPhysicsComponent(shared_ptr<BEntity> parent) : BComp
 
     // Use the default collision dispatcher. For parallel processing you can use a diffent dispatcher (see Extras/BulletMultiThreaded).
 
-    collisionDispatcher = shared_ptr<btCollisionDispatcher>(new btCollisionDispatcher(&(*collisionConfiguration)));
+    collisionDispatcher = shared_ptr<btCollisionDispatcher>(new btCollisionDispatcher(collisionConfiguration.get()));
 
     // btDbvtBroadphase is a good general purpose broadphase. You can also try out btAxis3Sweep.
 
@@ -41,14 +41,14 @@ BMainPhysicsComponent::BMainPhysicsComponent(shared_ptr<BEntity> parent) : BComp
         (
             new btDiscreteDynamicsWorld
             (
-                &(*collisionDispatcher),
-                &(*overlappingPairCache),
-                &(*constraintSolver),
-                &(*collisionConfiguration)
+                collisionDispatcher.get(),
+                overlappingPairCache.get(),
+                constraintSolver.get(),
+                collisionConfiguration.get()
             )
             );
 
-    dynamicsWorld->setGravity(btVector3(0, -2, 0));
+    dynamicsWorld->setGravity(btVector3(0, -10, 0));    
 
     BMainPhysicsComponent::instance = shared_ptr<BMainPhysicsComponent>(this);
 }
