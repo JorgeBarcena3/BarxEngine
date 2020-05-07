@@ -56,6 +56,11 @@ BMainPhysicsComponent::BMainPhysicsComponent(shared_ptr<BEntity> parent) : BComp
 BMainPhysicsComponent::~BMainPhysicsComponent()
 {
     dynamicsWorld.reset();
+
+    collisionConfiguration.reset() ;
+    collisionDispatcher   .reset() ;
+    overlappingPairCache  .reset() ;
+    constraintSolver      .reset() ;
 }
 
 bool BMainPhysicsComponent::initialize()

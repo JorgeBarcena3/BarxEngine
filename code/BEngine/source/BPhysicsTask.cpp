@@ -29,18 +29,22 @@ bool BPhysicsTask::finalize()
 
 bool BPhysicsTask::execute(float time)
 {
-    // Apply the physics transform to the graphics model:
-    auto transform = physicsComponent->getEntity()->getTransform();
 
-    btTransform physics_transform;
+    if (physicsComponent->isActive())
+    {
+        // Apply the physics transform to the graphics model:
+        auto transform = physicsComponent->getEntity()->getTransform();
 
-    physicsComponent->getPhysicalBody()->getMotionState()->getWorldTransform(physics_transform);
+        btTransform physics_transform;
 
-    glt::Matrix44 matrix;
+        physicsComponent->getPhysicalBody()->getMotionState()->getWorldTransform(physics_transform);
 
-    physics_transform.getOpenGLMatrix(glm::value_ptr(matrix));
+        glt::Matrix44 matrix;
 
-    (transform->transformationMatrix) = matrix;
+        physics_transform.getOpenGLMatrix(glm::value_ptr(matrix));
+
+        (transform->transformationMatrix) = matrix;
+    }
 
     return true;
 }

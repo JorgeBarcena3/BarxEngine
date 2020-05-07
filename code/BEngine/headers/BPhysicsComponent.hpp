@@ -56,7 +56,7 @@ private:
     float  friction;
     float  restitution;
 
-
+    bool active;
 
     shared_ptr< btDefaultMotionState > state;
 
@@ -111,6 +111,16 @@ public:
     * Devuelve la inversa de la masa del rigidbody
     */
     float getMass();
+
+    /**
+    * Activa o desactiva las fisicas de un objeto
+    */
+    void setActive(bool a);
+
+    /**
+    * Si el objeto está o no activado
+    */
+    inline const bool isActive() { return active; };
 
 
 private:

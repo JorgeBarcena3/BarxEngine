@@ -21,6 +21,7 @@ BPhysicsCompmponent::BPhysicsCompmponent(shared_ptr<BEntity> parent) : BComponen
     task = shared_ptr<BPhysicsTask>(new BPhysicsTask(parent->getId(), shared_ptr<BPhysicsCompmponent>(this)));
     friction = 0;
     restitution = 0;
+    active = true;
 }
 
 bool BPhysicsCompmponent::initialize()
@@ -84,6 +85,11 @@ void BPhysicsCompmponent::applyImpulse(vec3<float> force, vec3<float> point)
 float BPhysicsCompmponent::getMass()
 {
     return body->getInvMass();
+}
+
+void BPhysicsCompmponent::setActive(bool a)
+{
+    active = a;
 }
 
 void BPhysicsCompmponent::setGravity(vec3<float> g)
