@@ -21,6 +21,7 @@
 
 #include "BtypeDef.hpp"
 #include "BTask.hpp"
+#include "BPhysicsComponent.hpp"
 
 /**
 * Clases adelantadas
@@ -30,6 +31,7 @@ class BScene;
 class BTransformComponent;
 class BCharacterControllerComponent;
 class BKeyboardComponent;
+class BPhysicsCompmponent;
 
 /**
 * Tarea del caracter controller
@@ -49,6 +51,7 @@ private:
     shared_ptr< BTransformComponent           > transform   ; ///< Transform de la entidad
     shared_ptr< BCharacterControllerComponent > component   ; ///< Componente de control
     shared_ptr< BKeyboardComponent            > InputManager; ///< ImputManager para manejar los eventos
+    shared_ptr< BPhysicsCompmponent           > physicsComponent; ///< ImputManager para manejar los eventos
 
     /**
     * Inicializa la tarea

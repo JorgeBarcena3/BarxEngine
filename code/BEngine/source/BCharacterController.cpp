@@ -26,7 +26,7 @@
 #include "..\headers\BTransformComponent.hpp"
 #include "..\headers\BCharacterControllerTask.hpp"
 
-BCharacterControllerComponent::BCharacterControllerComponent(shared_ptr<BEntity> parent) : BComponent(parent)
+BCharacterControllerComponent::BCharacterControllerComponent(shared_ptr<BEntity> parent) : BComponent(parent, COMPONENT_INITIALIZATION::CONTROL_COMPONENT)
 {
     task = shared_ptr<BCharacterControllerTask>(new BCharacterControllerTask(parent, shared_ptr<BCharacterControllerComponent>(this)));
 }
@@ -46,8 +46,12 @@ bool BCharacterControllerComponent::parse_property(const string& name, const str
         Left = value;
     else  if (name == "Right")
         Right = value;
+    else  if (name == "Jump")
+        Jump = value;
     else if (name == "speed")
         speed = stof(value);
+    else if (name == "JumpForce")
+        JumpForce = stof(value);
 
     return true;
 }

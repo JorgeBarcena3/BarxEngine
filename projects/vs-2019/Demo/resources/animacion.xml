@@ -3,7 +3,7 @@
 
   <entity id="Camera">
     <component type="BTransform_Component" >
-      <position>0,0,5</position>
+      <position>1,0,7</position>
       <rotation>0, 0, 0</rotation>
       <scale>1,1,1</scale>
     </component>
@@ -23,32 +23,128 @@
     </component>
     <component type="BLightComponent"/>
   </entity>
-
-
-  <entity id="Floor">
+ 
+  <entity id="Floor 1">
     <component type="BTransform_Component" >
-      <position>0, -4, -4</position>
+      <position>-5, -4, -4</position>
       <rotation>0, 0, 0</rotation>
-      <scale>8,1,2</scale>
+      <scale>2,1,5</scale>
     </component>
     <component type="BRenderObjectComponent" >
       <model>../../../binaries/assets/models/cube_centered.obj</model>
     </component>
     <component type="BBoxColliderComponent" >
-      <boxShape>4,0.5,1</boxShape>
+      <boxShape>1,0.5,2.5</boxShape>
       <mask>1</mask>
       <group>1</group>
       <trigger>0</trigger>
     </component>
     <component type="BPhysicsCompmponent">
       <type>STATIC</type>
-      <mass>0</mass>
-      <restitution>0.7</restitution>
-      <friction>0</friction>
+      <mass>2</mass>
+      <restitution>0.1</restitution>
+      <friction>0.2</friction>
     </component>
   </entity>
 
-  <entity id="Ball">
+  <entity id="MovementPlatform Floor">
+    <component type="BTransform_Component" >
+      <position>-2, -4, -4</position>
+      <rotation>0, 0, 0</rotation>
+      <scale>1,0.5,3</scale>
+    </component>
+    <component type="BRenderObjectComponent" >
+      <model>../../../binaries/assets/models/cube_centered.obj</model>
+    </component>
+    <component type="BBoxColliderComponent" >
+      <boxShape>0.5,0.25,1.5</boxShape>
+      <mask>1</mask>
+      <group>1</group>
+      <trigger>0</trigger>
+    </component>
+    <component type="BPhysicsCompmponent">
+      <type>DYNAMIC</type>
+      <mass>0</mass>
+      <restitution>0.1</restitution>
+      <friction>0.2</friction>
+    </component>
+    <component type="BControlComponent"/>
+  </entity>
+
+
+  <entity id="Floor 2">
+    <component type="BTransform_Component" >
+      <position>0, -4, -4</position>
+      <rotation>0, 0, 0</rotation>
+      <scale>2,1,5</scale>
+    </component>
+    <component type="BRenderObjectComponent" >
+      <model>../../../binaries/assets/models/cube_centered.obj</model>
+    </component>
+    <component type="BBoxColliderComponent" >
+      <boxShape>1,0.5,2.5</boxShape>
+      <mask>1</mask>
+      <group>1</group>
+      <trigger>0</trigger>
+    </component>
+    <component type="BPhysicsCompmponent">
+      <type>STATIC</type>
+      <mass>2</mass>
+      <restitution>0.1</restitution>
+      <friction>0.2</friction>
+    </component>
+  </entity>
+
+
+  <entity id="Floor 3">
+    <component type="BTransform_Component" >
+      <position>7, -4, -4</position>
+      <rotation>0, 0, 0</rotation>
+      <scale>5,5,5</scale>
+    </component>
+    <component type="BRenderObjectComponent" >
+      <model>../../../binaries/assets/models/cube_centered.obj</model>
+    </component>
+    <component type="BBoxColliderComponent" >
+      <boxShape>2.5,2.5,2.5</boxShape>
+      <mask>1</mask>
+      <group>1</group>
+      <trigger>0</trigger>
+    </component>
+    <component type="BPhysicsCompmponent">
+      <type>STATIC</type>
+      <mass>2</mass>
+      <restitution>0.1</restitution>
+      <friction>0.2</friction>
+    </component>
+  </entity>
+
+  <entity id="ElevatorPlatform Floor">
+    <component type="BTransform_Component" >
+      <position>2.5, -4, -4</position>
+      <rotation>0, 0, 0</rotation>
+      <scale>3,0.5,3</scale>
+    </component>
+    <component type="BRenderObjectComponent" >
+      <model>../../../binaries/assets/models/cube_centered.obj</model>
+    </component>
+    <component type="BBoxColliderComponent" >
+      <boxShape>1.5,0.25,1.5</boxShape>
+      <mask>1</mask>
+      <group>1</group>
+      <trigger>0</trigger>
+    </component>
+    <component type="BPhysicsCompmponent">
+      <type>DYNAMIC</type>
+      <mass>0</mass>
+      <restitution>0.1</restitution>
+      <friction>0.2</friction>
+    </component>
+    <component type="BControlComponent"/>
+  </entity>
+
+
+  <entity id="Player">
     <component type="BTransform_Component" >
       <position>0, +5, -4</position>
       <rotation>0, 0, 0</rotation>
@@ -61,17 +157,26 @@
       <radius>0.5</radius>
       <mask>1</mask>
       <group>1</group>
-      <trigger>1</trigger>
+      <trigger>0</trigger>
     </component>
     <!--<component type="BCapsulleColliderComponent">
       <radius>1</radius>
       <height>0.25</height>
     </component>-->
+    <component type="BCharacterController">
+      <speed>0.1</speed>
+      <Up>W</Up>
+      <Down>S</Down>
+      <Left>A</Left>
+      <Right>D</Right>
+      <Jump>Space</Jump>
+      <JumpForce>30</JumpForce>
+    </component>
     <component type="BPhysicsCompmponent">
       <type>DINAMIC</type>
       <mass>1</mass>
       <restitution>0.7</restitution>
-      <friction>0</friction>
+      <friction>0.7</friction>
     </component>
     <component type="BControlComponent"/>
   </entity>

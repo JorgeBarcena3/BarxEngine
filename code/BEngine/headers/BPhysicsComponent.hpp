@@ -20,11 +20,12 @@
 #define BARX_ENGINE_BPHYSICSCOMPONENT
 
 #include "BtypeDef.hpp"
+#include "BComponent.hpp"
 
 /**
 * Clases adelantadas
 */
-class BComponent;
+//class BComponent;
 class btCollisionShape;
 class btDefaultMotionState;
 class btRigidBody;
@@ -90,7 +91,7 @@ public:
     /**
     * Añade x fuerza al cuerpo
     */
-    void addForce(vec3<float> force, vec3<float> point);
+    void addForce(vec3<float> force, vec3<float> point = vec3<float>{ 0, 0, 0 });
 
     /**
     * Añade x fuerza al cuerpo
@@ -101,6 +102,11 @@ public:
     * Añade x fuerza al cuerpo
     */
     void setLinearVelocity(vec3<float> v);
+    
+    /**
+    * Añade x fuerza al cuerpo
+    */
+    vec3<float> getLinearVelocity();
 
     /**
     * Añade x impulso
@@ -121,6 +127,11 @@ public:
     * Si el objeto está o no activado
     */
     inline const bool isActive() { return active; };
+
+    /**
+    * Determina si el objeto está en un suelo o no
+    */
+    bool isInFloor();
 
 
 private:

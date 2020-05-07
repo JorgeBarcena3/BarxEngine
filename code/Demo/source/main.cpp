@@ -19,48 +19,50 @@
 
 
 #include <BEngine.hpp>
+#include "../headers/BulletDemo.hpp"
 
 
-BScene* scene;
-shared_ptr< BKeyboardComponent            > InputManager; ///< ImputManager para manejar los eventos
-
-
-
-void ballControl(float time, shared_ptr<BEntity> entity)
-{
-
-    auto physics = entity->getComponent<BPhysicsCompmponent>();
-
-    if (InputManager->Keyboard->isKeyPresed("R"))
-        scene->reloadScene("resources/animacion.xml"); 
-    else if (InputManager->Keyboard->isKeyPresed("F"))
-        physics->applyImpulse(vec3<float>(0.25f * physics->getMass(), 0, 0), vec3<float>(0, 0, 0));
-
-}
-
-void collisionCheck(BEntity * me, BEntity* other)
-{
-    auto physics = me->getComponent<BPhysicsCompmponent>();
-    cout << "trigering";
-    //other->removeEntity();
-    physics->setLinearVelocity(vec3<float>(0,0,0));
-    physics->applyImpulse(vec3<float>(0, 4.f * physics->getMass(), 0), vec3<float>(0, 0, 0));
-}
-
-void StartFunction(BScene* scene)
-{
-    InputManager = scene->getRootEntity()->getComponent< BKeyboardComponent  >();
-
-    scene->getEntity("Ball")->getComponent<BControlComponent>()->setFunction(ballControl);
-    scene->getEntity("Ball")->getComponent<BColliderComponent>()->setFunction(collisionCheck);
-
-}
+//BScene* scene;
+//shared_ptr< BKeyboardComponent            > InputManager; ///< ImputManager para manejar los eventos
+//
+//
+//
+//void ballControl(float time, shared_ptr<BEntity> entity)
+//{
+//
+//    auto physics = entity->getComponent<BPhysicsCompmponent>();
+//
+//    if (InputManager->Keyboard->isKeyPresed("R"))
+//        scene->reloadScene("resources/animacion.xml"); 
+//    else if (InputManager->Keyboard->isKeyPresed("F"))
+//        physics->applyImpulse(vec3<float>(0.25f * physics->getMass(), 0, 0), vec3<float>(0, 0, 0));
+//
+//}
+//
+//void collisionCheck(BEntity * me, BEntity* other)
+//{
+//    auto physics = me->getComponent<BPhysicsCompmponent>();
+//    cout << "trigering";
+//    //other->removeEntity();
+//    physics->setLinearVelocity(vec3<float>(0,0,0));
+//    physics->applyImpulse(vec3<float>(0, 4.f * physics->getMass(), 0), vec3<float>(0, 0, 0));
+//}
+//
+//void StartFunction(BScene* scene)
+//{
+//    InputManager = scene->getRootEntity()->getComponent< BKeyboardComponent  >();
+//
+//    scene->getEntity("Ball")->getComponent<BControlComponent>()->setFunction(ballControl);
+//    scene->getEntity("Ball")->getComponent<BColliderComponent>()->setFunction(collisionCheck);
+//
+//}
 
 int main() {
 
-    scene = new BScene("resources/animacion.xml", StartFunction);
 
-    scene->run();
+    BulletDemo demo;
+
+    demo.start();
 
     return 0;
 

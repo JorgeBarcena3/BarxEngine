@@ -44,6 +44,10 @@ bool BPhysicsTask::execute(float time)
         physics_transform.getOpenGLMatrix(glm::value_ptr(matrix));
 
         (transform->transformationMatrix) = matrix;
+
+        auto pos = extract_translation(matrix);
+
+        transform->position = {pos.x, pos.y, pos.z};
     }
 
     return true;

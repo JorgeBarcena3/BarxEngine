@@ -104,6 +104,37 @@ void BPhysicsCompmponent::setLinearVelocity(vec3<float> v)
     body->setLinearVelocity(btVector3(v.x, v.y, v.z));
 }
 
+vec3<float> BPhysicsCompmponent::getLinearVelocity()
+{
+    btVector3 velocity = body->getLinearVelocity();
+
+    return vec3<float>(velocity.getX(), velocity.getY(), velocity.getZ());
+}
+
+bool BPhysicsCompmponent::isInFloor()
+{
+    shared_ptr<BTransformComponent> transformComponent = getEntity()->getTransform();
+
+    int numManifolds = BMainPhysicsComponent::instance->dynamicsWorld->getDispatcher()->getNumManifolds();
+    for (int i = 0; i < numManifolds; i++)
+    {
+        btPersistentManifold* contactManifold = BMainPhysicsComponent::instance->dynamicsWorld->getDispatcher()->getManifoldByIndexInternal(i);
+        const btCollisionObject* obA = static_cast<const btCollisionObject*>(contactManifold->getBody0());
+        const btCollisionObject* obB = static_cast<const btCollisionObject*>(contactManifold->getBody1());
+        BEntity* A = static_cast<BEntity*>((obA->getUserPointer()));
+        BEntity* B = static_cast<BEntity*>((obB->getUserPointer()));
+
+        if (
+            (A->getId() == parent->getId() && B->getId().find("Floor") != string::npos) ||
+            (B->getId() == parent->getId() && A->getId().find("Floor") != string::npos)
+            )
+
+            return true;
+     
+    }
+    return false;
+}
+
 void BPhysicsCompmponent::createBulletRigidBody()
 {
 

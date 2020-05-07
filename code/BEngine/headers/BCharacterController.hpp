@@ -40,7 +40,9 @@ public:
     string Down ; ///< Letra que maneja la accion
     string Left ; ///< Letra que maneja la accion
     string Right; ///< Letra que maneja la accion
+    string Jump; ///< Letra que maneja la accion
     float  speed; ///< Velocidad de movimiento
+    float  JumpForce; ///< Velocidad de movimiento
 
 public:
 

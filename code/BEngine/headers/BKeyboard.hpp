@@ -59,6 +59,7 @@ public:
         const string X = "X";
         const string Y = "Y";
         const string Z = "Z";
+        const string SPACE = "SPACE";
         const string N1 = "1";
         const string N2 = "2";
         const string N3 = "3";

@@ -11,11 +11,21 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\code\Demo\headers\AscensionPlatform.cpp" />
+    <ClCompile Include="..\..\..\code\Demo\headers\BulletDemo.cpp" />
+    <ClCompile Include="..\..\..\code\Demo\headers\DemoEntity.cpp" />
+    <ClCompile Include="..\..\..\code\Demo\headers\LateralMovemementPlattfom.cpp" />
     <ClCompile Include="..\..\..\code\Demo\source\main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Xml Include="resources\animacion.xml" />
     <Xml Include="resources\scene.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\code\Demo\headers\AscensionPlatform.hpp" />
+    <ClInclude Include="..\..\..\code\Demo\headers\BulletDemo.hpp" />
+    <ClInclude Include="..\..\..\code\Demo\headers\DemoEntity.hpp" />
+    <ClInclude Include="..\..\..\code\Demo\headers\LateralMovemementPlattfom.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
