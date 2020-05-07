@@ -5,7 +5,7 @@ void AscensionPlatform::update(float time, shared_ptr<BEntity> entity)
 
     auto position = entity->getTransform()->position;
 
-    if (isPlayer && position.y < -limitYUp)
+    if (isPlayer && position.y < limitYUp)
     {
 
         physicsComponent->setLinearVelocity(vec3<float>(0, speed, 0));

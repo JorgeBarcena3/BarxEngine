@@ -64,9 +64,9 @@
     </component>
     <component type="BPhysicsCompmponent">
       <type>DYNAMIC</type>
-      <mass>0</mass>
+      <mass>1</mass>
       <restitution>0.1</restitution>
-      <friction>0.2</friction>
+      <friction>0.5</friction>
     </component>
     <component type="BControlComponent"/>
   </entity>
@@ -147,22 +147,19 @@
   <entity id="Player">
     <component type="BTransform_Component" >
       <position>0, +5, -4</position>
-      <rotation>0, 0, 0</rotation>
+      <rotation>0, 2, 0</rotation>
       <scale>1,1,1</scale>
     </component>
     <component type="BRenderObjectComponent" >
       <model>../../../binaries/assets/models/sphere.obj</model>
     </component>
-    <component type="BShereColliderComponent">
-      <radius>0.5</radius>
+    <component type="BCapsulleColliderComponent">
+      <radius>1</radius>
+      <height>0.5</height>
       <mask>1</mask>
       <group>1</group>
       <trigger>0</trigger>
     </component>
-    <!--<component type="BCapsulleColliderComponent">
-      <radius>1</radius>
-      <height>0.25</height>
-    </component>-->
     <component type="BCharacterController">
       <speed>0.1</speed>
       <Up>W</Up>
