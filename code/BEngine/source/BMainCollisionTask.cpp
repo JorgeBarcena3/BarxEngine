@@ -45,7 +45,6 @@ bool BMainCollisionTask::execute(float time)
                 if (pt.getDistance() < 0.f)
                 {
 
-
                     BEntity* A = static_cast<BEntity*>((obA->getUserPointer()));
                     BEntity* B = static_cast<BEntity*>((obB->getUserPointer()));
                     auto collider_A = A->getComponent<BColliderComponent>();

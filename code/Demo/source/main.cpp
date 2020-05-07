@@ -31,8 +31,8 @@ void ballControl(float time, shared_ptr<BEntity> entity)
 
     auto physics = entity->getComponent<BPhysicsCompmponent>();
 
-    if (InputManager->Keyboard->isKeyPresed("F"))
-        physics->addForce(vec3<float>(15, 0, 0), vec3<float>(0, 0, 0));
+    if (InputManager->Keyboard->isKeyPresed("R"))
+        scene->reloadScene("resources/animacion.xml");
 
 }
 
@@ -44,14 +44,18 @@ void collisionCheck(BEntity * me, BEntity* other)
     //physics->setLinearVelocity(vec3<float>(0,10,0));
 }
 
-int main() {
-
-    scene = new BScene("resources/animacion.xml");
-
-    InputManager = scene->getRootEntity()->getComponent< BKeyboardComponent  >();  
+void StartFunction(BScene* scene)
+{
+    InputManager = scene->getRootEntity()->getComponent< BKeyboardComponent  >();
 
     scene->getEntity("Ball")->getComponent<BControlComponent>()->setFunction(ballControl);
     scene->getEntity("Ball")->getComponent<BColliderComponent>()->setFunction(collisionCheck);
+
+}
+
+int main() {
+
+    scene = new BScene("resources/animacion.xml", StartFunction);
 
     scene->run();
 

@@ -47,7 +47,9 @@ public:
     /**
     * Constructor de la escena
     */
-    BScene(const string& scene_description_file_path = "");
+    BScene(const string& scene_description_file_path = "", std::function<void(BScene * )> startFunction = nullptr) ;
+
+    ~BScene();
 
     /**
     * Devuelve una entidad por ID
@@ -66,6 +68,11 @@ private:
     * Inicializa un kernel
     */
     void init_kernel();
+
+    /**
+    * Funcion que se ejecuta antes de comenzar la escena
+    */
+    std::function<void(BScene*)> startFunction;
 
 public:
 

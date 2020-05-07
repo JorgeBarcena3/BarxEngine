@@ -43,17 +43,25 @@
 #include "../headers/BCapsulleColliderComponent.hpp"
 #include "../headers/BMainCollisionComponent.hpp"
 
-BScene::BScene(const string& _scene_description_file_path)
+BScene::BScene(const string& _scene_description_file_path, std::function<void(BScene*)> _startFunction)
 {
+
+    startFunction = _startFunction;
 
     entities = shared_ptr<Entity_Map>(new Entity_Map())                   ;
 
-    kernel   = shared_ptr<BKernel>(new BKernel(shared_ptr<BScene>(this))) ;
+    kernel   = shared_ptr<BKernel>(new BKernel(this)) ;
 
     load(_scene_description_file_path)                                    ;
 
     init_kernel()                                                         ;
 
+    startFunction(this)                                                   ;
+
+}
+
+BScene::~BScene()
+{
 }
 
 shared_ptr<BEntity> BScene::getEntity(string id)
@@ -174,17 +182,24 @@ void BScene::run()
 
 void BScene::reloadScene(const string& scene_description_file_path)
 {
-    //root.reset(new BEntity("MainScene", shared_ptr<BScene>(this)));
+    for (auto entity : *entities)
+    {
+        kernel->removeTaskForEntity(entity.second.get());
+    }
 
-    //kernel.reset(new BKernel(shared_ptr<BScene>( this )));
+    entities->clear();
 
-    //entities.reset(new Entity_Map());
+    root.reset(new BEntity("MainScene", shared_ptr<BScene>(this)));
 
-    //load(scene_description_file_path);
+    kernel.reset(new BKernel( this ));
 
-    //init_kernel();
+    load(scene_description_file_path);
 
-    //run();
+    init_kernel();
+
+    startFunction(this);
+
+    run();
 
 }
 

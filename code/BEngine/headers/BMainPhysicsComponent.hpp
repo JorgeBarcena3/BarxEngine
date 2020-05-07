@@ -44,7 +44,7 @@ class BMainPhysicsComponent : public BComponent
 public:
 
     //Instancia del componente general del mundo
-    static shared_ptr<BMainPhysicsComponent> instance;
+    static BMainPhysicsComponent* instance;
 
     // Atributos del mundo de Bullet
     shared_ptr< btDiscreteDynamicsWorld > dynamicsWorld;

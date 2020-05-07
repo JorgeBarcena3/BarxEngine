@@ -24,11 +24,15 @@
 #include <SDL_timer.h>
 
 
-BKernel::BKernel(shared_ptr<BScene> _scene)
+BKernel::BKernel(BScene * _scene)
 {
     BTasks = std::vector< shared_ptr<BTask> >();
     scene = _scene;
     paused = false;
+}
+
+BKernel::~BKernel()
+{
 }
 
 void BKernel::addTask(shared_ptr<BTask> task)
@@ -121,9 +125,9 @@ void BKernel::resume()
     paused = false;
 }
 
-shared_ptr<BScene> BKernel::getScene()
+BScene * BKernel::getScene()
 {
-    return scene;
+    return ( scene );
 }
 
 void BKernel::removeTaskForEntity(BEntity* entity)

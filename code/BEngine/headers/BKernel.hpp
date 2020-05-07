@@ -36,7 +36,7 @@ class BKernel
 {
     typedef std::vector< shared_ptr<BTask> > BTask_List; ///< Tipo que guarda la lista de tareas
     BTask_List                               BTasks    ; ///< Lista de tareas
-    shared_ptr<BScene>                       scene     ; ///< Escena que se está ejecutando
+    BScene *                                 scene     ; ///< Escena que se está ejecutando
     bool                                     exit      ; ///< Si se debe acabar el ciclo
     bool                                     paused    ; ///< Si se debe parar
 
@@ -45,7 +45,12 @@ public:
     /**
     * Clases adelantadas
     */
-    BKernel(shared_ptr<BScene> _scene);
+    BKernel(BScene * _scene);
+
+    /**
+    * Clases adelantadas
+    */
+    ~BKernel();
 
     /**
     * Clases adelantadas
@@ -75,7 +80,7 @@ public:
     /**
     * Clases adelantadas
     */
-    shared_ptr<BScene> getScene();
+    BScene * getScene();
 
     /**
     * Elimina las tareas de la entidad

@@ -7,7 +7,7 @@
 #include <btBulletDynamicsCommon.h>
 #include "../headers/BMainPhysicsTask.hpp"
 
-shared_ptr<BMainPhysicsComponent> BMainPhysicsComponent::instance = shared_ptr<BMainPhysicsComponent>(nullptr);
+BMainPhysicsComponent * BMainPhysicsComponent::instance = nullptr;
 
 BMainPhysicsComponent::BMainPhysicsComponent(shared_ptr<BEntity> parent) : BComponent(parent)
 {
@@ -50,12 +50,12 @@ BMainPhysicsComponent::BMainPhysicsComponent(shared_ptr<BEntity> parent) : BComp
 
     dynamicsWorld->setGravity(btVector3(0, -10, 0));    
 
-    BMainPhysicsComponent::instance = shared_ptr<BMainPhysicsComponent>(this);
+    BMainPhysicsComponent::instance = (this);
 }
 
 BMainPhysicsComponent::~BMainPhysicsComponent()
 {
-    dynamicsWorld.reset();
+
 }
 
 bool BMainPhysicsComponent::initialize()
