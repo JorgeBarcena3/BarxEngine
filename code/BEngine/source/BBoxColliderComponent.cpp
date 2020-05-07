@@ -23,16 +23,21 @@
 #include "..\headers\BShereColliderComponent.hpp"
 #include "..\headers\BTransformComponent.hpp"
 #include "..\headers\BEntity.hpp"
+#include <btBulletDynamicsCommon.h>
+#include <btBulletCollisionCommon.h>
 
 BBoxColliderComponent::BBoxColliderComponent(shared_ptr<BEntity> parent) : BColliderComponent(parent)
 {
     transform = parent->getTransform();
-    type      = COLLIDERTYPE::BOX     ;
-    btBoxShape = vec3<float>(1, 1, 1);
+    type = COLLIDERTYPE::BOX;
+    BoxShape = vec3<float>(1, 1, 1);
 }
 
 bool BBoxColliderComponent::initialize()
 {
+
+    shape.reset(new btBoxShape(btVector3(BoxShape.x, BoxShape.y, BoxShape.z)));
+         
     return true;
 }
 
@@ -49,9 +54,9 @@ bool BBoxColliderComponent::parse_property(const string& name, const string& val
 
     if (name == "boxShape")
     {
-        btBoxShape.x = stof(seglist[0]);
-        btBoxShape.y = stof(seglist[1]);
-        btBoxShape.z = stof(seglist[2]);
+        BoxShape.x = stof(seglist[0]);
+        BoxShape.y = stof(seglist[1]);
+        BoxShape.z = stof(seglist[2]);
     }
 
     return true;
@@ -59,7 +64,7 @@ bool BBoxColliderComponent::parse_property(const string& name, const string& val
 
 shared_ptr<BEntity> BBoxColliderComponent::checkCollisions(shared_ptr<BEntity> other)
 {
-   
+
 
     return shared_ptr<BEntity>(nullptr);
 }

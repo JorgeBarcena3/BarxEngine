@@ -36,18 +36,23 @@ using namespace glt;
 */
 class BComponent
 {
+
+private:
+
+    COMPONENT_INITIALIZATION priority;
+
 protected:
 
-    string              id     ;  ///< Id del componente
-    shared_ptr<BEntity> parent ;  ///< Entidad que posee el componente
-    shared_ptr<BTask  >   task ;  ///< Tarea que tiene asignada
+    string              id;  ///< Id del componente
+    shared_ptr<BEntity> parent;  ///< Entidad que posee el componente
+    shared_ptr<BTask  >   task;  ///< Tarea que tiene asignada
 
 public:
 
     /**
     * Constructor por defecto
     */
-    BComponent(shared_ptr<BEntity> parent);
+    BComponent(shared_ptr<BEntity> parent, COMPONENT_INITIALIZATION prior = COMPONENT_INITIALIZATION::DEFAULT_COMPONENT);
 
     /**
     * Destructor por defecto
@@ -61,7 +66,7 @@ public:
     virtual bool initialize() = 0;
 
     /**
-    * Función virtual pura  
+    * Función virtual pura
     * Parsea las propiedades del xml
     */
     virtual bool parse_property
@@ -76,6 +81,13 @@ public:
     shared_ptr<BTask> getTask();
 
     shared_ptr<BEntity> getEntity();
-  
+
+public:
+
+    /**
+   * Sobrecarga del operador <
+   */
+    bool operator < (const BComponent& other);
+
 };
 #endif

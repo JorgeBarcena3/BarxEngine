@@ -30,7 +30,7 @@
 
 using namespace glt;
 
-BTransformComponent::BTransformComponent(shared_ptr <BEntity> parent) : BComponent(parent)
+BTransformComponent::BTransformComponent(shared_ptr <BEntity> parent) : BComponent(parent, COMPONENT_INITIALIZATION::TRANSFORM_COMPONENT)
 {
     task              = shared_ptr<BTransformTask>(new BTransformTask(parent->getId(), shared_ptr<BTransformComponent>(this)));
     parent->transform = shared_ptr<BTransformComponent>(this);

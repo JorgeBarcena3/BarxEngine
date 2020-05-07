@@ -21,6 +21,8 @@
 #include "..\headers\BTransformComponent.hpp"
 #include "..\headers\BEntity.hpp"
 #include "..\headers\BBoxColliderComponent.hpp"
+#include <btBulletDynamicsCommon.h>
+#include <btBulletCollisionCommon.h>
 
 BSphereColliderComponent::BSphereColliderComponent(shared_ptr<BEntity> parent) : BColliderComponent(parent)
 {
@@ -31,6 +33,11 @@ BSphereColliderComponent::BSphereColliderComponent(shared_ptr<BEntity> parent) :
 
 bool BSphereColliderComponent::initialize()
 {
+
+
+    shape.reset(new btSphereShape(btScalar(radius)));
+
+    
     return true;
 }
 

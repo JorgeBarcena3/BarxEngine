@@ -22,7 +22,7 @@
 
 using namespace glt;
 
-BComponent::BComponent(shared_ptr<BEntity> parent) : parent(parent)
+BComponent::BComponent(shared_ptr<BEntity> parent, COMPONENT_INITIALIZATION prior) : parent(parent), priority(prior)
 {    }
 BComponent::~BComponent()
 {    };
@@ -37,4 +37,9 @@ shared_ptr<BTask> BComponent::getTask()
 shared_ptr<BEntity> BComponent::getEntity()
 {
     return parent;
+}
+
+bool BComponent::operator<(const BComponent& other)
+{
+    return this->priority < other.priority;
 }

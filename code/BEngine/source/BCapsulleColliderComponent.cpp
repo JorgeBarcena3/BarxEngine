@@ -24,6 +24,8 @@
 #include "..\headers\BTransformComponent.hpp"
 #include "..\headers\BEntity.hpp"
 #include "..\headers\BCapsulleColliderComponent.hpp"
+#include <btBulletDynamicsCommon.h>
+#include <btBulletCollisionCommon.h>
 
 BCapsulleColliderComponent::BCapsulleColliderComponent(shared_ptr<BEntity> parent) : BColliderComponent(parent)
 {
@@ -35,7 +37,10 @@ BCapsulleColliderComponent::BCapsulleColliderComponent(shared_ptr<BEntity> paren
 
 bool BCapsulleColliderComponent::initialize()
 {
-    return false;
+
+    shape.reset(new btCapsuleShape(radius, height));
+
+    return true;
 }
 
 bool BCapsulleColliderComponent::parse_property(const string& name, const string& value)

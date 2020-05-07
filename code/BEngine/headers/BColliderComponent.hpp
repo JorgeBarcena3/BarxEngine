@@ -26,6 +26,7 @@
 * Adelantamiento de clases
 */
 class BEntity;
+class btCollisionShape;
 
 /**
 * Tipo de colider
@@ -49,12 +50,19 @@ protected:
     */
     COLLIDERTYPE type;
 
+    /**
+   * Shape de bullet
+   */
+    shared_ptr< btCollisionShape >     shape;
+
 public:
 
     /**
     * Funcion de colision
     */
     std::function<void(BEntity*, BEntity* )> collisionFunction;
+
+
 
 public:
 
@@ -90,6 +98,10 @@ public:
     * Devuelve el tipo de collider que es
     */
     COLLIDERTYPE getType();
+
+
+    shared_ptr< btCollisionShape > getShape();
+
 
 };
 #endif

@@ -28,10 +28,24 @@ using namespace std;
 
 namespace BAlgoritmosDeOrdenacion {
 
-    /** 
+    template <class V, class K>
+    vector<pair<K, V>> orderMapByValue(const std::map<K, V>& myMap)
+    {
+
+        vector<pair<K, V>> vec;
+
+        for (auto x = myMap.begin(); x != myMap.end(); x++)
+            vec.push_back(*x);
+
+        sort(vec.begin(), vec.end(), [](pair<K, V>elem1, pair<K, V>elem2) {return *(elem1.second) < *(elem2.second); });
+
+        return vec;
+    }
+
+    /**
     * Algoritmo de burbuja
     * Recorremos la lista de numeros comparando el numero actual con el siguiente, y si es el orden incorrecto los cambiamos
-    * Hasta que no cambiamos nada 
+    * Hasta que no cambiamos nada
     */
     template <class T>
     void algoritmoBurbuja(T* list, size_t size) {
@@ -60,7 +74,7 @@ namespace BAlgoritmosDeOrdenacion {
     *  Algoritmo de inserccion directa
     *  Recorremos la lista buscando el valor mas pequeño
     *  size_tercambiamos la posicion actual con el valor mas pequeño
-    */ 
+    */
     template <class T>
     void algoritmoInserccionDirecta(T* list, size_t size) {
 
@@ -78,7 +92,7 @@ namespace BAlgoritmosDeOrdenacion {
     }
 
 
-    /** 
+    /**
     * Algoritmo de quick sort
     * Elegimos un numero al alazar (Mitad de la cadena)
     * Dos listas con elementos mas grandes que el pivote y otra con los elementos mas pequeños que el pivote
@@ -152,11 +166,11 @@ namespace BAlgoritmosDeOrdenacion {
     * Lista de igual tamaño
     * Variable offest que vale 0
     * Recorremos la lista de conteo y la añadimos a la nueva lista
-    */ 
+    */
     template <class T>
     void countShort(T* list, size_t size) {
-        
-            T maxValue = list[0];
+
+        T maxValue = list[0];
 
         for (size_t i = 1; i < size; i++)
         {

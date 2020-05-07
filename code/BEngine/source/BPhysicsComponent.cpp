@@ -12,11 +12,10 @@
 #include "../headers/BColliderComponent.hpp"
 #include "../headers/BBoxColliderComponent.hpp"
 #include "../headers/BShereColliderComponent.hpp"
-#include <btBulletDynamicsCommon.h>
 #include "../headers/BCapsulleColliderComponent.hpp"
 
 
-BPhysicsCompmponent::BPhysicsCompmponent(shared_ptr<BEntity> parent) : BComponent(parent)
+BPhysicsCompmponent::BPhysicsCompmponent(shared_ptr<BEntity> parent) : BComponent(parent, COMPONENT_INITIALIZATION::PHYSICS_COMPONENT)
 {
     type = BPSHYSIC_TYPE::DYNAMIC;
     task = shared_ptr<BPhysicsTask>(new BPhysicsTask(parent->getId(), shared_ptr<BPhysicsCompmponent>(this)));
@@ -104,67 +103,27 @@ void BPhysicsCompmponent::createBulletRigidBody()
 
     shared_ptr<BTransformComponent> transformComponent = getEntity()->getTransform();
     shared_ptr<BColliderComponent> colliderComponent = getEntity()->getComponent<BColliderComponent>();
-
-    if (colliderComponent->getType() == COLLIDERTYPE::BOX)
-    {
-        shared_ptr< BBoxColliderComponent > boxCollider = dynamic_pointer_cast<BBoxColliderComponent>(colliderComponent);
-
-        shape = shared_ptr< btCollisionShape >(new btBoxShape(btVector3(boxCollider->btBoxShape.x, boxCollider->btBoxShape.y, boxCollider->btBoxShape.z)));
-        
-        
-
-    }
-    else if (colliderComponent->getType() == COLLIDERTYPE::SPHERE)
-    {
-
-        shared_ptr< BSphereColliderComponent > sphereCollider = dynamic_pointer_cast<BSphereColliderComponent>(colliderComponent);
-
-        shape = shared_ptr< btCollisionShape >(new btSphereShape(btScalar(sphereCollider->radius)));
-
-
-    }
-    else if (colliderComponent->getType() == COLLIDERTYPE::CAPSULE)
-    {
-        shared_ptr< BCapsulleColliderComponent > capsuleCollider = dynamic_pointer_cast<BCapsulleColliderComponent>(colliderComponent);
-
-        shape = shared_ptr< btCollisionShape >(new btCapsuleShape(capsuleCollider->radius, capsuleCollider->height));
-
-    }
-
-    
+    auto shape = colliderComponent->getShape();
 
     btTransform transform;
+
     transform.setIdentity();
     transform.setOrigin(btVector3(transformComponent->position.x, transformComponent->position.y, transformComponent->position.z));
+
     btQuaternion qt;
     qt.setEuler(transformComponent->rotation.x, transformComponent->rotation.y, transformComponent->rotation.z);
     transform.setRotation(qt);
+
     state = shared_ptr< btDefaultMotionState >(new btDefaultMotionState(transform));
-    
 
-    if (type == BPSHYSIC_TYPE::STATIC)
-    {
-
-
-        btRigidBody::btRigidBodyConstructionInfo info_S(0, state.get(), shape.get());
-        body = shared_ptr< btRigidBody >(new btRigidBody(info_S));
-
-
-    }
-    else
-    {
-
-
-        btRigidBody::btRigidBodyConstructionInfo info_S(mass, state.get(), shape.get());
-        body = shared_ptr< btRigidBody >(new btRigidBody(info_S));
-
-    }
+    btRigidBody::btRigidBodyConstructionInfo info_S(type == BPSHYSIC_TYPE::STATIC ? 0 : mass, state.get(), shape.get());
+    body = shared_ptr< btRigidBody >(new btRigidBody(info_S));
 
     body->setRestitution(restitution);
     body->setFriction(friction);
     body->setUserPointer(parent.get());
-    
-    
+
+
     // Add the body to the dynamics world.
 
     BMainPhysicsComponent::instance->dynamicsWorld->addRigidBody(body.get());

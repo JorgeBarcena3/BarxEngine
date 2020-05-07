@@ -56,10 +56,7 @@ private:
     float  friction;
     float  restitution;
 
-    /**
-    * Shape de bullet
-    */
-    shared_ptr< btCollisionShape >     shape;
+   
 
     shared_ptr< btDefaultMotionState > state;
 

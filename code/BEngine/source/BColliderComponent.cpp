@@ -18,9 +18,14 @@
 
 #include "..\headers\BColliderComponent.hpp"
 #include "..\headers\BEntity.hpp"
+#include <btBulletCollisionCommon.h>
+#include <btBulletDynamicsCommon.h>
+#include <LinearMath\btVector3.h>
 
-BColliderComponent::BColliderComponent(shared_ptr<BEntity> parent) : BComponent(parent)
+BColliderComponent::BColliderComponent(shared_ptr<BEntity> parent) : BComponent(parent, COMPONENT_INITIALIZATION::COLLIDER_COMPONENT)
 {
+    shape = shared_ptr< btCollisionShape >(nullptr);
+
 }
 
 void BColliderComponent::setFunction(std::function<void(BEntity * , BEntity *)> myFunction)
@@ -31,4 +36,9 @@ void BColliderComponent::setFunction(std::function<void(BEntity * , BEntity *)> 
 COLLIDERTYPE BColliderComponent::getType()
 {
     return type;
+}
+
+shared_ptr<btCollisionShape> BColliderComponent::getShape()
+{
+    return shape;
 }

@@ -20,6 +20,7 @@
 #include "..\headers\BComponent.hpp"
 #include "..\headers\BtypeDef.hpp"
 #include "..\headers\BTransformComponent.hpp"
+#include "..\headers\BAlgoritmosDeOrdenacion.hpp"
 
 BEntity::BEntity(string _id, shared_ptr<BScene> _scene)
 {
@@ -34,7 +35,9 @@ bool BEntity::initialize()
 
     bool result = true;
 
-    for (auto component : components)
+    auto orderedVec = BAlgoritmosDeOrdenacion::orderMapByValue(components);
+
+    for (auto component : orderedVec)
     {
         if (component.second->initialize() == false)
         {

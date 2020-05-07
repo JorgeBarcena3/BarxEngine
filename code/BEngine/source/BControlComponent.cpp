@@ -20,7 +20,7 @@
 #include "..\headers\BControlComponent.hpp"
 #include "..\headers\BControlTask.hpp"
 
-BControlComponent::BControlComponent(shared_ptr <BEntity> parent) : BComponent(parent)
+BControlComponent::BControlComponent(shared_ptr <BEntity> parent) : BComponent(parent, COMPONENT_INITIALIZATION::CONTROL_COMPONENT)
 {
      task = shared_ptr<BControlTask>(new BControlTask(parent));
      myFunction = nullptr;
