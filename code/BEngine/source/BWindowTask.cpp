@@ -38,6 +38,7 @@ BWindowTask::BWindowTask(const std::string& title, int _width, int _height, bool
         BWindowTask::instance = shared_ptr< BWindowTask >(this);
         width = _width;
         heigth = _height;
+        windowName = title;
 
         SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
         SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 2);
@@ -134,6 +135,11 @@ void BWindowTask::clear() const
 {
     glClearColor(0.2f, 0.2f, 0.2f, 1.f);
     if (gl_context) glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+}
+
+SDL_Window* BWindowTask::getSDL_Window()
+{
+    return window;
 }
 
 bool BWindowTask::initialize()

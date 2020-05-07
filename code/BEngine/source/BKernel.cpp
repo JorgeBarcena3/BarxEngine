@@ -19,7 +19,9 @@
 #include "..\headers\BKernel.hpp"
 #include "..\headers\BTask.hpp"
 #include "..\headers\BAlgoritmosDeOrdenacion.hpp"
+#include "..\headers\BScene.hpp"
 #include "..\headers\BEntity.hpp"
+#include "..\headers\BWindowTask.hpp"
 #include <SDL.h>
 #include <SDL_timer.h>
 
@@ -58,12 +60,16 @@ void BKernel::run()
         task->initialize();
     }
 
+    auto name = BWindowTask::instance->windowName;
+
+    auto window = BWindowTask::instance->getSDL_Window();
 
     BTimer timer;
     timer.start();
 
     float sec = 0;
     int frames = 0;
+    SDL_SetWindowTitle(window, (name + " FPS [ 60 ]").c_str());
 
     short timePerFrame = 1000 / 60; // miliseconds
     float deltatime = timer.timeDeltatime();
@@ -73,9 +79,9 @@ void BKernel::run()
 
         deltatime = timer.timeDeltatime();
 
-        if (sec > 1)
+        if (sec > 0.5)
         {
-            cout << frames << endl;
+            SDL_SetWindowTitle(window, (name + " FPS [ " + to_string(frames * 2) + " ]").c_str());
             sec = 0;
             frames = 0;
 

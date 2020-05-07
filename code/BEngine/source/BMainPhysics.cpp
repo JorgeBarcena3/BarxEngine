@@ -55,7 +55,7 @@ BMainPhysicsComponent::BMainPhysicsComponent(shared_ptr<BEntity> parent) : BComp
 
 BMainPhysicsComponent::~BMainPhysicsComponent()
 {
-
+    dynamicsWorld.reset();
 }
 
 bool BMainPhysicsComponent::initialize()

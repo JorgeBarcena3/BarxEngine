@@ -32,6 +32,8 @@ public:
 
     static shared_ptr< BWindowTask > instance; ///< Instancia de la ventana
 
+    string windowName;
+
 private:
 
     SDL_Window   * window     ; ///< SDL windows
@@ -101,6 +103,11 @@ public:
     * Limpia la pantalla
     */
     void clear() const;
+
+    /**
+    * Devuelve la pantalla de SDL
+    */
+    SDL_Window * getSDL_Window();
 
     /**
     * Inicializa la tarea

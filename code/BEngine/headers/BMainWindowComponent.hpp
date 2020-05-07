@@ -34,6 +34,7 @@ class BEntity;
 class BMainWindowComponent : public BComponent
 {  
 
+
 public:
 
     /**
