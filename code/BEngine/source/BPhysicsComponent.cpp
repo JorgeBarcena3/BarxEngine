@@ -123,10 +123,11 @@ void BPhysicsCompmponent::createBulletRigidBody()
     body->setFriction(friction);
     body->setUserPointer(parent.get());
 
+    colliderComponent->configShape();
 
     // Add the body to the dynamics world.
 
-    BMainPhysicsComponent::instance->dynamicsWorld->addRigidBody(body.get());
+    BMainPhysicsComponent::instance->dynamicsWorld->addRigidBody(body.get(), (int)colliderComponent->collisionGroup, (int)colliderComponent->collisionMask);
 
     // Save the smart pointers for automatic cleanup.
 

@@ -77,6 +77,11 @@ public:
     */
     virtual bool execute(float time) = 0;
 
+    /**
+    * Devuelve la tarea
+    */
+    inline const string getId() { return id; };
+
 
 public:
 

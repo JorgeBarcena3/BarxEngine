@@ -36,6 +36,9 @@
     </component>
     <component type="BBoxColliderComponent" >
       <boxShape>4,0.5,1</boxShape>
+      <mask>1</mask>
+      <group>1</group>
+      <trigger>0</trigger>
     </component>
     <component type="BPhysicsCompmponent">
       <type>STATIC</type>
@@ -56,6 +59,9 @@
     </component>
     <component type="BShereColliderComponent">
       <radius>0.5</radius>
+      <mask>1</mask>
+      <group>1</group>
+      <trigger>0</trigger>
     </component>
     <!--<component type="BCapsulleColliderComponent">
       <radius>1</radius>

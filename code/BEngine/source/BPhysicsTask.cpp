@@ -13,6 +13,7 @@
 
 #include <btBulletDynamicsCommon.h>
 #include <LinearMath\btVector3.h>
+#include "../headers/BMainPhysicsComponent.hpp"
 
 bool BPhysicsTask::initialize()
 {
@@ -22,6 +23,7 @@ bool BPhysicsTask::initialize()
 
 bool BPhysicsTask::finalize()
 {
+    BMainPhysicsComponent::instance->dynamicsWorld->removeRigidBody(physicsComponent->getPhysicalBody().get());
     return false;
 }
 

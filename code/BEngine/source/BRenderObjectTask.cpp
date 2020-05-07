@@ -44,6 +44,8 @@ bool BRenderObjectTask::initialize()
 
 bool BRenderObjectTask::finalize()
 {
+
+    BRenderTask::instance->getRenderer()->get(id)->set_visible(false);
     return true;
 }
 

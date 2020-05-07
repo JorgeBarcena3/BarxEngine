@@ -54,6 +54,18 @@ bool BCapsulleColliderComponent::parse_property(const string& name, const string
     {
         radius = atof(value.c_str());
     }
+    else if (name == "mask")
+    {
+        collisionMask = static_cast<COLLISION_MASK>(atoi(value.c_str()));
+    }
+    else if (name == "group")
+    {
+        collisionGroup = static_cast<COLLISION_GROUP>(atoi(value.c_str()));
+    }
+    else if (name == "trigger")
+    {
+        isTrigger = value == "1" ? true : false;
+    }
 
     return true;
 }

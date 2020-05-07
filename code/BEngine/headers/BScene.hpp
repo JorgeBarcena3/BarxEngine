@@ -115,5 +115,10 @@ public:
     */
     shared_ptr<BKeyboard> getKeyBoardManager();
 
+    /**
+    * Elimina la entidad
+    */
+    void removeEntity(BEntity* entity);
+
 };
 #endif

@@ -19,6 +19,7 @@
 #include "..\headers\BKernel.hpp"
 #include "..\headers\BTask.hpp"
 #include "..\headers\BAlgoritmosDeOrdenacion.hpp"
+#include "..\headers\BEntity.hpp"
 #include <SDL.h>
 #include <SDL_timer.h>
 
@@ -27,6 +28,7 @@ BKernel::BKernel(shared_ptr<BScene> _scene)
 {
     BTasks = std::vector< shared_ptr<BTask> >();
     scene = _scene;
+    paused = false;
 }
 
 void BKernel::addTask(shared_ptr<BTask> task)
@@ -64,6 +66,7 @@ void BKernel::run()
 
     do
     {
+
         deltatime = timer.timeDeltatime();
 
         if (sec > 1)
@@ -77,20 +80,23 @@ void BKernel::run()
         sec += deltatime;
         frames++;
 
-        
+
         //Limitamos a 60 el numero de FPS
         if (deltatime < timePerFrame)
         {
             SDL_Delay(timePerFrame - deltatime);
         }
 
-        for (auto task : BTasks)
+        if (!paused)
         {
-            if (!task->execute(deltatime))
-                exit = true;
+            for (auto task : BTasks)
+            {
+                if (!task->execute(deltatime))
+                    exit = true;
+            }
+
+            removeEntitiesQueue();
         }
-
-
 
     } while (!exit);
 
@@ -118,4 +124,29 @@ void BKernel::resume()
 shared_ptr<BScene> BKernel::getScene()
 {
     return scene;
+}
+
+void BKernel::removeTaskForEntity(BEntity* entity)
+{
+    for (int i = 0; i < BTasks.size(); i++)
+    {
+        if (BTasks[i]->getId() == entity->getId())
+        {
+            toRemoveTask.push_back(BTasks[i]);
+        }
+    }
+}
+
+void BKernel::removeEntitiesQueue()
+{
+
+    for (auto bTask : toRemoveTask)
+    {
+        bTask->finalize();
+        auto it = std::find(BTasks.begin(), BTasks.end(), bTask); 
+        BTasks.erase(it);
+    }
+
+    toRemoveTask.clear();
+    
 }

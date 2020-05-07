@@ -27,6 +27,7 @@
 */
 class BTask;
 class BScene;
+class BEntity;
 
 /**
 * Maneja el bicle principal del motor
@@ -75,6 +76,21 @@ public:
     * Clases adelantadas
     */
     shared_ptr<BScene> getScene();
+
+    /**
+    * Elimina las tareas de la entidad
+    */
+    void removeTaskForEntity(BEntity* entity);
+
+private:
+
+
+    vector<shared_ptr<BTask>> toRemoveTask;
+
+    /**
+    * Elimina las tareas que estan en la cola
+    */
+    void removeEntitiesQueue();
 
 };
 #endif

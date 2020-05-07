@@ -37,6 +37,24 @@ enum class COLLIDERTYPE {
     CAPSULE = 2
 };
 
+enum class COLLISION_MASK : int
+{
+    MASK_1 = 1,
+    MASK_2 = 2,
+    MASK_3 = 3,
+    MASK_4 = 4,
+    MASK_5 = 5
+};
+
+enum class COLLISION_GROUP : int
+{
+    GROUP_1 = 1,
+    GROUP_2 = 2,
+    GROUP_3 = 3,
+    GROUP_4 = 4,
+    GROUP_5 = 5
+};
+
 /**
 * Clase base de componente de colisión
 */
@@ -55,7 +73,15 @@ protected:
    */
     shared_ptr< btCollisionShape >     shape;
 
+
+
 public:
+
+    bool isTrigger;
+    
+    COLLISION_MASK collisionMask;
+
+    COLLISION_GROUP collisionGroup;
 
     /**
     * Funcion de colision
@@ -99,8 +125,21 @@ public:
     */
     COLLIDERTYPE getType();
 
-
+    /*
+    * Devuelve la shape de las colisiones
+    */
     shared_ptr< btCollisionShape > getShape();
+
+
+    /*
+    * Configura la shape
+    */
+    void configShape();
+
+    /*
+    * Cambia el estado de la shape a trigger o no
+    */
+    void setTrigger(float t);
 
 
 };

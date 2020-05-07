@@ -56,7 +56,7 @@ private:
     float  friction;
     float  restitution;
 
-   
+
 
     shared_ptr< btDefaultMotionState > state;
 
@@ -93,24 +93,36 @@ public:
     void addForce(vec3<float> force, vec3<float> point);
 
     /**
-   * Añade x fuerza al cuerpo
-   */
+    * Añade x fuerza al cuerpo
+    */
     void setGravity(vec3<float> g);
 
     /**
-   * Añade x fuerza al cuerpo
-   */
+    * Añade x fuerza al cuerpo
+    */
     void setLinearVelocity(vec3<float> v);
 
-    void applyImpulse(vec3<float> force, vec3<float> point);
-    float getMass();
+    /**
+    * Añade x impulso
+    */
+    void applyImpulse(vec3<float> impulse, vec3<float> point);
 
+    /**
+    * Devuelve la inversa de la masa del rigidbody
+    */
+    float getMass();
 
 
 private:
 
+    /**
+    * Crea el rigidBody
+    */
     void createBulletRigidBody();
 
+    /**
+    * Activa el objeto si se ha dormido en el mundo de Bullet
+    */
     void setActiveStatus();
 
 };

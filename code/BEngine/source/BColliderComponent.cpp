@@ -21,11 +21,14 @@
 #include <btBulletCollisionCommon.h>
 #include <btBulletDynamicsCommon.h>
 #include <LinearMath\btVector3.h>
+#include "../headers/BPhysicsComponent.hpp"
 
 BColliderComponent::BColliderComponent(shared_ptr<BEntity> parent) : BComponent(parent, COMPONENT_INITIALIZATION::COLLIDER_COMPONENT)
 {
     shape = shared_ptr< btCollisionShape >(nullptr);
-
+    collisionMask = COLLISION_MASK::MASK_1;
+    collisionGroup = COLLISION_GROUP::GROUP_1;
+    isTrigger = false;
 }
 
 void BColliderComponent::setFunction(std::function<void(BEntity * , BEntity *)> myFunction)
@@ -41,4 +44,17 @@ COLLIDERTYPE BColliderComponent::getType()
 shared_ptr<btCollisionShape> BColliderComponent::getShape()
 {
     return shape;
+}
+
+void BColliderComponent::configShape()
+{
+    auto body = parent->getComponent<BPhysicsCompmponent>()->getPhysicalBody();
+    body->setCollisionFlags(isTrigger ? btCollisionObject::CollisionFlags::CF_NO_CONTACT_RESPONSE : btCollisionObject::CollisionFlags::CF_CHARACTER_OBJECT);
+
+}
+
+void BColliderComponent::setTrigger(float t)
+{
+    isTrigger = t;
+    configShape();
 }

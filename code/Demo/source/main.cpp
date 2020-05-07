@@ -39,8 +39,9 @@ void ballControl(float time, shared_ptr<BEntity> entity)
 void collisionCheck(BEntity * me, BEntity* other)
 {
     auto physics = me->getComponent<BPhysicsCompmponent>();
-
-    physics->setLinearVelocity(vec3<float>(0,10,0));
+    cout << "trigering";
+    other->removeEntity();
+    //physics->setLinearVelocity(vec3<float>(0,10,0));
 }
 
 int main() {

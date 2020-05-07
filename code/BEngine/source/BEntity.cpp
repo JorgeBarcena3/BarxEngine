@@ -21,6 +21,7 @@
 #include "..\headers\BtypeDef.hpp"
 #include "..\headers\BTransformComponent.hpp"
 #include "..\headers\BAlgoritmosDeOrdenacion.hpp"
+#include "..\headers\BScene.hpp"
 
 BEntity::BEntity(string _id, shared_ptr<BScene> _scene)
 {
@@ -86,4 +87,9 @@ list<shared_ptr<BComponent>> BEntity::getComponents()
         list.push_back(component.second);
     }
     return list;
+}
+
+void BEntity::removeEntity()
+{
+    scene->removeEntity(this);
 }

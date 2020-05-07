@@ -107,5 +107,10 @@ public:
     */
     list<shared_ptr<BComponent>> getComponents();
 
+    /**
+    * Elimina la entidad
+    */
+    void removeEntity();
+
 };
 #endif

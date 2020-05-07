@@ -202,3 +202,12 @@ shared_ptr<BKeyboard> BScene::getKeyBoardManager()
 {
     return getRootEntity()->getComponent<BKeyboardComponent>()->Keyboard;
 }
+
+void BScene::removeEntity(BEntity* entity)
+{
+
+    kernel->removeTaskForEntity(entity);
+
+    entities->erase(entity->getId());
+
+}
