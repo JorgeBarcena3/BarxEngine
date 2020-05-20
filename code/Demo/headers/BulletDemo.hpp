@@ -20,15 +20,32 @@
 
 #include "LateralMovemementPlattfom.hpp"
 #include <BEngine.hpp>
+#include "Player.hpp"
 
 class BulletDemo
 {
+
+public:
+
+    static BulletDemo& getInstance()
+    {
+        static BulletDemo scene;
+
+        return scene;
+    }
+
+    static void entityToCenter(DemoEntity* entity, float time);
+
 
 private:
 
     BScene * scene;
 
     std::vector<DemoEntity * > entities;
+
+    DemoEntity* player;
+
+    bool endingScene = false;
 
 public:
 
@@ -37,6 +54,16 @@ public:
     ~BulletDemo();
 
     void start();
+
+    inline Player* getPlayer()
+    {
+        return (Player*)player;
+    };
+
+    void endScene();
+
+    const bool isEndScene() { return endingScene; };
+
 
 private:
 

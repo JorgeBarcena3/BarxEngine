@@ -14,7 +14,10 @@
     <ClCompile Include="..\..\..\code\Demo\headers\AscensionPlatform.cpp" />
     <ClCompile Include="..\..\..\code\Demo\headers\BulletDemo.cpp" />
     <ClCompile Include="..\..\..\code\Demo\headers\DemoEntity.cpp" />
+    <ClCompile Include="..\..\..\code\Demo\headers\Key.cpp" />
     <ClCompile Include="..\..\..\code\Demo\headers\LateralMovemementPlattfom.cpp" />
+    <ClCompile Include="..\..\..\code\Demo\headers\Player.cpp" />
+    <ClCompile Include="..\..\..\code\Demo\headers\StaticEntity.cpp" />
     <ClCompile Include="..\..\..\code\Demo\source\main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -25,7 +28,10 @@
     <ClInclude Include="..\..\..\code\Demo\headers\AscensionPlatform.hpp" />
     <ClInclude Include="..\..\..\code\Demo\headers\BulletDemo.hpp" />
     <ClInclude Include="..\..\..\code\Demo\headers\DemoEntity.hpp" />
+    <ClInclude Include="..\..\..\code\Demo\headers\Key.hpp" />
     <ClInclude Include="..\..\..\code\Demo\headers\LateralMovemementPlattfom.hpp" />
+    <ClInclude Include="..\..\..\code\Demo\headers\Player.hpp" />
+    <ClInclude Include="..\..\..\code\Demo\headers\StaticEntity.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

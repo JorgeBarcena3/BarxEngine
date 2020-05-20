@@ -1,7 +1,13 @@
 #include "AscensionPlatform.hpp"
+#include "BulletDemo.hpp"
 
 void AscensionPlatform::update(float time, shared_ptr<BEntity> entity)
 {
+    if (BulletDemo::getInstance().isEndScene())
+    {
+        BulletDemo::entityToCenter(this, time);
+        return;
+    }
 
     auto position = entity->getTransform()->position;
 

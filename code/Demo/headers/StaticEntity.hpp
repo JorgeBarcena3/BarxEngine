@@ -15,47 +15,29 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-#include <string>
-#include <BEngine.hpp>
+#ifndef STATICENTITY
+#define STATICENTITY
 
-#ifndef DEMOENTITY
-#define DEMOENTITY
+#include "DemoEntity.hpp"
 
-
-class DemoEntity
+class StaticEntity : public DemoEntity
 {
-      
 
-protected:
+private:
 
-    shared_ptr<BEntity> entity;
-
-    shared_ptr<BPhysicsCompmponent> physicsComponent;
+    std::string name;
 
 public:
 
-    std::string id;
+    StaticEntity(std::string name);
 
+    // Inherited via DemoEntity
+    virtual void start(BScene* scene) override;
 
-public:
+    virtual void update(float time, shared_ptr<BEntity> entity) override;
 
-    DemoEntity() = default;
+    virtual void onCollision(BEntity* me, BEntity* other) override;
 
-    virtual void start(BScene * scene) = 0;
-
-    virtual void update(float time, shared_ptr<BEntity> entity) = 0;
-
-    virtual void onCollision(BEntity* me, BEntity* other) = 0;
-
-    shared_ptr<BPhysicsCompmponent> getPhysicsComponent()
-    {
-        return physicsComponent;
-    };
-
-    shared_ptr<BEntity> getEntity()
-    {
-        return entity;
-    };
 
 };
 #endif

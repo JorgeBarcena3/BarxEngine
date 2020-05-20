@@ -104,7 +104,7 @@ public:
     void setLinearVelocity(vec3<float> v);
     
     /**
-    * Añade x fuerza al cuerpo
+    * Devuelve la velocidad actual del cuerpo
     */
     vec3<float> getLinearVelocity();
 

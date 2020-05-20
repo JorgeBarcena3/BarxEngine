@@ -1,9 +1,16 @@
 #include "LateralMovemementPlattfom.hpp"
+#include "BulletDemo.hpp"
 
 void LateralMovemementPlattfom::update(float time, shared_ptr<BEntity> entity)
 {
+    if (BulletDemo::getInstance().isEndScene())
+    {
+        BulletDemo::entityToCenter(this, time);
+        return;
+    }
 
     physicsComponent->setGravity({0,0,0});
+    physicsComponent->setLinearVelocity({0,0,0});
 
     if (currentDirection == DIRECTION::LEFT)
         physicsComponent->setLinearVelocity(vec3<float>(-speed, 0, 0));

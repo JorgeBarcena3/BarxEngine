@@ -71,7 +71,7 @@ bool BCharacterControllerTask::execute(float time)
     else if (InputManager->Keyboard->isKeyPresed(component->Jump))
     {
         if (physicsComponent->isInFloor())
-            physicsComponent->addForce({ 0, component->JumpForce, 0 });
+            physicsComponent->addForce({ physicsComponent->getLinearVelocity().x, component->JumpForce, physicsComponent->getLinearVelocity().z });
 
     }
 
