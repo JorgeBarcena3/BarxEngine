@@ -177,6 +177,9 @@
     <ClInclude Include="..\..\..\code\BEngine\headers\BMainCollisionTask.hpp">
       <Filter>Headers\Task</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\code\BEngine\headers\BPhysicsConstraintComponent.hpp">
+      <Filter>Headers\Components</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\code\BEngine\source\BAudio.cpp">
@@ -288,6 +291,9 @@
       <Filter>Source</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\code\BEngine\source\BMainCollisionTask.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\code\BEngine\source\BPhysicsConstraintComponent.cpp">
       <Filter>Source</Filter>
     </ClCompile>
   </ItemGroup>

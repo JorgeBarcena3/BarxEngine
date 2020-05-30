@@ -162,6 +162,8 @@ void BPhysicsCompmponent::createBulletRigidBody()
 
     colliderComponent->configShape();
 
+    setActiveStatus();
+
     // Add the body to the dynamics world.
 
     BMainPhysicsComponent::instance->dynamicsWorld->addRigidBody(body.get(), (int)colliderComponent->collisionGroup, (int)colliderComponent->collisionMask);

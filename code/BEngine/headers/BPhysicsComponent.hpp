@@ -133,6 +133,11 @@ public:
     */
     bool isInFloor();
 
+    /**
+   * Activa el objeto si se ha dormido en el mundo de Bullet
+   */
+    void setActiveStatus();
+
 
 private:
 
@@ -141,10 +146,7 @@ private:
     */
     void createBulletRigidBody();
 
-    /**
-    * Activa el objeto si se ha dormido en el mundo de Bullet
-    */
-    void setActiveStatus();
+   
 
 };
 #endif;

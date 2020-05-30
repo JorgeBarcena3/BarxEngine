@@ -14,6 +14,7 @@
     <ClCompile Include="..\..\..\code\Demo\headers\AscensionPlatform.cpp" />
     <ClCompile Include="..\..\..\code\Demo\headers\BulletDemo.cpp" />
     <ClCompile Include="..\..\..\code\Demo\headers\DemoEntity.cpp" />
+    <ClCompile Include="..\..\..\code\Demo\headers\Door.cpp" />
     <ClCompile Include="..\..\..\code\Demo\headers\Key.cpp" />
     <ClCompile Include="..\..\..\code\Demo\headers\LateralMovemementPlattfom.cpp" />
     <ClCompile Include="..\..\..\code\Demo\headers\Player.cpp" />
@@ -28,6 +29,7 @@
     <ClInclude Include="..\..\..\code\Demo\headers\AscensionPlatform.hpp" />
     <ClInclude Include="..\..\..\code\Demo\headers\BulletDemo.hpp" />
     <ClInclude Include="..\..\..\code\Demo\headers\DemoEntity.hpp" />
+    <ClInclude Include="..\..\..\code\Demo\headers\Door.hpp" />
     <ClInclude Include="..\..\..\code\Demo\headers\Key.hpp" />
     <ClInclude Include="..\..\..\code\Demo\headers\LateralMovemementPlattfom.hpp" />
     <ClInclude Include="..\..\..\code\Demo\headers\Player.hpp" />

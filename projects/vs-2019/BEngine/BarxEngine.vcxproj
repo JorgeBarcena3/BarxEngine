@@ -41,6 +41,7 @@
     <ClInclude Include="..\..\..\code\BEngine\headers\BMessage.hpp" />
     <ClInclude Include="..\..\..\code\BEngine\headers\BObserver.hpp" />
     <ClInclude Include="..\..\..\code\BEngine\headers\BPhysicsComponent.hpp" />
+    <ClInclude Include="..\..\..\code\BEngine\headers\BPhysicsConstraintComponent.hpp" />
     <ClInclude Include="..\..\..\code\BEngine\headers\BPhysicsTask.hpp" />
     <ClInclude Include="..\..\..\code\BEngine\headers\BRenderObjectComponent.hpp" />
     <ClInclude Include="..\..\..\code\BEngine\headers\BRenderObjectTask.hpp" />
@@ -87,6 +88,7 @@
     <ClCompile Include="..\..\..\code\BEngine\source\BMainWindowComponent.cpp" />
     <ClCompile Include="..\..\..\code\BEngine\source\BMessage.cpp" />
     <ClCompile Include="..\..\..\code\BEngine\source\BPhysicsComponent.cpp" />
+    <ClCompile Include="..\..\..\code\BEngine\source\BPhysicsConstraintComponent.cpp" />
     <ClCompile Include="..\..\..\code\BEngine\source\BPhysicsTask.cpp" />
     <ClCompile Include="..\..\..\code\BEngine\source\BRenderObjectComponent.cpp" />
     <ClCompile Include="..\..\..\code\BEngine\source\BRenderObjectTask.cpp" />

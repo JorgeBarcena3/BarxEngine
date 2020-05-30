@@ -31,7 +31,7 @@
       <scale>2,1,5</scale>
     </component>
     <component type="BRenderObjectComponent" >
-      <model>../../../binaries/assets/models/cube_centered.obj</model>
+      <model>../assets/models/cube_centered.obj</model>
     </component>
     <component type="BBoxColliderComponent" >
       <boxShape>1,0.5,2.5</boxShape>
@@ -56,7 +56,7 @@
       <scale>2,0.35,2</scale>
     </component>
     <component type="BRenderObjectComponent" >
-      <model>../../../binaries/assets/models/cube_centered.obj</model>
+      <model>../assets/models/cube_centered.obj</model>
     </component>
     <component type="BBoxColliderComponent" >
       <boxShape>1,0.175,1</boxShape>
@@ -81,7 +81,7 @@
       <scale>2,0.35,2</scale>
     </component>
     <component type="BRenderObjectComponent" >
-      <model>../../../binaries/assets/models/cube_centered.obj</model>
+      <model>../assets/models/cube_centered.obj</model>
     </component>
     <component type="BBoxColliderComponent" >
       <boxShape>1,0.175,1</boxShape>
@@ -106,7 +106,7 @@
       <scale>2,0.35,2</scale>
     </component>
     <component type="BRenderObjectComponent" >
-      <model>../../../binaries/assets/models/cube_centered.obj</model>
+      <model>../assets/models/cube_centered.obj</model>
     </component>
     <component type="BBoxColliderComponent" >
       <boxShape>1,0.175,1</boxShape>
@@ -131,7 +131,7 @@
       <scale>2,0.35,2</scale>
     </component>
     <component type="BRenderObjectComponent" >
-      <model>../../../binaries/assets/models/cube_centered.obj</model>
+      <model>../assets/models/cube_centered.obj</model>
     </component>
     <component type="BBoxColliderComponent" >
       <boxShape>1,0.175,1</boxShape>
@@ -156,7 +156,7 @@
       <scale>0.1, 0.1, 0.1</scale>
     </component>
     <component type="BRenderObjectComponent" >
-      <model>../../../binaries/assets/models/key.obj</model>
+      <model>../assets/models/key.obj</model>
     </component>
     <component type="BBoxColliderComponent" >
       <boxShape>0.05,0.05,0.05</boxShape>
@@ -180,7 +180,7 @@
       <scale>1,0.5,3</scale>
     </component>
     <component type="BRenderObjectComponent" >
-      <model>../../../binaries/assets/models/cube_centered.obj</model>
+      <model>../assets/models/cube_centered.obj</model>
     </component>
     <component type="BBoxColliderComponent" >
       <boxShape>0.5,0.25,1.5</boxShape>
@@ -205,7 +205,7 @@
       <scale>2,1,5</scale>
     </component>
     <component type="BRenderObjectComponent" >
-      <model>../../../binaries/assets/models/cube_centered.obj</model>
+      <model>../assets/models/cube_centered.obj</model>
     </component>
     <component type="BBoxColliderComponent" >
       <boxShape>1,0.5,2.5</boxShape>
@@ -231,7 +231,7 @@
       <scale>5,5,5</scale>
     </component>
     <component type="BRenderObjectComponent" >
-      <model>../../../binaries/assets/models/cube_centered.obj</model>
+      <model>../assets/models/cube_centered.obj</model>
     </component>
     <component type="BBoxColliderComponent" >
       <boxShape>2.5,2.5,2.5</boxShape>
@@ -255,7 +255,7 @@
       <scale>3,0.5,3</scale>
     </component>
     <component type="BRenderObjectComponent" >
-      <model>../../../binaries/assets/models/cube_centered.obj</model>
+      <model>../assets/models/cube_centered.obj</model>
     </component>
     <component type="BBoxColliderComponent" >
       <boxShape>1.5,0.25,1.5</boxShape>
@@ -281,7 +281,7 @@
       <scale>0.05,0.05,0.05</scale>
     </component>
     <component type="BRenderObjectComponent" >
-      <model>../../../binaries/assets/models/spider-man.obj</model>
+      <model>../assets/models/spider-man.obj</model>
     </component>
     <component type="BCapsulleColliderComponent">
       <radius>0.5</radius>
@@ -315,7 +315,7 @@
       <scale>0.25,2,1</scale>
     </component>
     <component type="BRenderObjectComponent" >
-      <model>../../../binaries/assets/models/cube_centered.obj</model>
+      <model>../assets/models/cube_centered.obj</model>
     </component>
     <component type="BBoxColliderComponent" >
       <boxShape>0.125,1,0.5</boxShape>
@@ -339,7 +339,7 @@
       <scale>0.25,2,0.25</scale>
     </component>
     <component type="BRenderObjectComponent" >
-      <model>../../../binaries/assets/models/cube_centered.obj</model>
+      <model>../assets/models/cube_centered.obj</model>
     </component>
     <component type="BBoxColliderComponent" >
       <boxShape>0.125,1,0.125</boxShape>

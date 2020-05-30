@@ -35,6 +35,7 @@ class btDefaultCollisionConfiguration;
 class btCollisionDispatcher;
 class btDbvtBroadphase;
 class btSequentialImpulseConstraintSolver;
+class btHingeConstraint;
 
 /**
 * Clase que se encarga de renderizar un modelo 3D
@@ -56,6 +57,8 @@ public:
     vector< shared_ptr< btRigidBody          > > rigidBodies;
     vector< shared_ptr< btDefaultMotionState > > motionStates;
     vector< shared_ptr< btCollisionShape     > > collisionShapes;
+    vector< shared_ptr< btHingeConstraint     > > constraints;
+
 
 private:
 

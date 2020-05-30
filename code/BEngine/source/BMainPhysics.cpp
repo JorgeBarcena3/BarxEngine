@@ -61,6 +61,7 @@ BMainPhysicsComponent::~BMainPhysicsComponent()
     collisionDispatcher   .reset() ;
     overlappingPairCache  .reset() ;
     constraintSolver      .reset() ;
+    
 }
 
 bool BMainPhysicsComponent::initialize()

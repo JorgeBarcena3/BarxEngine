@@ -15,64 +15,35 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-#ifndef BULLETDEMO
-#define BULLETDEMO
+#ifndef DOOR
+#define DOOR
 
-#include "LateralMovemementPlattfom.hpp"
-#include <BEngine.hpp>
-#include "Player.hpp"
+#include "DemoEntity.hpp"
 
-class BulletDemo
+
+class Door : public DemoEntity
 {
 
-public:
-
-    static BulletDemo& getInstance()
-    {
-        static BulletDemo scene;
-
-        return scene;
-    }
-
-    static void entityToCenter(DemoEntity* entity, float time);
-
-
 private:
 
-    BScene * scene;
+    shared_ptr<BPhysicsConstraintComponent> constraintComponent;
 
-    std::vector<DemoEntity * > entities;
+    shared_ptr<BEntity> A;
 
-    DemoEntity* player;
+    shared_ptr<BEntity> B;
 
-    bool endingScene = false;
 
 public:
 
-    BulletDemo();
+    Door() = default;
 
-    ~BulletDemo();
+    // Inherited via DemoEntity
+    virtual void start(BScene* scene) override;
 
-    void start();
+    virtual void update(float time, shared_ptr<BEntity> entity) override;
 
-    inline Player* getPlayer()
-    {
-        return (Player*)player;
-    };
+    virtual void onCollision(BEntity* me, BEntity* other) override;
 
-    inline BScene * getScene()
-    {
-        return scene;
-    }
-
-    void endScene();
-
-    const bool isEndScene() { return endingScene; };
-
-
-private:
-
-    void startSceneFunction(BScene* scene);
 
 };
 #endif

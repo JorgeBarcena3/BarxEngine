@@ -42,6 +42,7 @@
 #include "../headers/BPhysicsComponent.hpp"
 #include "../headers/BCapsulleColliderComponent.hpp"
 #include "../headers/BMainCollisionComponent.hpp"
+#include "../headers/BPhysicsConstraintComponent.hpp"
 
 BScene::BScene(const string& _scene_description_file_path, std::function<void(BScene*)> _startFunction)
 {
@@ -133,6 +134,8 @@ void BScene::load(const string& scene_description_file_path)
                 currentComponent = shared_ptr<BLightComponent>(new BLightComponent(entity));
             else if (typeComponent == "BPhysicsCompmponent")
                 currentComponent = shared_ptr<BPhysicsCompmponent>(new BPhysicsCompmponent(entity));
+            else if (typeComponent == "BPhysicsConstraintComponent")
+                currentComponent = shared_ptr<BPhysicsConstraintComponent>(new BPhysicsConstraintComponent(entity));
 
             // Añadimos todos los componentes que vayamos creando en el motor
 

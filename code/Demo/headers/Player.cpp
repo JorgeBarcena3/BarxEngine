@@ -29,7 +29,7 @@ void Player::start(BScene* scene)
 
     entity = (scene->getEntity("Player"));
 
-    hasKey = false;
+    hasKey = false  ;
 
     physicsComponent = entity->getComponent<BPhysicsCompmponent>();
 

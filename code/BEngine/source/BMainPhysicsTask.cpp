@@ -48,11 +48,15 @@ bool BMainPhysicsTask::finalize()
 
 bool BMainPhysicsTask::execute(float time)
 {
-
-
-    physicsComponent->dynamicsWorld->stepSimulation(1.f / 60.f);
-
-    //BEntity* other = static_cast<BEntity*>((body->getUserPointer()));
+    try
+    {
+        physicsComponent->dynamicsWorld->stepSimulation(1.f / 60.f);
+    }
+    catch (exception e)
+    {
+        cout << e.what();
+    }
 
     return true;
+
 }

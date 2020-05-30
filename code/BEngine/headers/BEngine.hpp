@@ -32,6 +32,7 @@
 #include "BWindowTask.hpp"
 #include "BPhysicsComponent.hpp"
 #include "BKeyboardComponent.hpp"
+#include "BPhysicsConstraintComponent.hpp"
 
 typedef BKeyboard Input;
 

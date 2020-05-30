@@ -39,6 +39,9 @@
     <ClCompile Include="..\..\..\code\Demo\headers\StaticEntity.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\code\Demo\headers\Door.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Xml Include="resources\scene.xml">
@@ -68,6 +71,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\code\Demo\headers\StaticEntity.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\code\Demo\headers\Door.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

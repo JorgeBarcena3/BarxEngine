@@ -2,6 +2,7 @@
 #include "DemoEntity.hpp"
 #include "AscensionPlatform.hpp"
 #include "Key.hpp"
+#include "Door.hpp"
 #include "StaticEntity.hpp"
 
 BulletDemo::BulletDemo()
@@ -21,6 +22,7 @@ BulletDemo::BulletDemo()
     entities.push_back(new AscensionPlatform());
     entities.push_back(new Key());
     entities.push_back(player);
+    //entities.push_back(new Door());
 
     scene = new BScene("resources/animacion.xml", [this](BScene* scene) { startSceneFunction(scene);  });
 
